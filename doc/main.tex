@@ -1,0 +1,177 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage{parskip}
+\usepackage{colortbl}
+
+\geometry{top=2.5cm,bottom=2.5cm,left=2.8cm,right=2.8cm}
+
+% Palette bianco e nero
+\definecolor{primary}{HTML}{000000}
+\definecolor{accent}{HTML}{333333}
+\definecolor{light}{HTML}{F2F2F2}
+\definecolor{success}{HTML}{000000}
+\definecolor{warning}{HTML}{000000}
+\definecolor{muted}{HTML}{555555}
+\definecolor{boxborder}{HTML}{000000}
+
+\titleformat{\section}{\color{primary}\large\bfseries\filright}{}{0em}{}[\color{black}\titlerule]
+\titlespacing{\section}{0pt}{18pt}{8pt}
+\titleformat{\subsection}{\color{accent}\normalsize\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{10pt}{4pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{muted}\textbf{SCALO} -- Smart Connection \& Layover Optimizer}
+\fancyhead[R]{\small\color{muted}A.A. 2025/2026}
+\fancyfoot[C]{\small\color{muted}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\tcbuselibrary{breakable,skins}
+\newtcolorbox{objectivebox}[2][]{enhanced,colback=light,colframe=black,coltitle=white,
+  fonttitle=\bfseries\small,title={#2},arc=0pt,left=8pt,right=8pt,top=6pt,bottom=6pt,#1}
+\newtcolorbox{infobox}{enhanced,colback=white,colframe=black,arc=0pt,
+  left=8pt,right=8pt,top=6pt,bottom=6pt,boxrule=0.8pt}
+
+\setlist[itemize,1]{label=\textcolor{black}{$\bullet$},leftmargin=1.4em,itemsep=3pt,parsep=0pt}
+
+\hypersetup{colorlinks=false,linkcolor=black,urlcolor=black,
+  pdftitle={SCALO -- Obiettivi Progetto Semestrale}}
+
+\begin{document}
+
+\begin{center}
+  {\color{black}\rule{\textwidth}{2pt}}\\[10pt]
+  {\fontsize{22}{26}\selectfont\bfseries\color{black}SCALO}\\[4pt]
+  {\large\color{black}Smart Connection \& Layover Optimizer}\\[6pt]
+  {\normalsize\color{muted}Documento degli Obiettivi -- Progetto Semestrale}\\[10pt]
+  {\color{black}\rule{\textwidth}{2pt}}
+\end{center}
+
+\vspace{8pt}
+
+\vspace{6pt}
+
+\section{Descrizione del Progetto}
+
+\textbf{SCALO} \`e un sito web che consente di ricercare voli tra un aeroporto di origine e uno di destinazione \emph{imponendo uno scalo desiderato} (es.\ ``voglio passare da Istanbul''). L'utente inserisce i codici IATA degli aeroporti, le date di viaggio e lo scalo obbligato; il sistema interroga le API di voli disponibili, filtra i risultati che includono tale scalo e mostra prezzi, durata totale, durata dello stopover e compagnie aeree.
+
+Come funzionalit\`a opzionale, se la durata dello scalo supera una soglia configurabile, il sistema suggerisce attivit\`a turistiche nella citt\`a di transito tramite API dedicate (es.\ GetYourGuide).
+
+\section{Obiettivi del Progetto}
+
+Di seguito sono riportati gli obiettivi principali del progetto, suddivisi per priorit\`a e accompagnati dai relativi criteri di accettazione.
+
+\begin{objectivebox}[colframe=black,colbacktitle=black]{O1 \quad|\quad MVP Funzionante}
+\textbf{Descrizione:} Realizzare un prodotto minimo funzionante (MVP) che consenta la ricerca di voli andata/ritorno con scalo obbligato, restituendo risultati acquistabili tramite link partner.
+
+\vspace{6pt}
+\textbf{Criteri di accettazione:}
+\begin{itemize}
+  \item L'utente pu\`o inserire aeroporto di origine, destinazione e scalo obbligato tramite codice IATA.
+  \item Il sistema restituisce almeno un risultato coerente con i parametri inseriti (scalo corrispondente a quello richiesto).
+  \item Ogni risultato include un link verso la piattaforma di acquisto del partner API.
+  \item La ricerca andata/ritorno \`e supportata con selezione delle rispettive date.
+\end{itemize}
+\end{objectivebox}
+
+\vspace{8pt}
+
+\begin{objectivebox}[colframe=black,colbacktitle=black]{O2 \quad|\quad Visualizzazione Chiara delle Informazioni}
+\textbf{Descrizione:} Presentare all'utente le informazioni essenziali di ciascun volo in maniera immediata e leggibile.
+
+\vspace{6pt}
+\textbf{Criteri di accettazione:}
+\begin{itemize}
+  \item Ogni card di risultato mostra: prezzo totale, durata del volo end-to-end, durata dello stopover e compagnia aerea.
+  \item La durata dello scalo \`e evidenziata visivamente per una consultazione rapida.
+  \item I risultati sono ordinabili per prezzo e per durata totale.
+  \item L'interfaccia \`e comprensibile senza istruzioni aggiuntive.
+\end{itemize}
+\end{objectivebox}
+
+\vspace{8pt}
+
+\begin{objectivebox}[colframe=black,colbacktitle=black]{O3 \quad|\quad Prestazioni e Qualit\`a UX}
+\textbf{Descrizione:} Garantire un'esperienza utente fluida con tempi di risposta accettabili, anche a fronte delle latenze introdotte dalle API di terze parti.
+
+\vspace{6pt}
+\textbf{Criteri di accettazione:}
+\begin{itemize}
+  \item Il tempo di visualizzazione dei risultati \`e inferiore a \textbf{3 secondi} lato UI in condizioni normali.
+  \item In caso di latenza elevata o errore API, l'interfaccia mostra un indicatore di caricamento e un messaggio di fallback esplicativo.
+  \item Il form di ricerca \`e responsive e funzionale su dispositivi desktop e mobile.
+  \item I messaggi di errore (quota API, rate limit, nessun risultato) sono chiari e informativi.
+\end{itemize}
+\end{objectivebox}
+
+\vspace{8pt}
+
+\begin{objectivebox}[colframe=black,colbacktitle=black]{O4 \quad|\quad Architettura Modulare ed Estendibile}
+\textbf{Descrizione:} Progettare il codice in modo che l'aggiunta di nuovi provider API o nuove logiche di filtro richieda il minimo intervento sulle parti gi\`a esistenti.
+
+\vspace{6pt}
+\textbf{Criteri di accettazione:}
+\begin{itemize}
+  \item L'integrazione di un secondo provider API si esegue aggiungendo un nuovo modulo/adattatore senza modificare la logica di business centrale.
+  \item Il filtro per scalo obbligato e durata minima/massima \`e separato dal layer di chiamata API.
+  \item Il codice \`e documentato e strutturato in cartelle distinte per frontend, backend e configurazione.
+  \item Sono presenti test su almeno 10 rotte reali (es.\ scali su AMS, IST, DOH, DXB).
+\end{itemize}
+\end{objectivebox}
+
+\newpage
+
+\section{Riepilogo Obiettivi}
+
+\vspace{4pt}
+\begin{center}
+\begin{tabularx}{0.95\textwidth}{@{}
+  >{\bfseries\centering\arraybackslash}p{1cm}
+  >{\raggedright\arraybackslash}X
+  >{\centering\arraybackslash}p{2.2cm}
+  >{\centering\arraybackslash}p{2.4cm}
+@{}}
+\toprule
+\rowcolor{light}
+\textbf{ID} & \textbf{Obiettivo} \\
+\midrule
+O1 & MVP Funzionante                            \\[2pt]
+O2 & Visualizzazione Chiara delle Informazioni  \\[2pt]
+O3 & Prestazioni e Qualit\`a UX                 \\[2pt]
+O4 & Architettura Modulare                      \\[2pt]
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Stack Tecnologico Previsto}
+
+\vspace{4pt}
+\begin{tabularx}{\textwidth}{@{} >{\bfseries}p{3.2cm} X @{}}
+\toprule
+\rowcolor{light}
+\textbf{Area} & \textbf{Tecnologie} \\
+\midrule
+Frontend      & Vite + React (o Next.js) / Tailwind CSS \\[2pt]
+Backend       & Node.js + Express (proxy API, gestione secret keys) \\[2pt]
+API Voli      & Amadeus / Kiwi / Duffel / Skyscanner (da selezionare) \\[2pt]
+API Attivit\`a & GetYourGuide (opzionale) \\[2pt]
+Storage       & Cache in memoria per MVP; Redis (opzionale) \\[2pt]
+Deploy        & Vercel / Netlify (frontend) + Render / Fly.io (backend) \\[2pt]
+Compliance    & Codici IATA, rispetto ToS provider, privacy-by-design \\
+\bottomrule
+\end{tabularx}
+
+\vspace{20pt}
+
+\end{document}

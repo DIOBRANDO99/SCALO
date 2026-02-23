@@ -1,0 +1,334 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage{parskip}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{amssymb}
+
+\geometry{top=2.5cm,bottom=2.5cm,left=2.8cm,right=2.8cm}
+
+% Colori
+\definecolor{primary}{HTML}{000000}
+\definecolor{accent}{HTML}{333333}
+\definecolor{light}{HTML}{F2F2F2}
+\definecolor{success}{HTML}{000000}
+\definecolor{danger}{HTML}{000000}
+\definecolor{warning}{HTML}{444444}
+\definecolor{muted}{HTML}{555555}
+\definecolor{codebg}{HTML}{EFEFEF}
+\definecolor{codeframe}{HTML}{999999}
+\definecolor{greenlight}{HTML}{F2F2F2}
+\definecolor{redlight}{HTML}{E8E8E8}
+\definecolor{orangelight}{HTML}{ECECEC}
+
+% Stile sezioni
+\titleformat{\section}{\color{black}\large\bfseries\filright}{}{0em}{}[\color{black}\titlerule]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+\titleformat{\subsection}{\color{black}\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+\titleformat{\subsubsection}{\color{muted}\normalsize\bfseries\itshape}{}{0em}{}
+\titlespacing{\subsubsection}{0pt}{8pt}{2pt}
+
+% Header/footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{muted}\textbf{SCALO} -- Analisi delle strategie}
+\fancyhead[R]{\small\color{muted}A.A. 2025/2026}
+\fancyfoot[C]{\small\color{muted}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Box
+\tcbuselibrary{breakable,skins}
+
+\newtcolorbox{probox}{enhanced,colback=greenlight,colframe=black,
+  arc=3pt,left=8pt,right=8pt,top=5pt,bottom=5pt,boxrule=0.8pt}
+
+\newtcolorbox{conbox}{enhanced,colback=redlight,colframe=black,
+  arc=3pt,left=8pt,right=8pt,top=5pt,bottom=5pt,boxrule=0.8pt}
+
+\newtcolorbox{infobox}[1]{enhanced,colback=light,colframe=black,
+  coltitle=white,fonttitle=\bfseries\small,title={#1},
+  arc=3pt,left=8pt,right=8pt,top=6pt,bottom=6pt}
+
+\newtcolorbox{warningbox}{enhanced,colback=orangelight,colframe=black,
+  arc=3pt,left=8pt,right=8pt,top=5pt,bottom=5pt,boxrule=0.8pt}
+
+\newtcolorbox{recbox}{enhanced,colback=greenlight,colframe=black,
+  coltitle=white,fonttitle=\bfseries\small,title={Raccomandazione},
+  arc=3pt,left=8pt,right=8pt,top=6pt,bottom=6pt}
+
+% Listings (codice JSON)
+\lstdefinestyle{json}{
+  backgroundcolor=\color{codebg},
+  basicstyle=\ttfamily\footnotesize,
+  frame=single,
+  rulecolor=\color{codeframe},
+  breaklines=true,
+  showstringspaces=false,
+  keywordstyle=\color{black}\bfseries,
+  stringstyle=\color{black},
+  commentstyle=\color{muted}\itshape,
+  numbers=none,
+  xleftmargin=8pt,
+  xrightmargin=4pt,
+  aboveskip=6pt,
+  belowskip=4pt,
+  framesep=4pt,
+}
+\lstset{style=json}
+
+% Liste
+\setlist[itemize,1]{label=\textcolor{accent}{$\bullet$},leftmargin=1.5em,itemsep=3pt,parsep=0pt}
+\setlist[itemize,2]{label=\textcolor{muted}{--},leftmargin=1.2em,itemsep=2pt}
+
+% Hyperref
+\hypersetup{colorlinks=false,linkcolor=black,urlcolor=black,
+  pdftitle={SCALO -- Rapporto}}
+
+% Comando verde/rosso
+\newcommand{\pro}[1]{\textcolor{black}{\textbf{+}} #1}
+\newcommand{\con}[1]{\textcolor{black}{\textbf{--}} #1}
+
+% ============================================================
+\begin{document}
+
+% ---------- TITOLO ----------
+\begin{center}
+  {\color{black}\rule{\textwidth}{2pt}}\\[10pt]
+  {\fontsize{18}{16}\selectfont\bfseries\color{black}SCALO -- Smart Connection \& Layover Optimizer}\\[5pt]
+  {\normalsize\color{muted}Report di valutazione per la scelta dell'approccio}\\[10pt]
+  {\color{black}\rule{\textwidth}{2pt}}
+\end{center}
+
+% ---------- ABSTRACT ----------
+\begin{infobox}{Abstract}
+Questo documento analizza tre possibili approcci per l'acquisizione dei dati di volo nel progetto SCALO andando a motivare la scelta dell'approccio basato su \textbf{SerpApi Google Flights} come fonte primaria, integrato con l'\textbf{API GetYourGuide} per la valorizzazione degli scali. Vengono esaminate in dettaglio le criticità degli approcci alternativi (scraping diretto con Puppeteer e API partner diretti) e illustrato il modello architetturale raccomandato.
+\end{infobox}
+
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Contesto e requisiti del problema}
+
+Il progetto SCALO richiede la capacità di ricercare itinerari aerei imponendo un vincolo ben preciso: lo \emph{scalo obbligatorio}. Questa funzionalit\`a non \`e offerta solitamente da nessun motore di ricerca dei voli disponibile al pubblico, il che rende necessario costruire uno strato applicativo in grado di:
+
+\begin{itemize}
+  \item interrogare una fonte dati affidabile e aggiornata con i prezzi reali e acquistabili;
+  \item filtrare o costruire possibili itinerari che includano un aeroporto di scalo specifico (codice IATA);
+  \item estrarre informazioni granulari sullo scalo: aeroporto, durata dello stopover, compagnia aerea per ogni segmento;
+  \item restituire link di acquisto funzionanti verso le piattaforme partner associate;
+  \item tenere in considerazione i nostri vincoli accademici: tempi limitati, zero budget per licenze, codice manutenibile.
+\end{itemize}
+
+Abbiamo pensato a tre strategie tecniche percorribili, che vengono analizzate nelle sezioni seguenti.
+
+% ============================================================
+\section{Analisi comparativa delle tre strategie}
+
+\subsection{Strategia A -- Web Scraping diretto con Puppeteer}
+
+Puppeteer \`e una libreria Node.js sviluppata dal team di Google Chrome che espone un'API ad alto livello per il controllo programmatico di un browser basato su Chromium. Permette di automatizzare interazioni con pagine web dinamiche, intercettare richieste di rete e simulare il comportamento di un utente reale.
+
+\subsubsection{Funzionamento tecnico}
+
+L'idea sarebbe quella di andare ad automatizzare la navigazione su siti come Google Flights, Kayak o Skyscanner: il browser viene aperto in modalit\`a headless, vengono compilati i campi del form di ricerca e i risultati vengono estratti dal DOM una volta renderizzati via JavaScript.
+
+\subsubsection{Criticità tecniche}
+
+\begin{conbox}
+\textbf{Motivi per cui questa strategia non \`e adatta al nostro progetto:}
+\begin{itemize}
+  \item \textbf{Anti-bot sistematici.} Google Flights, Kayak e le principali OTA (Online Travel Agency) impiegano sistemi di rilevamento avanzati, verifica della latenza degli input, CAPTCHA dinamici (Cloudflare Turnstile, hCaptcha). Andare a raggirare i seguenti sistemi richiede l'uso di plugin stealth (\texttt{puppeteer-extra-plugin-stealth}), rotazione di proxy e simulazione di movimenti del mouse, che non è il nostro scopo del progetto.
+  \item \textbf{Fragilit\`a strutturale.} Ogni aggiornamento dell'interfaccia del sito target invalida i selettori CSS/XPath utilizzati dallo scraper. Questo porterebbe ad un continuo aggiornamento del codice sorgente della piattaforma rendendolo molto instabile.
+  \item \textbf{Violazione dei Terms of Service.} Nonostante il nostro sia un progetto a puro scopo accademico, non potremmo andare legalmente ad effettuare lo scraping  diretto sui loro siti principali.
+  \item \textbf{Latenza elevata.} L'avvio di un'istanza browser, la navigazione completa e l'attesa del rendering JavaScript introducono latenze non indifferenti, incompatibili con il requisito di risposta entro 3 secondi definito negli obiettivi del progetto.
+  \item \textbf{Scalabilit\`a nulla.} Ogni istanza Chromium consuma circa 200--300\,MB di RAM. Gestire ricerche concorrenti richiede un'orchestrazione di processi complessa, che rappresenta un overhead architetturale ingiustificato.
+\end{itemize}
+\end{conbox}
+
+% ------ B ------
+\subsection{Strategia B -- Integrazione diretta con API (Skyscanner, Amadeus, Duffel)}
+
+Questa strategia prevede l'integrazione con le API ufficiali dei principali aggregatori di voli.
+
+\subsubsection{Analisi dei provider disponibili}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{} >{\bfseries}p{2.4cm} X X X @{}}
+\toprule
+\rowcolor{light}
+\textbf{Provider} & \textbf{Accesso} & \textbf{Dati scalo} & \textbf{Free Limits} \\
+\midrule
+Skyscanner API & Solo partner commerciali approvati & Parziali & Non disponibile \\[2pt]
+Amadeus        & Registrazione richiesta, approvazione manuale & S\`{\i}, ma verboso & 2\,000 richieste/mese \\[2pt]
+Duffel         & Account business & Completo & Limitato in sandbox \\[2pt]
+Kiwi/Tequila   & Registrazione, quota variabile & S\`{\i} & 500 richieste/giorno \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsubsection{Vincoli tecnici}
+
+\begin{conbox}
+\begin{itemize}
+  \item \textbf{Barriere di accesso.} Skyscanner API \`e riservata esclusivamente a partner commerciali con un volume di traffico minimo garantito. Non \`e accessibile per un progetto accademico senza accordi formali.
+  \item \textbf{Quote restrittive.} Amadeus offre un piano sandbox con 2\,000 richieste/mese, sufficienti per lo sviluppo ma non per test intensivi. Il piano produzione richiede contratto commerciale.
+  \item \textbf{Complessit\`a del dato sullo scalo.} Le API come Amadeus restituiscono itinerari multi-segmento in formato JSON annidato (standard IATA/IOTA). Estrarre e normalizzare la struttura degli scali richiede una logica di parsing complessa, specialmente per voli con connessioni multiple o code-share.
+  \item \textbf{Assenza del filtro scalo obbligato.} Nessuna delle API analizzate espone un parametro nativo per imporre uno specifico aeroporto di scalo. L'approccio richiederebbe di interrogare tutti gli itinerari e filtrare lato server, con un numero di chiamate API potenzialmente molto elevato.
+  \item \textbf{Basso valore differenziante.} Dal punto di vista progettuale, integrare una singola API di voli \`e un task standard privo di elemento innovativo. Non valorizza le competenze sviluppate n\'e produce un risultato distinguibile.
+\end{itemize}
+\end{conbox}
+
+% ------ C ------
+\subsection{Strategia C -- SerpApi Google Flights (la nostra proposta)}
+
+SerpApi \`e un servizio di terze parti che espone un'API strutturata per interrogare Google Flights, restituendo i risultati in formato JSON pulito e normalizzato. A differenza dello scraping diretto, \`e SerpApi a gestire internamente il browser headless, la compliance con Google e il rate limiting, offrendo all'utente una semplice interfaccia REST.
+
+\subsubsection{Perch\'e Google Flights?}
+
+Google Flights aggrega dati da oltre 300 compagnie aeree e GDS (Global Distribution Systems) in tempo reale. I prezzi sono acquistabili e aggiornati, la copertura globale \`e la pi\`u ampia disponibile gratuitamente, e l'interfaccia struttura gi\`a nativamente i voli per segmenti e scali.
+
+\subsubsection{Parametri rilevanti per SCALO}
+
+L'API SerpApi Google Flights espone parametri che si mappano direttamente sui requisiti del progetto:
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{} >{\ttfamily\small}p{4cm} X @{}}
+\toprule
+\rowcolor{light}
+\textbf{Parametro} & \textbf{Utilizzo in SCALO} \\
+\midrule
+\texttt{departure\_id}   & Aeroporto IATA di partenza (es. \texttt{MXP}) \\[2pt]
+\texttt{arrival\_id}     & Aeroporto IATA di destinazione (es. \texttt{BKK}) \\[2pt]
+\texttt{type}            & \texttt{1} = andata/ritorno, \texttt{2} = solo andata \\[2pt]
+\texttt{outbound\_date}  & Data di partenza in formato \texttt{YYYY-MM-DD} \\[2pt]
+\texttt{return\_date}    & Data di ritorno (solo per round trip) \\[2pt]
+\texttt{layover\_duration} & Filtro durata scalo in minuti (\texttt{min,max}) \\[2pt]
+\texttt{exclude\_conns}  & Esclude aeroporti di connessione indesiderati \\[2pt]
+\texttt{stops}           & Numero di scali (impostare $\geq 1$ per garantire almeno uno scalo) \\[2pt]
+\texttt{departure\_token} & Token per recuperare i voli di ritorno (round trip) \\[2pt]
+\texttt{booking\_token}  & Token per recuperare le opzioni di prenotazione acquistabili \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsubsection{Struttura della risposta JSON e logica del filtro scalo}
+
+La risposta dell'API include un campo \texttt{layovers} per ogni itinerario, contenente le informazioni strutturate di ogni scalo intermedio. Questa \`e la base su cui costruire il filtro per scalo obbligato lato backend:
+
+\begin{lstlisting}[caption={Struttura semplificata della risposta SerpApi Google Flights}]
+{
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": { "id": "MXP", "time": "2026-06-10 08:00" },
+          "arrival_airport":   { "id": "IST", "time": "2026-06-10 11:45" },
+          "airline": "Turkish Airlines",
+          "flight_number": "TK1888",
+          "duration": 165
+        },
+        {
+          "departure_airport": { "id": "IST", "time": "2026-06-10 14:30" },
+          "arrival_airport":   { "id": "BKK", "time": "2026-06-11 03:15" },
+          "airline": "Turkish Airlines",
+          "flight_number": "TK68",
+          "duration": 585
+        }
+      ],
+      "layovers": [
+        {
+          "id": "IST",
+          "name": "Istanbul Airport",
+          "duration": 165,
+          "overnight": false
+        }
+      ],
+      "total_duration": 915,
+      "price": 487,
+      "booking_token": "eyJh..."
+    }
+  ]
+}
+\end{lstlisting}
+
+Il backend di SCALO implementa quindi un filtro post-query che verifica, per ogni itinerario restituito, se l'array \texttt{layovers} contiene almeno un elemento con \texttt{id} uguale allo scalo richiesto dall'utente. Questo approccio \`e semplice, robusto e completamente disaccoppiato dalla fonte dati.
+
+\begin{lstlisting}[caption={Pseudocodice del filtro scalo obbligato (Node.js/Express)}]
+// adapter/serpapi.js
+async function searchFlights({ origin, destination, requiredLayover, date }) {
+  const params = {
+    engine: "google_flights",
+    departure_id: origin,
+    arrival_id: destination,
+    outbound_date: date,
+    stops: 2,  // almeno uno scalo
+    api_key: process.env.SERPAPI_KEY,
+  };
+  const raw = await serpapi.search(params);
+  const all = [...(raw.best_flights || []), ...(raw.other_flights || [])];
+
+  // Filtro scalo obbligato
+  return all.filter(flight =>
+    flight.layovers.some(l => l.id === requiredLayover.toUpperCase())
+  );
+}
+\end{lstlisting}
+
+\subsubsection{Vantaggi tecnici dell'approccio}
+
+\begin{probox}
+\begin{itemize}
+  \item \textbf{Accesso senza approvazione.} SerpApi \`e disponibile con registrazione self-service. Il piano gratuito include tutto quello che ci serve.
+  \item \textbf{Dati strutturati e normalizzati.} Nessun parsing HTML, nessun selettore CSS fragile. Il JSON restituito ha uno schema stabile e documentato, con tipizzazione prevedibile.
+  \item \textbf{Latenza contenuta.} Le chiamate REST a SerpApi hanno una latenza media di 1--4 secondi, compatibile con il requisito di risposta sotto i 3 secondi con caching lato backend.
+  \item \textbf{Prezzi e link di acquisto reali.} Ogni risultato include un \texttt{booking\_token} che permette di recuperare le opzioni di acquisto effettive, garantendo che i link verso i partner siano funzionanti.
+  \item \textbf{Architettura modulare.} L'adattatore SerpApi \`e un modulo isolato. Aggiungere un secondo provider (es. Amadeus) in futuro richiede solo la scrittura di un nuovo adattatore con la stessa interfaccia.
+\end{itemize}
+\end{probox}
+
+% ============================================================
+\section{Confronto sintetico tra le strategie}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{} >{\bfseries}p{3.8cm}
+  >{\centering\arraybackslash}X
+  >{\centering\arraybackslash}X
+  >{\centering\arraybackslash}X @{}}
+\toprule
+\rowcolor{light}
+\textbf{Criterio} & \textbf{Puppeteer} & \textbf{API diretta} & \textbf{SerpApi} \\
+\midrule
+Accesso immediato      & \textcolor{black}{S\`{\i}} & \textcolor{black}{Parziale}  & \textcolor{black}{S\`{\i}} \\[2pt]
+Dati strutturati       & \textcolor{black}{No}  & \textcolor{black}{S\`{\i}}  & \textcolor{black}{S\`{\i}} \\[2pt]
+Latenza $<$ 5s         & \textcolor{black}{No}  & \textcolor{black}{S\`{\i}}  & \textcolor{black}{S\`{\i}} \\[2pt]
+Compliance ToS         & \textcolor{black}{No}  & \textcolor{black}{S\`{\i}}  & \textcolor{black}{S\`{\i}} \\[2pt]
+Filtro scalo nativo    & \textcolor{black}{No}  & \textcolor{black}{No}        & \textcolor{black}{Parziale}$^*$ \\[2pt]
+Prezzi acquistabili    & \textcolor{black}{Difficile} & \textcolor{black}{S\`{\i}} & \textcolor{black}{S\`{\i}} \\[2pt]
+Manutenibilit\`a       & \textcolor{black}{Bassa} & \textcolor{black}{Alta}    & \textcolor{black}{Alta} \\[2pt]
+Complessit\`a setup    & \textcolor{black}{Alta} & \textcolor{black}{Media}   & \textcolor{black}{Bassa} \\[2pt]
+\bottomrule
+\multicolumn{4}{@{}l@{}}{\footnotesize $^*$ Il filtro per scalo specifico viene implementato lato backend su dati gi\`a strutturati.}
+\end{tabularx}
+\end{center}
+
+% ============================================================
+\section{Integrazione con GetYourGuide: valorizzazione dello scalo}
+
+\subsection{Razionale e valore aggiunto}
+
+Il differenziatore principale di SCALO rispetto a qualsiasi motore di ricerca voli esistente non \`e solo il filtro per scalo obbligato, ma la possibilit\`a di \emph{trasformare lo scalo da vincolo tecnico a esperienza pianificata}. L'utente che sceglie di passare da Istanbul non lo fa solo per risparmiare: vuole esplorare la citt\`a. SCALO \`e l'unico strumento che unisce la ricerca del volo con la pianificazione dell'esperienza nello scalo.
+
+\end{document}

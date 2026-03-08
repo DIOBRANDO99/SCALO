@@ -1,0 +1,318 @@
+SCALO – Exploration Notes
+=========================
+Last updated: 2026-03-08 (session 1 exploration complete)
+
+
+## WHAT SCALO ACTUALLY IS
+Not a simple "find flight A→B via C" tool.
+The real value proposition: find routes from A→B where stopping in C is
+CHEAPER than flying direct, AND gives enough time to actually visit C.
+Target user: someone with a trip planned (e.g. Italy→Brazil) who would
+never have considered Lisbon, but SCALO says "hey, stop here for 2 days,
+save €200, and tick it off your bucket list."
+The layover is a feature, not a bug.
+
+
+## APPLICATION FLOW (terminal phase)
+
+route_probe.js — test specific routes:
+  User sets: ORIGIN, DESTINATION list, dates, MIN_LAYOVER_MINUTES
+        ↓
+  For each route, 2 parallel API calls:
+    stops="1" → nonstop only → baseline price (null if no nonstop exists)
+    stops="2" → 1-stop-or-fewer itineraries
+        ↓
+  Filter: layover duration >= MIN_LAYOVER_MINUTES
+  Filter: price < direct baseline (or show all if no direct exists)
+  Sort:   by savings (highest first)
+        ↓
+  Terminal output: table of routes with best stopover options per route
+
+discover.js — discovery mode:
+  User sets: ORIGIN only, dates, MIN_LAYOVER_MINUTES
+        ↓
+  Probes 20 hardcoded popular tourist destinations sequentially
+  Same 2-call logic per destination
+        ↓
+  All matches ranked globally by savings
+  Terminal output: full ranked list across all destinations
+
+## APPLICATION FLOW (full product, future)
+
+  User sets origin city (discovery model — destination is flexible)
+        ↓
+  Frontend (React) sends request to backend (Express)
+        ↓
+  Backend probes destinations via SerpApi with secret key
+        ↓
+  Backend filters, compares, ranks
+        ↓
+  Backend responds with clean JSON
+        ↓
+  Frontend renders result cards (destination, layover city, savings, duration)
+  Optional: GetYourGuide API suggests activities in the layover city
+
+
+## SERPAPI – STRENGTHS
+- Self-service signup, no approval needed, free plan (100 searches/month)
+- Returns structured JSON, no HTML parsing, no fragile CSS selectors
+- Internally manages headless Chrome + Google Flights compliance
+- Response includes `layovers[]` array with IATA id, name, duration, overnight flag
+- Each itinerary has a `departure_token` for fetching return leg options
+- Latency ~1-4 seconds, compatible with <3s goal with backend caching
+- Modular: SerpApi adapter can be swapped for another provider later
+
+
+## SERPAPI – LIMITATIONS & GOTCHAS
+- `booking_token` field does NOT exist — the correct field is `departure_token`
+- Free plan: 100 searches/month (each call = 1 search, we use 2 per query)
+- No native "mandatory layover city" parameter — filtering must be done server-side
+- Only returns connecting itineraries (single ticket) — multi-day stopovers
+  (e.g. fly to LIS on Monday, fly to GRU on Thursday as separate bookings)
+  are NOT returned. This is a hard limitation of the approach.
+- Round trips require two API calls: one for outbound, one (with departure_token)
+  for return leg options
+- `stops` parameter CORRECT values (confirmed by testing):
+    "0" = any number of stops (NOT nonstop-only — this was wrong in the project doc)
+    "1" = nonstop only
+    "2" = 1 stop or fewer (NOT "at least 1 stop" as originally assumed)
+  Using "0" for the direct baseline returns the same results as "2" → prices identical
+  → comparison always fails. Must use "1" for nonstop baseline.
+- Some itineraries return price: undefined — must filter before Math.min() or get NaN,
+  which silently kills all comparisons (NaN === null → false, x < NaN → false)
+- Single-ticket layover ceiling: the API does return layovers beyond 24h (longest seen:
+  WAW 28h5m, AUH 25h40m) within a single booking. The hard limit is not duration but
+  the fact that it's one ticket. Multi-day stopovers requiring separate bookings are
+  simply not modelled by Google Flights and therefore not returnable via SerpApi.
+- DATA QUALITY RISK — anomalous direct prices: occasionally stops:"1" returns a single
+  outlier fare (e.g. MXP→ICN showed €4787 direct vs €588 via WAW). This inflates
+  savings figures and makes SCALO look misleading. Likely cause: only a premium/business
+  class nonstop existed on that date, or a very specific charter fare.
+  Mitigation needed: if directPrice > 3× median stopover price, treat directPrice as
+  null (no reliable baseline) and show results without savings framing.
+
+
+## REAL-WORLD FINDINGS (discover.js run: 2026-06-10 / 2026-06-20, from MXP)
+
+19 out of 20 destinations had at least one interesting stopover. Only MXP→GRU had none.
+
+Routes with nonstop AND cheaper stopover options (SCALO sweet spot):
+  MXP→ICN  direct €4787* — via WAW €588 SAVE €4199, via AUH €671 SAVE €4116
+  MXP→HKG  direct €1134  — via AUH €636 SAVE €498, via FRA €755 SAVE €379
+  MXP→BKK  direct €888   — via AUH €572 SAVE €316, via CDG €579 SAVE €309
+  MXP→DXB  direct €766   — via MCT €463 SAVE €303, via BAH €495 SAVE €271
+  MXP→ORD  direct €884   — via WAW €628 SAVE €256
+  MXP→JFK  direct €581   — via LHR €411 SAVE €170, via WAW €477 SAVE €104
+
+Routes with NO nonstop (show best explorable layovers, no savings framing):
+  MXP→NRT  — via AUH 14h30m €751, via HEL 18h50m €901
+  MXP→SYD  — via AUH 3h30m €1361, via DOH 3h20m €1429
+  MXP→LAX  — via FRA 3h20m €614, via LHR 5h35m €637
+  MXP→SIN  — via DOH 3h15m €572, via BAH 3h50m €597
+  MXP→MEX  — via CDG 3h €1014, via LHR 5h40m €1093
+  MXP→JNB  — via ZRH 10h50m €469, via FRA 5h55m €480
+  MXP→YYZ  — via FRA 6h40m €481, via ORD 3h5m €485
+  MXP→DEL  — via MUC 3h €465, via ZRH 5h15m €490
+  MXP→BOM  — via BAH 3h15m €499, via DOH 4h10m €550
+  MXP→LIM  — via MAD 8h55m €1045, via MAD 7h15m €1073
+  MXP→MNL  — via MCT 3h10m €763
+  MXP→CPT  — via DOH 3h55m overnight €807
+  MXP→AKL  — via HKG 14h55m €1630
+
+* ICN direct price (€4787) is likely an anomaly — see DATA QUALITY RISK note above.
+
+Key insights:
+- The concept works on both types of routes
+- Middle East hubs (AUH, DOH, BAH, MCT) dominate Asia-bound routes
+- European hubs (LHR, FRA, WAW, ZRH, CDG) dominate Americas-bound routes
+- Warsaw (WAW) is an unexpected recurring gem — cheap and long layovers
+- Zurich (ZRH) and Frankfurt (FRA) also strong for Africa/Americas routes
+
+
+## PRODUCT PROBLEM: EMPTY RESULTS & POSSIBLE SOLUTIONS
+
+If a user searches A→B and no stopover beats the direct price, they see nothing
+and leave. First impressions matter. Four options discussed:
+
+Option 1 — FLIP THE SEARCH MODEL (preferred)
+  User picks origin A, destination B is flexible.
+  "I'm in Milan, I want to go somewhere long-haul in June."
+  SCALO discovers routes where a stopover saves money across many destinations.
+  Becomes a discovery tool, not a search tool.
+  Empty results become impossible — we always find something interesting.
+  Harder to build but most differentiated product.
+
+Option 2 — GUARANTEED RESULTS FALLBACK
+  If no stopover beats direct, still show best layover options but reframe:
+  not "save money" but "same price, more trip."
+  ZRH 10h at same price as direct → you get half a day in Zurich for free.
+  Hook shifts from savings to value-for-money.
+
+Option 3 — PRE-COMPUTED CATALOGUE
+  Run searches offline across hundreds of route pairs, store only good results.
+  User browses curated deals rather than searching arbitrarily.
+  Empty results impossible. Downside: prices change daily, catalogue goes stale.
+
+Option 4 — WIDEN THE ORIGIN
+  User says "departing from Italy" not just MXP.
+  Search MXP, FCO, VCE, BGY simultaneously.
+  More API calls but much richer results, near-guaranteed hits.
+
+Recommended combination: Option 1 as core model, Option 2 as fallback,
+Option 4 to widen coverage. Option 3 viable later as a "deals" feed feature.
+
+
+## WHAT "SINGLE TICKET" MEANS (and why it matters)
+
+When you book a flight with a layover through Google Flights it is ONE transaction:
+one ticket, one price, one booking reference. The airline is contractually responsible
+for getting you from A to B including the connection. If your first leg is delayed and
+you miss the connection, the airline must rebook you at no cost.
+
+Example (single ticket):
+  MXP → WAW → ICN   €588   one booking, one price
+
+What SerpApi CANNOT return is a journey made of two separate purchases:
+  MXP → LIS   €120   ← booking 1, separate ticket
+      ... 3 days in Lisbon ...
+  LIS → GRU   €340   ← booking 2, separate ticket
+
+These are two independent transactions. If your first flight is delayed you will miss
+your second flight and the second airline owes you nothing. Google Flights does not
+model this as a single product so SerpApi never returns it.
+
+The longest single-ticket layover seen in testing: ~28h (WAW).
+Airlines like Turkish and Emirates do sell official multi-day stopover programs
+as single tickets, but these are rare and route-specific.
+
+
+## ALTERNATIVES TO SERPAPI FOR MULTI-DAY SEPARATE-BOOKING APPROACH
+
+If we wanted to support true multi-day stopovers (two separate bookings), options are:
+
+1. Kiwi.com / Tequila API
+   Kiwi specialises in "virtual interlining" — combining flights from different airlines
+   that don't share inventory. Their Nomad and multi-city search can find A→C on day 1
+   and C→B on day 4 as a combined suggestion. Closest to what SCALO would need.
+   Has an affiliate program. Free tier available.
+
+2. Amadeus Multi-City API
+   Amadeus supports multi-city itineraries with date gaps between legs.
+   Requires manual approval and has restrictive free tier (2000 req/month).
+   Returns real bookable inventory.
+
+3. Two independent SerpApi calls
+   Search A→C and C→B separately, then combine results server-side.
+   Simple to implement but: prices shown are live at query time, not guaranteed
+   at booking time. User sees combined price but must complete two separate bookings.
+
+PROBLEMS WITH THE TWO-BOOKING APPROACH:
+- Price volatility: by the time the user books leg 2, leg 1 price may have changed.
+  The "save €300" headline could be gone in minutes.
+- No protection: if leg 1 is delayed or cancelled, leg 2 is lost. No airline liability.
+  User needs travel insurance to cover this risk.
+- Race condition: showing "MXP→LIS €120 + LIS→GRU €340 = €460 total" is a snapshot.
+  Click to book and either ticket could have sold out or repriced.
+- UX complexity: two separate checkout flows. User must book twice, track two
+  booking references, check in twice.
+- Trust problem: if something goes wrong the user blames SCALO even though we just
+  suggested the combination.
+
+VERDICT: Two-booking approach is viable for a future version but needs very clear
+UX communication that prices are not guaranteed and legs are independent. Kiwi/Tequila
+is the best API candidate for this since they handle the combination logic themselves.
+
+
+## BUSINESS MODEL — WHERE DOES THE MONEY COME FROM?
+
+Most likely model: affiliate commissions on bookings. Multiple revenue streams:
+
+1. Flight affiliate commissions
+   SerpApi results link to Google Flights which has its own partner arrangements.
+   Kiwi/Tequila has an affiliate program paying per completed booking.
+   Skyscanner affiliate: commission per click-out or per booking.
+   Typical range: €3–15 per completed flight booking.
+
+2. Hotel affiliate commissions
+   If user has a 14h layover in Abu Dhabi they might need a hotel.
+   Booking.com and Hotels.com both have affiliate programs.
+   This is a natural extension of the layover recommendation.
+
+3. Activities affiliate commissions
+   GetYourGuide pays commission on tours/experiences booked.
+   Already planned as optional feature in original project spec.
+   Natural upsell: "You have 7h in Warsaw — here are things to do."
+
+4. Future: premium / subscription
+   Free tier: discover routes, see savings.
+   Premium: price alerts, calendar view of best dates, saved searches.
+
+The affiliate model is ideal for an MVP because:
+- No need to handle payments directly
+- Revenue is directly tied to value delivered (user actually books)
+- Multiple stacked commissions possible per user session (flight + hotel + activity)
+
+
+## KIWI / TEQUILA
+Kiwi.com is a consumer flight search site (like Skyscanner).
+Tequila is simply their B2B API product name — same company, developer-facing.
+Their specialty is "virtual interlining": combining flights from airlines that don't
+have formal partnerships, selling the combination as one product and taking on
+rebooking liability themselves if something goes wrong. This is what makes them
+interesting for multi-day separate-booking scenarios.
+Tequila has a free tier with self-service registration. Worth exploring in a future
+version but not needed for MVP.
+
+
+## RACE CONDITION — CAN IT BE FIXED?
+Short answer: no, not without becoming a ticketing agent.
+
+Mitigations (don't solve it, just reduce surprise):
+- Re-query both legs right before user clicks "book", show refreshed prices
+- Timestamp prices clearly ("found 4 min ago") with a manual refresh button
+- Never show a combined total — show leg 1 and leg 2 separately
+- Disclaim that prices are not guaranteed
+
+To truly lock a price you need to hold inventory, which requires direct airline
+contracts and IATA accreditation. Way out of scope for this project.
+
+DECISION: stick with Google Flights / SerpApi single-ticket model for MVP.
+Single-ticket layovers up to ~28h cover overnight stays which is sufficient.
+Cleaner product, no race condition risk, no trust issues with the user.
+
+
+## SCOPE DECISION – MVP
+Targeting single-ticket itineraries with long connections (3h–24h overnight).
+Multi-day separate-booking stopovers are out of scope for now.
+MIN_LAYOVER_MINUTES is configurable (default: 180 = 3 hours).
+
+
+## KEY JSON FIELDS IN SERPAPI RESPONSE
+{
+  "flights": [{ departure_airport, arrival_airport, duration, airline,
+                flight_number, airplane, legroom, overnight,
+                often_delayed_by_over_30_min }],
+  "layovers": [{ id, name, duration, overnight }],
+  "total_duration": minutes,
+  "price": EUR,
+  "type": "Round trip",
+  "departure_token": "base64...",   ← use this, NOT booking_token
+  "carbon_emissions": { this_flight, typical_for_this_route, difference_percent }
+}
+
+
+## TECH STACK
+Frontend:   Vite + React / Tailwind CSS
+Backend:    Node.js + Express (API proxy, keeps secret key server-side)
+Flight API: SerpApi Google Flights
+Activities: GetYourGuide (optional, for long layovers)
+Cache:      In-memory for MVP, Redis later
+Deploy:     Vercel/Netlify (frontend) + Render/Fly.io (backend)
+
+
+## FILES
+route_probe.js  test specific A→B routes, filter by layover duration + savings
+discover.js     discovery mode — probe 20 destinations from one origin, ranked output
+.env            API key lives here (never commit this file)
+.env.example    safe template to share
+notes.txt       this file

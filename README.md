@@ -1,39 +1,76 @@
 # SCALO
 
-> **Lavoro in corso.** Questo progetto è in fase esplorativa. Nessuna scelta è definitiva — l'architettura, le API utilizzate e il modello di business sono ancora in fase di valutazione.
+SCALO è una piattaforma web che aiuta i viaggiatori a trovare voli più economici
+sfruttando uno scalo intermedio in una città da visitare. L'utente specifica
+origine, destinazione e la città di scalo desiderata; il sistema cerca le migliori
+combinazioni di due biglietti separati e mostra il risparmio rispetto al volo diretto.
 
-SCALO è una piattaforma web che offre delle alternative più economiche per dei voli da A a B, includendo uno scalo. Lo scopo non è solo di risparmiare, ma anche di proporre scali che permettono ai viaggiatori di visitare la città in cui fanno lo scalo.
+## Struttura del Progetto
 
-## Servizi
-Attualmente la piattaforma offre due servizi differenti:
+```
+backend/           Server Express (API REST)
+  adapters/        Wrapper per provider di dati di volo (SerpApi, mock)
+  services/        Logica di business (FlightService)
+  routes/          Endpoint HTTP
+doc/               Documentazione e specifiche
+discover.js        Script CLI — esplorazione destinazioni (fase esplorativa)
+route_probe.js     Script CLI — test rotte specifiche (fase esplorativa)
+```
 
-- **Partenza e destinazione specificata da utente**
-    L'utente decide da dove e dove vuole andare, l'applicazione propone alternative (se esistono) più economiche con scalo.
-    **User story** -> "I want to check specific routes I already have in mind."
+## Setup Backend
 
-- **Partenza specificata da utente**
-    L'utente decide da dove partire, l'applicazione offre una serie di destinazioni popolari includendo uno scalo. Le proposte sono ordinate in base al risparmio economico rispetto al volo diretto.
-    **User story** -> "I'm in Milan, show me everywhere I could go with an interesting stopover deal."
+**Requisiti:** Node.js 18+
 
-## Setup
+```bash
+cd backend
+npm install
+cp .env
+```
 
-**Requisiti:** Node.js installato.
+Modifica `backend/.env` con la tua chiave SerpApi:
 
-1. Installa le dipendenze:
-    ```bash
-    npm install
-    ```
+```
+SERPAPI_KEY=la_tua_chiave_serpapi
+FLIGHT_PROVIDER=mock
+PORT=3001
+```
 
-3. Abbonati a SerpApi per ottenere la chiave API necessaria per eseguire gli scripts. **(SerpApi ha un limite di 250 chiamate al mese, usare con parsimonia durante la fase di sviluppo)**
+Avvia il server:
 
-4. Crea il file `.env` nella root del progetto:
-    Inserisci la tua chiave SerpApi nel file `.env`:
-    ```
-    SERPAPI_KEY=la_tua_chiave
-    ```
+```bash
+cd backend && npm run dev
 
-5. Esegui uno dei due script:
-    ```bash
-    node route_probe.js   # testa rotte specifiche A→B
-    node discover.js      # scopri destinazioni da un'origine fissa
-    ```
+cd backend && npm start
+```
+
+Verifica che il server sia attivo:
+
+```bash
+curl http://localhost:3001/health
+# { "status": "ok", "provider": "mock", "timestamp": "..." }
+```
+
+## Provider di Dati di Volo
+
+Il backend supporta due provider, selezionabili tramite `FLIGHT_PROVIDER` in `backend/.env`:
+
+| Valore | Descrizione |
+|--------|-------------|
+| `mock` | Dati generati localmente — usa durante lo sviluppo, non consuma quota API |
+| `serpapi` | SerpApi Google Flights — solo per demo e test finali |
+
+> **Nota:** 
+> Usa sempre `FLIGHT_PROVIDER=mock` durante lo sviluppo.
+
+## Script CLI (Fase Esplorativa)
+
+Gli script nella root sono stati usati per validare il concetto con dati reali.
+Non fanno parte del backend.
+
+```bash
+npm install
+cp .env    # aggiungi SERPAPI_KEY
+
+node route_probe.js     # testa rotte specifiche A→B
+node discover.js        # scopri destinazioni da un'origine fissa
+```

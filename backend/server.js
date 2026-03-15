@@ -1,8 +1,6 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import searchRouter from "./routes/search.js";
-import discoverRouter from "./routes/discover.js";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -10,7 +8,6 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-// --- Health check (Issue #11 acceptance criterion) ---
 app.get("/health", (_req, res) => {
   res.json({
     status: "ok",
@@ -18,10 +15,6 @@ app.get("/health", (_req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
-
-// --- API routes ---
-app.use("/api/search", searchRouter);
-app.use("/api/discover", discoverRouter);
 
 // --- Global error handler ---
 app.use((err, _req, res, _next) => {

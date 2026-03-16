@@ -12,22 +12,29 @@ backend/           Server Express (API REST)
   adapters/        Wrapper per provider di dati di volo (SerpApi, mock)
   services/        Logica di business (FlightService)
   routes/          Endpoint HTTP
+scripts/           Script CLI esplorativi (fase prototipale, non parte del server)
 doc/               Documentazione e specifiche
-discover.js        Script CLI — esplorazione destinazioni (fase esplorativa)
-route_probe.js     Script CLI — test rotte specifiche (fase esplorativa)
 ```
 
-## Setup Backend
+## Setup
 
 **Requisiti:** Node.js 18+
 
+Ogni cartella ha le proprie dipendenze. Va eseguito `npm install` almeno una volta in ciascuna prima di poterla usare.
+
+Per il server:
+
 ```bash
-cd backend
-npm install
-cp .env
+cd backend && npm install
 ```
 
-Modifica `backend/.env` con la tua chiave SerpApi:
+Per gli script esplorativi (solo se necessario):
+
+```bash
+cd scripts && npm install
+```
+
+Crea il file `backend/.env` e inserisci:
 
 ```
 SERPAPI_KEY=la_tua_chiave_serpapi
@@ -38,9 +45,8 @@ PORT=3001
 Avvia il server:
 
 ```bash
-cd backend && npm run dev
-
-cd backend && npm start
+npm run dev    # sviluppo — riavvio automatico ad ogni modifica
+npm start      # esecuzione normale, nessun riavvio automatico
 ```
 
 Verifica che il server sia attivo:
@@ -59,18 +65,5 @@ Il backend supporta due provider, selezionabili tramite `FLIGHT_PROVIDER` in `ba
 | `mock` | Dati generati localmente — usa durante lo sviluppo, non consuma quota API |
 | `serpapi` | SerpApi Google Flights — solo per demo e test finali |
 
-> **Nota:** 
+> **Nota:**
 > Usa sempre `FLIGHT_PROVIDER=mock` durante lo sviluppo.
-
-## Script CLI (Fase Esplorativa)
-
-Gli script nella root sono stati usati per validare il concetto con dati reali.
-Non fanno parte del backend.
-
-```bash
-npm install
-cp .env    # aggiungi SERPAPI_KEY
-
-node route_probe.js     # testa rotte specifiche A→B
-node discover.js        # scopri destinazioni da un'origine fissa
-```

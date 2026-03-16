@@ -1,0 +1,28 @@
+import "dotenv/config";
+import express from "express";
+import cors from "cors";
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+app.use(cors());
+app.use(express.json());
+
+app.get("/health", (_req, res) => {
+  res.json({
+    status: "ok",
+    provider: process.env.FLIGHT_PROVIDER || "serpapi",
+    timestamp: new Date().toISOString(),
+  });
+});
+
+// --- Global error handler ---
+app.use((err, _req, res, _next) => {
+  console.error("Unhandled error:", err);
+  res.status(500).json({ error: "Internal server error" });
+});
+
+app.listen(PORT, () => {
+  console.log(`SCALO backend listening on http://localhost:${PORT}`);
+  console.log(`Flight provider: ${process.env.FLIGHT_PROVIDER || "serpapi"}`);
+});

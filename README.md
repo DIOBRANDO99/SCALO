@@ -12,7 +12,7 @@ backend/           Server Express (API REST)
   adapters/        Wrapper per provider di dati di volo (SerpApi, mock)
   services/        Logica di business (FlightService)
   routes/          Endpoint HTTP
-scripts/           Script CLI esplorativi (fase prototipale, non parte del server)
+scripts/           Script CLI esplorativi + Script per generare mock api response
 doc/               Documentazione e specifiche
 ```
 
@@ -67,3 +67,5 @@ Il backend supporta due provider, selezionabili tramite `FLIGHT_PROVIDER` in `ba
 
 > **Nota:**
 > Usa sempre `FLIGHT_PROVIDER=mock` durante lo sviluppo.
+>
+> La logica di selezione del provider verrà implementata in `services/flights.js` (issue #13).

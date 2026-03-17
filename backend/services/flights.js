@@ -9,7 +9,7 @@ const adapterMap = {
   mock_real: "../adapters/mock_real.js",
 };
 
-const adapterPath = adapterMap[process.env.FLIGHT_PROVIDER] ?? "../adapters/mock.js";
+const adapterPath = adapterMap[process.env.FLIGHT_PROVIDER] ?? "../adapters/mock_real.js";
 const adapter = await import(adapterPath);
 
 const HUB_CITIES = [

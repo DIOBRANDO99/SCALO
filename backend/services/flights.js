@@ -1,8 +1,3 @@
-import { config } from "dotenv";
-import { fileURLToPath } from "url";
-import { dirname, join } from "path";
-config({ path: join(dirname(fileURLToPath(import.meta.url)), "../.env") });
-
 const adapterMap = {
   serpapi:   "../adapters/serpapi.js",
   mock_fake: "../adapters/mock_fake.js",
@@ -51,7 +46,13 @@ export async function searchWithStopover({ origin, destination, stopover, outbou
   const bestLeg1Price = cheapestPrice(leg1Options);
   const bestLeg2Price = cheapestPrice(leg2Options);
   const bestLeg3Price = cheapestPrice(leg3Options);
-  const directPrice   = cheapestPrice(directFlights.filter(f => !f.layovers || f.layovers.length === 0));
+
+  let directPrice   = cheapestPrice(directFlights.filter(f => !f.layovers || f.layovers.length === 0));
+
+  const stopoverTotal = (bestLeg1Price || 0) + (bestLeg2Price || 0);
+  if (directPrice !== null && stopoverTotal > 0 && directPrice > stopoverTotal * 3) {
+    directPrice = null;
+  }
 
   const bestCombinedPrice = bestLeg1Price !== null && bestLeg2Price !== null && bestLeg3Price !== null
     ? bestLeg1Price + bestLeg2Price + bestLeg3Price

@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { readFileSync } from "fs";
 import { searchWithStopover } from "../services/flights.js";
 

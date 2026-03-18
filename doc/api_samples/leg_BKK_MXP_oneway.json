@@ -1,0 +1,1900 @@
+{
+  "search_metadata": {
+    "id": "69b7f9bf95e950ac008c1f62",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/trVzp99Rb5kpTeHexx_rFA/69b7f9bf95e950ac008c1f62.json",
+    "created_at": "2026-03-16 12:38:23 UTC",
+    "processed_at": "2026-03-16 12:38:23 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhoeEgoyMDI2LTA2LTIwagcIARIDQktLcgcIARIDTVhQQgEBSAFwAZgBAg&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/trVzp99Rb5kpTeHexx_rFA/69b7f9bf95e950ac008c1f62.html",
+    "prettify_html_file": "https://serpapi.com/searches/trVzp99Rb5kpTeHexx_rFA/69b7f9bf95e950ac008c1f62.prettify",
+    "total_time_taken": 1.98
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "BKK",
+    "arrival_id": "MXP",
+    "outbound_date": "2026-06-20",
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 09:45"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-20 13:05"
+          },
+          "duration": 380,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 409",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 314 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-20 14:20"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 18:50"
+          },
+          "duration": 390,
+          "airplane": "Boeing 787-10",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 79",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 284 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 75,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 845,
+      "carbon_emissions": {
+        "this_flight": 599000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -10
+      },
+      "price": 272,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3BGV1RRd09YeEZXVGM1R2dzSTVkTUJFQUlhQTBWVlVqZ2NjSnp6QVE9PSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkFVSCIsbnVsbCwiRVkiLCI0MDkiXSxbIkFVSCIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIkVZIiwiNzkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 08:40"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-20 11:35"
+          },
+          "duration": 265,
+          "airplane": "Airbus A320neo",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2333",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 220 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-20 14:00"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 19:30"
+          },
+          "duration": 540,
+          "airplane": "Boeing 787",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 137",
+          "legroom": "33 in",
+          "extensions": [
+            "Above average legroom (33 in)",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 419 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 145,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL"
+        }
+      ],
+      "total_duration": 950,
+      "carbon_emissions": {
+        "this_flight": 640000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -4
+      },
+      "price": 433,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3hCU1RJek16TjhRVWt4TXpjYUN3anIwUUlRQWhvRFJWVlNPQnh3L1lNRCIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkRFTCIsbnVsbCwiQUkiLCIyMzMzIl0sWyJERUwiLCIyMDI2LTA2LTIwIiwiTVhQIixudWxsLCJBSSIsIjEzNyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 00:55"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 07:35"
+          },
+          "duration": 700,
+          "airplane": "Boeing 787",
+          "airline": "THAI",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+          "travel_class": "Economy",
+          "flight_number": "TG 940",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 590 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 700,
+      "carbon_emissions": {
+        "this_flight": 590000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -12
+      },
+      "price": 640,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ1ZVUnprME1Cb0xDUDd6QXhBQ0dnTkZWVkk0SEhDWXZnUT0iLFtbIkJLSyIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIlRHIiwiOTQwIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 15:05"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-20 19:20"
+          },
+          "duration": 435,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 405",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 295 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-21 02:15"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 06:45"
+          },
+          "duration": 390,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 81",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 302 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 415,
+          "name": "Zayed International Airport",
+          "id": "AUH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1240,
+      "carbon_emissions": {
+        "this_flight": 598000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -10
+      },
+      "price": 272,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3BGV1RRd05YeEZXVGd4R2dzSTVkTUJFQUlhQTBWVlVqZ2NjSnp6QVE9PSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkFVSCIsbnVsbCwiRVkiLCI0MDUiXSxbIkFVSCIsIjIwMjYtMDYtMjEiLCJNWFAiLG51bGwsIkVZIiwiODEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 20:15"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-20 23:30"
+          },
+          "duration": 435,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 153",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 330 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-21 01:40"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 06:55"
+          },
+          "duration": 375,
+          "airplane": "Airbus A321neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 25",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 359 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 130,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 940,
+      "carbon_emissions": {
+        "this_flight": 690000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 3
+      },
+      "price": 300,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3BIUmpFMU0zeEhSakkxR2dzSW9Pb0JFQUlhQTBWVlVqZ2NjSUtOQWc9PSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkJBSCIsbnVsbCwiR0YiLCIxNTMiXSxbIkJBSCIsIjIwMjYtMDYtMjEiLCJNWFAiLG51bGwsIkdGIiwiMjUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 09:55"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 12:30"
+          },
+          "duration": 395,
+          "airplane": "Boeing 787",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 839",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 296 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 15:50"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 21:00"
+          },
+          "duration": 370,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 117",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 329 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 200,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 965,
+      "carbon_emissions": {
+        "this_flight": 626000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -6
+      },
+      "price": 375,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3RSVWpnek9YeFJVakV4TnhvTENPaWtBaEFDR2dORlZWSTRISENqMEFJPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkRPSCIsbnVsbCwiUVIiLCI4MzkiXSxbIkRPSCIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIlFSIiwiMTE3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 03:40"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-20 06:50"
+          },
+          "duration": 370,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 371",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 362 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-20 09:35"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 14:10"
+          },
+          "duration": 395,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 205",
+          "ticket_also_sold_by": [
+            "Icelandair"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 359 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 165,
+          "name": "Dubai International Airport",
+          "id": "DXB"
+        }
+      ],
+      "total_duration": 930,
+      "carbon_emissions": {
+        "this_flight": 722000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 8
+      },
+      "price": 402,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3RGU3pNM01YeEZTekl3TlJvTENMKzVBaEFDR2dORlZWSTRISENDNkFJPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkRYQiIsbnVsbCwiRUsiLCIzNzEiXSxbIkRYQiIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIkVLIiwiMjA1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 09:55"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-20 13:00"
+          },
+          "duration": 365,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 375",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 373 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-20 15:35"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 20:15"
+          },
+          "duration": 400,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 91",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 361 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 155,
+          "name": "Dubai International Airport",
+          "id": "DXB"
+        }
+      ],
+      "total_duration": 920,
+      "carbon_emissions": {
+        "this_flight": 735000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 10
+      },
+      "price": 402,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3BGU3pNM05YeEZTemt4R2dzSXY3a0NFQUlhQTBWVlVqZ2NjSUxvQWc9PSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkRYQiIsbnVsbCwiRUsiLCIzNzUiXSxbIkRYQiIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIkVLIiwiOTEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 21:00"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-21 00:30"
+          },
+          "duration": 390,
+          "airplane": "Boeing 777",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 407",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 392 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-21 02:15"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 06:45"
+          },
+          "duration": 390,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 81",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 302 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 105,
+          "name": "Zayed International Airport",
+          "id": "AUH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 885,
+      "carbon_emissions": {
+        "this_flight": 695000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 4
+      },
+      "price": 416,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3BGV1RRd04zeEZXVGd4R2dzSTk4UUNFQUlhQTBWVlVqZ2NjSlQxQWc9PSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkFVSCIsbnVsbCwiRVkiLCI0MDciXSxbIkFVSCIsIjIwMjYtMDYtMjEiLCJNWFAiLG51bGwsIkVZIiwiODEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 12:50"
+          },
+          "arrival_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-20 19:35"
+          },
+          "duration": 705,
+          "airplane": "Boeing 777",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 181",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 577 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-21 08:55"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 09:50"
+          },
+          "duration": 55,
+          "airplane": "Airbus A320neo",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 1612",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 38 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 800,
+          "name": "Zurich Airport",
+          "id": "ZRH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1560,
+      "carbon_emissions": {
+        "this_flight": 616000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -8
+      },
+      "price": 482,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3hNV0RFNE1YeE1XREUyTVRJYUN3aTcrQUlRQWhvRFJWVlNPQnh3cTdBRCIsW1siQktLIiwiMjAyNi0wNi0yMCIsIlpSSCIsbnVsbCwiTFgiLCIxODEiXSxbIlpSSCIsIjIwMjYtMDYtMjEiLCJNWFAiLG51bGwsIkxYIiwiMTYxMiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 06:40"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-20 12:40"
+          },
+          "duration": 600,
+          "airplane": "Boeing 787",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 59",
+          "ticket_also_sold_by": [
+            "THAI"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 425 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-20 15:50"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 17:45"
+          },
+          "duration": 175,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1875",
+          "ticket_also_sold_by": [
+            "THAI"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 137 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 190,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 965,
+      "carbon_emissions": {
+        "this_flight": 563000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -16
+      },
+      "price": 494,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3RVU3pVNWZGUkxNVGczTlJvTENLT0JBeEFDR2dORlZWSTRISEM2dWdNPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIklTVCIsbnVsbCwiVEsiLCI1OSJdLFsiSVNUIiwiMjAyNi0wNi0yMCIsIk1YUCIsbnVsbCwiVEsiLCIxODc1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 12:50"
+          },
+          "arrival_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-20 19:35"
+          },
+          "duration": 705,
+          "airplane": "Boeing 777",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 181",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 577 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-20 22:45"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 23:40"
+          },
+          "duration": 55,
+          "airplane": "Embraer 190",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 1638",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 54 kg"
+          ],
+          "plane_and_crew_by": "Helvetic"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 190,
+          "name": "Zurich Airport",
+          "id": "ZRH"
+        }
+      ],
+      "total_duration": 950,
+      "carbon_emissions": {
+        "this_flight": 632000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -5
+      },
+      "price": 497,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3hNV0RFNE1YeE1XREUyTXpnYUN3am1nd01RQWhvRFJWVlNPQnh3cmIwRCIsW1siQktLIiwiMjAyNi0wNi0yMCIsIlpSSCIsbnVsbCwiTFgiLCIxODEiXSxbIlpSSCIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIkxYIiwiMTYzOCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 22:55"
+          },
+          "arrival_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-06-21 05:15"
+          },
+          "duration": 680,
+          "airplane": "Airbus A350",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 773",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 488 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-06-21 11:05"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 12:15"
+          },
+          "duration": 70,
+          "airplane": "Embraer 195",
+          "airline": "Air Dolomiti",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+          "travel_class": "Economy",
+          "flight_number": "EN 8274",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 71 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 350,
+          "name": "Munich International Airport",
+          "id": "MUC"
+        }
+      ],
+      "total_duration": 1100,
+      "carbon_emissions": {
+        "this_flight": 560000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -16
+      },
+      "price": 497,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3hNU0RjM00zeEZUamd5TnpRYUN3aUFoQU1RQWhvRFJWVlNPQnh3eTcwRCIsW1siQktLIiwiMjAyNi0wNi0yMCIsIk1VQyIsbnVsbCwiTEgiLCI3NzMiXSxbIk1VQyIsIjIwMjYtMDYtMjEiLCJNWFAiLG51bGwsIkVOIiwiODI3NCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 23:15"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-21 05:30"
+          },
+          "duration": 615,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 53",
+          "ticket_also_sold_by": [
+            "THAI"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 474 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-21 06:55"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 08:40"
+          },
+          "duration": 165,
+          "airplane": "Airbus A350",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1873",
+          "ticket_also_sold_by": [
+            "THAI"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 135 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 85,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 865,
+      "carbon_emissions": {
+        "this_flight": 610000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -9
+      },
+      "price": 545,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3RVU3pVemZGUkxNVGczTXhvTENKU3BBeEFDR2dORlZWSTRISENoNkFNPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIklTVCIsbnVsbCwiVEsiLCI1MyJdLFsiSVNUIiwiMjAyNi0wNi0yMSIsIk1YUCIsbnVsbCwiVEsiLCIxODczIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 07:05"
+          },
+          "arrival_airport": {
+            "name": "Helsinki Airport",
+            "id": "HEL",
+            "time": "2026-06-20 15:25"
+          },
+          "duration": 740,
+          "airplane": "Airbus A350",
+          "airline": "Finnair",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AY.png",
+          "travel_class": "Economy",
+          "flight_number": "AY 142",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 533 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Helsinki Airport",
+            "id": "HEL",
+            "time": "2026-06-20 16:10"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 18:10"
+          },
+          "duration": 180,
+          "airplane": "Airbus A321 (Sharklets)",
+          "airline": "Finnair",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AY.png",
+          "travel_class": "Economy",
+          "flight_number": "AY 1755",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 187 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 45,
+          "name": "Helsinki Airport",
+          "id": "HEL"
+        }
+      ],
+      "total_duration": 965,
+      "carbon_emissions": {
+        "this_flight": 721000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 8
+      },
+      "price": 603,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AY.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3hCV1RFME1ueEJXVEUzTlRVYUN3aUMxd01RQWhvRFJWVlNPQnh3OXB3RSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkhFTCIsbnVsbCwiQVkiLCIxNDIiXSxbIkhFTCIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIkFZIiwiMTc1NSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 15:10"
+          },
+          "arrival_airport": {
+            "name": "Taiwan Taoyuan International Airport",
+            "id": "TPE",
+            "time": "2026-06-20 20:00"
+          },
+          "duration": 230,
+          "airplane": "Boeing 777",
+          "airline": "EVA Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BR.png",
+          "travel_class": "Economy",
+          "flight_number": "BR 202",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 217 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Taiwan Taoyuan International Airport",
+            "id": "TPE",
+            "time": "2026-06-20 23:45"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 07:35"
+          },
+          "duration": 830,
+          "airplane": "Boeing 787",
+          "airline": "EVA Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BR.png",
+          "travel_class": "Economy",
+          "flight_number": "BR 95",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 597 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 225,
+          "name": "Taiwan Taoyuan International Airport",
+          "id": "TPE"
+        }
+      ],
+      "total_duration": 1285,
+      "carbon_emissions": {
+        "this_flight": 815000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 22
+      },
+      "price": 609,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BR.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3BDVWpJd01ueENVamsxR2dzSTM5c0RFQUlhQTBWVlVqZ2NjSzJpQkE9PSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIlRQRSIsbnVsbCwiQlIiLCIyMDIiXSxbIlRQRSIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIkJSIiwiOTUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 16:45"
+          },
+          "arrival_airport": {
+            "name": "Taiwan Taoyuan International Airport",
+            "id": "TPE",
+            "time": "2026-06-20 21:35"
+          },
+          "duration": 230,
+          "airplane": "Boeing 777",
+          "airline": "EVA Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BR.png",
+          "travel_class": "Economy",
+          "flight_number": "BR 68",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 217 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Taiwan Taoyuan International Airport",
+            "id": "TPE",
+            "time": "2026-06-20 23:45"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 07:35"
+          },
+          "duration": 830,
+          "airplane": "Boeing 787",
+          "airline": "EVA Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BR.png",
+          "travel_class": "Economy",
+          "flight_number": "BR 95",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 597 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 130,
+          "name": "Taiwan Taoyuan International Airport",
+          "id": "TPE"
+        }
+      ],
+      "total_duration": 1190,
+      "carbon_emissions": {
+        "this_flight": 815000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 22
+      },
+      "price": 643,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BR.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ2xDVWpZNGZFSlNPVFVhQ3dpWTlnTVFBaG9EUlZWU09CeHczTUFFIixbWyJCS0siLCIyMDI2LTA2LTIwIiwiVFBFIixudWxsLCJCUiIsIjY4Il0sWyJUUEUiLCIyMDI2LTA2LTIwIiwiTVhQIixudWxsLCJCUiIsIjk1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 22:35"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-21 06:00"
+          },
+          "duration": 745,
+          "airplane": "Airbus A330-900neo",
+          "airline": "Condor",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+          "travel_class": "Economy",
+          "flight_number": "DE 2363",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 517 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-21 09:50"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 10:50"
+          },
+          "duration": 60,
+          "airplane": "Embraer 190",
+          "airline": "Condor",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+          "travel_class": "Economy",
+          "flight_number": "DE 4355",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 78 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 230,
+          "name": "Frankfurt Airport",
+          "id": "FRA"
+        }
+      ],
+      "total_duration": 1035,
+      "carbon_emissions": {
+        "this_flight": 596000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -11
+      },
+      "price": 660,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZzFFUlRJek5qTjhSRVUwTXpVMUdnc0kwSU1FRUFJYUEwVlZVamdjY0pQUUJBPT0iLFtbIkJLSyIsIjIwMjYtMDYtMjAiLCJGUkEiLG51bGwsIkRFIiwiMjM2MyJdLFsiRlJBIiwiMjAyNi0wNi0yMSIsIk1YUCIsbnVsbCwiREUiLCI0MzU1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 16:25"
+          },
+          "arrival_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-20 20:30"
+          },
+          "duration": 185,
+          "airplane": "Airbus A321neo",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 706",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 129 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-21 00:50"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 08:00"
+          },
+          "duration": 790,
+          "airplane": "Boeing 777",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 233",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 639 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 260,
+          "name": "Hong Kong International Airport",
+          "id": "HKG"
+        }
+      ],
+      "total_duration": 1235,
+      "carbon_emissions": {
+        "this_flight": 769000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 15
+      },
+      "price": 670,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3REV0Rjd05ueERXREl6TXhvTENPK0tCQkFDR2dORlZWSTRISEM4MkFRPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkhLRyIsbnVsbCwiQ1giLCI3MDYiXSxbIkhLRyIsIjIwMjYtMDYtMjEiLCJNWFAiLG51bGwsIkNYIiwiMjMzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 11:25"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 19:00"
+          },
+          "duration": 755,
+          "airplane": "Airbus A350",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 199",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 552 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 21:30"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 23:00"
+          },
+          "duration": 90,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1130",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 78 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 150,
+          "name": "Paris Charles de Gaulle Airport",
+          "id": "CDG"
+        }
+      ],
+      "total_duration": 995,
+      "carbon_emissions": {
+        "this_flight": 630000,
+        "typical_for_this_route": 667000,
+        "difference_percent": -6
+      },
+      "price": 753,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3hCUmpFNU9YeEJSakV4TXpBYUN3akN5d1FRQWhvRFJWVlNPQnh3MjZJRiIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkNERyIsbnVsbCwiQUYiLCIxOTkiXSxbIkNERyIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIkFGIiwiMTEzMCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 19:10"
+          },
+          "arrival_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-20 23:05"
+          },
+          "duration": 175,
+          "airplane": "Boeing 777",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 704",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 116 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-21 00:50"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-21 08:00"
+          },
+          "duration": 790,
+          "airplane": "Boeing 777",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 233",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 639 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 105,
+          "name": "Hong Kong International Airport",
+          "id": "HKG"
+        }
+      ],
+      "total_duration": 1070,
+      "carbon_emissions": {
+        "this_flight": 756000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 13
+      },
+      "price": 783,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3REV0Rjd05IeERXREl6TXhvTENNYmpCQkFDR2dORlZWSTRISENvdmdVPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkhLRyIsbnVsbCwiQ1giLCI3MDQiXSxbIkhLRyIsIjIwMjYtMDYtMjEiLCJNWFAiLG51bGwsIkNYIiwiMjMzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 01:05"
+          },
+          "arrival_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-20 07:50"
+          },
+          "duration": 705,
+          "airplane": "Boeing 777",
+          "airline": "THAI",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+          "travel_class": "Economy",
+          "flight_number": "TG 970",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 767 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-20 08:55"
+          },
+          "arrival_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-20 09:50"
+          },
+          "duration": 55,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 1612",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 46 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 65,
+          "name": "Zurich Airport",
+          "id": "ZRH"
+        }
+      ],
+      "total_duration": 825,
+      "carbon_emissions": {
+        "this_flight": 814000,
+        "typical_for_this_route": 667000,
+        "difference_percent": 22
+      },
+      "price": 859,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJYW1jMk1WaGhOSFF5WW1OQlNERTFkbWRDUnkwdExTMHRMUzB0TFhscFltdG1PRUZCUVVGQlIyMHpMV05CVFZGa1NUWkJFZ3hVUnprM01IeE1XREUyTVRJYUN3amZuZ1VRQWhvRFJWVlNPQnh3cFlJRyIsW1siQktLIiwiMjAyNi0wNi0yMCIsIlpSSCIsbnVsbCwiVEciLCI5NzAiXSxbIlpSSCIsIjIwMjYtMDYtMjAiLCJNWFAiLG51bGwsIkxYIiwiMTYxMiJdXV0="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 272,
+    "price_level": "typical",
+    "typical_price_range": [
+      265,
+      305
+    ],
+    "price_history": [
+      [
+        1768410000,
+        281
+      ],
+      [
+        1768496400,
+        282
+      ],
+      [
+        1768582800,
+        283
+      ],
+      [
+        1768669200,
+        284
+      ],
+      [
+        1768755600,
+        283
+      ],
+      [
+        1768842000,
+        283
+      ],
+      [
+        1768928400,
+        284
+      ],
+      [
+        1769014800,
+        284
+      ],
+      [
+        1769101200,
+        283
+      ],
+      [
+        1769187600,
+        283
+      ],
+      [
+        1769274000,
+        281
+      ],
+      [
+        1769360400,
+        281
+      ],
+      [
+        1769446800,
+        287
+      ],
+      [
+        1769533200,
+        287
+      ],
+      [
+        1769619600,
+        288
+      ],
+      [
+        1769706000,
+        291
+      ],
+      [
+        1769792400,
+        292
+      ],
+      [
+        1769878800,
+        292
+      ],
+      [
+        1769965200,
+        290
+      ],
+      [
+        1770051600,
+        291
+      ],
+      [
+        1770138000,
+        296
+      ],
+      [
+        1770224400,
+        293
+      ],
+      [
+        1770310800,
+        293
+      ],
+      [
+        1770397200,
+        292
+      ],
+      [
+        1770483600,
+        294
+      ],
+      [
+        1770570000,
+        294
+      ],
+      [
+        1770656400,
+        294
+      ],
+      [
+        1770742800,
+        311
+      ],
+      [
+        1770829200,
+        300
+      ],
+      [
+        1770915600,
+        302
+      ],
+      [
+        1771002000,
+        301
+      ],
+      [
+        1771088400,
+        313
+      ],
+      [
+        1771174800,
+        301
+      ],
+      [
+        1771261200,
+        290
+      ],
+      [
+        1771347600,
+        292
+      ],
+      [
+        1771434000,
+        294
+      ],
+      [
+        1771520400,
+        298
+      ],
+      [
+        1771606800,
+        298
+      ],
+      [
+        1771693200,
+        298
+      ],
+      [
+        1771779600,
+        298
+      ],
+      [
+        1771866000,
+        299
+      ],
+      [
+        1771952400,
+        299
+      ],
+      [
+        1772038800,
+        272
+      ],
+      [
+        1772125200,
+        272
+      ],
+      [
+        1772211600,
+        272
+      ],
+      [
+        1772298000,
+        271
+      ],
+      [
+        1772384400,
+        261
+      ],
+      [
+        1772470800,
+        261
+      ],
+      [
+        1772557200,
+        262
+      ],
+      [
+        1772643600,
+        261
+      ],
+      [
+        1772730000,
+        260
+      ],
+      [
+        1772816400,
+        259
+      ],
+      [
+        1772902800,
+        259
+      ],
+      [
+        1772989200,
+        259
+      ],
+      [
+        1773075600,
+        259
+      ],
+      [
+        1773162000,
+        265
+      ],
+      [
+        1773248400,
+        274
+      ],
+      [
+        1773334800,
+        273
+      ],
+      [
+        1773421200,
+        273
+      ],
+      [
+        1773507600,
+        272
+      ],
+      [
+        1773594000,
+        272
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "BKK",
+            "name": "Suvarnabhumi Airport"
+          },
+          "city": "Bangkok",
+          "country": "Thailand",
+          "country_code": "TH",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzC4xB5QxGqhLwOS5u7E8q-Ty8lX8lihfxKD-L1VCamrWDhR52VWvoBnPWydRUr7FEKiKwHfAU0sB9mg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-yAxs8ZWNi0M14W-4wO0ra1auEIiVtG0zy-C8CygMmIa2-MVy7L8vSTHNXJJnS_9lq_gL3BVaF6MQh6wBKzXzqexb7CZL29F6UQABXAY"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "MXP",
+            "name": "Milano Malpensa Airport"
+          },
+          "city": "Milan",
+          "country": "Italy",
+          "country_code": "IT",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpIuAaYn-1q7jvtJKK9jO9Q0T_a_2HSfh1W2_pk8staOhM7a7JIweVHMECsqtVw5pO_yXdd9g5APWZqA",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsBB8akHX241dOfMh93D9sZuGXUGLXU4NMsSjTo4rnhQrgmRXJssnGLBNbZz1j31_7qNDAYshJ2KaWOL4z4jtiycyGiwD1epOOcsFmmSU"
+        }
+      ]
+    }
+  ]
+}

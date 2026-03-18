@@ -1,6 +1,6 @@
 import { getJson } from "serpapi";
 
-export async function search({ departureId, arrivalId, outboundDate, returnDate, stops = "2" }) {
+export async function search({ departureId, arrivalId, outboundDate, returnDate, stops = "2", tripType = "1" }) {
   return getJson({
     engine: "google_flights",
     departure_id: departureId,
@@ -8,7 +8,7 @@ export async function search({ departureId, arrivalId, outboundDate, returnDate,
     outbound_date: outboundDate,
     return_date: returnDate,
     stops,
-    type: "1",
+    type: tripType,
     currency: "EUR",
     hl: "en",
     api_key: process.env.SERPAPI_KEY,

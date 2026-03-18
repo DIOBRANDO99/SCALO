@@ -1,0 +1,849 @@
+{
+  "search_metadata": {
+    "id": "69b7f9be9df9dde63b22a7ed",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/Qeao91tozDL2yLP5OZPOeA/69b7f9be9df9dde63b22a7ed.json",
+    "created_at": "2026-03-16 12:38:22 UTC",
+    "processed_at": "2026-03-16 12:38:22 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhoeEgoyMDI2LTA2LTEzagcIARIDSVNUcgcIARIDQktLQgEBSAFwAZgBAg&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/Qeao91tozDL2yLP5OZPOeA/69b7f9be9df9dde63b22a7ed.html",
+    "prettify_html_file": "https://serpapi.com/searches/Qeao91tozDL2yLP5OZPOeA/69b7f9be9df9dde63b22a7ed.prettify",
+    "total_time_taken": 0.76
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "IST",
+    "arrival_id": "BKK",
+    "outbound_date": "2026-06-13",
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 14:10"
+          },
+          "arrival_airport": {
+            "name": "Sharjah International Airport",
+            "id": "SHJ",
+            "time": "2026-06-13 19:35"
+          },
+          "duration": 265,
+          "airplane": "Airbus A320",
+          "airline": "Air Arabia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G9.png",
+          "travel_class": "Economy",
+          "flight_number": "G9 322",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 247 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Sharjah International Airport",
+            "id": "SHJ",
+            "time": "2026-06-13 22:15"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 07:50"
+          },
+          "duration": 395,
+          "airplane": "Airbus A321",
+          "airline": "Air Arabia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G9.png",
+          "travel_class": "Economy",
+          "flight_number": "G9 821",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 397 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 160,
+          "name": "Sharjah International Airport",
+          "id": "SHJ"
+        }
+      ],
+      "total_duration": 820,
+      "carbon_emissions": {
+        "this_flight": 645000,
+        "typical_for_this_route": 589000,
+        "difference_percent": 10
+      },
+      "price": 279,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G9.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ3RIT1RNeU1ueEhPVGd5TVJvTENLUFpBUkFDR2dORlZWSTRISEREK1FFPSIsW1siSVNUIiwiMjAyNi0wNi0xMyIsIlNISiIsbnVsbCwiRzkiLCIzMjIiXSxbIlNISiIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIkc5IiwiODIxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 16:05"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-13 20:15"
+          },
+          "duration": 250,
+          "airplane": "Airbus A320neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 44",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 213 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-13 22:35"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 09:45"
+          },
+          "duration": 430,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 152",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 331 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 140,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 820,
+      "carbon_emissions": {
+        "this_flight": 544000,
+        "typical_for_this_route": 589000,
+        "difference_percent": -8
+      },
+      "price": 296,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ3BIUmpRMGZFZEdNVFV5R2dzSTNPWUJFQUlhQTBWVlVqZ2NjUHVJQWc9PSIsW1siSVNUIiwiMjAyNi0wNi0xMyIsIkJBSCIsbnVsbCwiR0YiLCI0NCJdLFsiQkFIIiwiMjAyNi0wNi0xMyIsIkJLSyIsbnVsbCwiR0YiLCIxNTIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 20:25"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 09:45"
+          },
+          "duration": 560,
+          "airplane": "Boeing 787",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 64",
+          "ticket_also_sold_by": [
+            "THAI"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 425 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 560,
+      "carbon_emissions": {
+        "this_flight": 426000,
+        "typical_for_this_route": 589000,
+        "difference_percent": -28
+      },
+      "price": 431,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ1JVU3pZMEdnc0l2TkFDRUFJYUEwVlZVamdjY0xTQ0F3PT0iLFtbIklTVCIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIlRLIiwiNjQiXV1d"
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 14:10"
+          },
+          "arrival_airport": {
+            "name": "Sharjah International Airport",
+            "id": "SHJ",
+            "time": "2026-06-13 19:35"
+          },
+          "duration": 265,
+          "airplane": "Airbus A320",
+          "airline": "Air Arabia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G9.png",
+          "travel_class": "Economy",
+          "flight_number": "G9 322",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 247 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Sharjah International Airport",
+            "id": "SHJ",
+            "time": "2026-06-14 00:45"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 10:20"
+          },
+          "duration": 395,
+          "airplane": "Airbus A321",
+          "airline": "Air Arabia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G9.png",
+          "travel_class": "Economy",
+          "flight_number": "G9 823",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 397 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 310,
+          "name": "Sharjah International Airport",
+          "id": "SHJ"
+        }
+      ],
+      "total_duration": 970,
+      "carbon_emissions": {
+        "this_flight": 645000,
+        "typical_for_this_route": 589000,
+        "difference_percent": 10
+      },
+      "price": 275,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G9.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ3RIT1RNeU1ueEhPVGd5TXhvTENLaldBUkFDR2dORlZWSTRISENQOWdFPSIsW1siSVNUIiwiMjAyNi0wNi0xMyIsIlNISiIsbnVsbCwiRzkiLCIzMjIiXSxbIlNISiIsIjIwMjYtMDYtMTQiLCJCS0siLG51bGwsIkc5IiwiODIzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 13:45"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-13 17:50"
+          },
+          "duration": 245,
+          "airplane": "Airbus A330",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 240",
+          "legroom": "34 in",
+          "extensions": [
+            "Above average legroom (34 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 243 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-13 19:25"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 06:20"
+          },
+          "duration": 415,
+          "airplane": "Boeing 787",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 838",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 294 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 95,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 755,
+      "carbon_emissions": {
+        "this_flight": 538000,
+        "typical_for_this_route": 589000,
+        "difference_percent": -9
+      },
+      "price": 361,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ3RSVWpJME1IeFJVamd6T0JvTENJT2FBaEFDR2dORlZWSTRISER4d3dJPSIsW1siSVNUIiwiMjAyNi0wNi0xMyIsIkRPSCIsbnVsbCwiUVIiLCIyNDAiXSxbIkRPSCIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIlFSIiwiODM4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 14:10"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-13 19:45"
+          },
+          "duration": 275,
+          "airplane": "Airbus A321",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 542",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 279 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-13 20:40"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 06:15"
+          },
+          "duration": 395,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 408",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 317 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 55,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 725,
+      "carbon_emissions": {
+        "this_flight": 598000,
+        "typical_for_this_route": 589000,
+        "difference_percent": 2
+      },
+      "price": 402,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ3RGV1RVME1ueEZXVFF3T0JvTENQcTVBaEFDR2dORlZWSTRISERHNkFJPSIsW1siSVNUIiwiMjAyNi0wNi0xMyIsIkFVSCIsbnVsbCwiRVkiLCI1NDIiXSxbIkFVSCIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIkVZIiwiNDA4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 01:55"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-13 15:25"
+          },
+          "duration": 570,
+          "airplane": "Airbus A350",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 68",
+          "ticket_also_sold_by": [
+            "THAI"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 462 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 570,
+      "carbon_emissions": {
+        "this_flight": 463000,
+        "typical_for_this_route": 589000,
+        "difference_percent": -21
+      },
+      "price": 431,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ1JVU3pZNEdnc0l2TkFDRUFJYUEwVlZVamdjY0xTQ0F3PT0iLFtbIklTVCIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIlRLIiwiNjgiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 15:50"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 05:10"
+          },
+          "duration": 560,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 58",
+          "ticket_also_sold_by": [
+            "THAI"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 474 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 560,
+      "carbon_emissions": {
+        "this_flight": 474000,
+        "typical_for_this_route": 589000,
+        "difference_percent": -20
+      },
+      "price": 431,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ1JVU3pVNEdnc0l2TkFDRUFJYUEwVlZVamdjY0xTQ0F3PT0iLFtbIklTVCIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIlRLIiwiNTgiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-13 16:30"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 05:40"
+          },
+          "duration": 550,
+          "airplane": "Airbus A350",
+          "airline": "THAI",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+          "travel_class": "Economy",
+          "flight_number": "TG 901",
+          "ticket_also_sold_by": [
+            "Turkish Airlines"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 513 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 550,
+      "carbon_emissions": {
+        "this_flight": 514000,
+        "typical_for_this_route": 589000,
+        "difference_percent": -13
+      },
+      "price": 662,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlZMEZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0k0UWpCU1pEWkJFZ1ZVUnprd01Sb0xDSTJGQkJBQ0dnTkZWVkk0SEhEczBRUT0iLFtbIklTVCIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIlRHIiwiOTAxIl1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 275,
+    "price_level": "high",
+    "typical_price_range": [
+      220,
+      255
+    ],
+    "price_history": [
+      [
+        1768424400,
+        271
+      ],
+      [
+        1768510800,
+        271
+      ],
+      [
+        1768597200,
+        271
+      ],
+      [
+        1768683600,
+        271
+      ],
+      [
+        1768770000,
+        271
+      ],
+      [
+        1768856400,
+        270
+      ],
+      [
+        1768942800,
+        270
+      ],
+      [
+        1769029200,
+        269
+      ],
+      [
+        1769115600,
+        270
+      ],
+      [
+        1769202000,
+        268
+      ],
+      [
+        1769288400,
+        266
+      ],
+      [
+        1769374800,
+        266
+      ],
+      [
+        1769461200,
+        265
+      ],
+      [
+        1769547600,
+        265
+      ],
+      [
+        1769634000,
+        262
+      ],
+      [
+        1769720400,
+        263
+      ],
+      [
+        1769806800,
+        264
+      ],
+      [
+        1769893200,
+        267
+      ],
+      [
+        1769979600,
+        267
+      ],
+      [
+        1770066000,
+        227
+      ],
+      [
+        1770152400,
+        228
+      ],
+      [
+        1770238800,
+        227
+      ],
+      [
+        1770325200,
+        227
+      ],
+      [
+        1770411600,
+        228
+      ],
+      [
+        1770498000,
+        254
+      ],
+      [
+        1770584400,
+        254
+      ],
+      [
+        1770670800,
+        254
+      ],
+      [
+        1770757200,
+        252
+      ],
+      [
+        1770843600,
+        253
+      ],
+      [
+        1770930000,
+        253
+      ],
+      [
+        1771016400,
+        266
+      ],
+      [
+        1771102800,
+        266
+      ],
+      [
+        1771189200,
+        267
+      ],
+      [
+        1771275600,
+        266
+      ],
+      [
+        1771362000,
+        265
+      ],
+      [
+        1771448400,
+        265
+      ],
+      [
+        1771534800,
+        269
+      ],
+      [
+        1771621200,
+        268
+      ],
+      [
+        1771707600,
+        269
+      ],
+      [
+        1771794000,
+        255
+      ],
+      [
+        1771880400,
+        255
+      ],
+      [
+        1771966800,
+        255
+      ],
+      [
+        1772053200,
+        254
+      ],
+      [
+        1772139600,
+        255
+      ],
+      [
+        1772226000,
+        268
+      ],
+      [
+        1772312400,
+        267
+      ],
+      [
+        1772398800,
+        269
+      ],
+      [
+        1772485200,
+        270
+      ],
+      [
+        1772571600,
+        272
+      ],
+      [
+        1772658000,
+        272
+      ],
+      [
+        1772744400,
+        272
+      ],
+      [
+        1772830800,
+        272
+      ],
+      [
+        1772917200,
+        272
+      ],
+      [
+        1773003600,
+        274
+      ],
+      [
+        1773090000,
+        272
+      ],
+      [
+        1773176400,
+        272
+      ],
+      [
+        1773262800,
+        273
+      ],
+      [
+        1773349200,
+        274
+      ],
+      [
+        1773435600,
+        276
+      ],
+      [
+        1773522000,
+        275
+      ],
+      [
+        1773608400,
+        275
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "IST",
+            "name": "Istanbul Airport"
+          },
+          "city": "Istanbul",
+          "country": "Türkiye",
+          "country_code": "TR",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCxBjNwAoLrTOKowDJwZyOgqpPqpGuPY1umCd0ey6x2mma7s1rFxR63gC-wiSQxRp8LzzpwbK_vjhTOg",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiCjiMuHyH5raqgVAMRbLlsvhbz3F-vRqjoeVsLl90nMoNQwTytaomGjUfudBUtd2MtI9VLBNX1nuQ2S3W5ilNuO2DRBxUVEgdJX-XYQQ"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "BKK",
+            "name": "Suvarnabhumi Airport"
+          },
+          "city": "Bangkok",
+          "country": "Thailand",
+          "country_code": "TH",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzC4xB5QxGqhLwOS5u7E8q-Ty8lX8lihfxKD-L1VCamrWDhR52VWvoBnPWydRUr7FEKiKwHfAU0sB9mg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-yAxs8ZWNi0M14W-4wO0ra1auEIiVtG0zy-C8CygMmIa2-MVy7L8vSTHNXJJnS_9lq_gL3BVaF6MQh6wBKzXzqexb7CZL29F6UQABXAY"
+        }
+      ]
+    }
+  ]
+}

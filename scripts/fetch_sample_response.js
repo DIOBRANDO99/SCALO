@@ -16,5 +16,5 @@ const response = await getJson({
   api_key: process.env.SERPAPI_KEY,
 });
 
-writeFileSync("sample_response.json", JSON.stringify(response, null, 2));
+writeFileSync("../doc/api_samples/sample_response.json", JSON.stringify(response, null, 2));
 console.log("done — saved to sample_response.json");

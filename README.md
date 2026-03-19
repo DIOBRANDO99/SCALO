@@ -145,6 +145,16 @@ Con `FLIGHT_PROVIDER=mock_real` il risultato atteso è:
 
 La risposta completa include anche i tre legs (andata leg1, andata leg2, ritorno) con il prezzo migliore e tutte le opzioni di volo disponibili per ciascuno.
 
+**POST /api/discover** — trova automaticamente lo scalo più conveniente tra tutti i 16 hub city:
+
+```bash
+curl -s -X POST http://localhost:3001/api/discover -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}'
+```
+
+Rispetto a `/api/search`, non si specifica lo scalo — il servizio li prova tutti e restituisce un array ordinato per risparmio decrescente. Il primo elemento è lo scalo più conveniente.
+
+Con `FLIGHT_PROVIDER=mock_fake` il risultato atteso è un array con IST (risparmio €165) prima di DOH (risparmio €-251).
+
 In caso di parametri mancanti o non validi il server risponde con HTTP 400 e un messaggio esplicativo. In caso di quota API esaurita risponde con HTTP 429.
 
 ## Eseguire i Test

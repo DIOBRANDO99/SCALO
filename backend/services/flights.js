@@ -21,8 +21,39 @@ function addDays(dateStr, days) {
   return date.toISOString().split("T")[0];
 }
 
+function normalizeOption(o) {
+  return {
+    price:         o.price,
+    totalDuration: o.total_duration,
+    type:          o.type,
+    airlineLogo:   o.airline_logo ?? null,
+    bookingToken:  o.booking_token ?? null,
+    carbonEmissions: o.carbon_emissions ? {
+      grams:            o.carbon_emissions.this_flight,
+      typicalGrams:     o.carbon_emissions.typical_for_this_route,
+      differencePercent: o.carbon_emissions.difference_percent,
+    } : null,
+    layovers: o.layovers ?? [],
+    flights: (o.flights ?? []).map(f => ({
+      flightNumber:    f.flight_number ?? null,
+      airline:         f.airline ?? null,
+      airlineLogo:     f.airline_logo ?? null,
+      airplane:        f.airplane ?? null,
+      travelClass:     f.travel_class ?? null,
+      duration:        f.duration,
+      legroom:         f.legroom ?? null,
+      departureAirport: f.departure_airport ?? null,
+      arrivalAirport:   f.arrival_airport ?? null,
+      overnight:        f.overnight ?? false,
+      oftenDelayed:     f.often_delayed_by_over_30_min ?? false,
+      ticketAlsoSoldBy: f.ticket_also_sold_by ?? [],
+      planeAndCrewBy:   f.plane_and_crew_by ?? null,
+    })),
+  };
+}
+
 function extractFlights(raw) {
-  return [...(raw.best_flights ?? []), ...(raw.other_flights ?? [])];
+  return [...(raw.best_flights ?? []), ...(raw.other_flights ?? [])].map(normalizeOption);
 }
 
 function cheapestPrice(flights) {

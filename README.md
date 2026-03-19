@@ -119,6 +119,34 @@ cd scripts && node fetch_leg_responses.js
 
 Il tipo va specificato come `:1` per andata e ritorno, `:2` per solo andata.
 
+## Testare gli Endpoint HTTP
+
+Con il server avviato (`npm run dev` da `backend/`), è possibile testare gli endpoint con `curl`.
+
+**POST /api/search** — cerca i voli con uno scalo specifico:
+
+```bash
+curl -s -X POST http://localhost:3001/api/search \
+  -H "Content-Type: application/json" \
+  -d '{"origin":"MXP","destination":"BKK","stopover":"IST","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}' \
+  | jq '.summary'
+```
+
+Con `FLIGHT_PROVIDER=mock_real` il risultato atteso è:
+
+```json
+{
+  "bestCombinedPrice": 629,
+  "directPrice": 1176,
+  "savings": 547,
+  "currency": "EUR"
+}
+```
+
+La risposta completa include anche i tre legs (andata leg1, andata leg2, ritorno) con il prezzo migliore e tutte le opzioni di volo disponibili per ciascuno.
+
+In caso di parametri mancanti o non validi il server risponde con HTTP 400 e un messaggio esplicativo. In caso di quota API esaurita risponde con HTTP 429.
+
 ## Eseguire i Test
 
 I test si trovano in `backend/tests/` e si eseguono da quella cartella.

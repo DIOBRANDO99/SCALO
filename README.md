@@ -1,9 +1,15 @@
 # SCALO
 
-SCALO è una piattaforma web che aiuta i viaggiatori a trovare voli più economici
-sfruttando uno scalo intermedio in una città da visitare. L'utente specifica
-origine, destinazione e la città di scalo desiderata; il sistema cerca le migliori
-combinazioni di due biglietti separati e mostra il risparmio rispetto al volo diretto.
+Quando voli da Milano a Bangkok, la compagnia aerea potrebbe chiederti €1.176 per un volo diretto. Ma c'è qualcosa che molti viaggiatori non sanno: a volte è possibile comprare due biglietti separati — Milano-Istanbul e poi Istanbul-Bangkok — e pagare molto meno. In questo caso €629 invece di €1.176, con un risparmio di €547. E in più hai uno scalo a Istanbul dove puoi fermarti qualche giorno prima di proseguire.
+
+Questa è l'idea di SCALO. Uno strumento che fa questa ricerca in automatico.
+
+Fornisci origine, destinazione e date di viaggio. Ci sono due modalità:
+
+1. **Hai già una città in mente** — "Voglio fermarmi a Istanbul sulla strada per Bangkok." SCALO calcola il costo dei tre voli separati (andata tratta 1, andata tratta 2, ritorno), il prezzo del volo diretto e il risparmio.
+2. **Non sai dove fermarti** — SCALO controlla automaticamente 16 grandi hub aeroportuali nel mondo (Istanbul, Dubai, Doha, Londra, Singapore, ecc.) e restituisce una classifica ordinata per risparmio. L'offerta migliore è in cima.
+
+Il motore è completo e funzionante. Il passo successivo è costruire l'interfaccia web per i viaggiatori.
 
 ## Struttura del Progetto
 
@@ -12,10 +18,11 @@ backend/           Server Express (API REST)
   adapters/        Wrapper per provider di dati di volo (serpapi, mock_fake, mock_real)
   services/        Logica di business (flights.js)
   routes/          Endpoint HTTP
-  tests/           Script di test manuali
+  tests/           Suite di test Vitest
 scripts/           Script CLI per fetching campioni API reali
 doc/
   api_samples/     Risposte reali SerpAPI usate da mock_real
+  responses/       Risposte complete degli endpoint salvate per riferimento
 ```
 
 ## Setup
@@ -126,24 +133,10 @@ Con il server avviato (`npm run dev` da `backend/`), è possibile testare gli en
 **POST /api/search** — cerca i voli con uno scalo specifico:
 
 ```bash
-curl -s -X POST http://localhost:3001/api/search \
-  -H "Content-Type: application/json" \
-  -d '{"origin":"MXP","destination":"BKK","stopover":"IST","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}' \
-  | jq '.summary'
+curl -s -X POST http://localhost:3001/api/search -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","stopover":"IST","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}'
 ```
 
-Con `FLIGHT_PROVIDER=mock_real` il risultato atteso è:
-
-```json
-{
-  "bestCombinedPrice": 629,
-  "directPrice": 1176,
-  "savings": 547,
-  "currency": "EUR"
-}
-```
-
-La risposta completa include anche i tre legs (andata leg1, andata leg2, ritorno) con il prezzo migliore e tutte le opzioni di volo disponibili per ciascuno.
+La risposta include i tre legs (andata tratta 1, andata tratta 2, ritorno) con il prezzo migliore per ciascuno, più un summary con `bestCombinedPrice`, `directPrice` e `savings`.
 
 **POST /api/discover** — trova automaticamente lo scalo più conveniente tra tutti i 16 hub city:
 
@@ -151,26 +144,43 @@ La risposta completa include anche i tre legs (andata leg1, andata leg2, ritorno
 curl -s -X POST http://localhost:3001/api/discover -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}'
 ```
 
-Rispetto a `/api/search`, non si specifica lo scalo — il servizio li prova tutti e restituisce un array ordinato per risparmio decrescente. Il primo elemento è lo scalo più conveniente.
+Non si specifica lo scalo — il servizio li prova tutti e restituisce un array ordinato per risparmio decrescente. Il primo elemento è lo scalo più conveniente.
 
-Con `FLIGHT_PROVIDER=mock_fake` il risultato atteso è un array con IST (risparmio €165) prima di DOH (risparmio €-251).
+Per salvare la risposta in un file (utile con `FLIGHT_PROVIDER=serpapi` per non consumare quota inutilmente):
+
+```bash
+curl -s -X POST http://localhost:3001/api/discover -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}' | tee ../doc/responses/discover_MXP_BKK_$(date +%Y-%m-%d).json
+```
 
 In caso di parametri mancanti o non validi il server risponde con HTTP 400 e un messaggio esplicativo. In caso di quota API esaurita risponde con HTTP 429.
 
-## Eseguire i Test
+## Usare la API Live
 
-I test si trovano in `backend/tests/` e si eseguono da quella cartella.
+Per chiamate reali a Google Flights tramite SerpAPI, imposta in `backend/.env`:
 
-**test_real.js** — verifica che il servizio calcoli correttamente i prezzi usando i dati reali catturati:
-
-```bash
-# assicurati che FLIGHT_PROVIDER=mock_real in backend/.env
-cd backend/tests && node test_real.js
+```
+SERPAPI_KEY=la_tua_chiave
+FLIGHT_PROVIDER=serpapi
 ```
 
-**test_fake.js** — verifica i casi limite con dati inventati (stopover costoso, nessun volo diretto, ordinamento):
+Riavvia il server e usa i comandi curl sopra. Tieni presente che `/api/discover` effettua 64 chiamate API in una sola richiesta (16 hub × 4 legs ciascuno) — salvare sempre la risposta su file per evitare di consumare quota inutilmente.
+
+## Eseguire i Test
+
+I test usano Vitest e si eseguono con un solo comando da `backend/`:
 
 ```bash
-# imposta FLIGHT_PROVIDER=mock_fake in backend/.env
-cd backend/tests && node test_fake.js
+cd backend && npm test
+```
+
+Non è necessario modificare `FLIGHT_PROVIDER` in `.env` — Vitest imposta il provider corretto per ciascun file automaticamente tramite `vitest.config.js`.
+
+**flights.fake.test.js** — verifica la logica del servizio con dati inventati e controllati (stopover economico, stopover costoso, nessun volo diretto, ordinamento per risparmio).
+
+**flights.real.test.js** — verifica che il servizio elabori correttamente i dati reali catturati. Questo test legge i JSON grezzi in modo indipendente dal servizio: se il servizio ha un bug nel calcolo, i due percorsi di codice non coincidono.
+
+Per sviluppo con riavvio automatico ad ogni modifica:
+
+```bash
+npm run test:watch
 ```

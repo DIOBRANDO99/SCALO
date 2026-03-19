@@ -1,7 +1,6 @@
 // Requires FLIGHT_PROVIDER=mock_fake in .env
 // Tests service logic against controlled fake data — not real prices.
 // Expected values are derived from reading mock_fake.js directly.
-import "dotenv/config";
 import { searchWithStopover, discoverStopovers } from "../services/flights.js";
 
 function pass(condition) {

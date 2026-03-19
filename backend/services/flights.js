@@ -1,16 +1,13 @@
-import { config } from "dotenv";
-import { fileURLToPath } from "url";
-import { dirname, join } from "path";
-config({ path: join(dirname(fileURLToPath(import.meta.url)), "../.env") });
-
 const adapterMap = {
   serpapi:   "../adapters/serpapi.js",
   mock_fake: "../adapters/mock_fake.js",
   mock_real: "../adapters/mock_real.js",
 };
 
-const adapterPath = adapterMap[process.env.FLIGHT_PROVIDER] ?? "../adapters/mock_real.js";
-const adapter = await import(adapterPath);
+async function getAdapter() {
+  const path = adapterMap[process.env.FLIGHT_PROVIDER] ?? "../adapters/mock_real.js";
+  return import(path);
+}
 
 const HUB_CITIES = [
   "IST", "AUH", "DOH", "DXB", "LHR",
@@ -34,6 +31,7 @@ function cheapestPrice(flights) {
 }
 
 export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights }) {
+  const adapter = await getAdapter();
   const stopoverDepartureDate = addDays(outboundDate, stopoverNights);
 
   const [leg1Raw, leg2Raw, leg3Raw, directRaw] = await Promise.all([

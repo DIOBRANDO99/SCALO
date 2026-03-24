@@ -1,0 +1,357 @@
+{
+  "stopover": {
+    "iata": "JFK",
+    "nights": 3
+  },
+  "legs": [
+    {
+      "id": "outbound1",
+      "origin": "LHR",
+      "destination": "JFK",
+      "date": "2026-04-14",
+      "bestPrice": 498,
+      "options": [
+        {
+          "price": 618,
+          "totalDuration": 479,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/B6.png",
+          "bookingToken": "WyJDalJJTW0xSVNXcFJSSFJWTFUxQlFtcE1TMEZDUnkwdExTMHRMUzB0TFc5cmRua3hNa0ZCUVVGQlIyNURWRmt3UzJsblVtbEJFZ1pDTmpJeU1qQWFDd2kwNGdNUUFob0RSVlZTT0J4dzRLOEUiLFtbIkxIUiIsIjIwMjYtMDQtMTQiLCJKRksiLG51bGwsIkI2IiwiMjIyMCJdXV0=",
+          "carbonEmissions": {
+            "grams": 590000,
+            "typicalGrams": 323000,
+            "differencePercent": 83
+          },
+          "layovers": [],
+          "flights": [
+            {
+              "flightNumber": "B6 2220",
+              "airline": "JetBlue",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/B6.png",
+              "airplane": "Airbus A321neo",
+              "travelClass": "Economy",
+              "duration": 479,
+              "legroom": "32 in",
+              "departureAirport": {
+                "name": "Heathrow Airport",
+                "id": "LHR",
+                "time": "2026-04-14 08:15"
+              },
+              "arrivalAirport": {
+                "name": "John F. Kennedy International Airport",
+                "id": "JFK",
+                "time": "2026-04-14 11:14"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            }
+          ]
+        },
+        {
+          "price": 498,
+          "totalDuration": 1755,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+          "bookingToken": "WyJDalJJTW0xSVNXcFJSSFJWTFUxQlFtcE1TMEZDUnkwdExTMHRMUzB0TFc5cmRua3hNa0ZCUVVGQlIyNURWRmt3UzJsblVtbEJFZ3hVVURFek5qbDhWRkF5TURrYUN3anRoQU1RQWhvRFJWVlNPQnh3bWNNRCIsW1siTEhSIiwiMjAyNi0wNC0xNCIsIkxJUyIsbnVsbCwiVFAiLCIxMzY5Il0sWyJMSVMiLCIyMDI2LTA0LTE1IiwiSkZLIixudWxsLCJUUCIsIjIwOSJdXV0=",
+          "carbonEmissions": {
+            "grams": 458000,
+            "typicalGrams": 323000,
+            "differencePercent": 42
+          },
+          "layovers": [
+            {
+              "duration": 1100,
+              "name": "Humberto Delgado Airport",
+              "id": "LIS",
+              "overnight": true
+            }
+          ],
+          "flights": [
+            {
+              "flightNumber": "TP 1369",
+              "airline": "Tap Air Portugal",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+              "airplane": "Airbus A320neo",
+              "travelClass": "Economy",
+              "duration": 170,
+              "legroom": "28 in",
+              "departureAirport": {
+                "name": "Heathrow Airport",
+                "id": "LHR",
+                "time": "2026-04-14 19:50"
+              },
+              "arrivalAirport": {
+                "name": "Humberto Delgado Airport",
+                "id": "LIS",
+                "time": "2026-04-14 22:40"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            },
+            {
+              "flightNumber": "TP 209",
+              "airline": "Tap Air Portugal",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+              "airplane": "Airbus A330-900neo",
+              "travelClass": "Economy",
+              "duration": 485,
+              "legroom": "31 in",
+              "departureAirport": {
+                "name": "Humberto Delgado Airport",
+                "id": "LIS",
+                "time": "2026-04-15 17:00"
+              },
+              "arrivalAirport": {
+                "name": "John F. Kennedy International Airport",
+                "id": "JFK",
+                "time": "2026-04-15 20:05"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outbound2",
+      "origin": "JFK",
+      "destination": "LAX",
+      "date": "2026-04-17",
+      "bestPrice": 69,
+      "options": [
+        {
+          "price": 69,
+          "totalDuration": 705,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+          "bookingToken": "WyJDalJJU20xVlZEUXlTRkUzYTFWQlEyVndTMEZDUnkwdExTMHRMUzB0TFhsc1pYWXhOVUZCUVVGQlIyNURWRmswUjFNM2RVVkJFZzFHT1RRM016RjhSamt6TWpFMUdnb0k3VFVRQWhvRFJWVlNPQnh3dmo0PSIsW1siSkZLIiwiMjAyNi0wNC0xNyIsIkFUTCIsbnVsbCwiRjkiLCI0NzMxIl0sWyJBVEwiLCIyMDI2LTA0LTE3IiwiTEFYIixudWxsLCJGOSIsIjMyMTUiXV1d",
+          "carbonEmissions": {
+            "grams": 284000,
+            "typicalGrams": 371000,
+            "differencePercent": -23
+          },
+          "layovers": [
+            {
+              "duration": 229,
+              "name": "Hartsfield-Jackson Atlanta International Airport",
+              "id": "ATL"
+            }
+          ],
+          "flights": [
+            {
+              "flightNumber": "F9 4731",
+              "airline": "Frontier",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+              "airplane": "Airbus A321neo",
+              "travelClass": "Economy",
+              "duration": 163,
+              "legroom": "28 in",
+              "departureAirport": {
+                "name": "John F. Kennedy International Airport",
+                "id": "JFK",
+                "time": "2026-04-17 13:00"
+              },
+              "arrivalAirport": {
+                "name": "Hartsfield-Jackson Atlanta International Airport",
+                "id": "ATL",
+                "time": "2026-04-17 15:43"
+              },
+              "overnight": false,
+              "oftenDelayed": true,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            },
+            {
+              "flightNumber": "F9 3215",
+              "airline": "Frontier",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/F9.png",
+              "airplane": "Airbus A321neo",
+              "travelClass": "Economy",
+              "duration": 313,
+              "legroom": "28 in",
+              "departureAirport": {
+                "name": "Hartsfield-Jackson Atlanta International Airport",
+                "id": "ATL",
+                "time": "2026-04-17 19:32"
+              },
+              "arrivalAirport": {
+                "name": "Los Angeles International Airport",
+                "id": "LAX",
+                "time": "2026-04-17 21:45"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            }
+          ]
+        },
+        {
+          "price": 146,
+          "totalDuration": 370,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/B6.png",
+          "bookingToken": "WyJDalJJU20xVlZEUXlTRkUzYTFWQlEyVndTMEZDUnkwdExTMHRMUzB0TFhsc1pYWXhOVUZCUVVGQlIyNURWRmswUjFNM2RVVkJFZ1ZDTmpjeU14b0tDTEp4RUFJYUEwVlZVamdjY01tREFRPT0iLFtbIkpGSyIsIjIwMjYtMDQtMTciLCJMQVgiLG51bGwsIkI2IiwiNzIzIl1dXQ==",
+          "carbonEmissions": {
+            "grams": 424000,
+            "typicalGrams": 371000,
+            "differencePercent": 14
+          },
+          "layovers": [],
+          "flights": [
+            {
+              "flightNumber": "B6 723",
+              "airline": "JetBlue",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/B6.png",
+              "airplane": "Airbus A320",
+              "travelClass": "Economy",
+              "duration": 370,
+              "legroom": "33 in",
+              "departureAirport": {
+                "name": "John F. Kennedy International Airport",
+                "id": "JFK",
+                "time": "2026-04-17 13:59"
+              },
+              "arrivalAirport": {
+                "name": "Los Angeles International Airport",
+                "id": "LAX",
+                "time": "2026-04-17 17:09"
+              },
+              "overnight": false,
+              "oftenDelayed": true,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return",
+      "origin": "LAX",
+      "destination": "LHR",
+      "date": "2026-04-28",
+      "bestPrice": 396,
+      "options": [
+        {
+          "price": 417,
+          "totalDuration": 640,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "bookingToken": "WyJDalJJWlZKWVozSlpVekp6TkdOQlFuWk9aVUZDUnkwdExTMHRMUzB0TFMxdmEyTm5OMEZCUVVGQlIyNURWRmt3VFhBNGFrVkJFZ1ZWUVRreU14b0xDTVhGQWhBQ0dnTkZWVkk0SEhEZStRST0iLFtbIkxBWCIsIjIwMjYtMDQtMjgiLCJMSFIiLG51bGwsIlVBIiwiOTIzIl1dXQ==",
+          "carbonEmissions": {
+            "grams": 468000,
+            "typicalGrams": 593000,
+            "differencePercent": -21
+          },
+          "layovers": [],
+          "flights": [
+            {
+              "flightNumber": "UA 923",
+              "airline": "United",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+              "airplane": "Boeing 787-10",
+              "travelClass": "Economy",
+              "duration": 640,
+              "legroom": "31 in",
+              "departureAirport": {
+                "name": "Los Angeles International Airport",
+                "id": "LAX",
+                "time": "2026-04-28 15:30"
+              },
+              "arrivalAirport": {
+                "name": "Heathrow Airport",
+                "id": "LHR",
+                "time": "2026-04-29 10:10"
+              },
+              "overnight": true,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": ["Lufthansa", "Austrian", "Brussels Airlines"],
+              "planeAndCrewBy": null
+            }
+          ]
+        },
+        {
+          "price": 396,
+          "totalDuration": 880,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/B6.png",
+          "bookingToken": "WyJDalJJWlZKWVozSlpVekp6TkdOQlFuWk9aVUZDUnkwdExTMHRMUzB0TFMxdmEyTm5OMEZCUVVGQlIyNURWRmt3VFhBNGFrVkJFZ2xDTmpjeU5IeENOamNhQ3dpR3RRSVFBaG9EUlZWU09CeHd6ZVlDIixbWyJMQVgiLCIyMDI2LTA0LTI4IiwiSkZLIixudWxsLCJCNiIsIjcyNCJdLFsiSkZLIiwiMjAyNi0wNC0yOCIsIkxIUiIsbnVsbCwiQjYiLCI3Il1dXQ==",
+          "carbonEmissions": {
+            "grams": 1001000,
+            "typicalGrams": 593000,
+            "differencePercent": 69
+          },
+          "layovers": [
+            {
+              "duration": 97,
+              "name": "John F. Kennedy International Airport",
+              "id": "JFK"
+            }
+          ],
+          "flights": [
+            {
+              "flightNumber": "B6 724",
+              "airline": "JetBlue",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/B6.png",
+              "airplane": "Airbus A320",
+              "travelClass": "Economy",
+              "duration": 325,
+              "legroom": "32 in",
+              "departureAirport": {
+                "name": "Los Angeles International Airport",
+                "id": "LAX",
+                "time": "2026-04-28 10:50"
+              },
+              "arrivalAirport": {
+                "name": "John F. Kennedy International Airport",
+                "id": "JFK",
+                "time": "2026-04-28 19:15"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            },
+            {
+              "flightNumber": "B6 7",
+              "airline": "JetBlue",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/B6.png",
+              "airplane": "Airbus A321neo",
+              "travelClass": "Economy",
+              "duration": 458,
+              "legroom": "32 in",
+              "departureAirport": {
+                "name": "John F. Kennedy International Airport",
+                "id": "JFK",
+                "time": "2026-04-28 20:52"
+              },
+              "arrivalAirport": {
+                "name": "Heathrow Airport",
+                "id": "LHR",
+                "time": "2026-04-29 09:30"
+              },
+              "overnight": true,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "bestCombinedPrice": 963,
+    "directPrice": 549,
+    "savings": -414,
+    "currency": "EUR"
+  }
+}

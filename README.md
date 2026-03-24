@@ -9,7 +9,9 @@ Fornisci origine, destinazione e date di viaggio. Ci sono due modalità:
 1. **Hai già una città in mente**: "Voglio fermarmi a Istanbul sulla strada per Bangkok." SCALO calcola il costo dei tre voli separati (andata tratta 1, andata tratta 2, ritorno), il prezzo del volo diretto e il risparmio.
 2. **Non sai dove fermarti**: SCALO controlla automaticamente 16 grandi hub aeroportuali nel mondo (Istanbul, Dubai, Doha, Londra, Singapore, ecc.) e restituisce una classifica ordinata per risparmio. L'offerta migliore è in cima.
 
-Il motore è completo e funzionante. L'interfaccia web è in fase di sviluppo.
+Il motore è completo e funzionante. L'interfaccia web permette già di effettuare ricerche e visualizzare i risultati: form di ricerca, card con opzioni di volo selezionabili per ogni tratta, calcolo del risparmio in tempo reale e link diretto a Skyscanner per prenotare ciascun volo.
+
+![SCALO UI](doc/screenshots/UI_example.png)
 
 ## Struttura del Progetto
 
@@ -25,6 +27,7 @@ scripts/           Script CLI per fetching campioni API reali
 doc/
   api_samples/     Risposte reali SerpAPI usate da mock_real
   responses/       Risposte complete degli endpoint salvate per riferimento
+    search/        Risposte reali di /api/search testate via interfaccia web (FCO→IST→BKK, LHR→JFK→LAX)
 ```
 
 ## Setup
@@ -51,7 +54,13 @@ Per gli script esplorativi (solo se necessario):
 cd scripts && npm install
 ```
 
-Crea il file `backend/.env` e inserisci:
+Copia il file di esempio e inserisci la tua chiave SerpAPI:
+
+```bash
+cp backend/.env.example backend/.env
+```
+
+Il file `backend/.env` contiene:
 
 ```
 SERPAPI_KEY=la_tua_chiave_serpapi
@@ -178,7 +187,20 @@ SERPAPI_KEY=la_tua_chiave
 FLIGHT_PROVIDER=serpapi
 ```
 
-Riavvia il server e usa i comandi curl sopra. Tieni presente che `/api/discover` effettua 64 chiamate API in una sola richiesta (16 hub × 4 legs ciascuno): salvare sempre la risposta su file per evitare di consumare quota inutilmente.
+Riavvia il server. Tieni presente che `/api/discover` effettua 64 chiamate API in una sola richiesta (16 hub × 4 legs ciascuno): salvare sempre la risposta su file per evitare di consumare quota inutilmente.
+
+### Test minimo via interfaccia web (3 chiamate API)
+
+Il modo più economico per verificare che la chiave funzioni e che la pipeline sia integra end-to-end è usare direttamente il frontend:
+
+1. Imposta `FLIGHT_PROVIDER=serpapi` in `backend/.env`
+2. Avvia backend e frontend
+3. Apri `http://localhost:5173` e cerca un volo (es. FCO → IST → BKK)
+4. Una singola ricerca effettua esattamente 3 chiamate API (tratta 1, tratta 2, volo diretto di confronto)
+5. Se la card con i risultati appare con prezzi reali, tutto funziona
+6. Rimetti `FLIGHT_PROVIDER=mock_real` al termine del test
+
+Le risposte ottenute durante questi test sono salvate in `doc/responses/search/` come riferimento.
 
 ## Eseguire i Test
 

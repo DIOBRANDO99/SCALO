@@ -9,7 +9,8 @@ Questa è l'idea di SCALO. Uno strumento che fa questa ricerca in automatico.
 Fornisci origine, destinazione e date di viaggio. Ci sono due modalità:
 
 1. **Hai già una città in mente** — "Voglio fermarmi a Istanbul sulla strada per Bangkok." SCALO calcola il costo dei tre voli separati (andata tratta 1, andata tratta 2, ritorno), il prezzo del volo diretto e il risparmio.
-2. **Non sai dove fermarti** — SCALO controlla automaticamente 16 grandi hub aeroportuali nel mondo (Istanbul, Dubai, Doha, Londra, Singapore, ecc.) e restituisce una classifica ordinata per risparmio. L'offerta migliore è in cima.
+2. **Non sai dove fermarti** — SCALO seleziona automaticamente gli aeroporti candidati lungo la tua rotta usando un filtro geometrico basato sull'ellisse (metodo Haversine).
+
 
 Il motore è completo e funzionante. L'interfaccia web è completa.
 
@@ -18,7 +19,7 @@ Il motore è completo e funzionante. L'interfaccia web è completa.
 ```
 backend/           Server Express (API REST)
   adapters/        Wrapper per provider di dati di volo (serpapi, mock_fake, mock_real, mock_discover)
-  services/        Logica di business (flights.js)
+  services/        Logica di business (flights.js, hubs.js)
   routes/          Endpoint HTTP
   tests/           Suite di test Vitest
 client/            Interfaccia web (Vite + React + Tailwind)
@@ -179,6 +180,31 @@ Oppure da `backend/` o `client/` separatamente. Per watch mode: `npm run test:wa
 - `SearchForm.test.jsx` — toggle search/discover, visibilità del campo Stopover, parametri corretti passati all'handler
 - `DiscoverResults.test.jsx` — filtraggio dei risultati negativi, ordine per risparmio decrescente, valori di risparmio e prezzo totale, espansione/collasso
 - `App.test.jsx` — i tre scenari di risposta vuota (nessun volo, nessun diretto, scalo più costoso) con fetch mockato
+
+## Selezione Dinamica degli Hub (Metodo Ellisse)
+
+![Ellipse test map](doc/screenshots/example-test-map.png)
+
+In modalità Discover, il sistema seleziona automaticamente gli aeroporti candidati come scalo usando un metodo geometrico basato sull'ellisse con fuochi nei due aeroporti di partenza (A) e arrivo (B).
+
+**Come funziona:**
+
+1. Calcola la distanza geodetica (Haversine) tra A e B
+2. Definisce un budget massimo di distanza: `d_max = (1 + f) * d(A,B)`, dove `f` è il fattore di tolleranza (default 10%)
+3. Per ogni aeroporto `large_airport` nel dataset OurAirports (~1168 aeroporti con servizio schedulato), verifica se `d(A,C) + d(C,B) <= d_max`
+4. Gli aeroporti che soddisfano la condizione sono candidati validi per lo scalo
+
+Questo approccio garantisce che gli scali proposti siano geograficamente sensati per la rotta richiesta, evitando di interrogare aeroporti irrilevanti (es. Dubai per una rotta Milano-New York).
+
+Se le coordinate di partenza o arrivo non vengono trovate nel dataset, il sistema usa una lista di fallback con 16 hub principali mondiali.
+
+**Testare la selezione hub:**
+
+```bash
+cd backend/tests
+node test_hubs.js
+open hub_map.html  # oppure npx serve -p 8080 . e aprire http://localhost:8080/hub_map.html
+
 
 ## Licenze e Attribuzioni
 

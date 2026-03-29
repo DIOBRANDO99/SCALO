@@ -81,7 +81,7 @@ export default function App() {
                         className="mt-4 text-sm text-blue-600 underline"
                         onClick={() => setShowNegative(true)}
                     >
-                        Show flights anyway
+                        Show stopover flights
                     </button>
                 </EmptyState>
             )}

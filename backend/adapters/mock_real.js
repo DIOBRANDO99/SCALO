@@ -1,8 +1,15 @@
+// Serves pre-recorded SerpAPI responses from doc/samples/ for local development.
+//
+// To add a new route after fetching it with scripts/fetch_leg_responses.js:
+//   Add a line to ROUTES below:
+//     "MXP→DXB:2": JSON.parse(readFileSync(join(samplesDir, "leg_MXP_DXB_oneway.json"), "utf8")),
+//   Key format: "<DEPARTURE>→<ARRIVAL>:<type>"  where type 1 = round-trip, 2 = one-way
+
 import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
-const samplesDir = join(dirname(fileURLToPath(import.meta.url)), "../../doc/api_samples");
+const samplesDir = join(dirname(fileURLToPath(import.meta.url)), "../../doc/samples");
 
 const ROUTES = {
   "MXP→IST:2": JSON.parse(readFileSync(join(samplesDir, "leg_MXP_IST_oneway.json"),    "utf8")),

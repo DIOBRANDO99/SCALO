@@ -10,7 +10,7 @@ import { dirname, join } from "path";
 vi.stubEnv("FLIGHT_PROVIDER", "mock_real");
 import { searchWithStopover } from "../services/flights.js";
 
-const samplesDir = join(dirname(fileURLToPath(import.meta.url)), "../../doc/api_samples");
+const samplesDir = join(dirname(fileURLToPath(import.meta.url)), "../../doc/samples");
 
 function allFlights(raw) {
   return [...(raw.best_flights ?? []), ...(raw.other_flights ?? [])];

@@ -1,0 +1,7 @@
+{
+  "name": "scalo",
+  "private": true,
+  "scripts": {
+    "test": "npm test --prefix backend && npm test --prefix client"
+  }
+}

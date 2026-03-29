@@ -95,6 +95,19 @@ Apri `http://localhost:5173` nel browser. Il form presenta i seguenti campi:
 
 Il numero di notti allo scalo viene calcolato automaticamente dalla differenza tra Departure Date e Stopover Departure. Ad esempio, se parti il 10 giugno e riparti dallo scalo il 13 giugno, il sistema calcola 3 notti di scalo.
 
+## Comportamento con Risultati Vuoti
+
+L'interfaccia gestisce tre scenari quando una ricerca non produce risultati utili:
+
+| Scenario | Cosa succede | Messaggio |
+|----------|-------------|-----------|
+| **Nessun volo trovato** | Uno o più tratti non hanno opzioni di volo | Indica quali tratte specifiche non hanno risultati e suggerisce di cambiare date o scalo |
+| **Nessun volo diretto** | I voli con scalo sono stati trovati ma non esiste un volo diretto per confrontare il risparmio | Informa che il calcolo del risparmio non è disponibile, con opzione di vedere comunque i voli |
+| **Scalo più costoso** | Lo scalo costa più del volo diretto | Mostra la differenza di prezzo e permette di visualizzare comunque i dettagli |
+
+In tutti i casi l'utente può fare una nuova ricerca senza ricaricare la pagina.
+
+
 ## Provider di Dati di Volo
 
 Il backend supporta tre provider, selezionabili tramite `FLIGHT_PROVIDER` in `backend/.env`:

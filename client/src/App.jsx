@@ -2,6 +2,7 @@ import { useState } from "react";
 import SearchForm from "./SearchForm";
 import ResultCard from "./ResultCard";
 import LoadingSpinner from "./LoadingSpinner";
+import EmptyState from "./EmptyState";
 
 export default function App() {
     const [result, setResult] = useState(null);
@@ -36,10 +37,18 @@ export default function App() {
         }
     }
 
+    const emptyLegs = result
+        ? result.legs.filter((leg) => !leg.options || leg.options.length === 0)
+        : [];
+    const hasEmptyLegs = emptyLegs.length > 0;
+    const savingsNull = result && result.summary.savings === null;
+
     return (
         <div className="max-w-3xl mx-auto px-4 py-12">
             <h1 className="text-3xl font-bold mb-2">SCALO</h1>
-            <p className="text-gray-600 mb-8">Smart Connection &amp; Layover Optimizer</p>
+            <p className="text-gray-600 mb-8">
+                Smart Connection &amp; Layover Optimizer
+            </p>
 
             <SearchForm onSearch={handleSearch} loading={loading} />
 
@@ -52,21 +61,56 @@ export default function App() {
                 </div>
             )}
 
-            {result && result.summary.savings < 0 && !showNegative && (
-                <div className="bg-amber-50 border border-amber-200 text-amber-800 rounded-lg p-4 mb-4 flex items-center justify-between">
-                    <p className="text-sm">This stopover costs more than flying direct.</p>
-                    <button
-                        className="text-sm underline ml-4 shrink-0"
-                        onClick={() => setShowNegative(true)}
-                    >
-                        Show anyway
-                    </button>
-                </div>
+            {/* Scenario A: one or more legs have no flight options */}
+            {result && hasEmptyLegs && (
+                <EmptyState
+                    title="No flights found"
+                    description={`We couldn't find any flights for: ${emptyLegs
+                        .map((leg) => `${leg.origin} → ${leg.destination} on ${leg.date}`)
+                        .join(", ")}. Try different dates or a different stopover city.`}
+                />
             )}
 
-            {result && (result.summary.savings >= 0 || showNegative) && (
-                <ResultCard result={result} />
+            {/* Scenario B: flights found but no direct price to compare */}
+            {result && !hasEmptyLegs && savingsNull && (
+                <EmptyState
+                    title="No direct flight available"
+                    description="We found stopover flights but couldn't find a direct route to compare against. The savings calculation is not available for this route."
+                >
+                    <button
+                        className="mt-4 text-sm text-blue-600 underline"
+                        onClick={() => setShowNegative(true)}
+                    >
+                        Show stopover flights
+                    </button>
+                </EmptyState>
             )}
+
+            {/* Scenario C: stopover costs more than direct */}
+            {result &&
+                !hasEmptyLegs &&
+                !savingsNull &&
+                result.summary.savings < 0 &&
+                !showNegative && (
+                    <EmptyState
+                        title="No savings with this stopover"
+                        description={`Flying via ${result.stopover.iata} costs €${Math.abs(result.summary.savings)} more than the direct flight (€${result.summary.directPrice}). This stopover is not worth it for price — but you might still want to visit!`}
+                    >
+                        <button
+                            className="mt-4 text-sm text-blue-600 underline"
+                            onClick={() => setShowNegative(true)}
+                        >
+                            Show flights anyway
+                        </button>
+                    </EmptyState>
+                )}
+
+            {/* Show ResultCard only when legs are complete and savings are positive OR user clicked "show anyway" */}
+            {result &&
+                !hasEmptyLegs &&
+                ((!savingsNull && result.summary.savings >= 0) || showNegative) && (
+                    <ResultCard result={result} />
+                )}
         </div>
     );
 }

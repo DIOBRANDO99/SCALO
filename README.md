@@ -15,7 +15,7 @@ Il motore è completo e funzionante. L'interfaccia web è in fase di sviluppo.
 
 ```
 backend/           Server Express (API REST)
-  adapters/        Wrapper per provider di dati di volo (serpapi, mock_fake, mock_real)
+  adapters/        Wrapper per provider di dati di volo (serpapi, mock_fake, mock_real, mock_discover)
   services/        Logica di business (flights.js)
   routes/          Endpoint HTTP
   tests/           Suite di test Vitest
@@ -23,8 +23,8 @@ client/            Interfaccia web (Vite + React + Tailwind)
   src/             Componenti React e stili
 scripts/           Script CLI per fetching campioni API reali
 doc/
-  api_samples/     Risposte reali SerpAPI usate da mock_real
-  responses/       Risposte complete degli endpoint salvate per riferimento
+  samples/         Dati SerpAPI salvati — leg_* usati da mock_real, search_* e discover_* per riferimento
+  screenshots/     Screenshot dell'interfaccia
 ```
 
 ## Setup
@@ -84,16 +84,19 @@ curl http://localhost:3001/health
 
 Apri `http://localhost:5173` nel browser. Il form presenta i seguenti campi:
 
+Il form ha due modalità selezionabili tramite il toggle **Discover best stopover**:
+
+- **Modalità Search** (toggle off): specifica uno scalo preciso. Campi disponibili: Origin, Stopover, Destination, Departure Date, Nights at stopover, Return Date.
+- **Modalità Discover** (toggle on): SCALO cerca automaticamente lo scalo più conveniente tra i principali hub mondiali. Il campo Stopover scompare; i risultati vengono mostrati in una lista ordinata per risparmio (solo gli scali che costano meno del volo diretto).
+
 | Campo | Descrizione |
 |-------|-------------|
 | **Origin** | Codice IATA dell'aeroporto di partenza (es. MXP) |
-| **Stopover** | Codice IATA della città dove vuoi fermarti (es. IST) |
+| **Stopover** | Codice IATA della città dove vuoi fermarti (es. IST) — solo in modalità Search |
 | **Destination** | Codice IATA della destinazione finale (es. BKK) |
 | **Departure Date** | Quando parti dalla città di origine |
-| **Stopover Departure** | Quando riparti dalla città di scalo verso la destinazione |
+| **Nights at stopover** | Quante notti vuoi fermarti allo scalo (default: 3) |
 | **Return Date** | Quando torni dalla destinazione alla città di origine (opzionale) |
-
-Il numero di notti allo scalo viene calcolato automaticamente dalla differenza tra Departure Date e Stopover Departure. Ad esempio, se parti il 10 giugno e riparti dallo scalo il 13 giugno, il sistema calcola 3 notti di scalo.
 
 ## Comportamento con Risultati Vuoti
 
@@ -110,17 +113,18 @@ In tutti i casi l'utente può fare una nuova ricerca senza ricaricare la pagina.
 
 ## Provider di Dati di Volo
 
-Il backend supporta tre provider, selezionabili tramite `FLIGHT_PROVIDER` in `backend/.env`:
+Il backend supporta quattro provider, selezionabili tramite `FLIGHT_PROVIDER` in `backend/.env`:
 
 | Valore | Descrizione |
 |--------|-------------|
-| `mock_real` | Risposte reali SerpAPI salvate in `doc/api_samples/` — default per sviluppo |
+| `mock_real` | Risposte reali SerpAPI salvate in `doc/samples/` — default per sviluppo |
 | `mock_fake` | Dati inventati per testare casi limite (stopover caro, nessun volo diretto, ranking) |
+| `mock_discover` | Dati reali da `doc/samples/discover_MXP_BKK_2026-03-19.json` — tutti i 16 hub per MXP→BKK, usare per testare la modalità discover |
 | `serpapi` | SerpApi Google Flights live — solo per demo e deploy |
 
 ## Aggiornare i Dati di Mock Reali
 
-I file in `doc/api_samples/` sono risposte reali SerpAPI catturate in un momento specifico.
+I file in `doc/samples/` sono risposte reali SerpAPI catturate in un momento specifico.
 Per aggiornarli con prezzi freschi (richiede una `SERPAPI_KEY` valida in `scripts/.env`):
 
 ```bash
@@ -128,7 +132,7 @@ cd scripts && npm install
 node fetch_leg_responses.js
 ```
 
-Questo sovrascrive i 4 file in `doc/api_samples/` con nuove risposte live per i percorsi:
+Questo sovrascrive i 4 file in `doc/samples/` con nuove risposte live per i percorsi:
 - MXP → IST (solo andata)
 - IST → BKK (solo andata)
 - BKK → MXP (solo andata)
@@ -192,7 +196,7 @@ Non si specifica lo scalo — il servizio li prova tutti e restituisce un array 
 Per salvare la risposta in un file (utile con `FLIGHT_PROVIDER=serpapi` per non consumare quota inutilmente):
 
 ```bash
-curl -s -X POST http://localhost:3001/api/discover -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}' | tee ../doc/responses/discover_MXP_BKK_$(date +%Y-%m-%d).json
+curl -s -X POST http://localhost:3001/api/discover -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}' | tee ../doc/samples/discover_MXP_BKK_$(date +%Y-%m-%d).json
 ```
 
 In caso di parametri mancanti o non validi il server risponde con HTTP 400 e un messaggio esplicativo. In caso di quota API esaurita risponde con HTTP 429.

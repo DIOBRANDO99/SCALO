@@ -1,7 +1,8 @@
 const adapterMap = {
-  serpapi:   "../adapters/serpapi.js",
-  mock_fake: "../adapters/mock_fake.js",
-  mock_real: "../adapters/mock_real.js",
+  serpapi:        "../adapters/serpapi.js",
+  mock_fake:      "../adapters/mock_fake.js",
+  mock_real:      "../adapters/mock_real.js",
+  mock_discover:  "../adapters/mock_discover.js",
 };
 
 async function getAdapter() {

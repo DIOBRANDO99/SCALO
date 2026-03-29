@@ -2,7 +2,7 @@ import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
-const samplesDir = join(dirname(fileURLToPath(import.meta.url)), "../../doc/api_samples");
+const samplesDir = join(dirname(fileURLToPath(import.meta.url)), "../../doc/samples");
 
 const ROUTES = {
   "MXP→IST:2": JSON.parse(readFileSync(join(samplesDir, "leg_MXP_IST_oneway.json"),    "utf8")),

@@ -8,15 +8,18 @@ export default function SearchForm({ onSearch, loading }) {
         const fd = new FormData(e.target);
         const outboundDate = fd.get("outboundDate");
 
-        onSearch({
-            mode: discoverMode ? "discover" : "search",
+        const params = {
+            mode:           discoverMode ? "discover" : "search",
             origin:         fd.get("origin").trim().toUpperCase(),
             destination:    fd.get("destination").trim().toUpperCase(),
-            stopover:       discoverMode ? undefined : fd.get("stopover").trim().toUpperCase(),
             outboundDate,
             returnDate:     fd.get("returnDate") || null,
             stopoverNights: parseInt(fd.get("stopoverNights"), 10) || 3,
-        });
+        };
+        if (!discoverMode) {
+            params.stopover = fd.get("stopover").trim().toUpperCase();
+        }
+        onSearch(params);
     }
 
     return (

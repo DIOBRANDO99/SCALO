@@ -21,7 +21,7 @@ for (const leg of LEGS) {
   const { key, ...params } = leg;
   process.stdout.write(`fetching ${key}...`);
   const response = await getJson({ ...BASE, ...params });
-  writeFileSync(`../doc/api_samples/leg_${key}.json`, JSON.stringify(response, null, 2));
+  writeFileSync(`../doc/samples/leg_${key}.json`, JSON.stringify(response, null, 2));
   console.log(` saved to doc/leg_${key}.json`);
 }
 

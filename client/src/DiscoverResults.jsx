@@ -6,7 +6,7 @@ export default function DiscoverResults({ results }) {
     const [expandedIdx, setExpandedIdx] = useState(null);
 
     const positive = results.filter(
-        r => r.summary.savings !== null && r.summary.savings > 0
+        r => r.summary?.savings !== null && r.summary?.savings > 0
     );
 
     if (positive.length === 0) {

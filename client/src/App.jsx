@@ -3,9 +3,11 @@ import SearchForm from "./SearchForm";
 import ResultCard from "./ResultCard";
 import LoadingSpinner from "./LoadingSpinner";
 import EmptyState from "./EmptyState";
+import DiscoverResults from "./DiscoverResults";
 
 export default function App() {
     const [result, setResult] = useState(null);
+    const [discoverResults, setDiscoverResults] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [showNegative, setShowNegative] = useState(false);
@@ -14,13 +16,17 @@ export default function App() {
         setLoading(true);
         setError(null);
         setResult(null);
+        setDiscoverResults(null);
         setShowNegative(false);
 
+        const { mode, ...body } = params;
+        const endpoint = mode === "discover" ? "/api/discover" : "/api/search";
+
         try {
-            const res = await fetch("/api/search", {
+            const res = await fetch(endpoint, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(params),
+                body: JSON.stringify(body),
             });
 
             if (!res.ok) {
@@ -29,7 +35,11 @@ export default function App() {
             }
 
             const data = await res.json();
-            setResult(data);
+            if (mode === "discover") {
+                setDiscoverResults(data);
+            } else {
+                setResult(data);
+            }
         } catch (err) {
             setError(err.message);
         } finally {
@@ -60,6 +70,9 @@ export default function App() {
                     <p className="text-sm">{error}</p>
                 </div>
             )}
+
+            {/* Discover mode results */}
+            {discoverResults && <DiscoverResults results={discoverResults} />}
 
             {/* Scenario A: one or more legs have no flight options */}
             {result && hasEmptyLegs && (

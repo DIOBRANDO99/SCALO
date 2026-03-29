@@ -1,5 +1,7 @@
 # SCALO
 
+![SCALO UI](doc/screenshots/UI_example.png)
+
 Quando voli da Milano a Bangkok, la compagnia aerea potrebbe chiederti €1.176 per un volo diretto. Ma c'è qualcosa che molti viaggiatori non sanno: a volte è possibile comprare due biglietti separati — Milano-Istanbul e poi Istanbul-Bangkok — e pagare molto meno. In questo caso €629 invece di €1.176, con un risparmio di €547. E in più hai uno scalo a Istanbul dove puoi fermarti qualche giorno prima di proseguire.
 
 Questa è l'idea di SCALO. Uno strumento che fa questa ricerca in automatico.
@@ -177,3 +179,7 @@ Oppure da `backend/` o `client/` separatamente. Per watch mode: `npm run test:wa
 - `SearchForm.test.jsx` — toggle search/discover, visibilità del campo Stopover, parametri corretti passati all'handler
 - `DiscoverResults.test.jsx` — filtraggio dei risultati negativi, ordine per risparmio decrescente, valori di risparmio e prezzo totale, espansione/collasso
 - `App.test.jsx` — i tre scenari di risposta vuota (nessun volo, nessun diretto, scalo più costoso) con fetch mockato
+
+## Licenze e Attribuzioni
+
+Dati aeroportuali da [OpenFlights](https://openflights.org/data) — disponibili sotto [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).

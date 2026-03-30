@@ -181,31 +181,40 @@ Oppure da `backend/` o `client/` separatamente. Per watch mode: `npm run test:wa
 - `DiscoverResults.test.jsx` — filtraggio dei risultati negativi, ordine per risparmio decrescente, valori di risparmio e prezzo totale, espansione/collasso
 - `App.test.jsx` — i tre scenari di risposta vuota (nessun volo, nessun diretto, scalo più costoso) con fetch mockato
 
-## Selezione Dinamica degli Hub (Metodo Ellisse)
+
+## Selezione Dinamica degli Hub
 
 ![Ellipse test map](doc/screenshots/example-test-map.png)
 
-In modalità Discover, il sistema seleziona automaticamente gli aeroporti candidati come scalo usando un metodo geometrico basato sull'ellisse con fuochi nei due aeroporti di partenza (A) e arrivo (B).
+In modalità Discover, il sistema seleziona gli aeroporti candidati per lo scalo attraverso un pipeline a 2 livelli, senza consumare chiamate API:
+
+| Livello | Cosa fa | Input → Output |
+|---------|---------|----------------|
+| **1. Ellipse** | Filtro geografico Haversine: `d(A,C) + d(C,B) <= (1 + f) * d(A,B)` con f=0.2 | ~1168 → ~100-400 |
+| **2. Route filter** | Verifica esistenza rotte A→S e S→B tramite OpenFlights (solo compagnie attive) | ~100-400 → ~20-80 |
 
 **Come funziona:**
 
 1. Calcola la distanza geodetica (Haversine) tra A e B
-2. Definisce un budget massimo di distanza: `d_max = (1 + f) * d(A,B)`, dove `f` è il fattore di tolleranza (default 10%)
+2. Definisce un budget massimo di distanza: `d_max = (1 + f) * d(A,B)`, dove `f` è il fattore di tolleranza (default 20%)
 3. Per ogni aeroporto `large_airport` nel dataset OurAirports (~1168 aeroporti con servizio schedulato), verifica se `d(A,C) + d(C,B) <= d_max`
-4. Gli aeroporti che soddisfano la condizione sono candidati validi per lo scalo
+4. Filtra ulteriormente verificando che esistano rotte reali A→S e S→B nel dataset OpenFlights, considerando solo compagnie aeree attive
 
-Questo approccio garantisce che gli scali proposti siano geograficamente sensati per la rotta richiesta, evitando di interrogare aeroporti irrilevanti (es. Dubai per una rotta Milano-New York).
+Questo approccio garantisce che gli scali proposti siano geograficamente sensati e abbiano connessioni aeree reali, evitando di interrogare aeroporti irrilevanti.
 
 Se le coordinate di partenza o arrivo non vengono trovate nel dataset, il sistema usa una lista di fallback con 16 hub principali mondiali.
 
-**Testare la selezione hub:**
+**Testare il pipeline di selezione hub:**
 
 ```bash
 cd backend/tests
 node test_hubs.js
-open hub_map.html  # oppure npx serve -p 8080 . e aprire http://localhost:8080/hub_map.html
+npx serve -p 8080 .   # poi aprire http://localhost:8080/hub_map.html
+```
+La mappa mostra due livelli di candidati: grigio (solo ellisse, senza rotte confermate) e arancione (rotte A→S e S→B verificate).
 
 
 ## Licenze e Attribuzioni
 
-Dati aeroportuali da [OpenFlights](https://openflights.org/data) — disponibili sotto [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
+Dati aeroportuali da OurAirports — pubblico dominio.
+Dati rotte e compagnie aeree da OpenFlights — disponibili sotto Open Database License (ODbL).

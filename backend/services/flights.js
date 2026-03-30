@@ -1,4 +1,5 @@
-import { findHubs } from "./hubs.js";
+import { selectBestHubs } from "./hubs.js";
+
 
 const adapterMap = {
   serpapi:        "../adapters/serpapi.js",
@@ -106,7 +107,7 @@ export async function searchWithStopover({ origin, destination, stopover, outbou
 }
 
 export async function discoverStopovers({ origin, destination, outboundDate, returnDate, stopoverNights }) {
-    const hubs = findHubs(origin, destination) ?? FALLBACK_HUBS;
+    const hubs = selectBestHubs(origin, destination);
 
     const results = await Promise.all(
         hubs.map(city =>

@@ -1,3 +1,5 @@
+import { findHubs } from "./hubs.js";
+
 const adapterMap = {
   serpapi:        "../adapters/serpapi.js",
   mock_fake:      "../adapters/mock_fake.js",
@@ -10,7 +12,7 @@ async function getAdapter() {
   return import(path);
 }
 
-const HUB_CITIES = [
+const FALLBACK_HUBS = [
   "IST", "AUH", "DOH", "DXB", "LHR",
   "CDG", "FRA", "ZRH", "WAW", "MCT",
   "BAH", "MAD", "SIN", "HKG", "JFK", "ORD"
@@ -104,13 +106,15 @@ export async function searchWithStopover({ origin, destination, stopover, outbou
 }
 
 export async function discoverStopovers({ origin, destination, outboundDate, returnDate, stopoverNights }) {
-  const results = await Promise.all(
-    HUB_CITIES.map(city =>
-      searchWithStopover({ origin, destination, stopover: city, outboundDate, returnDate, stopoverNights })
-    )
-  );
+    const hubs = findHubs(origin, destination) ?? FALLBACK_HUBS;
 
-  return results
-    .filter(r => r.summary.bestCombinedPrice !== null)
-    .sort((a, b) => (b.summary.savings ?? -Infinity) - (a.summary.savings ?? -Infinity));
+    const results = await Promise.all(
+        hubs.map(city =>
+            searchWithStopover({ origin, destination, stopover: city, outboundDate, returnDate, stopoverNights })
+        )
+    );
+
+    return results
+        .filter(r => r.summary.bestCombinedPrice !== null)
+        .sort((a, b) => (b.summary.savings ?? -Infinity) - (a.summary.savings ?? -Infinity));
 }

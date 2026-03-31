@@ -8,6 +8,7 @@ const DATASET_DIR = join(__dirname, "../../dataset");
 let airports = null;
 let routeGraph = null;
 let airportStats = null;
+let nameMap = null;
 
 function parseCSVLine(line) {
     const fields = [];
@@ -67,7 +68,6 @@ function loadRouteGraph() {
     for (const line of airlinesRaw.split("\n")) {
         if (!line.trim()) continue;
         const fields = line.split(",");
-        // fields: ID, Name, Alias, IATA, ICAO, Callsign, Country, Active
         const iata = fields[3]?.replace(/"/g, "").trim();
         const active = fields[7]?.replace(/"/g, "").trim();
         if (active === "Y" && iata && iata.length >= 2 && iata !== "-" && iata !== "\\N") {
@@ -83,7 +83,6 @@ function loadRouteGraph() {
     for (const line of routesRaw.split("\n")) {
         if (!line.trim()) continue;
         const fields = line.split(",");
-        // fields: Airline, AirlineID, Source, SourceID, Dest, DestID, Codeshare, Stops, Equipment
         const airline = fields[0]?.trim();
         const source = fields[2]?.trim();
         const dest = fields[4]?.trim();
@@ -110,6 +109,28 @@ function loadRouteGraph() {
     return { routeGraph, airportStats };
 }
 
+function buildNameMap() {
+    if (nameMap) return nameMap;
+
+    const raw = readFileSync(join(DATASET_DIR, "airports.csv"), "utf8");
+    const lines = raw.split("\n");
+    const header = parseCSVLine(lines[0]);
+    const iataIdx = header.indexOf("iata_code");
+    const nameIdx = header.indexOf("name");
+
+    nameMap = new Map();
+    for (let i = 1; i < lines.length; i++) {
+        if (!lines[i].trim()) continue;
+        const fields = parseCSVLine(lines[i]);
+        const iata = fields[iataIdx];
+        const name = fields[nameIdx];
+        if (iata && iata.length === 3 && name) {
+            nameMap.set(iata, name);
+        }
+    }
+    return nameMap;
+}
+
 function haversine(lat1, lon1, lat2, lon2) {
     const R = 6371;
     const toRad = (deg) => (deg * Math.PI) / 180;
@@ -119,6 +140,12 @@ function haversine(lat1, lon1, lat2, lon2) {
         Math.sin(dLat / 2) ** 2 +
         Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
     return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function hasRoute(fromIata, toIata) {
+    const { routeGraph } = loadRouteGraph();
+    const dests = routeGraph.get(fromIata);
+    return dests ? dests.has(toIata) : false;
 }
 
 /**
@@ -140,8 +167,7 @@ export function findHubs(originIata, destinationIata, factor = 0.2) {
         const dAC = haversine(origin.lat, origin.lon, airport.lat, airport.lon);
         const dCB = haversine(airport.lat, airport.lon, dest.lat, dest.lon);
         if (dAC + dCB <= dMax) {
-            const detourPercent = ((dAC + dCB - dAB) / dAB) * 100;
-            hubs.push({ iata: airport.iata, detourPercent });
+            hubs.push(airport.iata);
         }
     }
 
@@ -150,56 +176,57 @@ export function findHubs(originIata, destinationIata, factor = 0.2) {
 }
 
 /**
- * Filters hubs to only those with routes A→S AND S→B.
+ * Returns hub candidates with full details for the frontend map.
+ * Pipeline: ellipse filter → route existence filter → enrich with details.
+ * @param {string} originIata
+ * @param {string} destinationIata
+ * @param {number} factor - ellipse tolerance (default 0.2)
+ * @returns {object|null} { origin, destination, directDistance, hubs[] }
  */
-export function filterByRoutes(hubs, originIata, destinationIata) {
-    const { routeGraph } = loadRouteGraph();
+export function getHubsWithDetails(originIata, destinationIata, factor = 0.2) {
+    const allAirports = loadAirports();
 
-    const originDests = routeGraph.get(originIata) ?? new Set();
-    const filtered = [];
+    const origin = allAirports.find((a) => a.iata === originIata);
+    const dest = allAirports.find((a) => a.iata === destinationIata);
 
-    for (const hub of hubs) {
-        const hasRouteFromA = originDests.has(hub.iata);
-        const hubDests = routeGraph.get(hub.iata) ?? new Set();
-        const hasRouteToB = hubDests.has(destinationIata);
+    if (!origin || !dest) return null;
 
-        if (hasRouteFromA && hasRouteToB) {
-            filtered.push(hub);
+    const dAB = haversine(origin.lat, origin.lon, dest.lat, dest.lon);
+    const dMax = (1 + factor) * dAB;
+
+    const names = buildNameMap();
+    const { airportStats } = loadRouteGraph();
+
+    const hubs = [];
+    for (const airport of allAirports) {
+        if (airport.iata === originIata || airport.iata === destinationIata) continue;
+
+        const dAC = haversine(origin.lat, origin.lon, airport.lat, airport.lon);
+        const dCB = haversine(airport.lat, airport.lon, dest.lat, dest.lon);
+
+        if (dAC + dCB <= dMax) {
+            if (!hasRoute(originIata, airport.iata) || !hasRoute(airport.iata, destinationIata)) continue;
+
+            const detourPercent = Math.round(((dAC + dCB - dAB) / dAB) * 1000) / 10;
+            const stats = airportStats.get(airport.iata);
+
+            hubs.push({
+                iata: airport.iata,
+                lat: airport.lat,
+                lon: airport.lon,
+                name: names.get(airport.iata) ?? airport.iata,
+                routeCount: stats?.totalRoutes ?? 0,
+                detourPercent,
+            });
         }
     }
 
-    console.log(`[hubs] Route filter: ${hubs.length} → ${filtered.length} (A→S and S→B exist)`);
-    return filtered;
-}
+    console.log(`[hubs] getHubsWithDetails ${originIata}→${destinationIata}: ${hubs.length} hubs with details`);
 
-const FALLBACK_HUBS = [
-    "IST", "AUH", "DOH", "DXB", "LHR",
-    "CDG", "FRA", "ZRH", "WAW", "MCT",
-    "BAH", "MAD", "SIN", "HKG", "JFK", "ORD",
-];
-
-/**
- * Pipeline: ellipse → route filter. Returns all hubs with verified routes.
- * @param {string} originIata
- * @param {string} destinationIata
- * @param {object} options
- * @param {number} options.factor - ellipse tolerance (default 0.1)
- * @returns {string[]} IATA codes of hubs with A→S and S→B routes
- */
-export function selectBestHubs(originIata, destinationIata, { factor = 0.1 } = {}) {
-    const ellipseHubs = findHubs(originIata, destinationIata, factor);
-    if (!ellipseHubs || ellipseHubs.length === 0) {
-        console.log(`[hubs] Ellipse returned nothing, using fallback`);
-        return FALLBACK_HUBS;
-    }
-
-    const routed = filterByRoutes(ellipseHubs, originIata, destinationIata);
-    if (routed.length === 0) {
-        console.log(`[hubs] No routed hubs found, using fallback`);
-        return FALLBACK_HUBS;
-    }
-
-    const result = routed.map((h) => h.iata);
-    console.log(`[hubs] Selected ${result.length} routed hubs: ${result.join(", ")}`);
-    return result;
+    return {
+        origin: { iata: originIata, lat: origin.lat, lon: origin.lon, name: names.get(originIata) ?? originIata },
+        destination: { iata: destinationIata, lat: dest.lat, lon: dest.lon, name: names.get(destinationIata) ?? destinationIata },
+        directDistance: Math.round(dAB),
+        hubs,
+    };
 }

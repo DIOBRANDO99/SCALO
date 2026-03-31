@@ -1,4 +1,5 @@
 import "dotenv/config";
+import hubsRouter from "./routes/hubsRoute.js";
 import express from "express";
 import cors from "cors";
 import searchRouter from "./routes/search.js";
@@ -9,6 +10,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
+app.use("/api/hubs", hubsRouter);
 
 app.get("/health", (_req, res) => {
   res.json({

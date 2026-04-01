@@ -169,13 +169,15 @@ export default function ResultCard({ result }) {
 
   const [selectedIdx, setSelectedIdx] = useState(() =>
     legs.map((leg) => {
-      const minPrice = Math.min(...leg.options.map((o) => o.price));
+      const validOptions = leg.options.filter((o) => typeof o.price === "number");
+      if (validOptions.length === 0) return 0;
+      const minPrice = Math.min(...validOptions.map((o) => o.price));
       return leg.options.findIndex((o) => o.price === minPrice);
     })
   );
 
   const selectedOptions = legs.map((leg, i) => leg.options[selectedIdx[i]]);
-  const totalPrice = selectedOptions.reduce((sum, o) => sum + o.price, 0);
+  const totalPrice = selectedOptions.reduce((sum, o) => sum + (o?.price ?? 0), 0);
   const savings = summary.directPrice != null ? summary.directPrice - totalPrice : null;
 
   const destination = legs.find((l) => l.id === "outbound2")?.destination ?? legs[1]?.destination;

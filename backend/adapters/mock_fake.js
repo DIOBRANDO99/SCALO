@@ -128,24 +128,6 @@ const ROUTES = {
     other_flights: []
   },
 
-  // --- leg1 for no-direct scenario ---
-  "MXP→IST_JFK": {
-    best_flights: [
-      {
-        flights: [
-          { departure_airport: { id: "MXP" }, arrival_airport: { id: "IST" }, duration: 175, airline: "Turkish Airlines", flight_number: "TK 1874" }
-        ],
-        layovers: [],
-        total_duration: 175,
-        carbon_emissions: { this_flight: 127000, typical_for_this_route: 150000, difference_percent: -15 },
-        price: 120,
-        type: "One way",
-        departure_token: "mock_test_token_MXP_IST_JFK"
-      }
-    ],
-    other_flights: []
-  },
-
   // --- leg2 for no-direct scenario ---
   "IST→JFK": {
     best_flights: [

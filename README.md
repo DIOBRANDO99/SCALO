@@ -18,7 +18,7 @@ Il motore è completo e funzionante. L'interfaccia web è completa.
 
 ```
 backend/           Server Express (API REST)
-  adapters/        Wrapper per provider di dati di volo (serpapi, mock_fake, mock_real, mock_discover)
+  adapters/        Wrapper per provider di dati di volo (serpapi, mock_fake, mock_real, mock_discover, mock_demo)
   services/        Logica di business (flights.js, hubs.js)
   routes/          Endpoint HTTP
   tests/           Suite di test Vitest
@@ -26,9 +26,11 @@ client/            Interfaccia web (Vite + React + Tailwind)
   src/             Componenti React e stili
   src/tests/       Suite di test Vitest + React Testing Library
 scripts/           Script CLI per fetching campioni API reali
+dataset/           Dati OpenFlights — airports.csv, airlines.dat, routes.dat
 doc/
   samples/         Dati SerpAPI salvati — leg_* usati da mock_real, search_* e discover_* per riferimento
   screenshots/     Screenshot dell'interfaccia
+  rapporto.tex     Relazione di progetto
 ```
 
 ## Setup
@@ -89,7 +91,7 @@ curl http://localhost:3001/health
 Apri `http://localhost:5173` nel browser. Il form ha due modalità selezionabili tramite il toggle **Discover best stopover**:
 
 - **Modalità Search** (toggle off): specifica uno scalo preciso. Campi disponibili: Origin, Stopover, Destination, Departure Date, Nights at stopover, Return Date.
-- **Modalità Discover** (toggle on): SCALO cerca automaticamente lo scalo più conveniente tra i principali hub mondiali. Il campo Stopover scompare; i risultati vengono mostrati in una lista ordinata per risparmio (solo gli scali che costano meno del volo diretto).
+- **Modalità Discover** (toggle on): SCALO calcola gli scali candidati lungo la rotta e li mostra su una mappa interattiva. I punti arancioni sono hub con rotte verificate — clicca su uno per avviare la ricerca su quel corridoio.
 
 | Campo | Descrizione |
 |-------|-------------|
@@ -120,47 +122,20 @@ Il backend supporta quattro provider, selezionabili tramite `FLIGHT_PROVIDER` in
 |--------|-------------|
 | `mock_real` | Risposte reali SerpAPI salvate in `doc/samples/` — default per sviluppo |
 | `mock_fake` | Dati inventati per testare casi limite (stopover caro, nessun volo diretto, ranking) |
-| `mock_discover` | Dati reali da `doc/samples/discover_MXP_BKK_2026-03-19.json` — tutti i 16 hub per MXP→BKK, usare per testare la modalità discover |
+| `mock_demo` | Dati reali per quattro corridoi demo: FCO→AMS, CDG→BKK, LHR→SIN, GRU→NRT |
+| `mock_discover` | Dati reali da `doc/samples/discover_MXP_BKK_2026-03-19.json` — 16 hub per MXP→BKK |
 | `serpapi` | SerpApi Google Flights live — solo per demo e deploy |
 
-## Testare gli Endpoint HTTP
+## Variabili d'Ambiente
 
-Con il server avviato (`npm run dev` da `backend/`), è possibile testare gli endpoint con `curl`.
+Tutte le variabili vanno in `backend/.env`:
 
-**POST /api/search** — cerca i voli con uno scalo specifico:
-
-```bash
-curl -s -X POST http://localhost:3001/api/search -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","stopover":"IST","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}'
-```
-
-La risposta include i tre legs (andata tratta 1, andata tratta 2, ritorno) con il prezzo migliore per ciascuno, più un summary con `bestCombinedPrice`, `directPrice` e `savings`.
-
-**POST /api/discover** — trova automaticamente lo scalo più conveniente tra tutti i 16 hub city:
-
-```bash
-curl -s -X POST http://localhost:3001/api/discover -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}'
-```
-
-Non si specifica lo scalo — il servizio li prova tutti e restituisce un array ordinato per risparmio decrescente. Il primo elemento è lo scalo più conveniente.
-
-Per salvare la risposta in un file (utile con `FLIGHT_PROVIDER=serpapi` per non consumare quota inutilmente):
-
-```bash
-curl -s -X POST http://localhost:3001/api/discover -H "Content-Type: application/json" -d '{"origin":"MXP","destination":"BKK","outboundDate":"2026-06-10","returnDate":"2026-06-20","stopoverNights":3}' | tee ../doc/samples/discover_MXP_BKK_$(date +%Y-%m-%d).json
-```
-
-In caso di parametri mancanti o non validi il server risponde con HTTP 400 e un messaggio esplicativo. In caso di quota API esaurita risponde con HTTP 429.
-
-## Usare la API Live
-
-Per chiamate reali a Google Flights tramite SerpAPI, imposta in `backend/.env`:
-
-```
-SERPAPI_KEY=la_tua_chiave
-FLIGHT_PROVIDER=serpapi
-```
-
-Riavvia il server e usa i comandi curl sopra. Tieni presente che `/api/discover` effettua 64 chiamate API in una sola richiesta (16 hub × 4 legs ciascuno) — salvare sempre la risposta su file per evitare di consumare quota inutilmente.
+| Variabile | Descrizione |
+|-----------|-------------|
+| `SERPAPI_KEY` | Chiave API SerpAPI — necessaria solo con `FLIGHT_PROVIDER=serpapi` |
+| `FLIGHT_PROVIDER` | Provider dati di volo (vedi tabella sopra) — default `mock_real` |
+| `PORT` | Porta del server backend — default `3001` |
+| `SAVE_SAMPLES` | Se `true`, ogni risposta SerpAPI viene salvata in `doc/samples/` — utile per catturare nuovi dati reali senza script separati |
 
 ## Eseguire i Test
 
@@ -178,7 +153,6 @@ Oppure da `backend/` o `client/` separatamente. Per watch mode: `npm run test:wa
 
 **Frontend** (`client/src/tests/`):
 - `SearchForm.test.jsx` — toggle search/discover, visibilità del campo Stopover, parametri corretti passati all'handler
-- `DiscoverResults.test.jsx` — filtraggio dei risultati negativi, ordine per risparmio decrescente, valori di risparmio e prezzo totale, espansione/collasso
 - `App.test.jsx` — i tre scenari di risposta vuota (nessun volo, nessun diretto, scalo più costoso) con fetch mockato
 
 
@@ -203,15 +177,6 @@ In modalità Discover, il sistema seleziona gli aeroporti candidati per lo scalo
 Questo approccio garantisce che gli scali proposti siano geograficamente sensati e abbiano connessioni aeree reali, evitando di interrogare aeroporti irrilevanti.
 
 Se le coordinate di partenza o arrivo non vengono trovate nel dataset, il sistema usa una lista di fallback con 16 hub principali mondiali.
-
-**Testare il pipeline di selezione hub:**
-
-```bash
-cd backend/tests
-node test_hubs.js
-npx serve -p 8080 .   # poi aprire http://localhost:8080/hub_map.html
-```
-La mappa mostra due livelli di candidati: grigio (solo ellisse, senza rotte confermate) e arancione (rotte A→S e S→B verificate).
 
 
 ## Licenze e Attribuzioni

@@ -1,10 +1,11 @@
-import { getHubsWithDetails, findHubs } from "./hubs.js";
+import { getHubsWithDetails } from "./hubs.js";
 
 const adapterMap = {
     serpapi:        "../adapters/serpapi.js",
     mock_fake:      "../adapters/mock_fake.js",
     mock_real:      "../adapters/mock_real.js",
     mock_discover:  "../adapters/mock_discover.js",
+    mock_demo:      "../adapters/mock_demo.js",
 };
 
 async function getAdapter() {

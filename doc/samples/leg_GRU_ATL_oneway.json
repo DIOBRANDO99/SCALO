@@ -1,0 +1,1062 @@
+{
+  "search_metadata": {
+    "id": "69cd046e874d5007513e6a34",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/2Kf_Wu8glaNutFPQkqXEcA/69cd046e874d5007513e6a34.json",
+    "created_at": "2026-04-01 11:41:34 UTC",
+    "processed_at": "2026-04-01 11:41:34 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNHUlVyBwgBEgNBVExAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/2Kf_Wu8glaNutFPQkqXEcA/69cd046e874d5007513e6a34.html",
+    "prettify_html_file": "https://serpapi.com/searches/2Kf_Wu8glaNutFPQkqXEcA/69cd046e874d5007513e6a34.prettify",
+    "total_time_taken": 0.84
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "GRU",
+    "arrival_id": "ATL",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 10:15"
+          },
+          "arrival_airport": {
+            "name": "Miami International Airport",
+            "id": "MIA",
+            "time": "2026-06-10 17:40"
+          },
+          "duration": 505,
+          "airplane": "Boeing 777",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8194",
+          "ticket_also_sold_by": [
+            "Delta"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 346 kg"
+          ],
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Miami International Airport",
+            "id": "MIA",
+            "time": "2026-06-10 19:16"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-10 21:34"
+          },
+          "duration": 138,
+          "airplane": "Airbus A321",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 1323",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "Live TV",
+            "Carbon emissions estimate: 99 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 96,
+          "name": "Miami International Airport",
+          "id": "MIA"
+        }
+      ],
+      "total_duration": 739,
+      "carbon_emissions": {
+        "this_flight": 446000,
+        "typical_for_this_route": 497000,
+        "difference_percent": -10
+      },
+      "price": 664,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZzFNUVRneE9UUjhSRXd4TXpJekdnc0lwNFlFRUFJYUEwVlZVamdjY0tuWkJBPT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJNSUEiLG51bGwsIkxBIiwiODE5NCJdLFsiTUlBIiwiMjAyNi0wNi0xMCIsIkFUTCIsbnVsbCwiREwiLCIxMzIzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 23:00"
+          },
+          "arrival_airport": {
+            "name": "Miami International Airport",
+            "id": "MIA",
+            "time": "2026-06-11 06:25"
+          },
+          "duration": 505,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8190",
+          "ticket_also_sold_by": [
+            "Delta"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 324 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Miami International Airport",
+            "id": "MIA",
+            "time": "2026-06-11 08:12"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-11 10:15"
+          },
+          "duration": 123,
+          "airplane": "Boeing 757",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 1261",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "Live TV",
+            "Carbon emissions estimate: 124 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 107,
+          "name": "Miami International Airport",
+          "id": "MIA"
+        }
+      ],
+      "total_duration": 735,
+      "carbon_emissions": {
+        "this_flight": 449000,
+        "typical_for_this_route": 497000,
+        "difference_percent": -10
+      },
+      "price": 664,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZzFNUVRneE9UQjhSRXd4TWpZeEdnc0lwNFlFRUFJYUEwVlZVamdjY0tuWkJBPT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJNSUEiLG51bGwsIkxBIiwiODE5MCJdLFsiTUlBIiwiMjAyNi0wNi0xMSIsIkFUTCIsbnVsbCwiREwiLCIxMjYxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 22:50"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-11 07:49"
+          },
+          "duration": 599,
+          "airplane": "Airbus A330",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 104",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 454 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 599,
+      "carbon_emissions": {
+        "this_flight": 455000,
+        "typical_for_this_route": 497000,
+        "difference_percent": -8
+      },
+      "price": 723,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZ1ZFVERFd05Cb0xDS0MwQkJBQ0dnTkZWVkk0SEhEUWpnVT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJBVEwiLG51bGwsIkRMIiwiMTA0Il1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 08:30"
+          },
+          "arrival_airport": {
+            "name": "Orlando International Airport",
+            "id": "MCO",
+            "time": "2026-06-10 16:20"
+          },
+          "duration": 530,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8126",
+          "ticket_also_sold_by": [
+            "Delta"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 383 kg"
+          ],
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Orlando International Airport",
+            "id": "MCO",
+            "time": "2026-06-10 18:45"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-10 20:41"
+          },
+          "duration": 116,
+          "airplane": "Airbus A321",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 1742",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "Live TV",
+            "Carbon emissions estimate: 80 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 145,
+          "name": "Orlando International Airport",
+          "id": "MCO"
+        }
+      ],
+      "total_duration": 791,
+      "carbon_emissions": {
+        "this_flight": 464000,
+        "typical_for_this_route": 497000,
+        "difference_percent": -7
+      },
+      "price": 664,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZzFNUVRneE1qWjhSRXd4TnpReUdnc0lwNFlFRUFJYUEwVlZVamdjY0tuWkJBPT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJNQ08iLG51bGwsIkxBIiwiODEyNiJdLFsiTUNPIiwiMjAyNi0wNi0xMCIsIkFUTCIsbnVsbCwiREwiLCIxNzQyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 07:30"
+          },
+          "arrival_airport": {
+            "name": "New Jorge Chávez International Airport",
+            "id": "LIM",
+            "time": "2026-06-10 10:50"
+          },
+          "duration": 320,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8202",
+          "ticket_also_sold_by": [
+            "Delta"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 217 kg"
+          ],
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "New Jorge Chávez International Airport",
+            "id": "LIM",
+            "time": "2026-06-10 12:05"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-10 20:35"
+          },
+          "duration": 450,
+          "airplane": "Boeing 767",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 2482",
+          "ticket_also_sold_by": [
+            "Delta"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 325 kg"
+          ],
+          "plane_and_crew_by": "Latam Airlines Peru"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 75,
+          "name": "New Jorge Chávez International Airport",
+          "id": "LIM"
+        }
+      ],
+      "total_duration": 845,
+      "carbon_emissions": {
+        "this_flight": 543000,
+        "typical_for_this_route": 497000,
+        "difference_percent": 9
+      },
+      "price": 723,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZzFNUVRneU1ESjhURUV5TkRneUdnc0lvTFFFRUFJYUEwVlZVamdjY05DT0JRPT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJMSU0iLG51bGwsIkxBIiwiODIwMiJdLFsiTElNIiwiMjAyNi0wNi0xMCIsIkFUTCIsbnVsbCwiTEEiLCIyNDgyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 12:05"
+          },
+          "arrival_airport": {
+            "name": "Arturo Merino Benitez International Airport",
+            "id": "SCL",
+            "time": "2026-06-10 15:25"
+          },
+          "duration": 260,
+          "airplane": "Airbus A321",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 612",
+          "ticket_also_sold_by": [
+            "Delta"
+          ],
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 215 kg"
+          ],
+          "plane_and_crew_by": "Latam Airlines Group"
+        },
+        {
+          "departure_airport": {
+            "name": "Arturo Merino Benitez International Airport",
+            "id": "SCL",
+            "time": "2026-06-10 20:40"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-11 06:25"
+          },
+          "duration": 585,
+          "airplane": "Airbus A350",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 146",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 462 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 315,
+          "name": "Arturo Merino Benitez International Airport",
+          "id": "SCL"
+        }
+      ],
+      "total_duration": 1160,
+      "carbon_emissions": {
+        "this_flight": 678000,
+        "typical_for_this_route": 497000,
+        "difference_percent": 36
+      },
+      "price": 723,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZ3RNUVRZeE1ueEVUREUwTmhvTENLQzBCQkFDR2dORlZWSTRISERRamdVPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIlNDTCIsbnVsbCwiTEEiLCI2MTIiXSxbIlNDTCIsIjIwMjYtMDYtMTAiLCJBVEwiLG51bGwsIkRMIiwiMTQ2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 23:45"
+          },
+          "arrival_airport": {
+            "name": "El Dorado International Airport",
+            "id": "BOG",
+            "time": "2026-06-11 03:55"
+          },
+          "duration": 370,
+          "airplane": "Airbus A320",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 4908",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 337 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Colombia"
+        },
+        {
+          "departure_airport": {
+            "name": "El Dorado International Airport",
+            "id": "BOG",
+            "time": "2026-06-11 09:00"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-11 14:56"
+          },
+          "duration": 296,
+          "airplane": "Boeing 757",
+          "airline": "Delta",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+          "travel_class": "Economy",
+          "flight_number": "DL 980",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "Live TV",
+            "Carbon emissions estimate: 353 kg"
+          ],
+          "plane_and_crew_by": "Delta Airlines for Latam Airlines Group"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 305,
+          "name": "El Dorado International Airport",
+          "id": "BOG",
+          "overnight": true
+        }
+      ],
+      "total_duration": 971,
+      "carbon_emissions": {
+        "this_flight": 691000,
+        "typical_for_this_route": 497000,
+        "difference_percent": 39
+      },
+      "price": 725,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZ3hNUVRRNU1EaDhSRXc1T0RBYUN3ajR0UVFRQWhvRFJWVlNPQnh3eTVBRiIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkJPRyIsbnVsbCwiTEEiLCI0OTA4Il0sWyJCT0ciLCIyMDI2LTA2LTExIiwiQVRMIixudWxsLCJETCIsIjk4MCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 21:50"
+          },
+          "arrival_airport": {
+            "name": "George Bush Intercontinental Airport",
+            "id": "IAH",
+            "time": "2026-06-11 05:45"
+          },
+          "duration": 595,
+          "airplane": "Boeing 787",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 63",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 384 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "George Bush Intercontinental Airport",
+            "id": "IAH",
+            "time": "2026-06-11 07:20"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-11 10:39"
+          },
+          "duration": 139,
+          "airplane": "Airbus A319",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 1030",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 130 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 95,
+          "name": "George Bush Intercontinental Airport",
+          "id": "IAH"
+        }
+      ],
+      "total_duration": 829,
+      "carbon_emissions": {
+        "this_flight": 515000,
+        "typical_for_this_route": 497000,
+        "difference_percent": 4
+      },
+      "price": 728,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZ3RWUVRZemZGVkJNVEF6TUJvTENJVzRCQkFDR2dORlZWSTRISENEa3dVPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIklBSCIsbnVsbCwiVUEiLCI2MyJdLFsiSUFIIiwiMjAyNi0wNi0xMSIsIkFUTCIsbnVsbCwiVUEiLCIxMDMwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 03:15"
+          },
+          "arrival_airport": {
+            "name": "Tocumen International Airport Panama",
+            "id": "PTY",
+            "time": "2026-06-10 08:11"
+          },
+          "duration": 416,
+          "airplane": "Boeing 737MAX 9 Passenger",
+          "airline": "COPA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CM.png",
+          "travel_class": "Economy",
+          "flight_number": "CM 702",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 343 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Tocumen International Airport Panama",
+            "id": "PTY",
+            "time": "2026-06-10 10:26"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-10 15:49"
+          },
+          "duration": 263,
+          "airplane": "Boeing 737",
+          "airline": "COPA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CM.png",
+          "travel_class": "Economy",
+          "flight_number": "CM 880",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 228 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 135,
+          "name": "Tocumen International Airport Panama",
+          "id": "PTY"
+        }
+      ],
+      "total_duration": 814,
+      "carbon_emissions": {
+        "this_flight": 572000,
+        "typical_for_this_route": 497000,
+        "difference_percent": 15
+      },
+      "price": 754,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CM.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZ3REVFRjd01ueERUVGc0TUJvTENPUE1CQkFDR2dORlZWSTRISENLcXdVPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIlBUWSIsbnVsbCwiQ00iLCI3MDIiXSxbIlBUWSIsIjIwMjYtMDYtMTAiLCJBVEwiLG51bGwsIkNNIiwiODgwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 21:25"
+          },
+          "arrival_airport": {
+            "name": "Miami International Airport",
+            "id": "MIA",
+            "time": "2026-06-11 04:50"
+          },
+          "duration": 505,
+          "airplane": "Boeing 777",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 930",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 384 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Miami International Airport",
+            "id": "MIA",
+            "time": "2026-06-11 07:40"
+          },
+          "arrival_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-11 09:41"
+          },
+          "duration": 121,
+          "airplane": "Boeing 737",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 512",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 96 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 170,
+          "name": "Miami International Airport",
+          "id": "MIA",
+          "overnight": true
+        }
+      ],
+      "total_duration": 796,
+      "carbon_emissions": {
+        "this_flight": 481000,
+        "typical_for_this_route": 497000,
+        "difference_percent": -3
+      },
+      "price": 987,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+      "booking_token": "WyJDalJJV0RaRldrMTJRbXQwT0RoQlFuUjBjMEZDUnkwdExTMHRMUzB0TFhCcWQyOHlNVUZCUVVGQlIyNU9Ra2MwU201bE0yOUJFZ3RCUVRrek1IeEJRVFV4TWhvTENJQ0RCaEFDR2dORlZWSTRISEMvL2dZPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIk1JQSIsbnVsbCwiQUEiLCI5MzAiXSxbIk1JQSIsIjIwMjYtMDYtMTEiLCJBVEwiLG51bGwsIkFBIiwiNTEyIl1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 664,
+    "price_level": "high",
+    "typical_price_range": [
+      445,
+      660
+    ],
+    "price_history": [
+      [
+        1769742000,
+        634
+      ],
+      [
+        1769828400,
+        633
+      ],
+      [
+        1769914800,
+        637
+      ],
+      [
+        1770001200,
+        638
+      ],
+      [
+        1770087600,
+        593
+      ],
+      [
+        1770174000,
+        590
+      ],
+      [
+        1770260400,
+        591
+      ],
+      [
+        1770346800,
+        590
+      ],
+      [
+        1770433200,
+        594
+      ],
+      [
+        1770519600,
+        594
+      ],
+      [
+        1770606000,
+        593
+      ],
+      [
+        1770692400,
+        588
+      ],
+      [
+        1770778800,
+        588
+      ],
+      [
+        1770865200,
+        587
+      ],
+      [
+        1770951600,
+        584
+      ],
+      [
+        1771038000,
+        590
+      ],
+      [
+        1771124400,
+        606
+      ],
+      [
+        1771210800,
+        607
+      ],
+      [
+        1771297200,
+        604
+      ],
+      [
+        1771383600,
+        607
+      ],
+      [
+        1771470000,
+        609
+      ],
+      [
+        1771556400,
+        647
+      ],
+      [
+        1771642800,
+        647
+      ],
+      [
+        1771729200,
+        647
+      ],
+      [
+        1771815600,
+        610
+      ],
+      [
+        1771902000,
+        608
+      ],
+      [
+        1771988400,
+        612
+      ],
+      [
+        1772074800,
+        610
+      ],
+      [
+        1772161200,
+        609
+      ],
+      [
+        1772247600,
+        644
+      ],
+      [
+        1772334000,
+        645
+      ],
+      [
+        1772420400,
+        648
+      ],
+      [
+        1772506800,
+        647
+      ],
+      [
+        1772593200,
+        663
+      ],
+      [
+        1772679600,
+        652
+      ],
+      [
+        1772766000,
+        619
+      ],
+      [
+        1772852400,
+        621
+      ],
+      [
+        1772938800,
+        626
+      ],
+      [
+        1773025200,
+        631
+      ],
+      [
+        1773111600,
+        698
+      ],
+      [
+        1773198000,
+        696
+      ],
+      [
+        1773284400,
+        660
+      ],
+      [
+        1773370800,
+        655
+      ],
+      [
+        1773457200,
+        689
+      ],
+      [
+        1773543600,
+        696
+      ],
+      [
+        1773630000,
+        691
+      ],
+      [
+        1773716400,
+        671
+      ],
+      [
+        1773802800,
+        686
+      ],
+      [
+        1773889200,
+        723
+      ],
+      [
+        1773975600,
+        727
+      ],
+      [
+        1774062000,
+        657
+      ],
+      [
+        1774148400,
+        657
+      ],
+      [
+        1774234800,
+        659
+      ],
+      [
+        1774321200,
+        722
+      ],
+      [
+        1774407600,
+        664
+      ],
+      [
+        1774494000,
+        720
+      ],
+      [
+        1774580400,
+        722
+      ],
+      [
+        1774666800,
+        720
+      ],
+      [
+        1774753200,
+        662
+      ],
+      [
+        1774839600,
+        725
+      ],
+      [
+        1774926000,
+        723
+      ],
+      [
+        1775012400,
+        664
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "GRU",
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport"
+          },
+          "city": "São Paulo",
+          "country": "Brazil",
+          "country_code": "BR",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkx9athZsBRDrcQSs15lBM_on9PkrTwz-ySvt8J6pcJZSuqg14GFxUPDm1FgV3ckvtmLWX0pDDIkRldw",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4D5SB4Yfugl7neBSWCiZ5gRiYxGRSSCYavaGuPsXj1q6Hk3Gv5C78US7ZqeotwTy5BX6xGe9CpXQkvQM45Mjnol7egb_CdoPyBoVeqB8"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "ATL",
+            "name": "Hartsfield-Jackson Atlanta International Airport"
+          },
+          "city": "Atlanta",
+          "country": "United States",
+          "country_code": "US",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYBXd-jsaFCOrq3Ftbagud_RXYRp8gK_jeDmxAfPmI5pP7SIRedYhExpUTLErX68PeHFvOzs8P_D0v_w",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJh6WEANkd6cril2a8Csnk2i_WTs-ZTUE-pamQ4iTfpTi0hlx5P9xhDKrUeBWRPb-4hiLgvoegdgPZ2t2R8qpkN_a7BzJjUNSnSonV664"
+        }
+      ]
+    }
+  ]
+}

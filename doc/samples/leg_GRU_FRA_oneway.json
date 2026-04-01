@@ -1,0 +1,984 @@
+{
+  "search_metadata": {
+    "id": "69cd0524f30d13a9cc6b93c8",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/geoqaFzmxe4_K-H7mbsTbQ/69cd0524f30d13a9cc6b93c8.json",
+    "created_at": "2026-04-01 11:44:36 UTC",
+    "processed_at": "2026-04-01 11:44:36 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNHUlVyBwgBEgNGUkFAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/geoqaFzmxe4_K-H7mbsTbQ/69cd0524f30d13a9cc6b93c8.html",
+    "prettify_html_file": "https://serpapi.com/searches/geoqaFzmxe4_K-H7mbsTbQ/69cd0524f30d13a9cc6b93c8.prettify",
+    "total_time_taken": 1.3
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "GRU",
+    "arrival_id": "FRA",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 23:45"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 16:25"
+          },
+          "duration": 700,
+          "airplane": "Boeing 777",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8070",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 575 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        }
+      ],
+      "total_duration": 700,
+      "carbon_emissions": {
+        "this_flight": 575000,
+        "typical_for_this_route": 617000,
+        "difference_percent": -7
+      },
+      "price": 440,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZ1pNUVRnd056QWFDd2lpMXdJUUFob0RSVlZTT0J4d29JNEQiLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIkxBIiwiODA3MCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 13:50"
+          },
+          "arrival_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-11 05:00"
+          },
+          "duration": 610,
+          "airplane": "Boeing 787",
+          "airline": "Air Europa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
+          "travel_class": "Economy",
+          "flight_number": "UX 58",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 390 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-11 07:05"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 09:45"
+          },
+          "duration": 160,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Air Europa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
+          "travel_class": "Economy",
+          "flight_number": "UX 1503",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 105 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 125,
+          "name": "Adolfo Suárez Madrid-Barajas Airport",
+          "id": "MAD"
+        }
+      ],
+      "total_duration": 895,
+      "carbon_emissions": {
+        "this_flight": 497000,
+        "typical_for_this_route": 617000,
+        "difference_percent": -19
+      },
+      "price": 449,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZ3RWV0RVNGZGVllNVFV3TXhvTENKYmVBaEFDR2dORlZWSTRISENobGdNPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIk1BRCIsbnVsbCwiVVgiLCI1OCJdLFsiTUFEIiwiMjAyNi0wNi0xMSIsIkZSQSIsbnVsbCwiVVgiLCIxNTAzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 15:30"
+          },
+          "arrival_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-06-11 05:25"
+          },
+          "duration": 595,
+          "airplane": "Airbus A330-900neo",
+          "airline": "Tap Air Portugal",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+          "travel_class": "Economy",
+          "flight_number": "TP 82",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 456 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Humberto Delgado Airport",
+            "id": "LIS",
+            "time": "2026-06-11 08:20"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 12:30"
+          },
+          "duration": 190,
+          "airplane": "Airbus A320neo",
+          "airline": "Tap Air Portugal",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+          "travel_class": "Economy",
+          "flight_number": "TP 570",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Carbon emissions estimate: 145 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Humberto Delgado Airport",
+          "id": "LIS"
+        }
+      ],
+      "total_duration": 960,
+      "carbon_emissions": {
+        "this_flight": 601000,
+        "typical_for_this_route": 617000,
+        "difference_percent": -3
+      },
+      "price": 510,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZ3BVVURneWZGUlFOVGN3R2dzSS9ZMERFQUlhQTBWVlVqZ2NjTnpOQXc9PSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkxJUyIsbnVsbCwiVFAiLCI4MiJdLFsiTElTIiwiMjAyNi0wNi0xMSIsIkZSQSIsbnVsbCwiVFAiLCI1NzAiXV1d"
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 21:15"
+          },
+          "arrival_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-11 12:15"
+          },
+          "duration": 600,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8076",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 443 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-11 15:10"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 17:50"
+          },
+          "duration": 160,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Air Europa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
+          "travel_class": "Economy",
+          "flight_number": "UX 1509",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 105 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Adolfo Suárez Madrid-Barajas Airport",
+          "id": "MAD"
+        }
+      ],
+      "total_duration": 935,
+      "carbon_emissions": {
+        "this_flight": 550000,
+        "typical_for_this_route": 617000,
+        "difference_percent": -11
+      },
+      "price": 472,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZzFNUVRnd056WjhWVmd4TlRBNUdnc0l6ZkFDRUFJYUEwVlZVamdjY05LckF3PT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJNQUQiLG51bGwsIkxBIiwiODA3NiJdLFsiTUFEIiwiMjAyNi0wNi0xMSIsIkZSQSIsbnVsbCwiVVgiLCIxNTA5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 18:00"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-11 10:15"
+          },
+          "duration": 675,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8068",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 514 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-11 14:35"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 15:50"
+          },
+          "duration": 75,
+          "airplane": "Airbus A319",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1035",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 72 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 260,
+          "name": "Paris Charles de Gaulle Airport",
+          "id": "CDG"
+        }
+      ],
+      "total_duration": 1010,
+      "carbon_emissions": {
+        "this_flight": 587000,
+        "typical_for_this_route": 617000,
+        "difference_percent": -5
+      },
+      "price": 524,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZzFNUVRnd05qaDhURWd4TURNMUdnc0lwWmtERUFJYUEwVlZVamdjY096YUF3PT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJDREciLG51bGwsIkxBIiwiODA2OCJdLFsiQ0RHIiwiMjAyNi0wNi0xMSIsIkZSQSIsbnVsbCwiTEgiLCIxMDM1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 23:50"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-11 15:05"
+          },
+          "duration": 675,
+          "airplane": "Boeing 777",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8084",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 553 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-11 18:30"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 21:05"
+          },
+          "duration": 95,
+          "airplane": "Airbus A320neo",
+          "airline": "Lufthansa City Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VL.png",
+          "travel_class": "Economy",
+          "flight_number": "VL 917",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 67 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 205,
+          "name": "Heathrow Airport",
+          "id": "LHR"
+        }
+      ],
+      "total_duration": 975,
+      "carbon_emissions": {
+        "this_flight": 620000,
+        "typical_for_this_route": 617000,
+        "difference_percent": 0
+      },
+      "price": 525,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZ3hNUVRnd09EUjhWa3c1TVRjYUN3amVtUU1RQWhvRFJWVlNPQnh3cnRzRCIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkxIUiIsbnVsbCwiTEEiLCI4MDg0Il0sWyJMSFIiLCIyMDI2LTA2LTExIiwiRlJBIixudWxsLCJWTCIsIjkxNyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 23:50"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-11 15:05"
+          },
+          "duration": 675,
+          "airplane": "Boeing 777",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8084",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 553 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-11 19:30"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 22:05"
+          },
+          "duration": 95,
+          "airplane": "Airbus A320neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 919",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 67 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 265,
+          "name": "Heathrow Airport",
+          "id": "LHR"
+        }
+      ],
+      "total_duration": 1035,
+      "carbon_emissions": {
+        "this_flight": 620000,
+        "typical_for_this_route": 617000,
+        "difference_percent": 0
+      },
+      "price": 525,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZ3hNUVRnd09EUjhURWc1TVRrYUN3amVtUU1RQWhvRFJWVlNPQnh3cnRzRCIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkxIUiIsbnVsbCwiTEEiLCI4MDg0Il0sWyJMSFIiLCIyMDI2LTA2LTExIiwiRlJBIixudWxsLCJMSCIsIjkxOSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 18:10"
+          },
+          "arrival_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-11 10:50"
+          },
+          "duration": 700,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8088",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 545 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-11 14:25"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 15:35"
+          },
+          "duration": 70,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Brussels Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SN.png",
+          "travel_class": "Economy",
+          "flight_number": "SN 2613",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 52 kg"
+          ],
+          "plane_and_crew_by": "Air Baltic"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 215,
+          "name": "Brussels Airport",
+          "id": "BRU"
+        }
+      ],
+      "total_duration": 985,
+      "carbon_emissions": {
+        "this_flight": 598000,
+        "typical_for_this_route": 617000,
+        "difference_percent": -3
+      },
+      "price": 532,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZzFNUVRnd09EaDhVMDR5TmpFekdnc0krSjRERUFJYUEwVlZVamdjY0xQaEF3PT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJCUlUiLG51bGwsIkxBIiwiODA4OCJdLFsiQlJVIiwiMjAyNi0wNi0xMSIsIkZSQSIsbnVsbCwiU04iLCIyNjEzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 18:55"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-11 11:30"
+          },
+          "duration": 695,
+          "airplane": "Airbus A330-900neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 679",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 541 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-11 13:20"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 15:20"
+          },
+          "duration": 120,
+          "airplane": "Airbus A321",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 233",
+          "ticket_also_sold_by": [
+            "ITA"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 106 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 110,
+          "name": "Leonardo da Vinci International Airport",
+          "id": "FCO"
+        }
+      ],
+      "total_duration": 925,
+      "carbon_emissions": {
+        "this_flight": 648000,
+        "typical_for_this_route": 617000,
+        "difference_percent": 5
+      },
+      "price": 601,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZ3RCV2pZM09YeE1TREl6TXhvTENJL1ZBeEFDR2dORlZWSTRISENob0FRPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiQVoiLCI2NzkiXSxbIkZDTyIsIjIwMjYtMDYtMTEiLCJGUkEiLG51bGwsIkxIIiwiMjMzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 18:10"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 10:45"
+          },
+          "duration": 695,
+          "airplane": "Boeing 747",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 507",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 598 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 695,
+      "carbon_emissions": {
+        "this_flight": 598000,
+        "typical_for_this_route": 617000,
+        "difference_percent": -3
+      },
+      "price": 825,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJUlU0elpqSlZhMVZ0UXpCQlEyMTBNM2RDUnkwdExTMHRMUzB0ZVdsaWFYZ3hNRUZCUVVGQlIyNU9RbE5SUzJKTU9EUkJFZ1ZNU0RVd054b0xDS3VFQlJBQ0dnTkZWVkk0SEhERjZ3VT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIkxIIiwiNTA3Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 440,
+    "price_level": "typical",
+    "typical_price_range": [
+      430,
+      640
+    ],
+    "price_history": [
+      [
+        1769828400,
+        453
+      ],
+      [
+        1769914800,
+        456
+      ],
+      [
+        1770001200,
+        456
+      ],
+      [
+        1770087600,
+        458
+      ],
+      [
+        1770174000,
+        459
+      ],
+      [
+        1770260400,
+        457
+      ],
+      [
+        1770346800,
+        455
+      ],
+      [
+        1770433200,
+        458
+      ],
+      [
+        1770519600,
+        458
+      ],
+      [
+        1770606000,
+        458
+      ],
+      [
+        1770692400,
+        454
+      ],
+      [
+        1770778800,
+        454
+      ],
+      [
+        1770865200,
+        366
+      ],
+      [
+        1770951600,
+        364
+      ],
+      [
+        1771038000,
+        364
+      ],
+      [
+        1771124400,
+        368
+      ],
+      [
+        1771210800,
+        368
+      ],
+      [
+        1771297200,
+        367
+      ],
+      [
+        1771383600,
+        368
+      ],
+      [
+        1771470000,
+        369
+      ],
+      [
+        1771556400,
+        371
+      ],
+      [
+        1771642800,
+        371
+      ],
+      [
+        1771729200,
+        372
+      ],
+      [
+        1771815600,
+        370
+      ],
+      [
+        1771902000,
+        369
+      ],
+      [
+        1771988400,
+        371
+      ],
+      [
+        1772074800,
+        370
+      ],
+      [
+        1772161200,
+        369
+      ],
+      [
+        1772247600,
+        369
+      ],
+      [
+        1772334000,
+        370
+      ],
+      [
+        1772420400,
+        372
+      ],
+      [
+        1772506800,
+        371
+      ],
+      [
+        1772593200,
+        370
+      ],
+      [
+        1772679600,
+        373
+      ],
+      [
+        1772766000,
+        372
+      ],
+      [
+        1772852400,
+        375
+      ],
+      [
+        1772938800,
+        378
+      ],
+      [
+        1773025200,
+        381
+      ],
+      [
+        1773111600,
+        393
+      ],
+      [
+        1773198000,
+        392
+      ],
+      [
+        1773284400,
+        393
+      ],
+      [
+        1773370800,
+        390
+      ],
+      [
+        1773457200,
+        388
+      ],
+      [
+        1773543600,
+        392
+      ],
+      [
+        1773630000,
+        392
+      ],
+      [
+        1773716400,
+        398
+      ],
+      [
+        1773802800,
+        413
+      ],
+      [
+        1773889200,
+        410
+      ],
+      [
+        1773975600,
+        393
+      ],
+      [
+        1774062000,
+        387
+      ],
+      [
+        1774148400,
+        387
+      ],
+      [
+        1774234800,
+        388
+      ],
+      [
+        1774321200,
+        391
+      ],
+      [
+        1774407600,
+        411
+      ],
+      [
+        1774494000,
+        438
+      ],
+      [
+        1774580400,
+        439
+      ],
+      [
+        1774666800,
+        438
+      ],
+      [
+        1774753200,
+        439
+      ],
+      [
+        1774839600,
+        410
+      ],
+      [
+        1774926000,
+        440
+      ],
+      [
+        1775012400,
+        440
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "GRU",
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport"
+          },
+          "city": "São Paulo",
+          "country": "Brazil",
+          "country_code": "BR",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkx9athZsBRDrcQSs15lBM_on9PkrTwz-ySvt8J6pcJZSuqg14GFxUPDm1FgV3ckvtmLWX0pDDIkRldw",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4D5SB4Yfugl7neBSWCiZ5gRiYxGRSSCYavaGuPsXj1q6Hk3Gv5C78US7ZqeotwTy5BX6xGe9CpXQkvQM45Mjnol7egb_CdoPyBoVeqB8"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "FRA",
+            "name": "Frankfurt Airport"
+          },
+          "city": "Frankfurt am Main",
+          "country": "Germany",
+          "country_code": "DE",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqdKUfBWQXvmp7-Y6p2lZnjO0xPPGMl7Wnh1tOp4QR5QfoOyaq2AqdvByEgXmwe_eGAYewCKeUlXGxqQ",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRthwXcj3pIl7-x_4xgko5YQeqkTISsGgqS8vvDyYGQIu3lfxXz40TSEiN_5YR7AfORo7EaBO1V46ilVJueQaqWGBb5GzrVbbIt2vBOALM"
+        }
+      ]
+    }
+  ]
+}

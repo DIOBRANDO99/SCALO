@@ -1,0 +1,1103 @@
+{
+  "search_metadata": {
+    "id": "69cd046e822c5fa8e9ce8fff",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/O4OIqhDS9jjqPXnsj6L3mg/69cd046e822c5fa8e9ce8fff.json",
+    "created_at": "2026-04-01 11:41:34 UTC",
+    "processed_at": "2026-04-01 11:41:34 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTIwKAFqBwgBEgNOUlRyBwgBEgNHUlVAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/O4OIqhDS9jjqPXnsj6L3mg/69cd046e822c5fa8e9ce8fff.html",
+    "prettify_html_file": "https://serpapi.com/searches/O4OIqhDS9jjqPXnsj6L3mg/69cd046e822c5fa8e9ce8fff.prettify",
+    "total_time_taken": 1.82
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "NRT",
+    "arrival_id": "GRU",
+    "outbound_date": "2026-06-20",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 21:30"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-21 03:05"
+          },
+          "duration": 635,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 321",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 581 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-21 09:05"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 17:15"
+          },
+          "duration": 910,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 261",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 869 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 360,
+          "name": "Dubai International Airport",
+          "id": "DXB",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1905,
+      "carbon_emissions": {
+        "this_flight": 1451000,
+        "typical_for_this_route": 984000,
+        "difference_percent": 47
+      },
+      "price": 787,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ3RGU3pNeU1YeEZTekkyTVJvTENJem1CQkFDR2dORlZWSTRISEM2eUFVPSIsW1siTlJUIiwiMjAyNi0wNi0yMCIsIkRYQiIsbnVsbCwiRUsiLCIzMjEiXSxbIkRYQiIsIjIwMjYtMDYtMjEiLCJHUlUiLG51bGwsIkVLIiwiMjYxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 17:25"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 22:20"
+          },
+          "duration": 655,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 809",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 605 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-21 01:55"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 10:35"
+          },
+          "duration": 880,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 779",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 745 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 215,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 1750,
+      "carbon_emissions": {
+        "this_flight": 1351000,
+        "typical_for_this_route": 984000,
+        "difference_percent": 37
+      },
+      "price": 906,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ3RSVWpnd09YeFJVamMzT1JvTENJWERCUkFDR2dORlZWSTRISENsdEFZPSIsW1siTlJUIiwiMjAyNi0wNi0yMCIsIkRPSCIsbnVsbCwiUVIiLCI4MDkiXSxbIkRPSCIsIjIwMjYtMDYtMjEiLCJHUlUiLG51bGwsIlFSIiwiNzc5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 17:25"
+          },
+          "arrival_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2026-06-20 16:30"
+          },
+          "duration": 725,
+          "airplane": "Boeing 787",
+          "airline": "Air Canada",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+          "travel_class": "Economy",
+          "flight_number": "AC 10",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 488 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Toronto Pearson International Airport",
+            "id": "YYZ",
+            "time": "2026-06-20 22:05"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 09:00"
+          },
+          "duration": 595,
+          "airplane": "Boeing 787",
+          "airline": "Air Canada",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+          "travel_class": "Economy",
+          "flight_number": "AC 90",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 421 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 335,
+          "name": "Toronto Pearson International Airport",
+          "id": "YYZ"
+        }
+      ],
+      "total_duration": 1655,
+      "carbon_emissions": {
+        "this_flight": 910000,
+        "typical_for_this_route": 984000,
+        "difference_percent": -8
+      },
+      "price": 1249,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ2xCUXpFd2ZFRkRPVEFhQ3dpV3p3Y1FBaG9EUlZWU09CeHdyK3NJIixbWyJOUlQiLCIyMDI2LTA2LTIwIiwiWVlaIixudWxsLCJBQyIsIjEwIl0sWyJZWVoiLCIyMDI2LTA2LTIwIiwiR1JVIixudWxsLCJBQyIsIjkwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 17:20"
+          },
+          "arrival_airport": {
+            "name": "Los Angeles International Airport",
+            "id": "LAX",
+            "time": "2026-06-20 11:05"
+          },
+          "duration": 585,
+          "airplane": "Boeing 787",
+          "airline": "JAL",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JL.png",
+          "travel_class": "Economy",
+          "flight_number": "JL 62",
+          "legroom": "33 in",
+          "extensions": [
+            "Above average legroom (33 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 397 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Los Angeles International Airport",
+            "id": "LAX",
+            "time": "2026-06-20 13:50"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 05:30"
+          },
+          "duration": 700,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8087",
+          "ticket_also_sold_by": [
+            "JAL"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 554 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 165,
+          "name": "Los Angeles International Airport",
+          "id": "LAX"
+        }
+      ],
+      "total_duration": 1450,
+      "carbon_emissions": {
+        "this_flight": 952000,
+        "typical_for_this_route": 984000,
+        "difference_percent": -3
+      },
+      "price": 1318,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ3RLVERZeWZFeEJPREE0TnhvTENKcUZDQkFDR2dORlZWSTRISENHcWdrPSIsW1siTlJUIiwiMjAyNi0wNi0yMCIsIkxBWCIsbnVsbCwiSkwiLCI2MiJdLFsiTEFYIiwiMjAyNi0wNi0yMCIsIkdSVSIsbnVsbCwiTEEiLCI4MDg3Il1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 22:30"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-21 04:05"
+          },
+          "duration": 635,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 319",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 563 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-21 09:05"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 17:15"
+          },
+          "duration": 910,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 261",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 869 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 300,
+          "name": "Dubai International Airport",
+          "id": "DXB",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1845,
+      "carbon_emissions": {
+        "this_flight": 1433000,
+        "typical_for_this_route": 984000,
+        "difference_percent": 46
+      },
+      "price": 869,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ3RGU3pNeE9YeEZTekkyTVJvTENOV21CUkFDR2dORlZWSTRISEN2a3dZPSIsW1siTlJUIiwiMjAyNi0wNi0yMCIsIkRYQiIsbnVsbCwiRUsiLCIzMTkiXSxbIkRYQiIsIjIwMjYtMDYtMjEiLCJHUlUiLG51bGwsIkVLIiwiMjYxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 17:25"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 22:20"
+          },
+          "duration": 655,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 809",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 605 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-21 00:20"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 09:00"
+          },
+          "duration": 880,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 785",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 826 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 120,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 1655,
+      "carbon_emissions": {
+        "this_flight": 1432000,
+        "typical_for_this_route": 984000,
+        "difference_percent": 46
+      },
+      "price": 1013,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ3RSVWpnd09YeFJVamM0TlJvTENOS1dCaEFDR2dORlZWSTRISENrbFFjPSIsW1siTlJUIiwiMjAyNi0wNi0yMCIsIkRPSCIsbnVsbCwiUVIiLCI4MDkiXSxbIkRPSCIsIjIwMjYtMDYtMjEiLCJHUlUiLG51bGwsIlFSIiwiNzg1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 22:25"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-21 03:20"
+          },
+          "duration": 655,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 807",
+          "ticket_also_sold_by": [
+            "LATAM",
+            "JAL"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 605 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-21 08:25"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 17:05"
+          },
+          "duration": 880,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 773",
+          "ticket_also_sold_by": [
+            "LATAM",
+            "JAL"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 745 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 305,
+          "name": "Hamad International Airport",
+          "id": "DOH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1840,
+      "carbon_emissions": {
+        "this_flight": 1351000,
+        "typical_for_this_route": 984000,
+        "difference_percent": 37
+      },
+      "price": 1013,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ3RSVWpnd04zeFJVamMzTXhvTENOS1dCaEFDR2dORlZWSTRISENrbFFjPSIsW1siTlJUIiwiMjAyNi0wNi0yMCIsIkRPSCIsbnVsbCwiUVIiLCI4MDciXSxbIkRPSCIsIjIwMjYtMDYtMjEiLCJHUlUiLG51bGwsIlFSIiwiNzczIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 21:15"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-21 04:40"
+          },
+          "duration": 805,
+          "airplane": "Boeing 787",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 301",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 499 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-21 20:15"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-22 03:30"
+          },
+          "duration": 795,
+          "airplane": "Airbus A350",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 215",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 560 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 935,
+          "name": "Istanbul Airport",
+          "id": "IST",
+          "overnight": true
+        }
+      ],
+      "total_duration": 2535,
+      "carbon_emissions": {
+        "this_flight": 1060000,
+        "typical_for_this_route": 984000,
+        "difference_percent": 8
+      },
+      "price": 1530,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ3RVU3pNd01YeFVTekl4TlJvTENKYXJDUkFDR2dORlZWSTRISERONmdvPSIsW1siTlJUIiwiMjAyNi0wNi0yMCIsIklTVCIsbnVsbCwiVEsiLCIzMDEiXSxbIklTVCIsIjIwMjYtMDYtMjEiLCJHUlUiLG51bGwsIlRLIiwiMjE1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 17:00"
+          },
+          "arrival_airport": {
+            "name": "George Bush Intercontinental Airport",
+            "id": "IAH",
+            "time": "2026-06-20 15:00"
+          },
+          "duration": 720,
+          "airplane": "Boeing 787",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 6",
+          "ticket_also_sold_by": [
+            "ANA"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 454 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "George Bush Intercontinental Airport",
+            "id": "IAH",
+            "time": "2026-06-20 18:40"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 06:30"
+          },
+          "duration": 590,
+          "airplane": "Boeing 787",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 62",
+          "ticket_also_sold_by": [
+            "ANA"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 396 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 220,
+          "name": "George Bush Intercontinental Airport",
+          "id": "IAH"
+        }
+      ],
+      "total_duration": 1530,
+      "carbon_emissions": {
+        "this_flight": 851000,
+        "typical_for_this_route": 984000,
+        "difference_percent": -14
+      },
+      "price": 1998,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ2hWUVRaOFZVRTJNaG9MQ05DWURCQUNHZ05GVlZJNEhIRE1rZzQ9IixbWyJOUlQiLCIyMDI2LTA2LTIwIiwiSUFIIixudWxsLCJVQSIsIjYiXSxbIklBSCIsIjIwMjYtMDYtMjAiLCJHUlUiLG51bGwsIlVBIiwiNjIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-20 18:30"
+          },
+          "arrival_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2026-06-20 16:20"
+          },
+          "duration": 710,
+          "airplane": "Boeing 777",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 60",
+          "ticket_also_sold_by": [
+            "JAL"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 566 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2026-06-20 20:50"
+          },
+          "arrival_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-21 09:00"
+          },
+          "duration": 610,
+          "airplane": "Boeing 787",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 963",
+          "ticket_also_sold_by": [
+            "JAL"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 413 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 270,
+          "name": "Dallas Fort Worth International Airport",
+          "id": "DFW"
+        }
+      ],
+      "total_duration": 1590,
+      "carbon_emissions": {
+        "this_flight": 981000,
+        "typical_for_this_route": 984000,
+        "difference_percent": 0
+      },
+      "price": 2049,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+      "booking_token": "WyJDalJJTjBKamRYQkNkWFpUV0VWQlExOWtTRUZDUnkwdExTMHRMUzB0TFMxNWJHbHFOVUZCUVVGQlIyNU9Ra2M0UkhKNk5qQkJFZ3BCUVRZd2ZFRkJPVFl6R2dzSW5NQU1FQUlhQTBWVlVqZ2NjTVBBRGc9PSIsW1siTlJUIiwiMjAyNi0wNi0yMCIsIkRGVyIsbnVsbCwiQUEiLCI2MCJdLFsiREZXIiwiMjAyNi0wNi0yMCIsIkdSVSIsbnVsbCwiQUEiLCI5NjMiXV1d"
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 787,
+    "price_level": "low",
+    "typical_price_range": [
+      830,
+      980
+    ],
+    "price_history": [
+      [
+        1769785200,
+        874
+      ],
+      [
+        1769871600,
+        873
+      ],
+      [
+        1769958000,
+        873
+      ],
+      [
+        1770044400,
+        871
+      ],
+      [
+        1770130800,
+        874
+      ],
+      [
+        1770217200,
+        871
+      ],
+      [
+        1770303600,
+        866
+      ],
+      [
+        1770390000,
+        871
+      ],
+      [
+        1770476400,
+        866
+      ],
+      [
+        1770562800,
+        866
+      ],
+      [
+        1770649200,
+        865
+      ],
+      [
+        1770735600,
+        865
+      ],
+      [
+        1770822000,
+        872
+      ],
+      [
+        1770908400,
+        880
+      ],
+      [
+        1770994800,
+        883
+      ],
+      [
+        1771081200,
+        884
+      ],
+      [
+        1771167600,
+        880
+      ],
+      [
+        1771254000,
+        883
+      ],
+      [
+        1771340400,
+        882
+      ],
+      [
+        1771426800,
+        884
+      ],
+      [
+        1771513200,
+        881
+      ],
+      [
+        1771599600,
+        880
+      ],
+      [
+        1771686000,
+        879
+      ],
+      [
+        1771772400,
+        880
+      ],
+      [
+        1771858800,
+        879
+      ],
+      [
+        1771945200,
+        881
+      ],
+      [
+        1772031600,
+        875
+      ],
+      [
+        1772118000,
+        871
+      ],
+      [
+        1772204400,
+        874
+      ],
+      [
+        1772290800,
+        872
+      ],
+      [
+        1772377200,
+        950
+      ],
+      [
+        1772463600,
+        946
+      ],
+      [
+        1772550000,
+        947
+      ],
+      [
+        1772636400,
+        951
+      ],
+      [
+        1772722800,
+        954
+      ],
+      [
+        1772809200,
+        953
+      ],
+      [
+        1772895600,
+        950
+      ],
+      [
+        1772982000,
+        950
+      ],
+      [
+        1773068400,
+        954
+      ],
+      [
+        1773154800,
+        948
+      ],
+      [
+        1773241200,
+        948
+      ],
+      [
+        1773327600,
+        950
+      ],
+      [
+        1773414000,
+        954
+      ],
+      [
+        1773500400,
+        951
+      ],
+      [
+        1773586800,
+        951
+      ],
+      [
+        1773673200,
+        953
+      ],
+      [
+        1773759600,
+        920
+      ],
+      [
+        1773846000,
+        918
+      ],
+      [
+        1773932400,
+        925
+      ],
+      [
+        1774018800,
+        919
+      ],
+      [
+        1774105200,
+        914
+      ],
+      [
+        1774191600,
+        914
+      ],
+      [
+        1774278000,
+        786
+      ],
+      [
+        1774364400,
+        786
+      ],
+      [
+        1774450800,
+        785
+      ],
+      [
+        1774537200,
+        785
+      ],
+      [
+        1774623600,
+        784
+      ],
+      [
+        1774710000,
+        782
+      ],
+      [
+        1774796400,
+        786
+      ],
+      [
+        1774882800,
+        791
+      ],
+      [
+        1774969200,
+        787
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "NRT",
+            "name": "Narita International Airport"
+          },
+          "city": "Tokyo",
+          "country": "Japan",
+          "country_code": "JP",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqHkzEeI2bSglPzmSGZL7bxXmn0wJgOn2ZtEN8I47uBnzY1CnHzGtD-YseJXqyexcAcw_uJp-D5HTkCg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLnIToEgwiM_jV3cbw5eQZoUAIg6XqdrJAiClDyyg0w-JBSRN5ZeOT-iFb3SvwkwP1uoBCmT-gKE5VcyCYf-xq4guL4NAFICSaNyOnYOA"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "GRU",
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport"
+          },
+          "city": "São Paulo",
+          "country": "Brazil",
+          "country_code": "BR",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkx9athZsBRDrcQSs15lBM_on9PkrTwz-ySvt8J6pcJZSuqg14GFxUPDm1FgV3ckvtmLWX0pDDIkRldw",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4D5SB4Yfugl7neBSWCiZ5gRiYxGRSSCYavaGuPsXj1q6Hk3Gv5C78US7ZqeotwTy5BX6xGe9CpXQkvQM45Mjnol7egb_CdoPyBoVeqB8"
+        }
+      ]
+    }
+  ]
+}

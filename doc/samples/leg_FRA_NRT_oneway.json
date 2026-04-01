@@ -1,0 +1,1096 @@
+{
+  "search_metadata": {
+    "id": "69cd0524919dfa33c160ea70",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ZOjvktHSUw9Ou4Af3swV-g/69cd0524919dfa33c160ea70.json",
+    "created_at": "2026-04-01 11:44:36 UTC",
+    "processed_at": "2026-04-01 11:44:36 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEzKAFqBwgBEgNGUkFyBwgBEgNOUlRAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/ZOjvktHSUw9Ou4Af3swV-g/69cd0524919dfa33c160ea70.html",
+    "prettify_html_file": "https://serpapi.com/searches/ZOjvktHSUw9Ou4Af3swV-g/69cd0524919dfa33c160ea70.prettify",
+    "total_time_taken": 0.79
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "FRA",
+    "arrival_id": "NRT",
+    "outbound_date": "2026-06-13",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 11:15"
+          },
+          "arrival_airport": {
+            "name": "Taiwan Taoyuan International Airport",
+            "id": "TPE",
+            "time": "2026-06-14 06:15"
+          },
+          "duration": 780,
+          "airplane": "Airbus A350",
+          "airline": "China Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CI.png",
+          "travel_class": "Economy",
+          "flight_number": "CI 62",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 728 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Taiwan Taoyuan International Airport",
+            "id": "TPE",
+            "time": "2026-06-14 08:50"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 13:15"
+          },
+          "duration": 205,
+          "airplane": "Airbus A350",
+          "airline": "China Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CI.png",
+          "travel_class": "Economy",
+          "flight_number": "CI 100",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 183 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 155,
+          "name": "Taiwan Taoyuan International Airport",
+          "id": "TPE"
+        }
+      ],
+      "total_duration": 1140,
+      "carbon_emissions": {
+        "this_flight": 911000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 36
+      },
+      "price": 692,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CI.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3BEU1RZeWZFTkpNVEF3R2dzSXBKd0VFQUlhQTBWVlVqZ2NjT255QkE9PSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIlRQRSIsbnVsbCwiQ0kiLCI2MiJdLFsiVFBFIiwiMjAyNi0wNi0xNCIsIk5SVCIsbnVsbCwiQ0kiLCIxMDAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 13:40"
+          },
+          "arrival_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-14 07:20"
+          },
+          "duration": 700,
+          "airplane": "Boeing 777",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 288",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 606 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-14 09:05"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 14:30"
+          },
+          "duration": 265,
+          "airplane": "Boeing 777",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 504",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 190 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 105,
+          "name": "Hong Kong International Airport",
+          "id": "HKG"
+        }
+      ],
+      "total_duration": 1070,
+      "carbon_emissions": {
+        "this_flight": 797000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 19
+      },
+      "price": 820,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3REV0RJNE9IeERXRFV3TkJvTENJdUFCUkFDR2dORlZWSTRISERPNWdVPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIkhLRyIsbnVsbCwiQ1giLCIyODgiXSxbIkhLRyIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIkNYIiwiNTA0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 14:45"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 06:25"
+          },
+          "duration": 640,
+          "airplane": "Boeing 777",
+          "airline": "THAI",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+          "travel_class": "Economy",
+          "flight_number": "TG 921",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 759 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 07:45"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 15:55"
+          },
+          "duration": 370,
+          "airplane": "Boeing 777",
+          "airline": "THAI",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+          "travel_class": "Economy",
+          "flight_number": "TG 676",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 467 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 80,
+          "name": "Suvarnabhumi Airport",
+          "id": "BKK"
+        }
+      ],
+      "total_duration": 1090,
+      "carbon_emissions": {
+        "this_flight": 1227000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 83
+      },
+      "price": 898,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3RVUnpreU1YeFVSelkzTmhvTENLcTlCUkFDR2dORlZWSTRISERVclFZPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIkJLSyIsbnVsbCwiVEciLCI5MjEiXSxbIkJLSyIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIlRHIiwiNjc2Il1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 21:55"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-14 06:10"
+          },
+          "duration": 375,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 124",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 310 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-14 21:25"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-15 12:30"
+          },
+          "duration": 605,
+          "airplane": "Airbus A350",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 800",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 460 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 915,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 1895,
+      "carbon_emissions": {
+        "this_flight": 771000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 15
+      },
+      "price": 445,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3RGV1RFeU5IeEZXVGd3TUJvTENLM2JBaEFDR2dORlZWSTRISEQra2dNPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIkFVSCIsbnVsbCwiRVkiLCIxMjQiXSxbIkFVSCIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIkVZIiwiODAwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 18:50"
+          },
+          "arrival_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2026-06-14 14:00"
+          },
+          "duration": 730,
+          "airplane": "Airbus A330",
+          "airline": "T'Way Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TW.png",
+          "travel_class": "Economy",
+          "flight_number": "TW 404",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 622 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2026-06-15 08:35"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-15 11:05"
+          },
+          "duration": 150,
+          "airplane": "Boeing 737",
+          "airline": "T'Way Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TW.png",
+          "travel_class": "Economy",
+          "flight_number": "TW 241",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 126 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1115,
+          "name": "Incheon International Airport",
+          "id": "ICN",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1995,
+      "carbon_emissions": {
+        "this_flight": 750000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 12
+      },
+      "price": 645,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TW.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3RVVnpRd05IeFVWekkwTVJvTENMNzNBeEFDR2dORlZWSTRISENReUFRPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIklDTiIsbnVsbCwiVFciLCI0MDQiXSxbIklDTiIsIjIwMjYtMDYtMTUiLCJOUlQiLG51bGwsIlRXIiwiMjQxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 11:05"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-13 19:20"
+          },
+          "duration": 375,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 122",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 310 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-13 21:25"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 12:30"
+          },
+          "duration": 605,
+          "airplane": "Airbus A350",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 800",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 460 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 125,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 1105,
+      "carbon_emissions": {
+        "this_flight": 771000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 15
+      },
+      "price": 679,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3RGV1RFeU1ueEZXVGd3TUJvTENQR1JCQkFDR2dORlZWSTRISERoNWdRPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIkFVSCIsbnVsbCwiRVkiLCIxMjIiXSxbIkFVSCIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIkVZIiwiODAwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 15:40"
+          },
+          "arrival_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2026-06-13 20:35"
+          },
+          "duration": 235,
+          "airplane": "Boeing 787",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Economy",
+          "flight_number": "MS 786",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 173 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2026-06-14 00:55"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 18:30"
+          },
+          "duration": 695,
+          "airplane": "Boeing 787",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Economy",
+          "flight_number": "MS 964",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 525 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 260,
+          "name": "Cairo International Airport",
+          "id": "CAI"
+        }
+      ],
+      "total_duration": 1190,
+      "carbon_emissions": {
+        "this_flight": 699000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 4
+      },
+      "price": 770,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3ROVXpjNE5ueE5VemsyTkJvTENKN1pCQkFDR2dORlZWSTRISERFdVFVPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIkNBSSIsbnVsbCwiTVMiLCI3ODYiXSxbIkNBSSIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIk1TIiwiOTY0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 13:40"
+          },
+          "arrival_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-14 07:20"
+          },
+          "duration": 700,
+          "airplane": "Boeing 777",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 288",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 606 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-14 10:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 15:55"
+          },
+          "duration": 265,
+          "airplane": "Boeing 787",
+          "airline": "JAL",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JL.png",
+          "travel_class": "Economy",
+          "flight_number": "JL 736",
+          "ticket_also_sold_by": [
+            "Cathay Pacific"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 258 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 190,
+          "name": "Hong Kong International Airport",
+          "id": "HKG"
+        }
+      ],
+      "total_duration": 1155,
+      "carbon_emissions": {
+        "this_flight": 865000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 29
+      },
+      "price": 820,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3REV0RJNE9IeEtURGN6TmhvTENJdUFCUkFDR2dORlZWSTRISERPNWdVPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIkhLRyIsbnVsbCwiQ1giLCIyODgiXSxbIkhLRyIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIkpMIiwiNzM2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 13:40"
+          },
+          "arrival_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-14 07:20"
+          },
+          "duration": 700,
+          "airplane": "Boeing 777",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 288",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 606 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Hong Kong International Airport",
+            "id": "HKG",
+            "time": "2026-06-14 08:15"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 13:40"
+          },
+          "duration": 265,
+          "airplane": "Airbus A350",
+          "airline": "Cathay Pacific",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+          "travel_class": "Economy",
+          "flight_number": "CX 526",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 216 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 55,
+          "name": "Hong Kong International Airport",
+          "id": "HKG"
+        }
+      ],
+      "total_duration": 1020,
+      "carbon_emissions": {
+        "this_flight": 823000,
+        "typical_for_this_route": 670000,
+        "difference_percent": 23
+      },
+      "price": 956,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CX.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3REV0RJNE9IeERXRFV5TmhvTENLdnFCUkFDR2dORlZWSTRISER3NFFZPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIkhLRyIsbnVsbCwiQ1giLCIyODgiXSxbIkhLRyIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIkNYIiwiNTI2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 19:40"
+          },
+          "arrival_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2026-06-14 14:35"
+          },
+          "duration": 715,
+          "airplane": "Airbus A350",
+          "airline": "Asiana Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OZ.png",
+          "travel_class": "Economy",
+          "flight_number": "OZ 542",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 528 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2026-06-14 15:45"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 18:25"
+          },
+          "duration": 160,
+          "airplane": "Airbus A330",
+          "airline": "Asiana Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OZ.png",
+          "travel_class": "Economy",
+          "flight_number": "OZ 106",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 114 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 70,
+          "name": "Incheon International Airport",
+          "id": "ICN"
+        }
+      ],
+      "total_duration": 945,
+      "carbon_emissions": {
+        "this_flight": 643000,
+        "typical_for_this_route": 670000,
+        "difference_percent": -4
+      },
+      "price": 1110,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OZ.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ3RQV2pVME1ueFBXakV3TmhvTENQdmlCaEFDR2dORlZWSTRISERwN1FjPSIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIklDTiIsbnVsbCwiT1oiLCI1NDIiXSxbIklDTiIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIk9aIiwiMTA2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 20:10"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 16:15"
+          },
+          "duration": 785,
+          "airplane": "Boeing 787",
+          "airline": "JAL",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JL.png",
+          "travel_class": "Economy",
+          "flight_number": "JL 408",
+          "ticket_also_sold_by": [
+            "British Airways",
+            "Finnair"
+          ],
+          "legroom": "33 in",
+          "extensions": [
+            "Above average legroom (33 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 628 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 785,
+      "carbon_emissions": {
+        "this_flight": 628000,
+        "typical_for_this_route": 670000,
+        "difference_percent": -6
+      },
+      "price": 1476,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JL.png",
+      "booking_token": "WyJDalJJT0dkdU5HaE9YM3BUYmxsQlFuSmhRa0ZDUnkwdExTMHRMUzB0TFhCcWRXSXlNVUZCUVVGQlIyNU9RbE5SUzNkRldVbEJFZ1ZLVERRd09Cb0xDTEtBQ1JBQ0dnTkZWVkk0SEhEOHVBbz0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIkpMIiwiNDA4Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 445,
+    "price_level": "typical",
+    "typical_price_range": [
+      435,
+      520
+    ],
+    "price_history": [
+      [
+        1769814000,
+        513
+      ],
+      [
+        1769900400,
+        513
+      ],
+      [
+        1769986800,
+        513
+      ],
+      [
+        1770073200,
+        509
+      ],
+      [
+        1770159600,
+        509
+      ],
+      [
+        1770246000,
+        509
+      ],
+      [
+        1770332400,
+        509
+      ],
+      [
+        1770418800,
+        509
+      ],
+      [
+        1770505200,
+        509
+      ],
+      [
+        1770591600,
+        509
+      ],
+      [
+        1770678000,
+        509
+      ],
+      [
+        1770764400,
+        509
+      ],
+      [
+        1770850800,
+        488
+      ],
+      [
+        1770937200,
+        488
+      ],
+      [
+        1771023600,
+        488
+      ],
+      [
+        1771110000,
+        488
+      ],
+      [
+        1771196400,
+        488
+      ],
+      [
+        1771282800,
+        488
+      ],
+      [
+        1771369200,
+        488
+      ],
+      [
+        1771455600,
+        488
+      ],
+      [
+        1771542000,
+        509
+      ],
+      [
+        1771628400,
+        509
+      ],
+      [
+        1771714800,
+        511
+      ],
+      [
+        1771801200,
+        511
+      ],
+      [
+        1771887600,
+        509
+      ],
+      [
+        1771974000,
+        509
+      ],
+      [
+        1772060400,
+        523
+      ],
+      [
+        1772146800,
+        523
+      ],
+      [
+        1772233200,
+        509
+      ],
+      [
+        1772319600,
+        523
+      ],
+      [
+        1772406000,
+        524
+      ],
+      [
+        1772492400,
+        509
+      ],
+      [
+        1772578800,
+        509
+      ],
+      [
+        1772665200,
+        510
+      ],
+      [
+        1772751600,
+        510
+      ],
+      [
+        1772838000,
+        510
+      ],
+      [
+        1772924400,
+        510
+      ],
+      [
+        1773010800,
+        551
+      ],
+      [
+        1773097200,
+        510
+      ],
+      [
+        1773183600,
+        510
+      ],
+      [
+        1773270000,
+        510
+      ],
+      [
+        1773356400,
+        510
+      ],
+      [
+        1773442800,
+        511
+      ],
+      [
+        1773529200,
+        551
+      ],
+      [
+        1773615600,
+        511
+      ],
+      [
+        1773702000,
+        511
+      ],
+      [
+        1773788400,
+        511
+      ],
+      [
+        1773874800,
+        554
+      ],
+      [
+        1773961200,
+        554
+      ],
+      [
+        1774047600,
+        554
+      ],
+      [
+        1774134000,
+        591
+      ],
+      [
+        1774220400,
+        591
+      ],
+      [
+        1774306800,
+        591
+      ],
+      [
+        1774393200,
+        591
+      ],
+      [
+        1774479600,
+        591
+      ],
+      [
+        1774566000,
+        375
+      ],
+      [
+        1774652400,
+        375
+      ],
+      [
+        1774738800,
+        591
+      ],
+      [
+        1774821600,
+        375
+      ],
+      [
+        1774908000,
+        375
+      ],
+      [
+        1774994400,
+        445
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "FRA",
+            "name": "Frankfurt Airport"
+          },
+          "city": "Frankfurt am Main",
+          "country": "Germany",
+          "country_code": "DE",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqdKUfBWQXvmp7-Y6p2lZnjO0xPPGMl7Wnh1tOp4QR5QfoOyaq2AqdvByEgXmwe_eGAYewCKeUlXGxqQ",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRthwXcj3pIl7-x_4xgko5YQeqkTISsGgqS8vvDyYGQIu3lfxXz40TSEiN_5YR7AfORo7EaBO1V46ilVJueQaqWGBb5GzrVbbIt2vBOALM"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "NRT",
+            "name": "Narita International Airport"
+          },
+          "city": "Tokyo",
+          "country": "Japan",
+          "country_code": "JP",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqHkzEeI2bSglPzmSGZL7bxXmn0wJgOn2ZtEN8I47uBnzY1CnHzGtD-YseJXqyexcAcw_uJp-D5HTkCg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLnIToEgwiM_jV3cbw5eQZoUAIg6XqdrJAiClDyyg0w-JBSRN5ZeOT-iFb3SvwkwP1uoBCmT-gKE5VcyCYf-xq4guL4NAFICSaNyOnYOA"
+        }
+      ]
+    }
+  ]
+}

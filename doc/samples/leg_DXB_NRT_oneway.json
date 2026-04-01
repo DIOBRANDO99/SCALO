@@ -1,0 +1,997 @@
+{
+  "search_metadata": {
+    "id": "69cd04ec69a322639914edff",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/VB6unVI1n6ZCNBTfteSBpQ/69cd04ec69a322639914edff.json",
+    "created_at": "2026-04-01 11:43:40 UTC",
+    "processed_at": "2026-04-01 11:43:40 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEzKAFqBwgBEgNEWEJyBwgBEgNOUlRAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/VB6unVI1n6ZCNBTfteSBpQ/69cd04ec69a322639914edff.html",
+    "prettify_html_file": "https://serpapi.com/searches/VB6unVI1n6ZCNBTfteSBpQ/69cd04ec69a322639914edff.prettify",
+    "total_time_taken": 0.6
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "DXB",
+    "arrival_id": "NRT",
+    "outbound_date": "2026-06-13",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 04:00"
+          },
+          "arrival_airport": {
+            "name": "Kuala Lumpur International Airport",
+            "id": "KUL",
+            "time": "2026-06-13 15:30"
+          },
+          "duration": 450,
+          "airplane": "Boeing 737",
+          "airline": "Batik Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OD.png",
+          "travel_class": "Economy",
+          "flight_number": "OD 714",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 466 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Kuala Lumpur International Airport",
+            "id": "KUL",
+            "time": "2026-06-14 00:10"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 08:25"
+          },
+          "duration": 435,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Batik Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OD.png",
+          "travel_class": "Economy",
+          "flight_number": "OD 872",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 363 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 520,
+          "name": "Kuala Lumpur International Airport",
+          "id": "KUL"
+        }
+      ],
+      "total_duration": 1405,
+      "carbon_emissions": {
+        "this_flight": 830000,
+        "typical_for_this_route": 624000,
+        "difference_percent": 33
+      },
+      "price": 389,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OD.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ3RQUkRjeE5IeFBSRGczTWhvTENMeXZBaEFDR2dORlZWSTRISENLNEFJPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIktVTCIsbnVsbCwiT0QiLCI3MTQiXSxbIktVTCIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIk9EIiwiODcyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 10:20"
+          },
+          "arrival_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 16:35"
+          },
+          "duration": 285,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "flydubai",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/FZ.png",
+          "travel_class": "Economy",
+          "flight_number": "FZ 549",
+          "ticket_also_sold_by": [
+            "Emirates"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 215 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 19:50"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 08:10"
+          },
+          "duration": 530,
+          "airplane": "Airbus A330",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 454",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 512 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 195,
+          "name": "Colombo Bandaranaike International Airport",
+          "id": "CMB"
+        }
+      ],
+      "total_duration": 1010,
+      "carbon_emissions": {
+        "this_flight": 728000,
+        "typical_for_this_route": 624000,
+        "difference_percent": 17
+      },
+      "price": 443,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ3RHV2pVME9YeFZURFExTkJvTENOTFpBaEFDR2dORlZWSTRISENBa1FNPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkNNQiIsbnVsbCwiRloiLCI1NDkiXSxbIkNNQiIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIlVMIiwiNDU0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 10:45"
+          },
+          "arrival_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 16:50"
+          },
+          "duration": 275,
+          "airplane": "Airbus A350",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 654",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 221 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 19:50"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 08:10"
+          },
+          "duration": 530,
+          "airplane": "Airbus A330",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 454",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 512 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 180,
+          "name": "Colombo Bandaranaike International Airport",
+          "id": "CMB"
+        }
+      ],
+      "total_duration": 985,
+      "carbon_emissions": {
+        "this_flight": 734000,
+        "typical_for_this_route": 624000,
+        "difference_percent": 18
+      },
+      "price": 443,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ3RGU3pZMU5IeFZURFExTkJvTENOTFpBaEFDR2dORlZWSTRISENBa1FNPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkNNQiIsbnVsbCwiRUsiLCI2NTQiXSxbIkNNQiIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIlVMIiwiNDU0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 20:55"
+          },
+          "arrival_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2026-06-14 10:45"
+          },
+          "duration": 530,
+          "airplane": "Boeing 787",
+          "airline": "Korean Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KE.png",
+          "travel_class": "Economy",
+          "flight_number": "KE 952",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 412 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2026-06-14 13:00"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 15:35"
+          },
+          "duration": 155,
+          "airplane": "Airbus A321neo",
+          "airline": "Korean Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KE.png",
+          "travel_class": "Economy",
+          "flight_number": "KE 711",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 126 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 135,
+          "name": "Incheon International Airport",
+          "id": "ICN"
+        }
+      ],
+      "total_duration": 820,
+      "carbon_emissions": {
+        "this_flight": 539000,
+        "typical_for_this_route": 624000,
+        "difference_percent": -14
+      },
+      "price": 618,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KE.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ3RMUlRrMU1ueExSVGN4TVJvTENKL2lBeEFDR2dORlZWSTRISEMrcndRPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIklDTiIsbnVsbCwiS0UiLCI5NTIiXSxbIklDTiIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIktFIiwiNzExIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 19:45"
+          },
+          "arrival_airport": {
+            "name": "Ninoy Aquino International Airport",
+            "id": "MNL",
+            "time": "2026-06-14 09:10"
+          },
+          "duration": 565,
+          "airplane": "Airbus A330",
+          "airline": "Philippine Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/PR.png",
+          "travel_class": "Economy",
+          "flight_number": "PR 659",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 382 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Ninoy Aquino International Airport",
+            "id": "MNL",
+            "time": "2026-06-15 07:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-15 13:00"
+          },
+          "duration": 270,
+          "airplane": "Airbus A321",
+          "airline": "Philippine Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/PR.png",
+          "travel_class": "Economy",
+          "flight_number": "PR 428",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 277 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1340,
+          "name": "Ninoy Aquino International Airport",
+          "id": "MNL",
+          "overnight": true
+        }
+      ],
+      "total_duration": 2175,
+      "carbon_emissions": {
+        "this_flight": 660000,
+        "typical_for_this_route": 624000,
+        "difference_percent": 6
+      },
+      "price": 473,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/PR.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ3RRVWpZMU9YeFFValF5T0JvTENMM3hBaEFDR2dORlZWSTRISERVckFNPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIk1OTCIsbnVsbCwiUFIiLCI2NTkiXSxbIk1OTCIsIjIwMjYtMDYtMTUiLCJOUlQiLG51bGwsIlBSIiwiNDI4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 05:20"
+          },
+          "arrival_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2026-06-13 08:00"
+          },
+          "duration": 220,
+          "airplane": "Airbus A321",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Economy",
+          "flight_number": "MS 911",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 229 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2026-06-14 00:55"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 18:30"
+          },
+          "duration": 695,
+          "airplane": "Boeing 787",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Economy",
+          "flight_number": "MS 964",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 525 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1015,
+          "name": "Cairo International Airport",
+          "id": "CAI"
+        }
+      ],
+      "total_duration": 1930,
+      "carbon_emissions": {
+        "this_flight": 755000,
+        "typical_for_this_route": 624000,
+        "difference_percent": 21
+      },
+      "price": 480,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ3ROVXpreE1YeE5VemsyTkJvTENQMzJBaEFDR2dORlZWSTRISENGc3dNPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkNBSSIsbnVsbCwiTVMiLCI5MTEiXSxbIkNBSSIsIjIwMjYtMDYtMTQiLCJOUlQiLG51bGwsIk1TIiwiOTY0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 23:25"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-13 23:40"
+          },
+          "duration": 75,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 1019",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 52 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-14 02:50"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 19:10"
+          },
+          "duration": 620,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 806",
+          "ticket_also_sold_by": [
+            "JAL"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 614 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 190,
+          "name": "Hamad International Airport",
+          "id": "DOH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 885,
+      "carbon_emissions": {
+        "this_flight": 666000,
+        "typical_for_this_route": 624000,
+        "difference_percent": 7
+      },
+      "price": 480,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ3hSVWpFd01UbDhVVkk0TURZYUN3ajk5Z0lRQWhvRFJWVlNPQnh3aGJNRCIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkRPSCIsbnVsbCwiUVIiLCIxMDE5Il0sWyJET0giLCIyMDI2LTA2LTE0IiwiTlJUIixudWxsLCJRUiIsIjgwNiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 02:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-13 17:35"
+          },
+          "duration": 595,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 318",
+          "ticket_also_sold_by": [
+            "JAL"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 570 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 595,
+      "carbon_emissions": {
+        "this_flight": 571000,
+        "typical_for_this_route": 624000,
+        "difference_percent": -8
+      },
+      "price": 924,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ1ZGU3pNeE9Cb0xDTVRSQlJBQ0dnTkZWVkk0SEhDTnhRWT0iLFtbIkRYQiIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIkVLIiwiMzE4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 22:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 13:30"
+          },
+          "duration": 600,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 320",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 589 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 600,
+      "carbon_emissions": {
+        "this_flight": 589000,
+        "typical_for_this_route": 624000,
+        "difference_percent": -6
+      },
+      "price": 924,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ1ZGU3pNeU1Cb0xDTVRSQlJBQ0dnTkZWVkk0SEhDTnhRWT0iLFtbIkRYQiIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIkVLIiwiMzIwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 03:40"
+          },
+          "arrival_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2026-06-13 17:00"
+          },
+          "duration": 500,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 322",
+          "ticket_also_sold_by": [
+            "Korean Air"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 456 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Incheon International Airport",
+            "id": "ICN",
+            "time": "2026-06-13 18:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-13 21:00"
+          },
+          "duration": 150,
+          "airplane": "Airbus A330",
+          "airline": "Asiana Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OZ.png",
+          "travel_class": "Economy",
+          "flight_number": "OZ 108",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 114 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 90,
+          "name": "Incheon International Airport",
+          "id": "ICN"
+        }
+      ],
+      "total_duration": 740,
+      "carbon_emissions": {
+        "this_flight": 571000,
+        "typical_for_this_route": 624000,
+        "difference_percent": -8
+      },
+      "price": 1990,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJZDNwalpqRnBRMFpSWkhkQlEzUjRXbEZDUnkwdExTMHRMUzB0TFMwdGVXbGpNMEZCUVVGQlIyNU9Razh3UTNacWVESkJFZ3RGU3pNeU1ueFBXakV3T0JvTENQNlJEQkFDR2dORlZWSTRISER4aWc0PSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIklDTiIsbnVsbCwiRUsiLCIzMjIiXSxbIklDTiIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIk9aIiwiMTA4Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 389,
+    "price_level": "typical",
+    "typical_price_range": [
+      290,
+      405
+    ],
+    "price_history": [
+      [
+        1769803200,
+        345
+      ],
+      [
+        1769889600,
+        298
+      ],
+      [
+        1769976000,
+        298
+      ],
+      [
+        1770062400,
+        298
+      ],
+      [
+        1770148800,
+        299
+      ],
+      [
+        1770235200,
+        299
+      ],
+      [
+        1770321600,
+        299
+      ],
+      [
+        1770408000,
+        300
+      ],
+      [
+        1770494400,
+        299
+      ],
+      [
+        1770580800,
+        299
+      ],
+      [
+        1770667200,
+        299
+      ],
+      [
+        1770753600,
+        297
+      ],
+      [
+        1770840000,
+        297
+      ],
+      [
+        1770926400,
+        297
+      ],
+      [
+        1771012800,
+        298
+      ],
+      [
+        1771099200,
+        298
+      ],
+      [
+        1771185600,
+        297
+      ],
+      [
+        1771272000,
+        298
+      ],
+      [
+        1771358400,
+        298
+      ],
+      [
+        1771444800,
+        298
+      ],
+      [
+        1771531200,
+        300
+      ],
+      [
+        1771617600,
+        300
+      ],
+      [
+        1771704000,
+        300
+      ],
+      [
+        1771790400,
+        300
+      ],
+      [
+        1771876800,
+        298
+      ],
+      [
+        1771963200,
+        299
+      ],
+      [
+        1772049600,
+        300
+      ],
+      [
+        1772136000,
+        299
+      ],
+      [
+        1772222400,
+        299
+      ],
+      [
+        1772308800,
+        301
+      ],
+      [
+        1772395200,
+        301
+      ],
+      [
+        1772481600,
+        300
+      ],
+      [
+        1772568000,
+        302
+      ],
+      [
+        1772654400,
+        304
+      ],
+      [
+        1772740800,
+        329
+      ],
+      [
+        1772827200,
+        304
+      ],
+      [
+        1772913600,
+        304
+      ],
+      [
+        1773000000,
+        304
+      ],
+      [
+        1773086400,
+        306
+      ],
+      [
+        1773172800,
+        304
+      ],
+      [
+        1773259200,
+        305
+      ],
+      [
+        1773345600,
+        307
+      ],
+      [
+        1773432000,
+        309
+      ],
+      [
+        1773518400,
+        308
+      ],
+      [
+        1773604800,
+        309
+      ],
+      [
+        1773691200,
+        307
+      ],
+      [
+        1773777600,
+        335
+      ],
+      [
+        1773864000,
+        372
+      ],
+      [
+        1773950400,
+        368
+      ],
+      [
+        1774036800,
+        369
+      ],
+      [
+        1774123200,
+        368
+      ],
+      [
+        1774209600,
+        370
+      ],
+      [
+        1774296000,
+        367
+      ],
+      [
+        1774382400,
+        368
+      ],
+      [
+        1774468800,
+        369
+      ],
+      [
+        1774555200,
+        370
+      ],
+      [
+        1774641600,
+        370
+      ],
+      [
+        1774728000,
+        391
+      ],
+      [
+        1774814400,
+        392
+      ],
+      [
+        1774900800,
+        394
+      ],
+      [
+        1774987200,
+        389
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "DXB",
+            "name": "Dubai International Airport"
+          },
+          "city": "Dubai",
+          "country": "United Arab Emirates",
+          "country_code": "AE",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRegWMQBRhDOeg2gvll8nGXsG1-OPqD2V0EvCN1Ni2Poe9hGY8CBps9mRaAyrAz8Jvsvl292aI62fq43A",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDaD8FERvoI4iorjkWbED9zAq7S3m9hD1t5vGNU5Jznr1Kl1em9SIs9c9VkujJF5_EDvC5mKyqcQ9B8PApW9tiwfzhK_pC2qvRBND2Plo"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "NRT",
+            "name": "Narita International Airport"
+          },
+          "city": "Tokyo",
+          "country": "Japan",
+          "country_code": "JP",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqHkzEeI2bSglPzmSGZL7bxXmn0wJgOn2ZtEN8I47uBnzY1CnHzGtD-YseJXqyexcAcw_uJp-D5HTkCg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLnIToEgwiM_jV3cbw5eQZoUAIg6XqdrJAiClDyyg0w-JBSRN5ZeOT-iFb3SvwkwP1uoBCmT-gKE5VcyCYf-xq4guL4NAFICSaNyOnYOA"
+        }
+      ]
+    }
+  ]
+}

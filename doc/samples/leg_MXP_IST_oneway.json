@@ -1,14 +1,14 @@
 {
   "search_metadata": {
-    "id": "69b7f9bddd2e16cec6dfac04",
+    "id": "69cd146dbe918a421b95f3d6",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/BQe7bNEeEtuwdhlxSYYE0g/69b7f9bddd2e16cec6dfac04.json",
-    "created_at": "2026-03-16 12:38:21 UTC",
-    "processed_at": "2026-03-16 12:38:21 UTC",
-    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhoeEgoyMDI2LTA2LTEwagcIARIDTVhQcgcIARIDSVNUQgEBSAFwAZgBAg&tfu=EgIIAQ",
-    "raw_html_file": "https://serpapi.com/searches/BQe7bNEeEtuwdhlxSYYE0g/69b7f9bddd2e16cec6dfac04.html",
-    "prettify_html_file": "https://serpapi.com/searches/BQe7bNEeEtuwdhlxSYYE0g/69b7f9bddd2e16cec6dfac04.prettify",
-    "total_time_taken": 0.87
+    "json_endpoint": "https://serpapi.com/searches/BX6kGko13zXkAOmwuOEJNg/69cd146dbe918a421b95f3d6.json",
+    "created_at": "2026-04-01 12:49:49 UTC",
+    "processed_at": "2026-04-01 12:49:49 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNNWFByBwgBEgNJU1RAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/BX6kGko13zXkAOmwuOEJNg/69cd146dbe918a421b95f3d6.html",
+    "prettify_html_file": "https://serpapi.com/searches/BX6kGko13zXkAOmwuOEJNg/69cd146dbe918a421b95f3d6.prettify",
+    "total_time_taken": 1.18
   },
   "search_parameters": {
     "engine": "google_flights",
@@ -18,6 +18,7 @@
     "departure_id": "MXP",
     "arrival_id": "IST",
     "outbound_date": "2026-06-10",
+    "stops": 2,
     "currency": "EUR"
   },
   "best_flights": [
@@ -82,13 +83,13 @@
       "total_duration": 280,
       "carbon_emissions": {
         "this_flight": 204000,
-        "typical_for_this_route": 142000,
-        "difference_percent": 44
+        "typical_for_this_route": 141000,
+        "difference_percent": 45
       },
-      "price": 82,
+      "price": 86,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZ3RLVlRReE4zeEtWVFF5TWhvS0NQcy9FQUlhQTBWVlVqZ2NjTHBKIixbWyJNWFAiLCIyMDI2LTA2LTEwIiwiQkVHIixudWxsLCJKVSIsIjQxNyJdLFsiQkVHIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiSlUiLCI0MjIiXV1d"
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZ3RLVlRReE4zeEtWVFF5TWhvS0NJdERFQUlhQTBWVlVqZ2NjTzVOIixbWyJNWFAiLCIyMDI2LTA2LTEwIiwiQkVHIixudWxsLCJKVSIsIjQxNyJdLFsiQkVHIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiSlUiLCI0MjIiXV1d"
     },
     {
       "flights": [
@@ -150,130 +151,13 @@
       "total_duration": 350,
       "carbon_emissions": {
         "this_flight": 206000,
-        "typical_for_this_route": 142000,
-        "difference_percent": 45
+        "typical_for_this_route": 141000,
+        "difference_percent": 46
       },
-      "price": 82,
+      "price": 86,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZ3RLVlRReE9YeEtWVFF5TmhvS0NQcy9FQUlhQTBWVlVqZ2NjTHBKIixbWyJNWFAiLCIyMDI2LTA2LTEwIiwiQkVHIixudWxsLCJKVSIsIjQxOSJdLFsiQkVHIiwiMjAyNi0wNi0xMSIsIklTVCIsbnVsbCwiSlUiLCI0MjYiXV1d"
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Milano Malpensa Airport",
-            "id": "MXP",
-            "time": "2026-06-10 14:00"
-          },
-          "arrival_airport": {
-            "name": "Josep Tarradellas Barcelona-El Prat Airport",
-            "id": "BCN",
-            "time": "2026-06-10 15:45"
-          },
-          "duration": 105,
-          "airplane": "Airbus A320",
-          "airline": "Vueling",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
-          "travel_class": "Economy",
-          "flight_number": "VY 6343",
-          "ticket_also_sold_by": [
-            "Iberia"
-          ],
-          "legroom": "29 in",
-          "extensions": [
-            "Below average legroom (29 in)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "Carbon emissions estimate: 73 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Josep Tarradellas Barcelona-El Prat Airport",
-            "id": "BCN",
-            "time": "2026-06-10 16:40"
-          },
-          "arrival_airport": {
-            "name": "Istanbul Airport",
-            "id": "IST",
-            "time": "2026-06-10 21:25"
-          },
-          "duration": 225,
-          "airplane": "Airbus A320",
-          "airline": "Vueling",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
-          "travel_class": "Economy",
-          "flight_number": "VY 3072",
-          "ticket_also_sold_by": [
-            "Iberia"
-          ],
-          "legroom": "29 in",
-          "extensions": [
-            "Below average legroom (29 in)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "Carbon emissions estimate: 174 kg"
-          ]
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 55,
-          "name": "Josep Tarradellas Barcelona-El Prat Airport",
-          "id": "BCN"
-        }
-      ],
-      "total_duration": 385,
-      "carbon_emissions": {
-        "this_flight": 248000,
-        "typical_for_this_route": 142000,
-        "difference_percent": 75
-      },
-      "price": 123,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZzFXV1RZek5ETjhWbGt6TURjeUdnb0l2RjhRQWhvRFJWVlNPQnh3MG0wPSIsW1siTVhQIiwiMjAyNi0wNi0xMCIsIkJDTiIsbnVsbCwiVlkiLCI2MzQzIl0sWyJCQ04iLCIyMDI2LTA2LTEwIiwiSVNUIixudWxsLCJWWSIsIjMwNzIiXV1d"
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Milano Malpensa Airport",
-            "id": "MXP",
-            "time": "2026-06-10 06:50"
-          },
-          "arrival_airport": {
-            "name": "Istanbul Airport",
-            "id": "IST",
-            "time": "2026-06-10 10:50"
-          },
-          "duration": 180,
-          "airplane": "Airbus A321neo",
-          "airline": "Turkish Airlines",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-          "travel_class": "Economy",
-          "flight_number": "TK 1878",
-          "legroom": "30 in",
-          "extensions": [
-            "Average legroom (30 in)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "On-demand video",
-            "Carbon emissions estimate: 136 kg"
-          ]
-        }
-      ],
-      "total_duration": 180,
-      "carbon_emissions": {
-        "this_flight": 137000,
-        "typical_for_this_route": 142000,
-        "difference_percent": -4
-      },
-      "price": 134,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZ1pVU3pFNE56Z2FDZ2lZYUJBQ0dnTkZWVkk0SEhEVGR3PT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3OCJdXV0="
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZ3RLVlRReE9YeEtWVFF5TmhvS0NJdERFQUlhQTBWVlVqZ2NjTzVOIixbWyJNWFAiLCIyMDI2LTA2LTEwIiwiQkVHIixudWxsLCJKVSIsIjQxOSJdLFsiQkVHIiwiMjAyNi0wNi0xMSIsIklTVCIsbnVsbCwiSlUiLCI0MjYiXV1d"
     },
     {
       "flights": [
@@ -307,13 +191,13 @@
       "total_duration": 180,
       "carbon_emissions": {
         "this_flight": 141000,
-        "typical_for_this_route": 142000,
-        "difference_percent": -1
+        "typical_for_this_route": 141000,
+        "difference_percent": 0
       },
-      "price": 134,
+      "price": 139,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZ1pVU3pFNE9UWWFDZ2lZYUJBQ0dnTkZWVkk0SEhEVGR3PT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg5NiJdXV0="
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZ1pVU3pFNE9UWWFDZ2lNYkJBQ0dnTkZWVkk0SEhDNmZRPT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg5NiJdXV0="
     }
   ],
   "other_flights": [
@@ -323,70 +207,78 @@
           "departure_airport": {
             "name": "Milano Malpensa Airport",
             "id": "MXP",
-            "time": "2026-06-10 17:20"
+            "time": "2026-06-10 14:00"
           },
           "arrival_airport": {
-            "name": "Munich International Airport",
-            "id": "MUC",
-            "time": "2026-06-10 18:30"
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-10 15:45"
           },
-          "duration": 70,
-          "airplane": "Airbus A319",
-          "airline": "Lufthansa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "duration": 105,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
           "travel_class": "Economy",
-          "flight_number": "LH 1857",
-          "legroom": "30 in",
-          "extensions": [
-            "Average legroom (30 in)",
-            "Wi-Fi for a fee",
-            "Carbon emissions estimate: 68 kg"
+          "flight_number": "VY 6343",
+          "ticket_also_sold_by": [
+            "Iberia"
           ],
-          "plane_and_crew_by": "Lufthansa CityLine"
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 73 kg"
+          ]
         },
         {
           "departure_airport": {
-            "name": "Munich International Airport",
-            "id": "MUC",
-            "time": "2026-06-10 22:30"
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-10 16:40"
           },
           "arrival_airport": {
             "name": "Istanbul Airport",
             "id": "IST",
-            "time": "2026-06-11 02:05"
+            "time": "2026-06-10 21:25"
           },
-          "duration": 155,
-          "airplane": "Airbus A320neo",
-          "airline": "Lufthansa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "duration": 225,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
           "travel_class": "Economy",
-          "flight_number": "LH 1742",
+          "flight_number": "VY 3072",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
           "legroom": "29 in",
           "extensions": [
             "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
             "In-seat USB outlet",
-            "Carbon emissions estimate: 122 kg"
-          ],
-          "overnight": true
+            "Stream media to your device",
+            "Carbon emissions estimate: 174 kg"
+          ]
         }
       ],
       "layovers": [
         {
-          "duration": 240,
-          "name": "Munich International Airport",
-          "id": "MUC"
+          "duration": 55,
+          "name": "Josep Tarradellas Barcelona-El Prat Airport",
+          "id": "BCN"
         }
       ],
-      "total_duration": 465,
+      "total_duration": 385,
       "carbon_emissions": {
-        "this_flight": 192000,
-        "typical_for_this_route": 142000,
-        "difference_percent": 35
+        "this_flight": 248000,
+        "typical_for_this_route": 141000,
+        "difference_percent": 76
       },
-      "price": 144,
+      "price": 123,
       "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZzFNU0RFNE5UZDhURWd4TnpReUdnb0k3bThRQWhvRFJWVlNPQnh3dTRBQiIsW1siTVhQIiwiMjAyNi0wNi0xMCIsIk1VQyIsbnVsbCwiTEgiLCIxODU3Il0sWyJNVUMiLCIyMDI2LTA2LTEwIiwiSVNUIixudWxsLCJMSCIsIjE3NDIiXV1d"
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZzFXV1RZek5ETjhWbGt6TURjeUdnb0l2RjhRQWhvRFJWVlNPQnh3NW00PSIsW1siTVhQIiwiMjAyNi0wNi0xMCIsIkJDTiIsbnVsbCwiVlkiLCI2MzQzIl0sWyJCQ04iLCIyMDI2LTA2LTEwIiwiSVNUIixudWxsLCJWWSIsIjMwNzIiXV1d"
     },
     {
       "flights": [
@@ -394,39 +286,39 @@
           "departure_airport": {
             "name": "Milano Malpensa Airport",
             "id": "MXP",
-            "time": "2026-06-10 19:45"
+            "time": "2026-06-10 06:50"
           },
           "arrival_airport": {
             "name": "Istanbul Airport",
             "id": "IST",
-            "time": "2026-06-10 23:40"
+            "time": "2026-06-10 10:50"
           },
-          "duration": 175,
-          "airplane": "Airbus A330",
+          "duration": 180,
+          "airplane": "Airbus A321neo",
           "airline": "Turkish Airlines",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
           "travel_class": "Economy",
-          "flight_number": "TK 1876",
-          "legroom": "32 in",
+          "flight_number": "TK 1878",
+          "legroom": "30 in",
           "extensions": [
-            "Above average legroom (32 in)",
+            "Average legroom (30 in)",
             "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
+            "In-seat USB outlet",
             "On-demand video",
-            "Carbon emissions estimate: 152 kg"
+            "Carbon emissions estimate: 136 kg"
           ]
         }
       ],
-      "total_duration": 175,
+      "total_duration": 180,
       "carbon_emissions": {
-        "this_flight": 152000,
-        "typical_for_this_route": 142000,
-        "difference_percent": 7
+        "this_flight": 137000,
+        "typical_for_this_route": 141000,
+        "difference_percent": -3
       },
-      "price": 147,
+      "price": 139,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZ1pVU3pFNE56WWFDZ2lzY2hBQ0dnTkZWVkk0SEhDb2d3RT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3NiJdXV0="
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZ1pVU3pFNE56Z2FDZ2lNYkJBQ0dnTkZWVkk0SEhDNmZRPT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3OCJdXV0="
     },
     {
       "flights": [
@@ -459,14 +351,14 @@
       ],
       "total_duration": 175,
       "carbon_emissions": {
-        "this_flight": 128000,
-        "typical_for_this_route": 142000,
+        "this_flight": 127000,
+        "typical_for_this_route": 141000,
         "difference_percent": -10
       },
-      "price": 152,
+      "price": 157,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZ1pVU3pFNE56UWFDZ2lnZGhBQ0dnTkZWVkk0SEhEbWh3RT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3NCJdXV0="
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZ1pVU3pFNE56UWFDZ2lVZWhBQ0dnTkZWVkk0SEhEampRRT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3NCJdXV0="
     },
     {
       "flights": [
@@ -474,15 +366,126 @@
           "departure_airport": {
             "name": "Milano Malpensa Airport",
             "id": "MXP",
-            "time": "2026-06-10 06:00"
+            "time": "2026-06-10 19:45"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 23:40"
+          },
+          "duration": 175,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1876",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 151 kg"
+          ]
+        }
+      ],
+      "total_duration": 175,
+      "carbon_emissions": {
+        "this_flight": 152000,
+        "typical_for_this_route": 141000,
+        "difference_percent": 8
+      },
+      "price": 169,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZ1pVU3pFNE56WWFDd2pFZ3dFUUFob0RSVlZTT0J4dzFKZ0IiLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3NiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 20:00"
+          },
+          "arrival_airport": {
+            "name": "Copenhagen Airport",
+            "id": "CPH",
+            "time": "2026-06-10 22:05"
+          },
+          "duration": 125,
+          "airplane": "Airbus A320neo",
+          "airline": "Scandinavian Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+          "travel_class": "Economy",
+          "flight_number": "SK 688",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 92 kg"
+          ],
+          "plane_and_crew_by": "Sas Connect"
+        },
+        {
+          "departure_airport": {
+            "name": "Copenhagen Airport",
+            "id": "CPH",
+            "time": "2026-06-10 23:15"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 03:40"
+          },
+          "duration": 205,
+          "airplane": "Airbus A320neo",
+          "airline": "Scandinavian Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+          "travel_class": "Economy",
+          "flight_number": "SK 831",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 144 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 70,
+          "name": "Copenhagen Airport",
+          "id": "CPH"
+        }
+      ],
+      "total_duration": 400,
+      "carbon_emissions": {
+        "this_flight": 236000,
+        "typical_for_this_route": 141000,
+        "difference_percent": 67
+      },
+      "price": 230,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZ3RUU3pZNE9IeFRTemd6TVJvTENQcXlBUkFDR2dORlZWSTRISERZendFPSIsW1siTVhQIiwiMjAyNi0wNi0xMCIsIkNQSCIsbnVsbCwiU0siLCI2ODgiXSxbIkNQSCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlNLIiwiODMxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 06:30"
           },
           "arrival_airport": {
             "name": "Frankfurt Airport",
             "id": "FRA",
-            "time": "2026-06-10 07:20"
+            "time": "2026-06-10 07:50"
           },
           "duration": 80,
-          "airplane": "Embraer 190",
+          "airplane": "Embraer 195",
           "airline": "Air Dolomiti",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
           "travel_class": "Economy",
@@ -494,7 +497,7 @@
           "legroom": "30 in",
           "extensions": [
             "Average legroom (30 in)",
-            "Carbon emissions estimate: 86 kg"
+            "Carbon emissions estimate: 78 kg"
           ]
         },
         {
@@ -523,95 +526,31 @@
       ],
       "layovers": [
         {
-          "duration": 95,
+          "duration": 65,
           "name": "Frankfurt Airport",
           "id": "FRA"
         }
       ],
-      "total_duration": 360,
+      "total_duration": 330,
       "carbon_emissions": {
-        "this_flight": 249000,
-        "typical_for_this_route": 142000,
-        "difference_percent": 75
+        "this_flight": 241000,
+        "typical_for_this_route": 141000,
+        "difference_percent": 71
       },
-      "price": 269,
+      "price": 241,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJUTI1cFExbFFZa0ZGTW1kQlRFeFlWRkZDUnkwdExTMHRMUzB0TFMxd1ptSm5ORUZCUVVGQlIyMHpMV0kwUkVwYU1VOUJFZzFGVGpnNE1UZDhURWd4TWprNEdnc0l4OUVCRUFJYUEwVlZVamdjY05Ud0FRPT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIkVOIiwiODgxNyJdLFsiRlJBIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiTEgiLCIxMjk4Il1dXQ=="
+      "booking_token": "WyJDalJJVFhOTFMyZFpaVlJoTUVGQlJGZHpaV2RDUnkwdExTMHRMUzB0TFMxdmVXSnBNVUZCUVVGQlIyNU9Sa2MwUVhkS1pUSkJFZzFGVGpnNE1UZDhURWd4TWprNEdnc0kxN3NCRUFJYUEwVlZVamdjY09uWkFRPT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIkVOIiwiODgxNyJdLFsiRlJBIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiTEgiLCIxMjk4Il1dXQ=="
     }
   ],
   "price_insights": {
-    "lowest_price": 82,
-    "price_level": "low",
+    "lowest_price": 86,
+    "price_level": "typical",
     "typical_price_range": [
       85,
       140
     ],
     "price_history": [
-      [
-        1768431600,
-        109
-      ],
-      [
-        1768518000,
-        95
-      ],
-      [
-        1768604400,
-        95
-      ],
-      [
-        1768690800,
-        95
-      ],
-      [
-        1768777200,
-        95
-      ],
-      [
-        1768863600,
-        95
-      ],
-      [
-        1768950000,
-        95
-      ],
-      [
-        1769036400,
-        95
-      ],
-      [
-        1769122800,
-        95
-      ],
-      [
-        1769209200,
-        95
-      ],
-      [
-        1769295600,
-        95
-      ],
-      [
-        1769382000,
-        95
-      ],
-      [
-        1769468400,
-        95
-      ],
-      [
-        1769554800,
-        95
-      ],
-      [
-        1769641200,
-        95
-      ],
-      [
-        1769727600,
-        83
-      ],
       [
         1769814000,
         83
@@ -791,6 +730,70 @@
       [
         1773615600,
         82
+      ],
+      [
+        1773702000,
+        82
+      ],
+      [
+        1773788400,
+        82
+      ],
+      [
+        1773874800,
+        82
+      ],
+      [
+        1773961200,
+        82
+      ],
+      [
+        1774047600,
+        86
+      ],
+      [
+        1774134000,
+        86
+      ],
+      [
+        1774220400,
+        86
+      ],
+      [
+        1774306800,
+        86
+      ],
+      [
+        1774393200,
+        86
+      ],
+      [
+        1774479600,
+        86
+      ],
+      [
+        1774566000,
+        86
+      ],
+      [
+        1774652400,
+        86
+      ],
+      [
+        1774738800,
+        86
+      ],
+      [
+        1774821600,
+        86
+      ],
+      [
+        1774908000,
+        86
+      ],
+      [
+        1774994400,
+        86
       ]
     ]
   },

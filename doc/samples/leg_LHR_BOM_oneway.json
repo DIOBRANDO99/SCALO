@@ -1,0 +1,1347 @@
+{
+  "search_metadata": {
+    "id": "69cd06d7dd2e16983728409a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/XX95H6qKj-lJ4LIspmV8CQ/69cd06d7dd2e16983728409a.json",
+    "created_at": "2026-04-01 11:51:51 UTC",
+    "processed_at": "2026-04-01 11:51:51 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNMSFJyBwgBEgNCT01AAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/XX95H6qKj-lJ4LIspmV8CQ/69cd06d7dd2e16983728409a.html",
+    "prettify_html_file": "https://serpapi.com/searches/XX95H6qKj-lJ4LIspmV8CQ/69cd06d7dd2e16983728409a.prettify",
+    "total_time_taken": 1.33
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "LHR",
+    "arrival_id": "BOM",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 10:00"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-10 18:40"
+          },
+          "duration": 400,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 2",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 314 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-10 22:45"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 05:10"
+          },
+          "duration": 235,
+          "airplane": "Airbus A321neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 56",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 210 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 245,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 880,
+      "carbon_emissions": {
+        "this_flight": 526000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -3
+      },
+      "price": 375,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ2hIUmpKOFIwWTFOaG9MQ01pa0FoQUNHZ05GVlZJNEhIQzIwd0k9IixbWyJMSFIiLCIyMDI2LTA2LTEwIiwiQkFIIixudWxsLCJHRiIsIjIiXSxbIkJBSCIsIjIwMjYtMDYtMTAiLCJCT00iLG51bGwsIkdGIiwiNTYiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 20:50"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-11 06:45"
+          },
+          "duration": 415,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 66",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 355 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-11 07:50"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 12:40"
+          },
+          "duration": 200,
+          "airplane": "Airbus A320",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 202",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 188 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 65,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 680,
+      "carbon_emissions": {
+        "this_flight": 544000,
+        "typical_for_this_route": 543000,
+        "difference_percent": 0
+      },
+      "price": 389,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ3BGV1RZMmZFVlpNakF5R2dzSTRxOENFQUlhQTBWVlVqZ2NjTGJnQWc9PSIsW1siTEhSIiwiMjAyNi0wNi0xMCIsIkFVSCIsbnVsbCwiRVkiLCI2NiJdLFsiQVVIIiwiMjAyNi0wNi0xMSIsIkJPTSIsbnVsbCwiRVkiLCIyMDIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 20:15"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 10:10"
+          },
+          "duration": 565,
+          "airplane": "Boeing 787",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 2",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 414 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Under Lease From Norse"
+        }
+      ],
+      "total_duration": 565,
+      "carbon_emissions": {
+        "this_flight": 415000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -24
+      },
+      "price": 475,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ00yUlRJYUN3aU04d0lRQWhvRFJWVlNPQnh3eEs0RCIsW1siTEhSIiwiMjAyNi0wNi0xMCIsIkJPTSIsbnVsbCwiNkUiLCIyIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 22:05"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-11 06:45"
+          },
+          "duration": 400,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 6",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 314 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-11 22:45"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-12 05:10"
+          },
+          "duration": 235,
+          "airplane": "Airbus A321neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 56",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 210 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 960,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 1595,
+      "carbon_emissions": {
+        "this_flight": 526000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -3
+      },
+      "price": 356,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ2hIUmpaOFIwWTFOaG9MQ1BpVkFoQUNHZ05GVlZJNEhIQzZ3Z0k9IixbWyJMSFIiLCIyMDI2LTA2LTEwIiwiQkFIIixudWxsLCJHRiIsIjYiXSxbIkJBSCIsIjIwMjYtMDYtMTEiLCJCT00iLG51bGwsIkdGIiwiNTYiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 21:45"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-11 07:40"
+          },
+          "duration": 415,
+          "airplane": "Airbus A380",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 68",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 409 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-11 14:15"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 19:00"
+          },
+          "duration": 195,
+          "airplane": "Airbus A350",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 204",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 138 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 395,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 1005,
+      "carbon_emissions": {
+        "this_flight": 548000,
+        "typical_for_this_route": 543000,
+        "difference_percent": 1
+      },
+      "price": 361,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ3BGV1RZNGZFVlpNakEwR2dzSXJwa0NFQUlhQTBWVlVqZ2NjTGJHQWc9PSIsW1siTEhSIiwiMjAyNi0wNi0xMCIsIkFVSCIsbnVsbCwiRVkiLCI2OCJdLFsiQVVIIiwiMjAyNi0wNi0xMSIsIkJPTSIsbnVsbCwiRVkiLCIyMDQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 22:05"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-11 06:45"
+          },
+          "duration": 400,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 6",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 314 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-11 14:30"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 20:55"
+          },
+          "duration": 235,
+          "airplane": "Airbus A321neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 64",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 210 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 465,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 1100,
+      "carbon_emissions": {
+        "this_flight": 526000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -3
+      },
+      "price": 375,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ2hIUmpaOFIwWTJOQm9MQ01pa0FoQUNHZ05GVlZJNEhIQzIwd0k9IixbWyJMSFIiLCIyMDI2LTA2LTEwIiwiQkFIIixudWxsLCJHRiIsIjYiXSxbIkJBSCIsIjIwMjYtMDYtMTEiLCJCT00iLG51bGwsIkdGIiwiNjQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 09:30"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-10 19:35"
+          },
+          "duration": 425,
+          "airplane": "Airbus A380",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 62",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 409 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-10 21:15"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 02:05"
+          },
+          "duration": 200,
+          "airplane": "Airbus A350",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 206",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 138 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 100,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 725,
+      "carbon_emissions": {
+        "this_flight": 548000,
+        "typical_for_this_route": 543000,
+        "difference_percent": 1
+      },
+      "price": 378,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ3BGV1RZeWZFVlpNakEyR2dzSTU2WUNFQUlhQTBWVlVqZ2NjSVBXQWc9PSIsW1siTEhSIiwiMjAyNi0wNi0xMCIsIkFVSCIsbnVsbCwiRVkiLCI2MiJdLFsiQVVIIiwiMjAyNi0wNi0xMCIsIkJPTSIsbnVsbCwiRVkiLCIyMDYiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 14:45"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-11 00:45"
+          },
+          "duration": 420,
+          "airplane": "Boeing 787-10",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 64",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 304 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-11 02:20"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 07:10"
+          },
+          "duration": 200,
+          "airplane": "Airbus A320",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 200",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 188 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 95,
+          "name": "Zayed International Airport",
+          "id": "AUH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 715,
+      "carbon_emissions": {
+        "this_flight": 493000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -9
+      },
+      "price": 378,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ3BGV1RZMGZFVlpNakF3R2dzSTU2WUNFQUlhQTBWVlVqZ2NjSVBXQWc9PSIsW1siTEhSIiwiMjAyNi0wNi0xMCIsIkFVSCIsbnVsbCwiRVkiLCI2NCJdLFsiQVVIIiwiMjAyNi0wNi0xMSIsIkJPTSIsbnVsbCwiRVkiLCIyMDAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 08:25"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-10 17:10"
+          },
+          "duration": 405,
+          "airplane": "Airbus A380",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 6",
+          "ticket_also_sold_by": [
+            "British Airways"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 423 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-10 20:35"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 02:40"
+          },
+          "duration": 215,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 556",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 168 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 205,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 825,
+      "carbon_emissions": {
+        "this_flight": 592000,
+        "typical_for_this_route": 543000,
+        "difference_percent": 9
+      },
+      "price": 396,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ2xSVWpaOFVWSTFOVFlhQ3dpV3RRSVFBaG9EUlZWU09CeHcyZVlDIixbWyJMSFIiLCIyMDI2LTA2LTEwIiwiRE9IIixudWxsLCJRUiIsIjYiXSxbIkRPSCIsIjIwMjYtMDYtMTAiLCJCT00iLG51bGwsIlFSIiwiNTU2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 15:05"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-10 23:50"
+          },
+          "duration": 405,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 4",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 351 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-11 02:00"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 08:05"
+          },
+          "duration": 215,
+          "airplane": "Airbus A320",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 1342",
+          "ticket_also_sold_by": [
+            "Qatar Airways"
+          ],
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Carbon emissions estimate: 161 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 130,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 750,
+      "carbon_emissions": {
+        "this_flight": 513000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -6
+      },
+      "price": 407,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ3BSVWpSOE5rVXhNelF5R2dzSXliMENFQUlhQTBWVlVqZ2NjTGp3QWc9PSIsW1siTEhSIiwiMjAyNi0wNi0xMCIsIkRPSCIsbnVsbCwiUVIiLCI0Il0sWyJET0giLCIyMDI2LTA2LTExIiwiQk9NIixudWxsLCI2RSIsIjEzNDIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 11:20"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 17:15"
+          },
+          "duration": 235,
+          "airplane": "Boeing 777",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1980",
+          "ticket_also_sold_by": [
+            "IndiGo"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 203 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 20:15"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 05:15"
+          },
+          "duration": 390,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 720",
+          "ticket_also_sold_by": [
+            "IndiGo"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 302 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 180,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 805,
+      "carbon_emissions": {
+        "this_flight": 506000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -7
+      },
+      "price": 546,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ3hVU3pFNU9EQjhWRXMzTWpBYUN3aTlxZ01RQWhvRFJWVlNPQnh3NWU0RCIsW1siTEhSIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiVEsiLCIxOTgwIl0sWyJJU1QiLCIyMDI2LTA2LTEwIiwiQk9NIixudWxsLCJUSyIsIjcyMCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 21:05"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 11:25"
+          },
+          "duration": 590,
+          "airplane": "Boeing 777",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 130",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 545 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 590,
+      "carbon_emissions": {
+        "this_flight": 546000,
+        "typical_for_this_route": 543000,
+        "difference_percent": 1
+      },
+      "price": 722,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ1ZCU1RFek1Cb0xDUEt6QkJBQ0dnTkZWVkk0SEhDYmpnVT0iLFtbIkxIUiIsIjIwMjYtMDYtMTAiLCJCT00iLG51bGwsIkFJIiwiMTMwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 12:30"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 02:50"
+          },
+          "duration": 590,
+          "airplane": "Boeing 777",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 128",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 545 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "total_duration": 590,
+      "carbon_emissions": {
+        "this_flight": 546000,
+        "typical_for_this_route": 543000,
+        "difference_percent": 1
+      },
+      "price": 791,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ1ZCU1RFeU9Cb0xDTmJwQkJBQ0dnTkZWVkk0SEhETnpBVT0iLFtbIkxIUiIsIjIwMjYtMDYtMTAiLCJCT00iLG51bGwsIkFJIiwiMTI4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 12:25"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 02:10"
+          },
+          "duration": 555,
+          "airplane": "Boeing 787",
+          "airline": "Virgin Atlantic",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VS.png",
+          "travel_class": "Economy",
+          "flight_number": "VS 358",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 448 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 555,
+      "carbon_emissions": {
+        "this_flight": 448000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -17
+      },
+      "price": 791,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VS.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ1ZXVXpNMU9Cb0xDTzNwQkJBQ0dnTkZWVkk0SEhEb3pBVT0iLFtbIkxIUiIsIjIwMjYtMDYtMTAiLCJCT00iLG51bGwsIlZTIiwiMzU4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 19:50"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 09:35"
+          },
+          "duration": 555,
+          "airplane": "Boeing 787",
+          "airline": "Virgin Atlantic",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VS.png",
+          "travel_class": "Economy",
+          "flight_number": "VS 354",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 448 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 555,
+      "carbon_emissions": {
+        "this_flight": 448000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -17
+      },
+      "price": 791,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VS.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ1ZXVXpNMU5Cb0xDTzNwQkJBQ0dnTkZWVkk0SEhEb3pBVT0iLFtbIkxIUiIsIjIwMjYtMDYtMTAiLCJCT00iLG51bGwsIlZTIiwiMzU0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 09:40"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-10 23:40"
+          },
+          "duration": 570,
+          "airplane": "Boeing 787",
+          "airline": "British Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+          "travel_class": "Economy",
+          "flight_number": "BA 139",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 459 kg"
+          ]
+        }
+      ],
+      "total_duration": 570,
+      "carbon_emissions": {
+        "this_flight": 459000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -15
+      },
+      "price": 974,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ1ZDUVRFek9Sb0xDTEQ0QlJBQ0dnTkZWVkk0SEhDVjhnWT0iLFtbIkxIUiIsIjIwMjYtMDYtMTAiLCJCT00iLG51bGwsIkJBIiwiMTM5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-10 21:00"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-11 10:50"
+          },
+          "duration": 560,
+          "airplane": "Boeing 787",
+          "airline": "British Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+          "travel_class": "Economy",
+          "flight_number": "BA 199",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 459 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "total_duration": 560,
+      "carbon_emissions": {
+        "this_flight": 459000,
+        "typical_for_this_route": 543000,
+        "difference_percent": -15
+      },
+      "price": 1192,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+      "booking_token": "WyJDalJJVUdrd1EwUk9TQzFIWVVGQlF6VnVYM2RDUnkwdExTMHRMUzB0TFhsc1kzWXhPVUZCUVVGQlIyNU9RblJuUlROVU1VRkJFZ1ZDUVRFNU9Sb0xDTmVpQnhBQ0dnTkZWVkk0SEhEZ3R3Zz0iLFtbIkxIUiIsIjIwMjYtMDYtMTAiLCJCT00iLG51bGwsIkJBIiwiMTk5Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 356,
+    "price_level": "typical",
+    "typical_price_range": [
+      310,
+      370
+    ],
+    "price_history": [
+      [
+        1769817600,
+        332
+      ],
+      [
+        1769904000,
+        332
+      ],
+      [
+        1769990400,
+        332
+      ],
+      [
+        1770076800,
+        333
+      ],
+      [
+        1770163200,
+        335
+      ],
+      [
+        1770249600,
+        334
+      ],
+      [
+        1770336000,
+        331
+      ],
+      [
+        1770422400,
+        332
+      ],
+      [
+        1770508800,
+        333
+      ],
+      [
+        1770595200,
+        333
+      ],
+      [
+        1770681600,
+        333
+      ],
+      [
+        1770768000,
+        331
+      ],
+      [
+        1770854400,
+        331
+      ],
+      [
+        1770940800,
+        331
+      ],
+      [
+        1771027200,
+        336
+      ],
+      [
+        1771113600,
+        336
+      ],
+      [
+        1771200000,
+        336
+      ],
+      [
+        1771286400,
+        336
+      ],
+      [
+        1771372800,
+        334
+      ],
+      [
+        1771459200,
+        334
+      ],
+      [
+        1771545600,
+        335
+      ],
+      [
+        1771632000,
+        335
+      ],
+      [
+        1771718400,
+        336
+      ],
+      [
+        1771804800,
+        335
+      ],
+      [
+        1771891200,
+        336
+      ],
+      [
+        1771977600,
+        336
+      ],
+      [
+        1772064000,
+        348
+      ],
+      [
+        1772150400,
+        347
+      ],
+      [
+        1772236800,
+        354
+      ],
+      [
+        1772323200,
+        354
+      ],
+      [
+        1772409600,
+        354
+      ],
+      [
+        1772496000,
+        356
+      ],
+      [
+        1772582400,
+        357
+      ],
+      [
+        1772668800,
+        357
+      ],
+      [
+        1772755200,
+        357
+      ],
+      [
+        1772841600,
+        358
+      ],
+      [
+        1772928000,
+        358
+      ],
+      [
+        1773014400,
+        358
+      ],
+      [
+        1773100800,
+        359
+      ],
+      [
+        1773187200,
+        359
+      ],
+      [
+        1773273600,
+        360
+      ],
+      [
+        1773360000,
+        360
+      ],
+      [
+        1773446400,
+        358
+      ],
+      [
+        1773532800,
+        358
+      ],
+      [
+        1773619200,
+        363
+      ],
+      [
+        1773705600,
+        363
+      ],
+      [
+        1773792000,
+        359
+      ],
+      [
+        1773878400,
+        359
+      ],
+      [
+        1773964800,
+        360
+      ],
+      [
+        1774051200,
+        357
+      ],
+      [
+        1774137600,
+        357
+      ],
+      [
+        1774224000,
+        358
+      ],
+      [
+        1774310400,
+        359
+      ],
+      [
+        1774396800,
+        358
+      ],
+      [
+        1774483200,
+        359
+      ],
+      [
+        1774569600,
+        359
+      ],
+      [
+        1774656000,
+        357
+      ],
+      [
+        1774742400,
+        358
+      ],
+      [
+        1774825200,
+        358
+      ],
+      [
+        1774911600,
+        357
+      ],
+      [
+        1774998000,
+        356
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "LHR",
+            "name": "Heathrow Airport"
+          },
+          "city": "London",
+          "country": "United Kingdom",
+          "country_code": "GB",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpN9RbtOSTDqKIPxWc_D6rdSysaWVh6d-NW7yz7yFXKRwh5RN5BpNIoXEwH1XVcFdLWqn6Sm8_Y_zmeg",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYH83YXny8hR4M7k5BMFq4vUT6LNtVABQzgs2pg-hcpSZq3oMBOQK3xh591AAJv2Qx4uvFZUGqOVt4kuoCUOklISunmndJleOoSef_7QE"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "BOM",
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai"
+          },
+          "city": "Mumbai",
+          "country": "India",
+          "country_code": "IN",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ5Q0R5IIxjWsuWKt6lnlBIOlNfNwTqC8yBtOP_uMdzFrluYmn3jZ-6dyEWo6AbIH3x57scrUgF3gvWA",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMqVWevN4qkQ8u4HrxtHbv2Oy7UigPckL8bgZUJQWQgjvmJxG7oggYxd2Rw5MwjiBYzZFpr939opSbON9CxkwdD-7DK9it3TPq1ea8pxU"
+        }
+      ]
+    }
+  ]
+}

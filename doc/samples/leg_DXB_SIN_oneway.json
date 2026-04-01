@@ -1,0 +1,1413 @@
+{
+  "search_metadata": {
+    "id": "69cd0697fd9b90e69fdf0439",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/W0kBLz69iG7UXgqVok8DuA/69cd0697fd9b90e69fdf0439.json",
+    "created_at": "2026-04-01 11:50:47 UTC",
+    "processed_at": "2026-04-01 11:50:47 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEzKAFqBwgBEgNEWEJyBwgBEgNTSU5AAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/W0kBLz69iG7UXgqVok8DuA/69cd0697fd9b90e69fdf0439.html",
+    "prettify_html_file": "https://serpapi.com/searches/W0kBLz69iG7UXgqVok8DuA/69cd0697fd9b90e69fdf0439.prettify",
+    "total_time_taken": 0.77
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "DXB",
+    "arrival_id": "SIN",
+    "outbound_date": "2026-06-13",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 04:00"
+          },
+          "arrival_airport": {
+            "name": "Kuala Lumpur International Airport",
+            "id": "KUL",
+            "time": "2026-06-13 15:30"
+          },
+          "duration": 450,
+          "airplane": "Boeing 737",
+          "airline": "Batik Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OD.png",
+          "travel_class": "Economy",
+          "flight_number": "OD 714",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 466 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Kuala Lumpur International Airport",
+            "id": "KUL",
+            "time": "2026-06-13 19:30"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 20:30"
+          },
+          "duration": 60,
+          "airplane": "Boeing 737",
+          "airline": "Batik Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OD.png",
+          "travel_class": "Economy",
+          "flight_number": "OD 805",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 59 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 240,
+          "name": "Kuala Lumpur International Airport",
+          "id": "KUL"
+        }
+      ],
+      "total_duration": 750,
+      "carbon_emissions": {
+        "this_flight": 526000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 16
+      },
+      "price": 257,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OD.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3RQUkRjeE5IeFBSRGd3TlJvTENPVElBUkFDR2dORlZWSTRISEQ0NkFFPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIktVTCIsbnVsbCwiT0QiLCI3MTQiXSxbIktVTCIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIk9EIiwiODA1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 21:00"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-13 21:15"
+          },
+          "duration": 75,
+          "airplane": "Airbus A320neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 511",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 62 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-13 23:20"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 12:45"
+          },
+          "duration": 505,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 165",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 381 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 125,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 705,
+      "carbon_emissions": {
+        "this_flight": 444000,
+        "typical_for_this_route": 453000,
+        "difference_percent": -2
+      },
+      "price": 260,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3RIUmpVeE1YeEhSakUyTlJvTENNL0tBUkFDR2dORlZWSTRISENKNndFPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkJBSCIsbnVsbCwiR0YiLCI1MTEiXSxbIkJBSCIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkdGIiwiMTY1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 20:40"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-14 01:40"
+          },
+          "duration": 210,
+          "airplane": "Boeing 787",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 916",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 152 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-14 03:35"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 12:10"
+          },
+          "duration": 365,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2115",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 385 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 115,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL",
+          "overnight": true
+        }
+      ],
+      "total_duration": 690,
+      "carbon_emissions": {
+        "this_flight": 538000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 19
+      },
+      "price": 286,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3hCU1RreE5ueEJTVEl4TVRVYUN3amwzZ0VRQWhvRFJWVlNPQnh3dllJQyIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkRFTCIsbnVsbCwiQUkiLCI5MTYiXSxbIkRFTCIsIjIwMjYtMDYtMTQiLCJTSU4iLG51bGwsIkFJIiwiMjExNSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 21:00"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 08:35"
+          },
+          "duration": 455,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 314",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 418 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 455,
+      "carbon_emissions": {
+        "this_flight": 418000,
+        "typical_for_this_route": 453000,
+        "difference_percent": -8
+      },
+      "price": 497,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ1ZGU3pNeE5Cb0xDT2lEQXhBQ0dnTkZWVkk0SEhEM3dRTT0iLFtbIkRYQiIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkVLIiwiMzE0Il1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 00:15"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-13 04:55"
+          },
+          "duration": 190,
+          "airplane": "Boeing 787",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 996",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 159 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-13 13:10"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 21:45"
+          },
+          "duration": 365,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2382",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 385 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 495,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1050,
+      "carbon_emissions": {
+        "this_flight": 545000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 20
+      },
+      "price": 286,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3hCU1RrNU5ueEJTVEl6T0RJYUN3amwzZ0VRQWhvRFJWVlNPQnh3dllJQyIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkRFTCIsbnVsbCwiQUkiLCI5OTYiXSxbIkRFTCIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkFJIiwiMjM4MiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 11:00"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-13 15:55"
+          },
+          "duration": 205,
+          "airplane": "Boeing 787",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 930",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 177 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-13 23:00"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 07:25"
+          },
+          "duration": 355,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2380",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 385 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 425,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL"
+        }
+      ],
+      "total_duration": 985,
+      "carbon_emissions": {
+        "this_flight": 563000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 24
+      },
+      "price": 286,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3hCU1Rrek1IeEJTVEl6T0RBYUN3amwzZ0VRQWhvRFJWVlNPQnh3dllJQyIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkRFTCIsbnVsbCwiQUkiLCI5MzAiXSxbIkRFTCIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkFJIiwiMjM4MCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 13:10"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-13 18:30"
+          },
+          "duration": 230,
+          "airplane": "Airbus A320neo",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 918",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 185 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-13 23:00"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 07:25"
+          },
+          "duration": 355,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2380",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 385 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 270,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL"
+        }
+      ],
+      "total_duration": 855,
+      "carbon_emissions": {
+        "this_flight": 571000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 26
+      },
+      "price": 288,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3hCU1RreE9IeEJTVEl6T0RBYUN3alA0QUVRQWhvRFJWVlNPQnh3eklRQyIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkRFTCIsbnVsbCwiQUkiLCI5MTgiXSxbIkRFTCIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkFJIiwiMjM4MCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 23:40"
+          },
+          "arrival_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-14 04:25"
+          },
+          "duration": 195,
+          "airplane": "Boeing 787",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 984",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 137 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-14 10:05"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 18:30"
+          },
+          "duration": 355,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2107",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 368 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 340,
+          "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+          "id": "BOM",
+          "overnight": true
+        }
+      ],
+      "total_duration": 890,
+      "carbon_emissions": {
+        "this_flight": 506000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 12
+      },
+      "price": 328,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3hCU1RrNE5IeEJTVEl4TURjYUN3amwvd0VRQWhvRFJWVlNPQnh3NGFnQyIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkJPTSIsbnVsbCwiQUkiLCI5ODQiXSxbIkJPTSIsIjIwMjYtMDYtMTQiLCJTSU4iLG51bGwsIkFJIiwiMjEwNyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 01:55"
+          },
+          "arrival_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 08:10"
+          },
+          "duration": 285,
+          "airplane": "Boeing 737",
+          "airline": "flydubai",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/FZ.png",
+          "travel_class": "Economy",
+          "flight_number": "FZ 579",
+          "ticket_also_sold_by": [
+            "Emirates"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 268 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 12:15"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 18:55"
+          },
+          "duration": 250,
+          "airplane": "Airbus A330",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 308",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 185 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 245,
+          "name": "Colombo Bandaranaike International Airport",
+          "id": "CMB"
+        }
+      ],
+      "total_duration": 780,
+      "carbon_emissions": {
+        "this_flight": 455000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 0
+      },
+      "price": 380,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3RHV2pVM09YeFZURE13T0JvTENKR29BaEFDR2dORlZWSTRISERJMXdJPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkNNQiIsbnVsbCwiRloiLCI1NzkiXSxbIkNNQiIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIlVMIiwiMzA4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 02:30"
+          },
+          "arrival_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 08:30"
+          },
+          "duration": 270,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 650",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 256 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 12:15"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 18:55"
+          },
+          "duration": 250,
+          "airplane": "Airbus A330",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 308",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 185 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 225,
+          "name": "Colombo Bandaranaike International Airport",
+          "id": "CMB"
+        }
+      ],
+      "total_duration": 745,
+      "carbon_emissions": {
+        "this_flight": 442000,
+        "typical_for_this_route": 453000,
+        "difference_percent": -2
+      },
+      "price": 380,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3RGU3pZMU1IeFZURE13T0JvTENKR29BaEFDR2dORlZWSTRISERJMXdJPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkNNQiIsbnVsbCwiRUsiLCI2NTAiXSxbIkNNQiIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIlVMIiwiMzA4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 16:10"
+          },
+          "arrival_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 22:10"
+          },
+          "duration": 270,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 648",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 245 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-14 01:50"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 08:30"
+          },
+          "duration": 250,
+          "airplane": "Airbus A320",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 306",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 246 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 220,
+          "name": "Colombo Bandaranaike International Airport",
+          "id": "CMB"
+        }
+      ],
+      "total_duration": 740,
+      "carbon_emissions": {
+        "this_flight": 492000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 9
+      },
+      "price": 380,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3RGU3pZME9IeFZURE13TmhvTENKR29BaEFDR2dORlZWSTRISERJMXdJPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkNNQiIsbnVsbCwiRUsiLCI2NDgiXSxbIkNNQiIsIjIwMjYtMDYtMTQiLCJTSU4iLG51bGwsIlVMIiwiMzA2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 23:00"
+          },
+          "arrival_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-14 05:00"
+          },
+          "duration": 270,
+          "airplane": "Airbus A330",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 226",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 268 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-14 12:15"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 18:55"
+          },
+          "duration": 250,
+          "airplane": "Airbus A330",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 308",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 185 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 435,
+          "name": "Colombo Bandaranaike International Airport",
+          "id": "CMB"
+        }
+      ],
+      "total_duration": 955,
+      "carbon_emissions": {
+        "this_flight": 455000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 0
+      },
+      "price": 434,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3RWVERJeU5ueFZURE13T0JvTENLZlNBaEFDR2dORlZWSTRISEMvaUFNPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIkNNQiIsbnVsbCwiVUwiLCIyMjYiXSxbIkNNQiIsIjIwMjYtMDYtMTQiLCJTSU4iLG51bGwsIlVMIiwiMzA4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 02:20"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 14:05"
+          },
+          "duration": 465,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 348",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 407 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "total_duration": 465,
+      "carbon_emissions": {
+        "this_flight": 408000,
+        "typical_for_this_route": 453000,
+        "difference_percent": -10
+      },
+      "price": 497,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ1ZGU3pNME9Cb0xDT2lEQXhBQ0dnTkZWVkk0SEhEM3dRTT0iLFtbIkRYQiIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkVLIiwiMzQ4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 03:00"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 15:00"
+          },
+          "duration": 480,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 354",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 404 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 480,
+      "carbon_emissions": {
+        "this_flight": 405000,
+        "typical_for_this_route": 453000,
+        "difference_percent": -11
+      },
+      "price": 497,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ1ZGU3pNMU5Cb0xDT2lEQXhBQ0dnTkZWVkk0SEhEM3dRTT0iLFtbIkRYQiIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkVLIiwiMzU0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 10:00"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 21:45"
+          },
+          "duration": 465,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 352",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 418 kg"
+          ]
+        }
+      ],
+      "total_duration": 465,
+      "carbon_emissions": {
+        "this_flight": 418000,
+        "typical_for_this_route": 453000,
+        "difference_percent": -8
+      },
+      "price": 497,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ1ZGU3pNMU1ob0xDT2lEQXhBQ0dnTkZWVkk0SEhEM3dRTT0iLFtbIkRYQiIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkVLIiwiMzUyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 21:15"
+          },
+          "arrival_airport": {
+            "name": "Kuala Lumpur International Airport",
+            "id": "KUL",
+            "time": "2026-06-14 08:35"
+          },
+          "duration": 440,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 344",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 384 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Kuala Lumpur International Airport",
+            "id": "KUL",
+            "time": "2026-06-14 10:10"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 11:25"
+          },
+          "duration": 75,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Malaysia Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MH.png",
+          "travel_class": "Economy",
+          "flight_number": "MH 627",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 53 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 95,
+          "name": "Kuala Lumpur International Airport",
+          "id": "KUL"
+        }
+      ],
+      "total_duration": 610,
+      "carbon_emissions": {
+        "this_flight": 438000,
+        "typical_for_this_route": 453000,
+        "difference_percent": -3
+      },
+      "price": 685,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ3RGU3pNME5IeE5TRFl5TnhvTENNQ1dCQkFDR2dORlZWSTRISENPN0FRPSIsW1siRFhCIiwiMjAyNi0wNi0xMyIsIktVTCIsbnVsbCwiRUsiLCIzNDQiXSxbIktVTCIsIjIwMjYtMDYtMTQiLCJTSU4iLG51bGwsIk1IIiwiNjI3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-13 19:45"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 07:30"
+          },
+          "duration": 465,
+          "airplane": "Boeing 777",
+          "airline": "Singapore Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+          "travel_class": "Economy",
+          "flight_number": "SQ 495",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 479 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 465,
+      "carbon_emissions": {
+        "this_flight": 480000,
+        "typical_for_this_route": 453000,
+        "difference_percent": 6
+      },
+      "price": 868,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktRbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJqUzE5bmVEaEJFZ1ZUVVRRNU5Sb0xDTU9sQlJBQ0dnTkZWVkk0SEhDRmtnWT0iLFtbIkRYQiIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIlNRIiwiNDk1Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 257,
+    "price_level": "high",
+    "typical_price_range": [
+      170,
+      235
+    ],
+    "price_history": [
+      [
+        1769803200,
+        188
+      ],
+      [
+        1769889600,
+        185
+      ],
+      [
+        1769976000,
+        185
+      ],
+      [
+        1770062400,
+        185
+      ],
+      [
+        1770148800,
+        200
+      ],
+      [
+        1770235200,
+        200
+      ],
+      [
+        1770321600,
+        194
+      ],
+      [
+        1770408000,
+        195
+      ],
+      [
+        1770494400,
+        194
+      ],
+      [
+        1770580800,
+        194
+      ],
+      [
+        1770667200,
+        194
+      ],
+      [
+        1770753600,
+        193
+      ],
+      [
+        1770840000,
+        193
+      ],
+      [
+        1770926400,
+        193
+      ],
+      [
+        1771012800,
+        193
+      ],
+      [
+        1771099200,
+        193
+      ],
+      [
+        1771185600,
+        193
+      ],
+      [
+        1771272000,
+        195
+      ],
+      [
+        1771358400,
+        196
+      ],
+      [
+        1771444800,
+        196
+      ],
+      [
+        1771531200,
+        185
+      ],
+      [
+        1771617600,
+        185
+      ],
+      [
+        1771704000,
+        185
+      ],
+      [
+        1771790400,
+        185
+      ],
+      [
+        1771876800,
+        184
+      ],
+      [
+        1771963200,
+        185
+      ],
+      [
+        1772049600,
+        185
+      ],
+      [
+        1772136000,
+        184
+      ],
+      [
+        1772222400,
+        197
+      ],
+      [
+        1772308800,
+        196
+      ],
+      [
+        1772395200,
+        198
+      ],
+      [
+        1772481600,
+        199
+      ],
+      [
+        1772568000,
+        205
+      ],
+      [
+        1772654400,
+        200
+      ],
+      [
+        1772740800,
+        199
+      ],
+      [
+        1772827200,
+        200
+      ],
+      [
+        1772913600,
+        199
+      ],
+      [
+        1773000000,
+        199
+      ],
+      [
+        1773086400,
+        201
+      ],
+      [
+        1773172800,
+        194
+      ],
+      [
+        1773259200,
+        195
+      ],
+      [
+        1773345600,
+        196
+      ],
+      [
+        1773432000,
+        198
+      ],
+      [
+        1773518400,
+        227
+      ],
+      [
+        1773604800,
+        228
+      ],
+      [
+        1773691200,
+        226
+      ],
+      [
+        1773777600,
+        226
+      ],
+      [
+        1773864000,
+        243
+      ],
+      [
+        1773950400,
+        241
+      ],
+      [
+        1774036800,
+        241
+      ],
+      [
+        1774123200,
+        248
+      ],
+      [
+        1774209600,
+        249
+      ],
+      [
+        1774296000,
+        248
+      ],
+      [
+        1774382400,
+        248
+      ],
+      [
+        1774468800,
+        249
+      ],
+      [
+        1774555200,
+        250
+      ],
+      [
+        1774641600,
+        250
+      ],
+      [
+        1774728000,
+        249
+      ],
+      [
+        1774814400,
+        243
+      ],
+      [
+        1774900800,
+        244
+      ],
+      [
+        1774987200,
+        257
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "DXB",
+            "name": "Dubai International Airport"
+          },
+          "city": "Dubai",
+          "country": "United Arab Emirates",
+          "country_code": "AE",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRegWMQBRhDOeg2gvll8nGXsG1-OPqD2V0EvCN1Ni2Poe9hGY8CBps9mRaAyrAz8Jvsvl292aI62fq43A",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDaD8FERvoI4iorjkWbED9zAq7S3m9hD1t5vGNU5Jznr1Kl1em9SIs9c9VkujJF5_EDvC5mKyqcQ9B8PApW9tiwfzhK_pC2qvRBND2Plo"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "SIN",
+            "name": "Singapore Changi Airport"
+          },
+          "city": "Singapore",
+          "country": "Singapore",
+          "country_code": "SG",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPxNDQYUBDKl_Cnb-2R_TakwdFGzKIpvsMBeDdYwNHK_c2jUY6LVQ5R_mwZDf9hOuu6iHgYjrL87eDZw",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSp10Y3G-u5LPBzRWABhOUD7BGcBspacZc2r31UP6QmzLmyprerN-6BZ5wZkdsDXngRuIYCPQI8Ny3uYjbRegATm48AJfppuLgpsc0mhsE"
+        }
+      ]
+    }
+  ]
+}

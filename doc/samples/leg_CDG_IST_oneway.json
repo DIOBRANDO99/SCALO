@@ -1,0 +1,1095 @@
+{
+  "search_metadata": {
+    "id": "69cd070f19c5f608b61514cc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/yN5IfOk-Stttm7udVmeQXA/69cd070f19c5f608b61514cc.json",
+    "created_at": "2026-04-01 11:52:47 UTC",
+    "processed_at": "2026-04-01 11:52:47 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNDREdyBwgBEgNJU1RAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/yN5IfOk-Stttm7udVmeQXA/69cd070f19c5f608b61514cc.html",
+    "prettify_html_file": "https://serpapi.com/searches/yN5IfOk-Stttm7udVmeQXA/69cd070f19c5f608b61514cc.prettify",
+    "total_time_taken": 0.67
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "CDG",
+    "arrival_id": "IST",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 16:20"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 17:40"
+          },
+          "duration": 80,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1140",
+          "ticket_also_sold_by": [
+            "KLM"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 59 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 21:00"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 01:20"
+          },
+          "duration": 200,
+          "airplane": "Boeing 737",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1961",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 160 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 200,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 480,
+      "carbon_emissions": {
+        "this_flight": 220000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -4
+      },
+      "price": 124,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZzFCUmpFeE5EQjhTMHd4T1RZeEdnb0k3MkFRQWhvRFJWVlNPQnh3c1hBPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkFNUyIsbnVsbCwiQUYiLCIxMTQwIl0sWyJBTVMiLCIyMDI2LTA2LTEwIiwiSVNUIixudWxsLCJLTCIsIjE5NjEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 20:35"
+          },
+          "arrival_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 23:00"
+          },
+          "duration": 145,
+          "airplane": "Airbus A320",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 243",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 123 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-11 00:55"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 03:40"
+          },
+          "duration": 105,
+          "airplane": "Airbus A319",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 426",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 95 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 115,
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "BEG"
+        }
+      ],
+      "total_duration": 365,
+      "carbon_emissions": {
+        "this_flight": 219000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -4
+      },
+      "price": 141,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+      "extensions": [
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ3RLVlRJME0zeEtWVFF5TmhvS0NJbHVFQUlhQTBWVlVqZ2NjTnAvIixbWyJDREciLCIyMDI2LTA2LTEwIiwiQkVHIixudWxsLCJKVSIsIjI0MyJdLFsiQkVHIiwiMjAyNi0wNi0xMSIsIklTVCIsbnVsbCwiSlUiLCI0MjYiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 13:35"
+          },
+          "arrival_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-10 15:30"
+          },
+          "duration": 115,
+          "airplane": "Airbus A321",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 8251",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 90 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-10 16:40"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 21:25"
+          },
+          "duration": 225,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 3072",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 174 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 70,
+          "name": "Josep Tarradellas Barcelona-El Prat Airport",
+          "id": "BCN"
+        }
+      ],
+      "total_duration": 410,
+      "carbon_emissions": {
+        "this_flight": 265000,
+        "typical_for_this_route": 229000,
+        "difference_percent": 16
+      },
+      "price": 156,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZzFXV1RneU5URjhWbGt6TURjeUdnb0lsM2tRQWhvRFJWVlNPQnh3eTR3QiIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkJDTiIsbnVsbCwiVlkiLCI4MjUxIl0sWyJCQ04iLCIyMDI2LTA2LTEwIiwiSVNUIixudWxsLCJWWSIsIjMwNzIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 14:20"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 18:55"
+          },
+          "duration": 215,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1824",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 143 kg"
+          ]
+        }
+      ],
+      "total_duration": 215,
+      "carbon_emissions": {
+        "this_flight": 144000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -37
+      },
+      "price": 171,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ1pVU3pFNE1qUWFDd2lKaFFFUUFob0RSVlZTT0J4d3Nab0IiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTgyNCJdXV0="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 14:30"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 15:45"
+          },
+          "duration": 75,
+          "airplane": "Boeing 737",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1408",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 50 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 21:00"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 01:20"
+          },
+          "duration": 200,
+          "airplane": "Boeing 737",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1961",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 160 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 315,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 590,
+      "carbon_emissions": {
+        "this_flight": 211000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -8
+      },
+      "price": 126,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZzFMVERFME1EaDhTMHd4T1RZeEdnb0lqbUlRQWhvRFJWVlNPQnh3NlhFPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkFNUyIsbnVsbCwiS0wiLCIxNDA4Il0sWyJBTVMiLCIyMDI2LTA2LTEwIiwiSVNUIixudWxsLCJLTCIsIjE5NjEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 10:10"
+          },
+          "arrival_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-10 12:05"
+          },
+          "duration": 115,
+          "airplane": "Airbus A321",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 8243",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 90 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-10 16:40"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 21:25"
+          },
+          "duration": 225,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 3072",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 174 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 275,
+          "name": "Josep Tarradellas Barcelona-El Prat Airport",
+          "id": "BCN"
+        }
+      ],
+      "total_duration": 615,
+      "carbon_emissions": {
+        "this_flight": 265000,
+        "typical_for_this_route": 229000,
+        "difference_percent": 16
+      },
+      "price": 141,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZzFXV1RneU5ETjhWbGt6TURjeUdnb0l1MjBRQWhvRFJWVlNPQnh3LzM0PSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkJDTiIsbnVsbCwiVlkiLCI4MjQzIl0sWyJCQ04iLCIyMDI2LTA2LTEwIiwiSVNUIixudWxsLCJWWSIsIjMwNzIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 07:20"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 12:00"
+          },
+          "duration": 220,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1830",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 172 kg"
+          ]
+        }
+      ],
+      "total_duration": 220,
+      "carbon_emissions": {
+        "this_flight": 172000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -25
+      },
+      "price": 171,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ1pVU3pFNE16QWFDd2lKaFFFUUFob0RSVlZTT0J4d3Nab0IiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTgzMCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 11:40"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 16:10"
+          },
+          "duration": 210,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1822",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 207 kg"
+          ]
+        }
+      ],
+      "total_duration": 210,
+      "carbon_emissions": {
+        "this_flight": 208000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -9
+      },
+      "price": 171,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ1pVU3pFNE1qSWFDd2lKaFFFUUFob0RSVlZTT0J4d3Nab0IiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTgyMiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 16:10"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 20:45"
+          },
+          "duration": 215,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1826",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 172 kg"
+          ]
+        }
+      ],
+      "total_duration": 215,
+      "carbon_emissions": {
+        "this_flight": 172000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -25
+      },
+      "price": 171,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ1pVU3pFNE1qWWFDd2lKaFFFUUFob0RSVlZTT0J4d3Nab0IiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTgyNiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 18:05"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 22:40"
+          },
+          "duration": 215,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1834",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 177 kg"
+          ]
+        }
+      ],
+      "total_duration": 215,
+      "carbon_emissions": {
+        "this_flight": 177000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -23
+      },
+      "price": 171,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ1pVU3pFNE16UWFDd2lKaFFFUUFob0RSVlZTT0J4d3Nab0IiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTgzNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 19:45"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 00:10"
+          },
+          "duration": 205,
+          "airplane": "Airbus A350",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1828",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 156 kg"
+          ]
+        }
+      ],
+      "total_duration": 205,
+      "carbon_emissions": {
+        "this_flight": 157000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -31
+      },
+      "price": 171,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ1pVU3pFNE1qZ2FDd2lKaFFFUUFob0RSVlZTT0J4d3Nab0IiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTgyOCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 22:55"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 03:30"
+          },
+          "duration": 215,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1390",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 205 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 215,
+      "carbon_emissions": {
+        "this_flight": 205000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -10
+      },
+      "price": 221,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ1pCUmpFek9UQWFDd2lJckFFUUFob0RSVlZTT0J4dzBNY0IiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIkFGIiwiMTM5MCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 07:05"
+          },
+          "arrival_airport": {
+            "name": "Vienna International Airport",
+            "id": "VIE",
+            "time": "2026-06-10 09:00"
+          },
+          "duration": 115,
+          "airplane": "Airbus A320",
+          "airline": "Austrian",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
+          "travel_class": "Economy",
+          "flight_number": "OS 370",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 106 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Vienna International Airport",
+            "id": "VIE",
+            "time": "2026-06-10 10:05"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 13:25"
+          },
+          "duration": 140,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1884",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 109 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 65,
+          "name": "Vienna International Airport",
+          "id": "VIE"
+        }
+      ],
+      "total_duration": 320,
+      "carbon_emissions": {
+        "this_flight": 215000,
+        "typical_for_this_route": 229000,
+        "difference_percent": -6
+      },
+      "price": 1239,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJVW5kaFNuWmxhbWRNZERSQlEwNXVSbmRDUnkwdExTMHRMUzB0TFc5NVkyeHVORUZCUVVGQlIyNU9RbmhCUVZoS2QwTkJFZ3hQVXpNM01IeFVTekU0T0RRYUN3aW94d2NRQWhvRFJWVlNPQnh3b09JSSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIlZJRSIsbnVsbCwiT1MiLCIzNzAiXSxbIlZJRSIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg4NCJdXV0="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 124,
+    "price_level": "low",
+    "typical_price_range": [
+      130,
+      180
+    ],
+    "price_history": [
+      [
+        1769814000,
+        119
+      ],
+      [
+        1769900400,
+        119
+      ],
+      [
+        1769986800,
+        119
+      ],
+      [
+        1770073200,
+        119
+      ],
+      [
+        1770159600,
+        89
+      ],
+      [
+        1770246000,
+        89
+      ],
+      [
+        1770332400,
+        89
+      ],
+      [
+        1770418800,
+        89
+      ],
+      [
+        1770505200,
+        89
+      ],
+      [
+        1770591600,
+        119
+      ],
+      [
+        1770678000,
+        119
+      ],
+      [
+        1770764400,
+        119
+      ],
+      [
+        1770850800,
+        119
+      ],
+      [
+        1770937200,
+        119
+      ],
+      [
+        1771023600,
+        119
+      ],
+      [
+        1771110000,
+        119
+      ],
+      [
+        1771196400,
+        119
+      ],
+      [
+        1771282800,
+        119
+      ],
+      [
+        1771369200,
+        119
+      ],
+      [
+        1771455600,
+        119
+      ],
+      [
+        1771542000,
+        119
+      ],
+      [
+        1771628400,
+        119
+      ],
+      [
+        1771714800,
+        119
+      ],
+      [
+        1771801200,
+        119
+      ],
+      [
+        1771887600,
+        119
+      ],
+      [
+        1771974000,
+        119
+      ],
+      [
+        1772060400,
+        119
+      ],
+      [
+        1772146800,
+        119
+      ],
+      [
+        1772233200,
+        119
+      ],
+      [
+        1772319600,
+        119
+      ],
+      [
+        1772406000,
+        119
+      ],
+      [
+        1772492400,
+        119
+      ],
+      [
+        1772578800,
+        119
+      ],
+      [
+        1772665200,
+        119
+      ],
+      [
+        1772751600,
+        118
+      ],
+      [
+        1772838000,
+        118
+      ],
+      [
+        1772924400,
+        118
+      ],
+      [
+        1773010800,
+        118
+      ],
+      [
+        1773097200,
+        118
+      ],
+      [
+        1773183600,
+        118
+      ],
+      [
+        1773270000,
+        118
+      ],
+      [
+        1773356400,
+        118
+      ],
+      [
+        1773442800,
+        118
+      ],
+      [
+        1773529200,
+        118
+      ],
+      [
+        1773615600,
+        118
+      ],
+      [
+        1773702000,
+        118
+      ],
+      [
+        1773788400,
+        118
+      ],
+      [
+        1773874800,
+        118
+      ],
+      [
+        1773961200,
+        118
+      ],
+      [
+        1774047600,
+        118
+      ],
+      [
+        1774134000,
+        118
+      ],
+      [
+        1774220400,
+        118
+      ],
+      [
+        1774306800,
+        118
+      ],
+      [
+        1774393200,
+        118
+      ],
+      [
+        1774479600,
+        123
+      ],
+      [
+        1774566000,
+        123
+      ],
+      [
+        1774652400,
+        123
+      ],
+      [
+        1774738800,
+        124
+      ],
+      [
+        1774821600,
+        124
+      ],
+      [
+        1774908000,
+        124
+      ],
+      [
+        1774994400,
+        124
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle Airport"
+          },
+          "city": "Paris",
+          "country": "France",
+          "country_code": "FR",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGx8ii2KbSDdbdzfKye5oDN2bwBA6audqI7XUEf2iMRZezpn_ZbQe1ZIuvUSH-8XOMe958umDwSsAF1w",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyQJ-woNs0iO22mPSkmRUM5gcsTbbYeypQ6BBTeFxXr90mqTxZl57Fdq2CDuLn4w7cKZ8TT9_zZhOpF57rIpA7yWKQnqKvkKIf9Y-qJDo"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "IST",
+            "name": "Istanbul Airport"
+          },
+          "city": "Istanbul",
+          "country": "Türkiye",
+          "country_code": "TR",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCxBjNwAoLrTOKowDJwZyOgqpPqpGuPY1umCd0ey6x2mma7s1rFxR63gC-wiSQxRp8LzzpwbK_vjhTOg",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiCjiMuHyH5raqgVAMRbLlsvhbz3F-vRqjoeVsLl90nMoNQwTytaomGjUfudBUtd2MtI9VLBNX1nuQ2S3W5ilNuO2DRBxUVEgdJX-XYQQ"
+        }
+      ]
+    }
+  ]
+}

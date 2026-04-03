@@ -1,0 +1,919 @@
+{
+  "search_metadata": {
+    "id": "69b7f89c01289b6773e47dcb",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/fbsYv8O5IruEeRW0nme4gw/69b7f89c01289b6773e47dcb.json",
+    "created_at": "2026-03-16 12:33:32 UTC",
+    "processed_at": "2026-03-16 12:33:32 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhoeEgoyMDI2LTA2LTEwagcIARIDTVhQcgcIARIDSVNUGh4SCjIwMjYtMDYtMjBqBwgBEgNJU1RyBwgBEgNNWFBCAQFIAXABmAEB&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/fbsYv8O5IruEeRW0nme4gw/69b7f89c01289b6773e47dcb.html",
+    "prettify_html_file": "https://serpapi.com/searches/fbsYv8O5IruEeRW0nme4gw/69b7f89c01289b6773e47dcb.prettify",
+    "total_time_taken": 0.59
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "1",
+    "departure_id": "MXP",
+    "arrival_id": "IST",
+    "outbound_date": "2026-06-10",
+    "return_date": "2026-06-20",
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 09:20"
+          },
+          "arrival_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 11:05"
+          },
+          "duration": 105,
+          "airplane": "Embraer 190",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 417",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 111 kg"
+          ],
+          "plane_and_crew_by": "Bulgaria Air for Air Serbia"
+        },
+        {
+          "departure_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 12:15"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 15:00"
+          },
+          "duration": 105,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 422",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 92 kg"
+          ],
+          "plane_and_crew_by": "Airbaltic for Air Serbia"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 70,
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "BEG"
+        }
+      ],
+      "total_duration": 280,
+      "carbon_emissions": {
+        "this_flight": 204000,
+        "typical_for_this_route": 142000,
+        "difference_percent": 44
+      },
+      "price": 196,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZ3RLVlRReE4zeEtWVFF5TWhvTENOS1lBUkFDR2dORlZWSTRISENtcndFPSIsW1siTVhQIiwiMjAyNi0wNi0xMCIsIkJFRyIsbnVsbCwiSlUiLCI0MTciXSxbIkJFRyIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIkpVIiwiNDIyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 06:50"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 10:50"
+          },
+          "duration": 180,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1878",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 136 kg"
+          ]
+        }
+      ],
+      "total_duration": 180,
+      "carbon_emissions": {
+        "this_flight": 137000,
+        "typical_for_this_route": 142000,
+        "difference_percent": -4
+      },
+      "price": 245,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZ1pVU3pFNE56Z2FDd2owdmdFUUFob0RSVlZTT0J4d245c0IiLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3OCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 15:15"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 19:15"
+          },
+          "duration": 180,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1896",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 141 kg"
+          ]
+        }
+      ],
+      "total_duration": 180,
+      "carbon_emissions": {
+        "this_flight": 141000,
+        "typical_for_this_route": 142000,
+        "difference_percent": -1
+      },
+      "price": 245,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZ1pVU3pFNE9UWWFDd2owdmdFUUFob0RSVlZTT0J4d245c0IiLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg5NiJdXV0="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 12:55"
+          },
+          "arrival_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-06-10 14:05"
+          },
+          "duration": 70,
+          "airplane": "Embraer 195",
+          "airline": "Air Dolomiti",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+          "travel_class": "Economy",
+          "flight_number": "EN 8275",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 70 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-06-10 22:30"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 02:05"
+          },
+          "duration": 155,
+          "airplane": "Airbus A320neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1742",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 122 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 505,
+          "name": "Munich International Airport",
+          "id": "MUC"
+        }
+      ],
+      "total_duration": 730,
+      "carbon_emissions": {
+        "this_flight": 193000,
+        "typical_for_this_route": 142000,
+        "difference_percent": 36
+      },
+      "price": 191,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZzFGVGpneU56VjhURWd4TnpReUdnc0l4NVFCRUFJYUEwVlZVamdjY00ycUFRPT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJNVUMiLG51bGwsIkVOIiwiODI3NSJdLFsiTVVDIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiTEgiLCIxNzQyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 17:20"
+          },
+          "arrival_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-06-10 18:30"
+          },
+          "duration": 70,
+          "airplane": "Airbus A319",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1857",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 68 kg"
+          ],
+          "plane_and_crew_by": "Lufthansa CityLine"
+        },
+        {
+          "departure_airport": {
+            "name": "Munich International Airport",
+            "id": "MUC",
+            "time": "2026-06-10 22:30"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 02:05"
+          },
+          "duration": 155,
+          "airplane": "Airbus A320neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1742",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 122 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 240,
+          "name": "Munich International Airport",
+          "id": "MUC"
+        }
+      ],
+      "total_duration": 465,
+      "carbon_emissions": {
+        "this_flight": 192000,
+        "typical_for_this_route": 142000,
+        "difference_percent": 35
+      },
+      "price": 191,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZzFNU0RFNE5UZDhURWd4TnpReUdnc0l4NVFCRUFJYUEwVlZVamdjY00ycUFRPT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJNVUMiLG51bGwsIkxIIiwiMTg1NyJdLFsiTVVDIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiTEgiLCIxNzQyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 20:50"
+          },
+          "arrival_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 22:35"
+          },
+          "duration": 105,
+          "airplane": "Embraer 195",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 419",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 110 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-11 00:55"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 03:40"
+          },
+          "duration": 105,
+          "airplane": "Airbus A319",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 426",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 95 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 140,
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "BEG"
+        }
+      ],
+      "total_duration": 350,
+      "carbon_emissions": {
+        "this_flight": 206000,
+        "typical_for_this_route": 142000,
+        "difference_percent": 45
+      },
+      "price": 196,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZ3RLVlRReE9YeEtWVFF5TmhvTENOS1lBUkFDR2dORlZWSTRISENtcndFPSIsW1siTVhQIiwiMjAyNi0wNi0xMCIsIkJFRyIsbnVsbCwiSlUiLCI0MTkiXSxbIkJFRyIsIjIwMjYtMDYtMTEiLCJJU1QiLG51bGwsIkpVIiwiNDI2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 09:00"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 10:20"
+          },
+          "duration": 80,
+          "airplane": "Airbus A321",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 247",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 70 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 12:50"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 16:55"
+          },
+          "duration": 185,
+          "airplane": "Airbus A321",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1300",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 170 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 150,
+          "name": "Frankfurt Airport",
+          "id": "FRA"
+        }
+      ],
+      "total_duration": 415,
+      "carbon_emissions": {
+        "this_flight": 241000,
+        "typical_for_this_route": 142000,
+        "difference_percent": 70
+      },
+      "price": 212,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZ3hNU0RJME4zeE1TREV6TURBYUN3aUFwUUVRQWhvRFJWVlNPQnh3djcwQiIsW1siTVhQIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiTEgiLCIyNDciXSxbIkZSQSIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIkxIIiwiMTMwMCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 19:45"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 23:40"
+          },
+          "duration": 175,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1876",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 152 kg"
+          ]
+        }
+      ],
+      "total_duration": 175,
+      "carbon_emissions": {
+        "this_flight": 152000,
+        "typical_for_this_route": 142000,
+        "difference_percent": 7
+      },
+      "price": 255,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZ1pVU3pFNE56WWFDd2pjeGdFUUFob0RSVlZTT0J4d20rUUIiLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3NiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 10:40"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 14:35"
+          },
+          "duration": 175,
+          "airplane": "Airbus A350",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1874",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 127 kg"
+          ]
+        }
+      ],
+      "total_duration": 175,
+      "carbon_emissions": {
+        "this_flight": 128000,
+        "typical_for_this_route": 142000,
+        "difference_percent": -10
+      },
+      "price": 260,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZ1pVU3pFNE56UWFDd2pReWdFUUFob0RSVlZTT0J4dzJlZ0IiLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJJU1QiLG51bGwsIlRLIiwiMTg3NCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Milano Malpensa Airport",
+            "id": "MXP",
+            "time": "2026-06-10 06:00"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 07:20"
+          },
+          "duration": 80,
+          "airplane": "Embraer 190",
+          "airline": "Air Dolomiti",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+          "travel_class": "Economy",
+          "flight_number": "EN 8817",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 86 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 08:55"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 13:00"
+          },
+          "duration": 185,
+          "airplane": "Airbus A320",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1298",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 162 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 95,
+          "name": "Frankfurt Airport",
+          "id": "FRA"
+        }
+      ],
+      "total_duration": 360,
+      "carbon_emissions": {
+        "this_flight": 249000,
+        "typical_for_this_route": 142000,
+        "difference_percent": 75
+      },
+      "price": 271,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJU2xkSmFXMVpkV3R1ZDJOQlVuRkJkV2RDUnkwdExTMHRMUzB0TFc5NVlXNHlNMEZCUVVGQlIyMHpMVW93UTIxek5HMUJFZzFGVGpnNE1UZDhURWd4TWprNEdnc0lqTk1CRUFJYUEwVlZVamdjY0xieUFRPT0iLFtbIk1YUCIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIkVOIiwiODgxNyJdLFsiRlJBIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiTEgiLCIxMjk4Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 191,
+    "price_level": "typical",
+    "typical_price_range": [
+      175,
+      285
+    ],
+    "price_history": [
+      [
+        1768431600,
+        204
+      ],
+      [
+        1768518000,
+        204
+      ],
+      [
+        1768604400,
+        229
+      ],
+      [
+        1768690800,
+        224
+      ],
+      [
+        1768777200,
+        224
+      ],
+      [
+        1768863600,
+        229
+      ],
+      [
+        1768950000,
+        229
+      ],
+      [
+        1769036400,
+        219
+      ],
+      [
+        1769122800,
+        219
+      ],
+      [
+        1769209200,
+        224
+      ],
+      [
+        1769295600,
+        224
+      ],
+      [
+        1769382000,
+        224
+      ],
+      [
+        1769468400,
+        224
+      ],
+      [
+        1769554800,
+        224
+      ],
+      [
+        1769641200,
+        224
+      ],
+      [
+        1769727600,
+        197
+      ],
+      [
+        1769814000,
+        197
+      ],
+      [
+        1769900400,
+        198
+      ],
+      [
+        1769986800,
+        198
+      ],
+      [
+        1770073200,
+        198
+      ],
+      [
+        1770159600,
+        150
+      ],
+      [
+        1770246000,
+        150
+      ],
+      [
+        1770332400,
+        150
+      ],
+      [
+        1770418800,
+        150
+      ],
+      [
+        1770505200,
+        150
+      ],
+      [
+        1770591600,
+        150
+      ],
+      [
+        1770678000,
+        198
+      ],
+      [
+        1770764400,
+        198
+      ],
+      [
+        1770850800,
+        198
+      ],
+      [
+        1770937200,
+        198
+      ],
+      [
+        1771023600,
+        141
+      ],
+      [
+        1771110000,
+        218
+      ],
+      [
+        1771196400,
+        218
+      ],
+      [
+        1771282800,
+        218
+      ],
+      [
+        1771369200,
+        218
+      ],
+      [
+        1771455600,
+        218
+      ],
+      [
+        1771542000,
+        218
+      ],
+      [
+        1771628400,
+        205
+      ],
+      [
+        1771714800,
+        198
+      ],
+      [
+        1771801200,
+        198
+      ],
+      [
+        1771887600,
+        198
+      ],
+      [
+        1771974000,
+        198
+      ],
+      [
+        1772060400,
+        191
+      ],
+      [
+        1772146800,
+        191
+      ],
+      [
+        1772233200,
+        191
+      ],
+      [
+        1772319600,
+        191
+      ],
+      [
+        1772406000,
+        191
+      ],
+      [
+        1772492400,
+        191
+      ],
+      [
+        1772578800,
+        191
+      ],
+      [
+        1772665200,
+        191
+      ],
+      [
+        1772751600,
+        191
+      ],
+      [
+        1772838000,
+        191
+      ],
+      [
+        1772924400,
+        191
+      ],
+      [
+        1773010800,
+        191
+      ],
+      [
+        1773097200,
+        188
+      ],
+      [
+        1773183600,
+        188
+      ],
+      [
+        1773270000,
+        188
+      ],
+      [
+        1773356400,
+        188
+      ],
+      [
+        1773442800,
+        191
+      ],
+      [
+        1773529200,
+        191
+      ],
+      [
+        1773615600,
+        191
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "MXP",
+            "name": "Milano Malpensa Airport"
+          },
+          "city": "Milan",
+          "country": "Italy",
+          "country_code": "IT",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpIuAaYn-1q7jvtJKK9jO9Q0T_a_2HSfh1W2_pk8staOhM7a7JIweVHMECsqtVw5pO_yXdd9g5APWZqA",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsBB8akHX241dOfMh93D9sZuGXUGLXU4NMsSjTo4rnhQrgmRXJssnGLBNbZz1j31_7qNDAYshJ2KaWOL4z4jtiycyGiwD1epOOcsFmmSU"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "IST",
+            "name": "Istanbul Airport"
+          },
+          "city": "Istanbul",
+          "country": "Türkiye",
+          "country_code": "TR",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCxBjNwAoLrTOKowDJwZyOgqpPqpGuPY1umCd0ey6x2mma7s1rFxR63gC-wiSQxRp8LzzpwbK_vjhTOg",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiCjiMuHyH5raqgVAMRbLlsvhbz3F-vRqjoeVsLl90nMoNQwTytaomGjUfudBUtd2MtI9VLBNX1nuQ2S3W5ilNuO2DRBxUVEgdJX-XYQQ"
+        }
+      ]
+    },
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "IST",
+            "name": "Istanbul Airport"
+          },
+          "city": "Istanbul",
+          "country": "Türkiye",
+          "country_code": "TR",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCxBjNwAoLrTOKowDJwZyOgqpPqpGuPY1umCd0ey6x2mma7s1rFxR63gC-wiSQxRp8LzzpwbK_vjhTOg",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiCjiMuHyH5raqgVAMRbLlsvhbz3F-vRqjoeVsLl90nMoNQwTytaomGjUfudBUtd2MtI9VLBNX1nuQ2S3W5ilNuO2DRBxUVEgdJX-XYQQ"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "MXP",
+            "name": "Milano Malpensa Airport"
+          },
+          "city": "Milan",
+          "country": "Italy",
+          "country_code": "IT",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpIuAaYn-1q7jvtJKK9jO9Q0T_a_2HSfh1W2_pk8staOhM7a7JIweVHMECsqtVw5pO_yXdd9g5APWZqA",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsBB8akHX241dOfMh93D9sZuGXUGLXU4NMsSjTo4rnhQrgmRXJssnGLBNbZz1j31_7qNDAYshJ2KaWOL4z4jtiycyGiwD1epOOcsFmmSU"
+        }
+      ]
+    }
+  ]
+}

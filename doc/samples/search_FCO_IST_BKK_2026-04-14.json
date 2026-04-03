@@ -1,0 +1,319 @@
+{
+  "stopover": {
+    "iata": "IST",
+    "nights": 3
+  },
+  "legs": [
+    {
+      "id": "outbound1",
+      "origin": "FCO",
+      "destination": "IST",
+      "date": "2026-04-14",
+      "bestPrice": 153,
+      "options": [
+        {
+          "price": 155,
+          "totalDuration": 165,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "bookingToken": "WyJDalJJYjIxVVJGZDFZbk0xT1c5QlEyaFFZWGRDUnkwdExTMHRMUzB0TFMxdmEzVnRORUZCUVVGQlIyNURWRTVWVGpGeFFXTkJFZ1pVU3pFNE5qWWFDZ2oxZUJBQ0dnTkZWVkk0SEhDbmpBRT0iLFtbIkZDTyIsIjIwMjYtMDQtMTQiLCJJU1QiLG51bGwsIlRLIiwiMTg2NiJdXV0=",
+          "carbonEmissions": {
+            "grams": 127000,
+            "typicalGrams": 131000,
+            "differencePercent": -3
+          },
+          "layovers": [],
+          "flights": [
+            {
+              "flightNumber": "TK 1866",
+              "airline": "Turkish Airlines",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+              "airplane": "Airbus A321neo",
+              "travelClass": "Economy",
+              "duration": 165,
+              "legroom": "30 in",
+              "departureAirport": {
+                "name": "Leonardo da Vinci International Airport",
+                "id": "FCO",
+                "time": "2026-04-14 15:10"
+              },
+              "arrivalAirport": {
+                "name": "Istanbul Airport",
+                "id": "IST",
+                "time": "2026-04-14 18:55"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": ["ITA"],
+              "planeAndCrewBy": null
+            }
+          ]
+        },
+        {
+          "price": 159,
+          "totalDuration": 415,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "bookingToken": "WyJDalJJYjIxVVJGZDFZbk0xT1c5QlEyaFFZWGRDUnkwdExTMHRMUzB0TFMxdmEzVnRORUZCUVVGQlIyNURWRTVWVGpGeFFXTkJFZzFMVERFMk1EWjhTMHd4T1RZeEdnb0kyM3NRQWhvRFJWVlNPQnh3eG84QiIsW1siRkNPIiwiMjAyNi0wNC0xNCIsIkFNUyIsbnVsbCwiS0wiLCIxNjA2Il0sWyJBTVMiLCIyMDI2LTA0LTE0IiwiSVNUIixudWxsLCJLTCIsIjE5NjEiXV1d",
+          "carbonEmissions": {
+            "grams": 255000,
+            "typicalGrams": 131000,
+            "differencePercent": 95
+          },
+          "layovers": [
+            {
+              "duration": 70,
+              "name": "Amsterdam Airport Schiphol",
+              "id": "AMS"
+            }
+          ],
+          "flights": [
+            {
+              "flightNumber": "KL 1606",
+              "airline": "KLM",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+              "airplane": "Airbus A321neo",
+              "travelClass": "Economy",
+              "duration": 145,
+              "legroom": "29 in",
+              "departureAirport": {
+                "name": "Leonardo da Vinci International Airport",
+                "id": "FCO",
+                "time": "2026-04-14 17:25"
+              },
+              "arrivalAirport": {
+                "name": "Amsterdam Airport Schiphol",
+                "id": "AMS",
+                "time": "2026-04-14 19:50"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            },
+            {
+              "flightNumber": "KL 1961",
+              "airline": "KLM",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+              "airplane": "Boeing 737",
+              "travelClass": "Economy",
+              "duration": 200,
+              "legroom": "30 in",
+              "departureAirport": {
+                "name": "Amsterdam Airport Schiphol",
+                "id": "AMS",
+                "time": "2026-04-14 21:00"
+              },
+              "arrivalAirport": {
+                "name": "Istanbul Airport",
+                "id": "IST",
+                "time": "2026-04-15 01:20"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            }
+          ]
+        },
+        {
+          "price": 160,
+          "totalDuration": 170,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "bookingToken": "WyJDalJJYjIxVVJGZDFZbk0xT1c5QlEyaFFZWGRDUnkwdExTMHRMUzB0TFMxdmEzVnRORUZCUVVGQlIyNURWRTVWVGpGeFFXTkJFZ1pVU3pFNE5qSWFDZ2pwZkJBQ0dnTkZWVkk0SEhEcmtBRT0iLFtbIkZDTyIsIjIwMjYtMDQtMTQiLCJJU1QiLG51bGwsIlRLIiwiMTg2MiJdXV0=",
+          "carbonEmissions": {
+            "grams": 107000,
+            "typicalGrams": 131000,
+            "differencePercent": -18
+          },
+          "layovers": [],
+          "flights": [
+            {
+              "flightNumber": "TK 1862",
+              "airline": "Turkish Airlines",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+              "airplane": "Boeing 787",
+              "travelClass": "Economy",
+              "duration": 170,
+              "legroom": "31 in",
+              "departureAirport": {
+                "name": "Leonardo da Vinci International Airport",
+                "id": "FCO",
+                "time": "2026-04-14 10:45"
+              },
+              "arrivalAirport": {
+                "name": "Istanbul Airport",
+                "id": "IST",
+                "time": "2026-04-14 14:35"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": ["ITA"],
+              "planeAndCrewBy": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outbound2",
+      "origin": "IST",
+      "destination": "BKK",
+      "date": "2026-04-17",
+      "bestPrice": 248,
+      "options": [
+        {
+          "price": 248,
+          "totalDuration": 845,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/RJ.png",
+          "bookingToken": "WyJDalJJU0U5TFZEWlJjM1JvTkZsQlFWOWFjWGRDUnkwdExTMHRMUzB0TFhCcWQyOHlORUZCUVVGQlIyNURWRTVaUWxkb1UzVkJFZ3RTU2pFMk5IeFNTakU0TWhvTENML0JBUkFDR2dORlZWSTRISERDNEFFPSIsW1siSVNUIiwiMjAyNi0wNC0xNyIsIkFNTSIsbnVsbCwiUkoiLCIxNjQiXSxbIkFNTSIsIjIwMjYtMDQtMTgiLCJCS0siLG51bGwsIlJKIiwiMTgyIl1dXQ==",
+          "carbonEmissions": {
+            "grams": 517000,
+            "typicalGrams": 588000,
+            "differencePercent": -12
+          },
+          "layovers": [
+            {
+              "duration": 209,
+              "name": "Queen Alia International Airport",
+              "id": "AMM",
+              "overnight": true
+            }
+          ],
+          "flights": [
+            {
+              "flightNumber": "RJ 164",
+              "airline": "Royal Jordanian",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/RJ.png",
+              "airplane": "Airbus A320neo",
+              "travelClass": "Economy",
+              "duration": 151,
+              "legroom": "30 in",
+              "departureAirport": {
+                "name": "Istanbul Airport",
+                "id": "IST",
+                "time": "2026-04-17 21:30"
+              },
+              "arrivalAirport": {
+                "name": "Queen Alia International Airport",
+                "id": "AMM",
+                "time": "2026-04-18 00:01"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            },
+            {
+              "flightNumber": "RJ 182",
+              "airline": "Royal Jordanian",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/RJ.png",
+              "airplane": "Boeing 787",
+              "travelClass": "Economy",
+              "duration": 485,
+              "legroom": "32 in",
+              "departureAirport": {
+                "name": "Queen Alia International Airport",
+                "id": "AMM",
+                "time": "2026-04-18 03:30"
+              },
+              "arrivalAirport": {
+                "name": "Suvarnabhumi Airport",
+                "id": "BKK",
+                "time": "2026-04-18 15:35"
+              },
+              "overnight": true,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return",
+      "origin": "BKK",
+      "destination": "FCO",
+      "date": "2026-04-28",
+      "bestPrice": 279,
+      "options": [
+        {
+          "price": 279,
+          "totalDuration": 820,
+          "type": "One way",
+          "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "bookingToken": "WyJDalJJTmxKSU5FMTFTazVxTFUxQlFtNXRVM2RDUnkwdExTMHRMUzB0Y0daaWJHUXhNa0ZCUVVGQlIyNURWRTVWVDJNM1NWTkJFZ3BGV1RRd09YeEZXVGd6R2dzSTh0a0JFQUlhQTBWVlVqZ2NjT3I0QVE9PSIsW1siQktLIiwiMjAyNi0wNC0yOCIsIkFVSCIsbnVsbCwiRVkiLCI0MDkiXSxbIkFVSCIsIjIwMjYtMDQtMjgiLCJGQ08iLG51bGwsIkVZIiwiODMiXV1d",
+          "carbonEmissions": {
+            "grams": 599000,
+            "typicalGrams": 639000,
+            "differencePercent": -6
+          },
+          "layovers": [
+            {
+              "duration": 70,
+              "name": "Zayed International Airport",
+              "id": "AUH"
+            }
+          ],
+          "flights": [
+            {
+              "flightNumber": "EY 409",
+              "airline": "Etihad",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+              "airplane": "Airbus A350",
+              "travelClass": "Economy",
+              "duration": 380,
+              "legroom": "31 in",
+              "departureAirport": {
+                "name": "Suvarnabhumi Airport",
+                "id": "BKK",
+                "time": "2026-04-28 09:40"
+              },
+              "arrivalAirport": {
+                "name": "Zayed International Airport",
+                "id": "AUH",
+                "time": "2026-04-28 13:00"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            },
+            {
+              "flightNumber": "EY 83",
+              "airline": "Etihad",
+              "airlineLogo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+              "airplane": "Boeing 787",
+              "travelClass": "Economy",
+              "duration": 370,
+              "legroom": "31 in",
+              "departureAirport": {
+                "name": "Zayed International Airport",
+                "id": "AUH",
+                "time": "2026-04-28 14:10"
+              },
+              "arrivalAirport": {
+                "name": "Leonardo da Vinci International Airport",
+                "id": "FCO",
+                "time": "2026-04-28 18:20"
+              },
+              "overnight": false,
+              "oftenDelayed": false,
+              "ticketAlsoSoldBy": [],
+              "planeAndCrewBy": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "bestCombinedPrice": 680,
+    "directPrice": 1486,
+    "savings": 806,
+    "currency": "EUR"
+  }
+}

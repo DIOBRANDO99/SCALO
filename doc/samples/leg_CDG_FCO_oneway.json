@@ -1,0 +1,1249 @@
+{
+  "search_metadata": {
+    "id": "69cd0bce69819d100fbf0aff",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/27R2g-jhzycwsFJB_tz5Iw/69cd0bce69819d100fbf0aff.json",
+    "created_at": "2026-04-01 12:13:02 UTC",
+    "processed_at": "2026-04-01 12:13:02 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNDREdyBwgBEgNGQ09AAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/27R2g-jhzycwsFJB_tz5Iw/69cd0bce69819d100fbf0aff.html",
+    "prettify_html_file": "https://serpapi.com/searches/27R2g-jhzycwsFJB_tz5Iw/69cd0bce69819d100fbf0aff.prettify",
+    "total_time_taken": 0.77
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "CDG",
+    "arrival_id": "FCO",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 16:45"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 18:15"
+          },
+          "duration": 90,
+          "airplane": "Airbus A320",
+          "airline": "Condor",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+          "travel_class": "Economy",
+          "flight_number": "DE 4214",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 61 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 20:00"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 21:50"
+          },
+          "duration": 110,
+          "airplane": "Airbus A321 (Sharklets)",
+          "airline": "Condor",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+          "travel_class": "Economy",
+          "flight_number": "DE 4187",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 96 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 105,
+          "name": "Frankfurt Airport",
+          "id": "FRA"
+        }
+      ],
+      "total_duration": 305,
+      "carbon_emissions": {
+        "this_flight": 158000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 40
+      },
+      "price": 101,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZzFFUlRReU1UUjhSRVUwTVRnM0dnb0k4MDRRQWhvRFJWVlNPQnh3eFZzPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiREUiLCI0MjE0Il0sWyJGUkEiLCIyMDI2LTA2LTEwIiwiRkNPIixudWxsLCJERSIsIjQxODciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 06:10"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 08:10"
+          },
+          "duration": 120,
+          "airplane": "Airbus A320neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 317",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        }
+      ],
+      "total_duration": 120,
+      "carbon_emissions": {
+        "this_flight": 92000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -19
+      },
+      "price": 105,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1ZCV2pNeE54b0tDUFJSRUFJYUEwVlZVamdjY0lOZiIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiQVoiLCIzMTciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 06:50"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 08:55"
+          },
+          "duration": 125,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1204",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 108 kg"
+          ]
+        }
+      ],
+      "total_duration": 125,
+      "carbon_emissions": {
+        "this_flight": 108000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -4
+      },
+      "price": 113,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1pCUmpFeU1EUWFDZ2lHV0JBQ0dnTkZWVkk0SEhDVFpnPT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJGQ08iLG51bGwsIkFGIiwiMTIwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 14:05"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 16:10"
+          },
+          "duration": 125,
+          "airplane": "Airbus A320neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 333",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        }
+      ],
+      "total_duration": 125,
+      "carbon_emissions": {
+        "this_flight": 92000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -19
+      },
+      "price": 125,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1ZCV2pNek14b0tDTVJoRUFJYUEwVlZVamdjY0pSeCIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiQVoiLCIzMzMiXV1d"
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 16:20"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 17:40"
+          },
+          "duration": 80,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1140",
+          "ticket_also_sold_by": [
+            "KLM"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 59 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 20:35"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 22:45"
+          },
+          "duration": 130,
+          "airplane": "Airbus A321neo",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1609",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 89 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 385,
+      "carbon_emissions": {
+        "this_flight": 149000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 32
+      },
+      "price": 109,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZzFCUmpFeE5EQjhTMHd4TmpBNUdnb0l4MVFRQWhvRFJWVlNPQnh3aldJPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkFNUyIsbnVsbCwiQUYiLCIxMTQwIl0sWyJBTVMiLCIyMDI2LTA2LTEwIiwiRkNPIixudWxsLCJLTCIsIjE2MDkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 09:40"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 10:55"
+          },
+          "duration": 75,
+          "airplane": "Boeing 737",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1404",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 50 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 16:35"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 18:45"
+          },
+          "duration": 130,
+          "airplane": "Boeing 737",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1607",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 105 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 340,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 545,
+      "carbon_emissions": {
+        "this_flight": 156000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 38
+      },
+      "price": 110,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZzFMVERFME1EUjhTMHd4TmpBM0dnb0k1bFVRQWhvRFJWVlNPQnh3eFdNPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkFNUyIsbnVsbCwiS0wiLCIxNDA0Il0sWyJBTVMiLCIyMDI2LTA2LTEwIiwiRkNPIixudWxsLCJLTCIsIjE2MDciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 14:30"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 15:45"
+          },
+          "duration": 75,
+          "airplane": "Boeing 737",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1408",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 50 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 20:35"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 22:45"
+          },
+          "duration": 130,
+          "airplane": "Airbus A321neo",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1609",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 89 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 290,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 495,
+      "carbon_emissions": {
+        "this_flight": 140000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 24
+      },
+      "price": 110,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZzFMVERFME1EaDhTMHd4TmpBNUdnb0k1bFVRQWhvRFJWVlNPQnh3eFdNPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkFNUyIsbnVsbCwiS0wiLCIxNDA4Il0sWyJBTVMiLCIyMDI2LTA2LTEwIiwiRkNPIixudWxsLCJLTCIsIjE2MDkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 14:30"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 15:45"
+          },
+          "duration": 75,
+          "airplane": "Boeing 737",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1408",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 50 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-10 16:35"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 18:45"
+          },
+          "duration": 130,
+          "airplane": "Boeing 737",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1607",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 105 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 50,
+          "name": "Amsterdam Airport Schiphol",
+          "id": "AMS"
+        }
+      ],
+      "total_duration": 255,
+      "carbon_emissions": {
+        "this_flight": 156000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 38
+      },
+      "price": 125,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZzFMVERFME1EaDhTMHd4TmpBM0dnb0l3bUVRQWhvRFJWVlNPQnh3a1hFPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkFNUyIsbnVsbCwiS0wiLCIxNDA4Il0sWyJBTVMiLCIyMDI2LTA2LTEwIiwiRkNPIixudWxsLCJLTCIsIjE2MDciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 09:15"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 11:25"
+          },
+          "duration": 130,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1104",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 107 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 107000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -5
+      },
+      "price": 131,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1pCUmpFeE1EUWFDZ2lPWmhBQ0dnTkZWVkk0SEhDN2RnPT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJGQ08iLG51bGwsIkFGIiwiMTEwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 11:40"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 13:45"
+          },
+          "duration": 125,
+          "airplane": "Airbus A320neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 319",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        }
+      ],
+      "total_duration": 125,
+      "carbon_emissions": {
+        "this_flight": 92000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -19
+      },
+      "price": 135,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1ZCV2pNeE9Sb0tDS3hwRUFJYUEwVlZVamdjY0p4NiIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiQVoiLCIzMTkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 18:15"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 20:25"
+          },
+          "duration": 130,
+          "airplane": "Airbus A320neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 325",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 92000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -19
+      },
+      "price": 135,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1ZCV2pNeU5Sb0tDS3hwRUFJYUEwVlZVamdjY0p4NiIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiQVoiLCIzMjUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 21:10"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 23:15"
+          },
+          "duration": 125,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1004",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 109 kg"
+          ]
+        }
+      ],
+      "total_duration": 125,
+      "carbon_emissions": {
+        "this_flight": 110000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -3
+      },
+      "price": 152,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1pCUmpFd01EUWFDZ2pDZGhBQ0dnTkZWVkk0SEhEQWlRRT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJGQ08iLG51bGwsIkFGIiwiMTAwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 17:00"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 19:05"
+          },
+          "duration": 125,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1404",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 119 kg"
+          ]
+        }
+      ],
+      "total_duration": 125,
+      "carbon_emissions": {
+        "this_flight": 120000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 6
+      },
+      "price": 162,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1pCUmpFME1EUWFDZ2lxZmhBQ0dnTkZWVkk0SEhESWtnRT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJGQ08iLG51bGwsIkFGIiwiMTQwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 15:20"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 17:30"
+          },
+          "duration": 130,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1604",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 119 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 120000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 6
+      },
+      "price": 193,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1pCUmpFMk1EUWFDd2pHbGdFUUFob0RSVlZTT0J4dzFLNEIiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJGQ08iLG51bGwsIkFGIiwiMTYwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 14:25"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 16:35"
+          },
+          "duration": 130,
+          "airplane": "Airbus A318",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1304",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 133 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 133000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 18
+      },
+      "price": 197,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1pCUmpFek1EUWFDd2pXbVFFUUFob0RSVlZTT0J4d3BiSUIiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJGQ08iLG51bGwsIkFGIiwiMTMwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 12:15"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 14:25"
+          },
+          "duration": 130,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1504",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 109 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 110000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -3
+      },
+      "price": 204,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ1pCUmpFMU1EUWFDd2lTbndFUUFob0RSVlZTT0J4dzBiZ0IiLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJGQ08iLG51bGwsIkFGIiwiMTUwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 09:55"
+          },
+          "arrival_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-10 10:55"
+          },
+          "duration": 60,
+          "airplane": "Airbus A320neo",
+          "airline": "Brussels Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SN.png",
+          "travel_class": "Economy",
+          "flight_number": "SN 3634",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 42 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-10 11:35"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 13:40"
+          },
+          "duration": 125,
+          "airplane": "Airbus A320neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 159",
+          "ticket_also_sold_by": [
+            "Brussels Airlines"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 94 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 40,
+          "name": "Brussels Airport",
+          "id": "BRU"
+        }
+      ],
+      "total_duration": 225,
+      "carbon_emissions": {
+        "this_flight": 137000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 21
+      },
+      "price": 264,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJUnpkbmRtSldOa2x3Ym5OQlEzRjJVRUZDUnkwdExTMHRMUzB0TFc5cmNtZ3hOVUZCUVVGQlIyNU9RemcwUnpkV1QzVkJFZ3hUVGpNMk16UjhRVm94TlRrYUN3aUV6Z0VRQWhvRFJWVlNPQnh3aE84QiIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkJSVSIsbnVsbCwiU04iLCIzNjM0Il0sWyJCUlUiLCIyMDI2LTA2LTEwIiwiRkNPIixudWxsLCJBWiIsIjE1OSJdXV0="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 101,
+    "price_level": "typical",
+    "typical_price_range": [
+      80,
+      135
+    ],
+    "price_history": [
+      [
+        1769814000,
+        95
+      ],
+      [
+        1769900400,
+        95
+      ],
+      [
+        1769986800,
+        95
+      ],
+      [
+        1770073200,
+        95
+      ],
+      [
+        1770159600,
+        95
+      ],
+      [
+        1770246000,
+        95
+      ],
+      [
+        1770332400,
+        98
+      ],
+      [
+        1770418800,
+        87
+      ],
+      [
+        1770505200,
+        87
+      ],
+      [
+        1770591600,
+        98
+      ],
+      [
+        1770678000,
+        98
+      ],
+      [
+        1770764400,
+        98
+      ],
+      [
+        1770850800,
+        98
+      ],
+      [
+        1770937200,
+        98
+      ],
+      [
+        1771023600,
+        98
+      ],
+      [
+        1771110000,
+        98
+      ],
+      [
+        1771196400,
+        98
+      ],
+      [
+        1771282800,
+        98
+      ],
+      [
+        1771369200,
+        98
+      ],
+      [
+        1771455600,
+        98
+      ],
+      [
+        1771542000,
+        98
+      ],
+      [
+        1771628400,
+        98
+      ],
+      [
+        1771714800,
+        98
+      ],
+      [
+        1771801200,
+        98
+      ],
+      [
+        1771887600,
+        98
+      ],
+      [
+        1771974000,
+        98
+      ],
+      [
+        1772060400,
+        98
+      ],
+      [
+        1772146800,
+        98
+      ],
+      [
+        1772233200,
+        100
+      ],
+      [
+        1772319600,
+        100
+      ],
+      [
+        1772406000,
+        100
+      ],
+      [
+        1772492400,
+        100
+      ],
+      [
+        1772578800,
+        103
+      ],
+      [
+        1772665200,
+        103
+      ],
+      [
+        1772751600,
+        103
+      ],
+      [
+        1772838000,
+        103
+      ],
+      [
+        1772924400,
+        104
+      ],
+      [
+        1773010800,
+        96
+      ],
+      [
+        1773097200,
+        96
+      ],
+      [
+        1773183600,
+        96
+      ],
+      [
+        1773270000,
+        96
+      ],
+      [
+        1773356400,
+        96
+      ],
+      [
+        1773442800,
+        96
+      ],
+      [
+        1773529200,
+        96
+      ],
+      [
+        1773615600,
+        96
+      ],
+      [
+        1773702000,
+        96
+      ],
+      [
+        1773788400,
+        96
+      ],
+      [
+        1773874800,
+        96
+      ],
+      [
+        1773961200,
+        96
+      ],
+      [
+        1774047600,
+        96
+      ],
+      [
+        1774134000,
+        96
+      ],
+      [
+        1774220400,
+        96
+      ],
+      [
+        1774306800,
+        96
+      ],
+      [
+        1774393200,
+        96
+      ],
+      [
+        1774479600,
+        96
+      ],
+      [
+        1774566000,
+        101
+      ],
+      [
+        1774652400,
+        101
+      ],
+      [
+        1774738800,
+        101
+      ],
+      [
+        1774821600,
+        101
+      ],
+      [
+        1774908000,
+        101
+      ],
+      [
+        1774994400,
+        101
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle Airport"
+          },
+          "city": "Paris",
+          "country": "France",
+          "country_code": "FR",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGx8ii2KbSDdbdzfKye5oDN2bwBA6audqI7XUEf2iMRZezpn_ZbQe1ZIuvUSH-8XOMe958umDwSsAF1w",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyQJ-woNs0iO22mPSkmRUM5gcsTbbYeypQ6BBTeFxXr90mqTxZl57Fdq2CDuLn4w7cKZ8TT9_zZhOpF57rIpA7yWKQnqKvkKIf9Y-qJDo"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "FCO",
+            "name": "Leonardo da Vinci International Airport"
+          },
+          "city": "Rome",
+          "country": "Italy",
+          "country_code": "IT",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2IU9ZUmvhvThfVJdnmh0sazh2RYI04-GSv0_GLCW7m3TnPpi1XYRNkIuXyL-bdJRgPn7Akcbg6zmDzw",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM_5snkSVZsnpG8dhW0NGx_Pdwk592nbBjmyqu-UxZDclvuBr6HXfXd0Fm7TYGVQpVCCr4RC6TGTmOgyP6KwpvZr0tGGnpZ7ukzP8RPLA"
+        }
+      ]
+    }
+  ]
+}

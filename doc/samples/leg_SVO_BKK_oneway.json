@@ -1,0 +1,1186 @@
+{
+  "search_metadata": {
+    "id": "69cd07367223f44c4aa04072",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/vQ8pIHmW_OdBB7IgsOfiYA/69cd07367223f44c4aa04072.json",
+    "created_at": "2026-04-01 11:53:26 UTC",
+    "processed_at": "2026-04-01 11:53:26 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEzKAFqBwgBEgNTVk9yBwgBEgNCS0tAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/vQ8pIHmW_OdBB7IgsOfiYA/69cd07367223f44c4aa04072.html",
+    "prettify_html_file": "https://serpapi.com/searches/vQ8pIHmW_OdBB7IgsOfiYA/69cd07367223f44c4aa04072.prettify",
+    "total_time_taken": 0.42
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "SVO",
+    "arrival_id": "BKK",
+    "outbound_date": "2026-06-13",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 13:00"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-13 19:25"
+          },
+          "duration": 385,
+          "airplane": "Airbus A320neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 13",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 275 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-13 22:35"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 09:45"
+          },
+          "duration": 430,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 152",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 331 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 190,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 1005,
+      "carbon_emissions": {
+        "this_flight": 607000,
+        "typical_for_this_route": 629000,
+        "difference_percent": -3
+      },
+      "price": 298,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3BIUmpFemZFZEdNVFV5R2dzSWkrZ0JFQUlhQTBWVlVqZ2NjS0dOQWc9PSIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIkJBSCIsbnVsbCwiR0YiLCIxMyJdLFsiQkFIIiwiMjAyNi0wNi0xMyIsIkJLSyIsbnVsbCwiR0YiLCIxNTIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 12:40"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-13 19:10"
+          },
+          "duration": 330,
+          "airplane": "Boeing 787-10",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 842",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 223 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-13 21:10"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 06:45"
+          },
+          "duration": 395,
+          "airplane": "Boeing 777",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 402",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 396 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 120,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 845,
+      "carbon_emissions": {
+        "this_flight": 620000,
+        "typical_for_this_route": 629000,
+        "difference_percent": -1
+      },
+      "price": 371,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3RGV1RnME1ueEZXVFF3TWhvTENNYWhBaEFDR2dORlZWSTRISEQyendJPSIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIkFVSCIsbnVsbCwiRVkiLCI4NDIiXSxbIkFVSCIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIkVZIiwiNDAyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 22:05"
+          },
+          "arrival_airport": {
+            "name": "Muscat International Airport",
+            "id": "MCT",
+            "time": "2026-06-14 05:25"
+          },
+          "duration": 380,
+          "airplane": "Boeing 737",
+          "airline": "Oman Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WY.png",
+          "travel_class": "Economy",
+          "flight_number": "WY 184",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 345 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Muscat International Airport",
+            "id": "MCT",
+            "time": "2026-06-14 08:40"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 17:45"
+          },
+          "duration": 365,
+          "airplane": "Boeing 787",
+          "airline": "Oman Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WY.png",
+          "travel_class": "Economy",
+          "flight_number": "WY 815",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 291 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 195,
+          "name": "Muscat International Airport",
+          "id": "MCT"
+        }
+      ],
+      "total_duration": 940,
+      "carbon_emissions": {
+        "this_flight": 637000,
+        "typical_for_this_route": 629000,
+        "difference_percent": 1
+      },
+      "price": 391,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WY.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3RYV1RFNE5IeFhXVGd4TlJvTENLeXhBaEFDR2dORlZWSTRISENnNGdJPSIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIk1DVCIsbnVsbCwiV1kiLCIxODQiXSxbIk1DVCIsIjIwMjYtMDYtMTQiLCJCS0siLG51bGwsIldZIiwiODE1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 14:25"
+          },
+          "arrival_airport": {
+            "name": "Haikou Meilan International Airport",
+            "id": "HAK",
+            "time": "2026-06-14 04:55"
+          },
+          "duration": 570,
+          "airplane": "Airbus A330",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 766",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 457 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Haikou Meilan International Airport",
+            "id": "HAK",
+            "time": "2026-06-14 08:35"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 10:00"
+          },
+          "duration": 145,
+          "airplane": "Airbus A320neo",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 7939",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 110 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 220,
+          "name": "Haikou Meilan International Airport",
+          "id": "HAK",
+          "overnight": true
+        }
+      ],
+      "total_duration": 935,
+      "carbon_emissions": {
+        "this_flight": 568000,
+        "typical_for_this_route": 629000,
+        "difference_percent": -10
+      },
+      "price": 413,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3hJVlRjMk5ueElWVGM1TXprYUN3alN3Z0lRQWhvRFJWVlNPQnh3cWZZQyIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIkhBSyIsbnVsbCwiSFUiLCI3NjYiXSxbIkhBSyIsIjIwMjYtMDYtMTQiLCJCS0siLG51bGwsIkhVIiwiNzkzOSJdXV0="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 23:50"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-14 06:20"
+          },
+          "duration": 330,
+          "airplane": "Boeing 787-10",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 844",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 223 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-14 08:35"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 18:10"
+          },
+          "duration": 395,
+          "airplane": "Boeing 777",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 406",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 396 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 135,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 860,
+      "carbon_emissions": {
+        "this_flight": 620000,
+        "typical_for_this_route": 629000,
+        "difference_percent": -1
+      },
+      "price": 371,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3RGV1RnME5IeEZXVFF3TmhvTENNYWhBaEFDR2dORlZWSTRISEQyendJPSIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIkFVSCIsbnVsbCwiRVkiLCI4NDQiXSxbIkFVSCIsIjIwMjYtMDYtMTQiLCJCS0siLG51bGwsIkVZIiwiNDA2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 22:05"
+          },
+          "arrival_airport": {
+            "name": "Muscat International Airport",
+            "id": "MCT",
+            "time": "2026-06-14 05:25"
+          },
+          "duration": 380,
+          "airplane": "Boeing 737",
+          "airline": "Oman Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WY.png",
+          "travel_class": "Economy",
+          "flight_number": "WY 184",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 345 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Muscat International Airport",
+            "id": "MCT",
+            "time": "2026-06-14 21:50"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-15 06:55"
+          },
+          "duration": 365,
+          "airplane": "Boeing 787",
+          "airline": "Oman Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WY.png",
+          "travel_class": "Economy",
+          "flight_number": "WY 817",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 291 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 985,
+          "name": "Muscat International Airport",
+          "id": "MCT"
+        }
+      ],
+      "total_duration": 1730,
+      "carbon_emissions": {
+        "this_flight": 637000,
+        "typical_for_this_route": 629000,
+        "difference_percent": 1
+      },
+      "price": 386,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WY.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3RYV1RFNE5IeFhXVGd4TnhvTENJT3RBaEFDR2dORlZWSTRISENmM1FJPSIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIk1DVCIsbnVsbCwiV1kiLCIxODQiXSxbIk1DVCIsIjIwMjYtMDYtMTQiLCJCS0siLG51bGwsIldZIiwiODE3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 12:40"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-13 19:10"
+          },
+          "duration": 330,
+          "airplane": "Boeing 787-10",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 842",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 223 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-13 20:40"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 06:15"
+          },
+          "duration": 395,
+          "airplane": "Airbus A350",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 408",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 313 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 90,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 815,
+      "carbon_emissions": {
+        "this_flight": 537000,
+        "typical_for_this_route": 629000,
+        "difference_percent": -15
+      },
+      "price": 390,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3RGV1RnME1ueEZXVFF3T0JvTENJQ3dBaEFDR2dORlZWSTRISERaNEFJPSIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIkFVSCIsbnVsbCwiRVkiLCI4NDIiXSxbIkFVSCIsIjIwMjYtMDYtMTMiLCJCS0siLG51bGwsIkVZIiwiNDA4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 20:05"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-06-14 08:55"
+          },
+          "duration": 470,
+          "airplane": "Airbus A330",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 7986",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 391 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-06-14 19:00"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 23:00"
+          },
+          "duration": 300,
+          "airplane": "Boeing 737",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 7995",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 287 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 605,
+          "name": "Beijing Capital International Airport",
+          "id": "PEK"
+        }
+      ],
+      "total_duration": 1375,
+      "carbon_emissions": {
+        "this_flight": 679000,
+        "typical_for_this_route": 629000,
+        "difference_percent": 8
+      },
+      "price": 477,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZzFJVlRjNU9EWjhTRlUzT1RrMUdnc0lwZlFDRUFJYUEwVlZVamdjY1BhdkF3PT0iLFtbIlNWTyIsIjIwMjYtMDYtMTMiLCJQRUsiLG51bGwsIkhVIiwiNzk4NiJdLFsiUEVLIiwiMjAyNi0wNi0xNCIsIkJLSyIsbnVsbCwiSFUiLCI3OTk1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 16:50"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-13 22:15"
+          },
+          "duration": 325,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 340",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 292 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-14 02:30"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 13:25"
+          },
+          "duration": 415,
+          "airplane": "Airbus A380",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 836",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 430 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 255,
+          "name": "Hamad International Airport",
+          "id": "DOH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 995,
+      "carbon_emissions": {
+        "this_flight": 722000,
+        "typical_for_this_route": 629000,
+        "difference_percent": 15
+      },
+      "price": 506,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3RSVWpNME1IeFJVamd6TmhvTENPaUtBeEFDR2dORlZWSTRISENHeWdNPSIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIkRPSCIsbnVsbCwiUVIiLCIzNDAiXSxbIkRPSCIsIjIwMjYtMDYtMTQiLCJCS0siLG51bGwsIlFSIiwiODM2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 21:15"
+          },
+          "arrival_airport": {
+            "name": "Guangzhou Baiyun International Airport",
+            "id": "CAN",
+            "time": "2026-06-14 11:35"
+          },
+          "duration": 560,
+          "airplane": "Airbus A350",
+          "airline": "China Southern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CZ.png",
+          "travel_class": "Economy",
+          "flight_number": "CZ 656",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 463 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Guangzhou Baiyun International Airport",
+            "id": "CAN",
+            "time": "2026-06-14 14:50"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 16:50"
+          },
+          "duration": 180,
+          "airplane": "Airbus A320",
+          "airline": "China Southern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CZ.png",
+          "travel_class": "Economy",
+          "flight_number": "CZ 8023",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 174 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 195,
+          "name": "Guangzhou Baiyun International Airport",
+          "id": "CAN"
+        }
+      ],
+      "total_duration": 935,
+      "carbon_emissions": {
+        "this_flight": 638000,
+        "typical_for_this_route": 629000,
+        "difference_percent": 1
+      },
+      "price": 701,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CZ.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3hEV2pZMU5ueERXamd3TWpNYUN3akVvd1FRQWhvRFJWVlNPQnh3bmZzRSIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIkNBTiIsbnVsbCwiQ1oiLCI2NTYiXSxbIkNBTiIsIjIwMjYtMDYtMTQiLCJCS0siLG51bGwsIkNaIiwiODAyMyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 16:50"
+          },
+          "arrival_airport": {
+            "name": "Shanghai Pudong International Airport",
+            "id": "PVG",
+            "time": "2026-06-14 07:00"
+          },
+          "duration": 550,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 248",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 401 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Shanghai Pudong International Airport",
+            "id": "PVG",
+            "time": "2026-06-14 09:05"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 12:30"
+          },
+          "duration": 265,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 541",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 260 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 125,
+          "name": "Shanghai Pudong International Airport",
+          "id": "PVG"
+        }
+      ],
+      "total_duration": 940,
+      "carbon_emissions": {
+        "this_flight": 663000,
+        "typical_for_this_route": 629000,
+        "difference_percent": 5
+      },
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZ3ROVlRJME9IeE5WVFUwTVRnYyIsW1siU1ZPIiwiMjAyNi0wNi0xMyIsIlBWRyIsbnVsbCwiTVUiLCIyNDgiXSxbIlBWRyIsIjIwMjYtMDYtMTQiLCJCS0siLG51bGwsIk1VIiwiNTQxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-13 22:20"
+          },
+          "arrival_airport": {
+            "name": "Chengdu Tianfu International",
+            "id": "TFU",
+            "time": "2026-06-14 11:00"
+          },
+          "duration": 460,
+          "airplane": "Airbus A350",
+          "airline": "Sichuan Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/3U.png",
+          "travel_class": "Economy",
+          "flight_number": "3U 3888",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 360 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Chengdu Tianfu International",
+            "id": "TFU",
+            "time": "2026-06-14 14:40"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-14 16:50"
+          },
+          "duration": 190,
+          "airplane": "Airbus A320",
+          "airline": "Sichuan Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/3U.png",
+          "travel_class": "Economy",
+          "flight_number": "3U 3935",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 149 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 220,
+          "name": "Chengdu Tianfu International",
+          "id": "TFU"
+        }
+      ],
+      "total_duration": 870,
+      "carbon_emissions": {
+        "this_flight": 510000,
+        "typical_for_this_route": 629000,
+        "difference_percent": -19
+      },
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/3U.png",
+      "booking_token": "WyJDalJJWDA5dVZWb3hYM1JyTFdkQlJFcHlUMUZDUnkwdExTMHRMUzB0TFMxNWJHMXdOMEZCUVVGQlIyNU9RbnBaUlRSS2JXRkJFZzB6VlRNNE9EaDhNMVV6T1RNMU9Cdz0iLFtbIlNWTyIsIjIwMjYtMDYtMTMiLCJURlUiLG51bGwsIjNVIiwiMzg4OCJdLFsiVEZVIiwiMjAyNi0wNi0xNCIsIkJLSyIsbnVsbCwiM1UiLCIzOTM1Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 298,
+    "price_level": "typical",
+    "typical_price_range": [
+      255,
+      325
+    ],
+    "price_history": [
+      [
+        1769806800,
+        214
+      ],
+      [
+        1769893200,
+        213
+      ],
+      [
+        1769979600,
+        212
+      ],
+      [
+        1770066000,
+        210
+      ],
+      [
+        1770152400,
+        226
+      ],
+      [
+        1770238800,
+        221
+      ],
+      [
+        1770325200,
+        225
+      ],
+      [
+        1770411600,
+        225
+      ],
+      [
+        1770498000,
+        224
+      ],
+      [
+        1770584400,
+        224
+      ],
+      [
+        1770670800,
+        224
+      ],
+      [
+        1770757200,
+        262
+      ],
+      [
+        1770843600,
+        252
+      ],
+      [
+        1770930000,
+        254
+      ],
+      [
+        1771016400,
+        260
+      ],
+      [
+        1771102800,
+        266
+      ],
+      [
+        1771189200,
+        258
+      ],
+      [
+        1771275600,
+        257
+      ],
+      [
+        1771362000,
+        261
+      ],
+      [
+        1771448400,
+        262
+      ],
+      [
+        1771534800,
+        263
+      ],
+      [
+        1771621200,
+        264
+      ],
+      [
+        1771707600,
+        263
+      ],
+      [
+        1771794000,
+        261
+      ],
+      [
+        1771880400,
+        260
+      ],
+      [
+        1771966800,
+        259
+      ],
+      [
+        1772053200,
+        265
+      ],
+      [
+        1772139600,
+        262
+      ],
+      [
+        1772226000,
+        265
+      ],
+      [
+        1772312400,
+        264
+      ],
+      [
+        1772398800,
+        266
+      ],
+      [
+        1772485200,
+        264
+      ],
+      [
+        1772571600,
+        269
+      ],
+      [
+        1772658000,
+        272
+      ],
+      [
+        1772744400,
+        274
+      ],
+      [
+        1772830800,
+        273
+      ],
+      [
+        1772917200,
+        272
+      ],
+      [
+        1773003600,
+        267
+      ],
+      [
+        1773090000,
+        268
+      ],
+      [
+        1773176400,
+        334
+      ],
+      [
+        1773262800,
+        340
+      ],
+      [
+        1773349200,
+        343
+      ],
+      [
+        1773435600,
+        342
+      ],
+      [
+        1773522000,
+        342
+      ],
+      [
+        1773608400,
+        342
+      ],
+      [
+        1773694800,
+        298
+      ],
+      [
+        1773781200,
+        298
+      ],
+      [
+        1773867600,
+        300
+      ],
+      [
+        1773954000,
+        288
+      ],
+      [
+        1774040400,
+        298
+      ],
+      [
+        1774126800,
+        298
+      ],
+      [
+        1774213200,
+        295
+      ],
+      [
+        1774299600,
+        294
+      ],
+      [
+        1774386000,
+        299
+      ],
+      [
+        1774472400,
+        301
+      ],
+      [
+        1774558800,
+        301
+      ],
+      [
+        1774645200,
+        301
+      ],
+      [
+        1774731600,
+        301
+      ],
+      [
+        1774818000,
+        301
+      ],
+      [
+        1774904400,
+        302
+      ],
+      [
+        1774990800,
+        298
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "SVO",
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport"
+          },
+          "city": "Moscow",
+          "country": "Russia",
+          "country_code": "RU",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyTCy1ygr3oTtbVSRXh4DIBr221Ygp_bTpEfwCtww-u2wzCx9vaK_y1RYfuIgvo3RTfZ46_hAktEvshA",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE4qUwY9Ysg-1IWkrUxQDqNKd5G4R6qcydqjtMdSDK5xBt4ra_6h0T-EiQ2BeUil73R-efW5x8wDfQtN7trHkjoj9_Xd8_qBA-ZloViz4"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "BKK",
+            "name": "Suvarnabhumi Airport"
+          },
+          "city": "Bangkok",
+          "country": "Thailand",
+          "country_code": "TH",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzC4xB5QxGqhLwOS5u7E8q-Ty8lX8lihfxKD-L1VCamrWDhR52VWvoBnPWydRUr7FEKiKwHfAU0sB9mg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-yAxs8ZWNi0M14W-4wO0ra1auEIiVtG0zy-C8CygMmIa2-MVy7L8vSTHNXJJnS_9lq_gL3BVaF6MQh6wBKzXzqexb7CZL29F6UQABXAY"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1030 @@
+{
+  "search_metadata": {
+    "id": "69cd04ec09a51a2f56dde2c3",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/eB7gjyKapnG-wOU_Iu84oQ/69cd04ec09a51a2f56dde2c3.json",
+    "created_at": "2026-04-01 11:43:40 UTC",
+    "processed_at": "2026-04-01 11:43:40 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNHUlVyBwgBEgNEWEJAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/eB7gjyKapnG-wOU_Iu84oQ/69cd04ec09a51a2f56dde2c3.html",
+    "prettify_html_file": "https://serpapi.com/searches/eB7gjyKapnG-wOU_Iu84oQ/69cd04ec09a51a2f56dde2c3.prettify",
+    "total_time_taken": 1.47
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "GRU",
+    "arrival_id": "DXB",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 14:15"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-11 06:50"
+          },
+          "duration": 695,
+          "airplane": "Airbus A330-900neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 675",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 541 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-11 11:05"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 19:20"
+          },
+          "duration": 375,
+          "airplane": "Airbus A321neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 856",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 372 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 255,
+          "name": "Leonardo da Vinci International Airport",
+          "id": "FCO"
+        }
+      ],
+      "total_duration": 1325,
+      "carbon_emissions": {
+        "this_flight": 913000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 10
+      },
+      "price": 691,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3RCV2pZM05YeEJXamcxTmhvTENOMmJCQkFDR2dORlZWSTRISENXOGdRPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiQVoiLCI2NzUiXSxbIkZDTyIsIjIwMjYtMDYtMTEiLCJEWEIiLG51bGwsIkFaIiwiODU2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 23:00"
+          },
+          "arrival_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-11 14:05"
+          },
+          "duration": 605,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 714",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 446 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Group"
+        },
+        {
+          "departure_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-11 15:25"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-12 00:35"
+          },
+          "duration": 430,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 142",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 402 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 80,
+          "name": "Adolfo Suárez Madrid-Barajas Airport",
+          "id": "MAD"
+        }
+      ],
+      "total_duration": 1115,
+      "carbon_emissions": {
+        "this_flight": 848000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 2
+      },
+      "price": 699,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3RNUVRjeE5IeEZTekUwTWhvTENMdWhCQkFDR2dORlZWSTRISERxK0FRPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIk1BRCIsbnVsbCwiTEEiLCI3MTQiXSxbIk1BRCIsIjIwMjYtMDYtMTEiLCJEWEIiLG51bGwsIkVLIiwiMTQyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 01:05"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-10 23:00"
+          },
+          "duration": 895,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 262",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 873 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 895,
+      "carbon_emissions": {
+        "this_flight": 874000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 5
+      },
+      "price": 709,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ1ZGU3pJMk1ob0xDSitwQkJBQ0dnTkZWVkk0SEhEdGdRVT0iLFtbIkdSVSIsIjIwMjYtMDYtMTAiLCJEWEIiLG51bGwsIkVLIiwiMjYyIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 18:55"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-11 11:30"
+          },
+          "duration": 695,
+          "airplane": "Airbus A330-900neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 679",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 541 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-12 11:05"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-12 19:20"
+          },
+          "duration": 375,
+          "airplane": "Airbus A321neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 856",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 372 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1415,
+          "name": "Leonardo da Vinci International Airport",
+          "id": "FCO",
+          "overnight": true
+        }
+      ],
+      "total_duration": 2485,
+      "carbon_emissions": {
+        "this_flight": 913000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 10
+      },
+      "price": 619,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3RCV2pZM09YeEJXamcxTmhvTENQTGlBeEFDR2dORlZWSTRISENlc0FRPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiQVoiLCI2NzkiXSxbIkZDTyIsIjIwMjYtMDYtMTIiLCJEWEIiLG51bGwsIkFaIiwiODU2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 19:20"
+          },
+          "arrival_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-11 10:45"
+          },
+          "duration": 625,
+          "airplane": "Airbus A330",
+          "airline": "Iberia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+          "travel_class": "Economy",
+          "flight_number": "IB 272",
+          "ticket_also_sold_by": [
+            "LATAM"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 480 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Iberia for Latam Airlines Group"
+        },
+        {
+          "departure_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-11 15:25"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-12 00:35"
+          },
+          "duration": 430,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 142",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 402 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 280,
+          "name": "Adolfo Suárez Madrid-Barajas Airport",
+          "id": "MAD"
+        }
+      ],
+      "total_duration": 1335,
+      "carbon_emissions": {
+        "this_flight": 882000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 6
+      },
+      "price": 699,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3RKUWpJM01ueEZTekUwTWhvTENMdWhCQkFDR2dORlZWSTRISERxK0FRPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIk1BRCIsbnVsbCwiSUIiLCIyNzIiXSxbIk1BRCIsIjIwMjYtMDYtMTEiLCJEWEIiLG51bGwsIkVLIiwiMTQyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 17:50"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-11 10:15"
+          },
+          "duration": 685,
+          "airplane": "Boeing 777",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8120",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 551 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-11 15:45"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 23:30"
+          },
+          "duration": 345,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 98",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 339 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 330,
+          "name": "Leonardo da Vinci International Airport",
+          "id": "FCO"
+        }
+      ],
+      "total_duration": 1360,
+      "carbon_emissions": {
+        "this_flight": 891000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 7
+      },
+      "price": 703,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3RNUVRneE1qQjhSVXM1T0JvTENPeWtCQkFDR2dORlZWSTRISERnL0FRPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiTEEiLCI4MTIwIl0sWyJGQ08iLCIyMDI2LTA2LTExIiwiRFhCIixudWxsLCJFSyIsIjk4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 18:10"
+          },
+          "arrival_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-11 10:50"
+          },
+          "duration": 700,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8088",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 545 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-11 15:20"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 23:55"
+          },
+          "duration": 395,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 184",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 394 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 270,
+          "name": "Brussels Airport",
+          "id": "BRU"
+        }
+      ],
+      "total_duration": 1365,
+      "carbon_emissions": {
+        "this_flight": 940000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 13
+      },
+      "price": 705,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3hNUVRnd09EaDhSVXN4T0RRYUN3alNwZ1FRQWhvRFJWVlNPQnh3Ni80RSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkJSVSIsbnVsbCwiTEEiLCI4MDg4Il0sWyJCUlUiLCIyMDI2LTA2LTExIiwiRFhCIixudWxsLCJFSyIsIjE4NCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 22:30"
+          },
+          "arrival_airport": {
+            "name": "O.R. Tambo International Airport",
+            "id": "JNB",
+            "time": "2026-06-11 12:00"
+          },
+          "duration": 510,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8058",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 417 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "O.R. Tambo International Airport",
+            "id": "JNB",
+            "time": "2026-06-11 13:30"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 23:40"
+          },
+          "duration": 490,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 762",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 449 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 90,
+          "name": "O.R. Tambo International Airport",
+          "id": "JNB"
+        }
+      ],
+      "total_duration": 1090,
+      "carbon_emissions": {
+        "this_flight": 867000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 4
+      },
+      "price": 706,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3hNUVRnd05UaDhSVXMzTmpJYUN3aUtwd1FRQWhvRFJWVlNPQnh3clA4RSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkpOQiIsbnVsbCwiTEEiLCI4MDU4Il0sWyJKTkIiLCIyMDI2LTA2LTExIiwiRFhCIixudWxsLCJFSyIsIjc2MiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 04:10"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-10 22:45"
+          },
+          "duration": 755,
+          "airplane": "Airbus A350",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 16",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 543 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-11 00:30"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 05:55"
+          },
+          "duration": 265,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 762",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 231 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 105,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 1125,
+      "carbon_emissions": {
+        "this_flight": 775000,
+        "typical_for_this_route": 833000,
+        "difference_percent": -7
+      },
+      "price": 812,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3BVU3pFMmZGUkxOell5R2dzSTV2a0VFQUlhQTBWVlVqZ2NjS2pmQlE9PSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIklTVCIsbnVsbCwiVEsiLCIxNiJdLFsiSVNUIiwiMjAyNi0wNi0xMSIsIkRYQiIsbnVsbCwiVEsiLCI3NjIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+            "id": "GRU",
+            "time": "2026-06-10 01:45"
+          },
+          "arrival_airport": {
+            "name": "Bole Addis Ababa International Airport",
+            "id": "ADD",
+            "time": "2026-06-10 19:45"
+          },
+          "duration": 720,
+          "airplane": "Boeing 777",
+          "airline": "Ethiopian",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ET.png",
+          "travel_class": "Economy",
+          "flight_number": "ET 507",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 637 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Bole Addis Ababa International Airport",
+            "id": "ADD",
+            "time": "2026-06-10 21:45"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 02:55"
+          },
+          "duration": 250,
+          "airplane": "Boeing 777",
+          "airline": "Ethiopian",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ET.png",
+          "travel_class": "Economy",
+          "flight_number": "ET 600",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "Some seats with power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 239 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 120,
+          "name": "Bole Addis Ababa International Airport",
+          "id": "ADD"
+        }
+      ],
+      "total_duration": 1090,
+      "carbon_emissions": {
+        "this_flight": 877000,
+        "typical_for_this_route": 833000,
+        "difference_percent": 5
+      },
+      "price": 955,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ET.png",
+      "booking_token": "WyJDalJJTnpOSFJVOW1UR3hCTTAxQlEwaHZPVkZDUnkwdExTMHRMUzEyZDJocE9DMXVNVUZCUVVGQlIyNU9Razh3VGsxVlkwTkJFZ3RGVkRVd04zeEZWRFl3TUJvTENJanFCUkFDR2dORlZWSTRISERJNFFZPSIsW1siR1JVIiwiMjAyNi0wNi0xMCIsIkFERCIsbnVsbCwiRVQiLCI1MDciXSxbIkFERCIsIjIwMjYtMDYtMTAiLCJEWEIiLG51bGwsIkVUIiwiNjAwIl1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 619,
+    "price_level": "typical",
+    "typical_price_range": [
+      475,
+      670
+    ],
+    "price_history": [
+      [
+        1769828400,
+        561
+      ],
+      [
+        1769914800,
+        561
+      ],
+      [
+        1770001200,
+        561
+      ],
+      [
+        1770087600,
+        564
+      ],
+      [
+        1770174000,
+        564
+      ],
+      [
+        1770260400,
+        565
+      ],
+      [
+        1770346800,
+        564
+      ],
+      [
+        1770433200,
+        567
+      ],
+      [
+        1770519600,
+        567
+      ],
+      [
+        1770606000,
+        567
+      ],
+      [
+        1770692400,
+        562
+      ],
+      [
+        1770778800,
+        562
+      ],
+      [
+        1770865200,
+        561
+      ],
+      [
+        1770951600,
+        558
+      ],
+      [
+        1771038000,
+        558
+      ],
+      [
+        1771124400,
+        563
+      ],
+      [
+        1771210800,
+        564
+      ],
+      [
+        1771297200,
+        562
+      ],
+      [
+        1771383600,
+        564
+      ],
+      [
+        1771470000,
+        566
+      ],
+      [
+        1771556400,
+        569
+      ],
+      [
+        1771642800,
+        569
+      ],
+      [
+        1771729200,
+        570
+      ],
+      [
+        1771815600,
+        567
+      ],
+      [
+        1771902000,
+        566
+      ],
+      [
+        1771988400,
+        569
+      ],
+      [
+        1772074800,
+        568
+      ],
+      [
+        1772161200,
+        566
+      ],
+      [
+        1772247600,
+        567
+      ],
+      [
+        1772334000,
+        567
+      ],
+      [
+        1772420400,
+        570
+      ],
+      [
+        1772506800,
+        574
+      ],
+      [
+        1772593200,
+        574
+      ],
+      [
+        1772679600,
+        571
+      ],
+      [
+        1772766000,
+        573
+      ],
+      [
+        1772852400,
+        582
+      ],
+      [
+        1772938800,
+        587
+      ],
+      [
+        1773025200,
+        592
+      ],
+      [
+        1773111600,
+        585
+      ],
+      [
+        1773198000,
+        583
+      ],
+      [
+        1773284400,
+        583
+      ],
+      [
+        1773370800,
+        579
+      ],
+      [
+        1773457200,
+        585
+      ],
+      [
+        1773543600,
+        591
+      ],
+      [
+        1773630000,
+        591
+      ],
+      [
+        1773716400,
+        600
+      ],
+      [
+        1773802800,
+        597
+      ],
+      [
+        1773889200,
+        592
+      ],
+      [
+        1773975600,
+        593
+      ],
+      [
+        1774062000,
+        587
+      ],
+      [
+        1774148400,
+        589
+      ],
+      [
+        1774234800,
+        614
+      ],
+      [
+        1774321200,
+        618
+      ],
+      [
+        1774407600,
+        595
+      ],
+      [
+        1774494000,
+        594
+      ],
+      [
+        1774580400,
+        595
+      ],
+      [
+        1774666800,
+        593
+      ],
+      [
+        1774753200,
+        593
+      ],
+      [
+        1774839600,
+        597
+      ],
+      [
+        1774926000,
+        596
+      ],
+      [
+        1775012400,
+        619
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "GRU",
+            "name": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport"
+          },
+          "city": "São Paulo",
+          "country": "Brazil",
+          "country_code": "BR",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkx9athZsBRDrcQSs15lBM_on9PkrTwz-ySvt8J6pcJZSuqg14GFxUPDm1FgV3ckvtmLWX0pDDIkRldw",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4D5SB4Yfugl7neBSWCiZ5gRiYxGRSSCYavaGuPsXj1q6Hk3Gv5C78US7ZqeotwTy5BX6xGe9CpXQkvQM45Mjnol7egb_CdoPyBoVeqB8"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "DXB",
+            "name": "Dubai International Airport"
+          },
+          "city": "Dubai",
+          "country": "United Arab Emirates",
+          "country_code": "AE",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRegWMQBRhDOeg2gvll8nGXsG1-OPqD2V0EvCN1Ni2Poe9hGY8CBps9mRaAyrAz8Jvsvl292aI62fq43A",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDaD8FERvoI4iorjkWbED9zAq7S3m9hD1t5vGNU5Jznr1Kl1em9SIs9c9VkujJF5_EDvC5mKyqcQ9B8PApW9tiwfzhK_pC2qvRBND2Plo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,2 +1,4 @@
 node_modules/
 .env
+client/dist/
+hub_map.html

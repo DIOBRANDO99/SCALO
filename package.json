@@ -1,12 +1,7 @@
 {
   "name": "scalo",
-  "version": "1.0.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "search": "node search.js"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "serpapi": "^2.1.0"
+    "test": "npm test --prefix backend && npm test --prefix client"
   }
 }

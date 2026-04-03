@@ -1,0 +1,1195 @@
+{
+  "search_metadata": {
+    "id": "69cd0e3503610ace4857ced1",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/R2M4UbQH3aWL-IPXu8Uv8w/69cd0e3503610ace4857ced1.json",
+    "created_at": "2026-04-01 12:23:17 UTC",
+    "processed_at": "2026-04-01 12:23:17 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNDREdyBwgBEgNEWEJAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/R2M4UbQH3aWL-IPXu8Uv8w/69cd0e3503610ace4857ced1.html",
+    "prettify_html_file": "https://serpapi.com/searches/R2M4UbQH3aWL-IPXu8Uv8w/69cd0e3503610ace4857ced1.prettify",
+    "total_time_taken": 0.76
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "CDG",
+    "arrival_id": "DXB",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 12:35"
+          },
+          "arrival_airport": {
+            "name": "Sabiha Gökçen International Airport",
+            "id": "SAW",
+            "time": "2026-06-10 17:10"
+          },
+          "duration": 215,
+          "airplane": "Airbus A321neo",
+          "airline": "AJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VF.png",
+          "travel_class": "Economy",
+          "flight_number": "VF 12",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 179 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Sabiha Gökçen International Airport",
+            "id": "SAW",
+            "time": "2026-06-10 20:25"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 02:00"
+          },
+          "duration": 275,
+          "airplane": "Boeing 737",
+          "airline": "AJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VF.png",
+          "travel_class": "Economy",
+          "flight_number": "VF 143",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 229 kg"
+          ],
+          "plane_and_crew_by": "Turkish Airlines"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 195,
+          "name": "Sabiha Gökçen International Airport",
+          "id": "SAW"
+        }
+      ],
+      "total_duration": 685,
+      "carbon_emissions": {
+        "this_flight": 408000,
+        "typical_for_this_route": 449000,
+        "difference_percent": -9
+      },
+      "price": 171,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ3BXUmpFeWZGWkdNVFF6R2dzSW9ZVUJFQUlhQTBWVlVqZ2NjTlNhQVE9PSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIlNBVyIsbnVsbCwiVkYiLCIxMiJdLFsiU0FXIiwiMjAyNi0wNi0xMCIsIkRYQiIsbnVsbCwiVkYiLCIxNDMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 15:25"
+          },
+          "arrival_airport": {
+            "name": "Chișinău International Airport",
+            "id": "RMO",
+            "time": "2026-06-10 19:25"
+          },
+          "duration": 180,
+          "airplane": "Airbus A321",
+          "airline": "FLYONE",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5F.png",
+          "travel_class": "Economy",
+          "flight_number": "5F 5902",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Carbon emissions estimate: 178 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Chișinău International Airport",
+            "id": "RMO",
+            "time": "2026-06-11 05:45"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 11:55"
+          },
+          "duration": 310,
+          "airplane": "Airbus A321",
+          "airline": "FLYONE",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5F.png",
+          "travel_class": "Economy",
+          "flight_number": "5F 5153",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Carbon emissions estimate: 293 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 620,
+          "name": "Chișinău International Airport",
+          "id": "RMO",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1110,
+      "carbon_emissions": {
+        "this_flight": 472000,
+        "typical_for_this_route": 449000,
+        "difference_percent": 5
+      },
+      "price": 311,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/5F.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Fare non-refundable, taxes may be refundable",
+        "Ticket changes for a fee"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZzAxUmpVNU1ESjhOVVkxTVRVekdnc0kvUElCRUFJYUEwVlZVamdjY1A2WkFnPT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJSTU8iLG51bGwsIjVGIiwiNTkwMiJdLFsiUk1PIiwiMjAyNi0wNi0xMSIsIkRYQiIsbnVsbCwiNUYiLCI1MTUzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 08:25"
+          },
+          "arrival_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2026-06-10 15:10"
+          },
+          "duration": 345,
+          "airplane": "Boeing 787",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 130",
+          "ticket_also_sold_by": [
+            "Air France"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 286 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2026-06-10 17:35"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-10 21:30"
+          },
+          "duration": 175,
+          "airplane": "Airbus A321",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 594",
+          "ticket_also_sold_by": [
+            "Air France"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 179 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 145,
+          "name": "King Abdulaziz International Airport",
+          "id": "JED"
+        }
+      ],
+      "total_duration": 665,
+      "carbon_emissions": {
+        "this_flight": 466000,
+        "typical_for_this_route": 449000,
+        "difference_percent": 4
+      },
+      "price": 392,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ3RUVmpFek1IeFRWalU1TkJvTENQT3hBaEFDR2dORlZWSTRISENENHdJPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkpFRCIsbnVsbCwiU1YiLCIxMzAiXSxbIkpFRCIsIjIwMjYtMDYtMTAiLCJEWEIiLG51bGwsIlNWIiwiNTk0Il1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 18:15"
+          },
+          "arrival_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 20:25"
+          },
+          "duration": 130,
+          "airplane": "Airbus A320neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 325",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-11 11:05"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 19:20"
+          },
+          "duration": 375,
+          "airplane": "Airbus A321neo",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 856",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 372 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 880,
+          "name": "Leonardo da Vinci International Airport",
+          "id": "FCO",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1385,
+      "carbon_emissions": {
+        "this_flight": 464000,
+        "typical_for_this_route": 449000,
+        "difference_percent": 3
+      },
+      "price": 290,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ3RCV2pNeU5YeEJXamcxTmhvTENMamlBUkFDR2dORlZWSTRISERtaGdJPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkZDTyIsbnVsbCwiQVoiLCIzMjUiXSxbIkZDTyIsIjIwMjYtMDYtMTEiLCJEWEIiLG51bGwsIkFaIiwiODU2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 12:40"
+          },
+          "arrival_airport": {
+            "name": "Larnaka International Airport",
+            "id": "LCA",
+            "time": "2026-06-10 17:50"
+          },
+          "duration": 250,
+          "airplane": "Airbus A220 Passenger",
+          "airline": "Cyprus Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CY.png",
+          "travel_class": "Economy",
+          "flight_number": "CY 381",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 289 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Larnaka International Airport",
+            "id": "LCA",
+            "time": "2026-06-11 07:55"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 12:45"
+          },
+          "duration": 230,
+          "airplane": "Airbus A220 Passenger",
+          "airline": "Cyprus Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CY.png",
+          "travel_class": "Economy",
+          "flight_number": "CY 106",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 284 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 845,
+          "name": "Larnaka International Airport",
+          "id": "LCA",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1325,
+      "carbon_emissions": {
+        "this_flight": 574000,
+        "typical_for_this_route": 449000,
+        "difference_percent": 28
+      },
+      "price": 346,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CY.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ3REV1RNNE1YeERXVEV3TmhvTENNaU5BaEFDR2dORlZWSTRISER0dUFJPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkxDQSIsbnVsbCwiQ1kiLCIzODEiXSxbIkxDQSIsIjIwMjYtMDYtMTEiLCJEWEIiLG51bGwsIkNZIiwiMTA2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 11:30"
+          },
+          "arrival_airport": {
+            "name": "King Khalid International Airport",
+            "id": "RUH",
+            "time": "2026-06-10 18:45"
+          },
+          "duration": 375,
+          "airplane": "Boeing 777",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 144",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 358 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "King Khalid International Airport",
+            "id": "RUH",
+            "time": "2026-06-10 23:25"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 02:25"
+          },
+          "duration": 120,
+          "airplane": "Airbus A321",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 592",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 114 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 280,
+          "name": "King Khalid International Airport",
+          "id": "RUH"
+        }
+      ],
+      "total_duration": 775,
+      "carbon_emissions": {
+        "this_flight": 473000,
+        "typical_for_this_route": 449000,
+        "difference_percent": 5
+      },
+      "price": 399,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ3RUVmpFME5IeFRWalU1TWhvTENLKzNBaEFDR2dORlZWSTRISEN2NlFJPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIlJVSCIsbnVsbCwiU1YiLCIxNDQiXSxbIlJVSCIsIjIwMjYtMDYtMTAiLCJEWEIiLG51bGwsIlNWIiwiNTkyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 15:55"
+          },
+          "arrival_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2026-06-10 22:40"
+          },
+          "duration": 345,
+          "airplane": "Boeing 787",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 126",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 247 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2026-06-11 00:40"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 04:35"
+          },
+          "duration": 175,
+          "airplane": "Airbus A321",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 590",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 179 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 120,
+          "name": "King Abdulaziz International Airport",
+          "id": "JED"
+        }
+      ],
+      "total_duration": 640,
+      "carbon_emissions": {
+        "this_flight": 427000,
+        "typical_for_this_route": 449000,
+        "difference_percent": -5
+      },
+      "price": 407,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ3RUVmpFeU5ueFRWalU1TUJvTENNKzlBaEFDR2dORlZWSTRISERQOEFJPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkpFRCIsbnVsbCwiU1YiLCIxMjYiXSxbIkpFRCIsIjIwMjYtMDYtMTEiLCJEWEIiLG51bGwsIlNWIiwiNTkwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 22:05"
+          },
+          "arrival_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2026-06-11 03:30"
+          },
+          "duration": 265,
+          "airplane": "Airbus A320neo",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Economy",
+          "flight_number": "MS 802",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 259 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Cairo International Airport",
+            "id": "CAI",
+            "time": "2026-06-11 06:25"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 10:55"
+          },
+          "duration": 210,
+          "airplane": "Airbus A320neo",
+          "airline": "EgyptAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+          "travel_class": "Economy",
+          "flight_number": "MS 901",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 201 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Cairo International Airport",
+          "id": "CAI",
+          "overnight": true
+        }
+      ],
+      "total_duration": 650,
+      "carbon_emissions": {
+        "this_flight": 462000,
+        "typical_for_this_route": 449000,
+        "difference_percent": 3
+      },
+      "price": 424,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ3ROVXpnd01ueE5Vemt3TVJvTENKWExBaEFDR2dORlZWSTRISENzZ0FNPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkNBSSIsbnVsbCwiTVMiLCI4MDIiXSxbIkNBSSIsIjIwMjYtMDYtMTEiLCJEWEIiLG51bGwsIk1TIiwiOTAxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 11:20"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-10 19:20"
+          },
+          "duration": 420,
+          "airplane": "Airbus A321neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 18",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 396 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-10 20:05"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-10 22:35"
+          },
+          "duration": 90,
+          "airplane": "Airbus A321neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 512",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 67 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 45,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 555,
+      "carbon_emissions": {
+        "this_flight": 464000,
+        "typical_for_this_route": 449000,
+        "difference_percent": 3
+      },
+      "price": 446,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "extensions": [
+        "1 checked bag up to 25 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ3BIUmpFNGZFZEdOVEV5R2dzSWs5d0NFQUlhQTBWVlVqZ2NjSWVVQXc9PSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkJBSCIsbnVsbCwiR0YiLCIxOCJdLFsiQkFIIiwiMjAyNi0wNi0xMCIsIkRYQiIsbnVsbCwiR0YiLCI1MTIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 11:20"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-10 20:00"
+          },
+          "duration": 400,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 72",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 369 kg"
+          ]
+        }
+      ],
+      "total_duration": 400,
+      "carbon_emissions": {
+        "this_flight": 369000,
+        "typical_for_this_route": 449000,
+        "difference_percent": -18
+      },
+      "price": 603,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "extensions": [
+        "1 checked bag up to 30 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ1JGU3pjeUdnc0kzOVlERUFJYUEwVlZVamdjY0t1aUJBPT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJEWEIiLG51bGwsIkVLIiwiNzIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 15:35"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 00:20"
+          },
+          "duration": 405,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 74",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 368 kg"
+          ]
+        }
+      ],
+      "total_duration": 405,
+      "carbon_emissions": {
+        "this_flight": 368000,
+        "typical_for_this_route": 449000,
+        "difference_percent": -18
+      },
+      "price": 603,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "extensions": [
+        "1 checked bag up to 30 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ1JGU3pjMEdnc0kzOVlERUFJYUEwVlZVamdjY0t1aUJBPT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJEWEIiLG51bGwsIkVLIiwiNzQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 21:55"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-11 06:40"
+          },
+          "duration": 405,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 76",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 368 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "total_duration": 405,
+      "carbon_emissions": {
+        "this_flight": 368000,
+        "typical_for_this_route": 449000,
+        "difference_percent": -18
+      },
+      "price": 603,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "extensions": [
+        "1 checked bag up to 30 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ1JGU3pjMkdnc0kzOVlERUFJYUEwVlZVamdjY0t1aUJBPT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJEWEIiLG51bGwsIkVLIiwiNzYiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 13:40"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-10 22:35"
+          },
+          "duration": 415,
+          "airplane": "Boeing 777",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 662",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 382 kg"
+          ]
+        }
+      ],
+      "total_duration": 415,
+      "carbon_emissions": {
+        "this_flight": 382000,
+        "typical_for_this_route": 449000,
+        "difference_percent": -15
+      },
+      "price": 809,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYjBGNk5FNXdNVWx5UmxGQlJIVnJXWGRDUnkwdExTMHRMUzB0TFMxdmVXTmlOMEZCUVVGQlIyNU9SR3BWU1hOalVHMUJFZ1ZCUmpZMk1ob0xDUDMzQkJBQ0dnTkZWVkk0SEhDNzNRVT0iLFtbIkNERyIsIjIwMjYtMDYtMTAiLCJEWEIiLG51bGwsIkFGIiwiNjYyIl1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 171,
+    "price_level": "low",
+    "typical_price_range": [
+      195,
+      280
+    ],
+    "price_history": [
+      [
+        1769814000,
+        195
+      ],
+      [
+        1769900400,
+        195
+      ],
+      [
+        1769986800,
+        195
+      ],
+      [
+        1770073200,
+        195
+      ],
+      [
+        1770159600,
+        195
+      ],
+      [
+        1770246000,
+        195
+      ],
+      [
+        1770332400,
+        195
+      ],
+      [
+        1770418800,
+        195
+      ],
+      [
+        1770505200,
+        195
+      ],
+      [
+        1770591600,
+        195
+      ],
+      [
+        1770678000,
+        195
+      ],
+      [
+        1770764400,
+        195
+      ],
+      [
+        1770850800,
+        195
+      ],
+      [
+        1770937200,
+        195
+      ],
+      [
+        1771023600,
+        195
+      ],
+      [
+        1771110000,
+        195
+      ],
+      [
+        1771196400,
+        195
+      ],
+      [
+        1771282800,
+        195
+      ],
+      [
+        1771369200,
+        195
+      ],
+      [
+        1771455600,
+        195
+      ],
+      [
+        1771542000,
+        195
+      ],
+      [
+        1771628400,
+        195
+      ],
+      [
+        1771714800,
+        171
+      ],
+      [
+        1771801200,
+        171
+      ],
+      [
+        1771887600,
+        171
+      ],
+      [
+        1771974000,
+        171
+      ],
+      [
+        1772060400,
+        171
+      ],
+      [
+        1772146800,
+        171
+      ],
+      [
+        1772233200,
+        171
+      ],
+      [
+        1772319600,
+        171
+      ],
+      [
+        1772406000,
+        171
+      ],
+      [
+        1772492400,
+        171
+      ],
+      [
+        1772578800,
+        171
+      ],
+      [
+        1772665200,
+        171
+      ],
+      [
+        1772751600,
+        171
+      ],
+      [
+        1772838000,
+        171
+      ],
+      [
+        1772924400,
+        171
+      ],
+      [
+        1773010800,
+        171
+      ],
+      [
+        1773097200,
+        171
+      ],
+      [
+        1773183600,
+        171
+      ],
+      [
+        1773270000,
+        171
+      ],
+      [
+        1773356400,
+        171
+      ],
+      [
+        1773442800,
+        171
+      ],
+      [
+        1773529200,
+        171
+      ],
+      [
+        1773615600,
+        171
+      ],
+      [
+        1773702000,
+        205
+      ],
+      [
+        1773788400,
+        205
+      ],
+      [
+        1773874800,
+        205
+      ],
+      [
+        1773961200,
+        205
+      ],
+      [
+        1774047600,
+        205
+      ],
+      [
+        1774134000,
+        205
+      ],
+      [
+        1774220400,
+        171
+      ],
+      [
+        1774306800,
+        171
+      ],
+      [
+        1774393200,
+        171
+      ],
+      [
+        1774479600,
+        171
+      ],
+      [
+        1774566000,
+        171
+      ],
+      [
+        1774652400,
+        171
+      ],
+      [
+        1774738800,
+        171
+      ],
+      [
+        1774821600,
+        171
+      ],
+      [
+        1774908000,
+        171
+      ],
+      [
+        1774994400,
+        171
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle Airport"
+          },
+          "city": "Paris",
+          "country": "France",
+          "country_code": "FR",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGx8ii2KbSDdbdzfKye5oDN2bwBA6audqI7XUEf2iMRZezpn_ZbQe1ZIuvUSH-8XOMe958umDwSsAF1w",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyQJ-woNs0iO22mPSkmRUM5gcsTbbYeypQ6BBTeFxXr90mqTxZl57Fdq2CDuLn4w7cKZ8TT9_zZhOpF57rIpA7yWKQnqKvkKIf9Y-qJDo"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "DXB",
+            "name": "Dubai International Airport"
+          },
+          "city": "Dubai",
+          "country": "United Arab Emirates",
+          "country_code": "AE",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRegWMQBRhDOeg2gvll8nGXsG1-OPqD2V0EvCN1Ni2Poe9hGY8CBps9mRaAyrAz8Jvsvl292aI62fq43A",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDaD8FERvoI4iorjkWbED9zAq7S3m9hD1t5vGNU5Jznr1Kl1em9SIs9c9VkujJF5_EDvC5mKyqcQ9B8PApW9tiwfzhK_pC2qvRBND2Plo"
+        }
+      ]
+    }
+  ]
+}

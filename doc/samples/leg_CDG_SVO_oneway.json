@@ -1,0 +1,1072 @@
+{
+  "search_metadata": {
+    "id": "69cd07363f79f52adee4c475",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/3JtSdVqujbRbpgZ6JhEQaA/69cd07363f79f52adee4c475.json",
+    "created_at": "2026-04-01 11:53:26 UTC",
+    "processed_at": "2026-04-01 11:53:26 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNDREdyBwgBEgNTVk9AAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/3JtSdVqujbRbpgZ6JhEQaA/69cd07363f79f52adee4c475.html",
+    "prettify_html_file": "https://serpapi.com/searches/3JtSdVqujbRbpgZ6JhEQaA/69cd07363f79f52adee4c475.prettify",
+    "total_time_taken": 0.43
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "CDG",
+    "arrival_id": "SVO",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 10:00"
+          },
+          "arrival_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 12:25"
+          },
+          "duration": 145,
+          "airplane": "Airbus A319",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 241",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 143 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 21:55"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 02:05"
+          },
+          "duration": 190,
+          "airplane": "Airbus A319",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 136",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 175 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 570,
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "BEG"
+        }
+      ],
+      "total_duration": 905,
+      "carbon_emissions": {
+        "this_flight": 319000,
+        "typical_for_this_route": 333000,
+        "difference_percent": -4
+      },
+      "price": 392,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+      "extensions": [
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3RLVlRJME1YeEtWVEV6TmhvTENLQ3lBaEFDR2dORlZWSTRISENuNHdJPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkJFRyIsbnVsbCwiSlUiLCIyNDEiXSxbIkJFRyIsIjIwMjYtMDYtMTAiLCJTVk8iLG51bGwsIkpVIiwiMTM2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 18:30"
+          },
+          "arrival_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2026-06-10 20:40"
+          },
+          "duration": 190,
+          "airplane": "Boeing 737",
+          "airline": "Royal Air Maroc",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+          "travel_class": "Economy",
+          "flight_number": "AT 789",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Carbon emissions estimate: 182 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Casablanca Mohammed V International Airport",
+            "id": "CMN",
+            "time": "2026-06-10 22:30"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 06:35"
+          },
+          "duration": 365,
+          "airplane": "Boeing 737",
+          "airline": "Royal Air Maroc",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+          "travel_class": "Economy",
+          "flight_number": "AT 220",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Carbon emissions estimate: 356 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 110,
+          "name": "Casablanca Mohammed V International Airport",
+          "id": "CMN"
+        }
+      ],
+      "total_duration": 665,
+      "carbon_emissions": {
+        "this_flight": 539000,
+        "typical_for_this_route": 333000,
+        "difference_percent": 62
+      },
+      "price": 481,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3RCVkRjNE9YeEJWREl5TUJvTENMLzNBaEFDR2dORlZWSTRISERSc3dNPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkNNTiIsbnVsbCwiQVQiLCI3ODkiXSxbIkNNTiIsIjIwMjYtMDYtMTAiLCJTVk8iLG51bGwsIkFUIiwiMjIwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 10:00"
+          },
+          "arrival_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 12:25"
+          },
+          "duration": 145,
+          "airplane": "Airbus A319",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 241",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 143 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 14:30"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-10 18:40"
+          },
+          "duration": 190,
+          "airplane": "Airbus A319",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 132",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 175 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 125,
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "BEG"
+        }
+      ],
+      "total_duration": 460,
+      "carbon_emissions": {
+        "this_flight": 319000,
+        "typical_for_this_route": 333000,
+        "difference_percent": -4
+      },
+      "price": 487,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+      "extensions": [
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3RLVlRJME1YeEtWVEV6TWhvTENMejhBaEFDR2dORlZWSTRISEMwdVFNPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkJFRyIsbnVsbCwiSlUiLCIyNDEiXSxbIkJFRyIsIjIwMjYtMDYtMTAiLCJTVk8iLG51bGwsIkpVIiwiMTMyIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 20:35"
+          },
+          "arrival_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 23:00"
+          },
+          "duration": 145,
+          "airplane": "Airbus A320",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 243",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 123 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-11 18:45"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 22:55"
+          },
+          "duration": 190,
+          "airplane": "Airbus A320",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 134",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 156 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1185,
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "BEG",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1520,
+      "carbon_emissions": {
+        "this_flight": 279000,
+        "typical_for_this_route": 333000,
+        "difference_percent": -16
+      },
+      "price": 437,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+      "extensions": [
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3RLVlRJME0zeEtWVEV6TkJvTENMVFZBaEFDR2dORlZWSTRISENMakFNPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkJFRyIsbnVsbCwiSlUiLCIyNDMiXSxbIkJFRyIsIjIwMjYtMDYtMTEiLCJTVk8iLG51bGwsIkpVIiwiMTM0Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 16:35"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-10 23:55"
+          },
+          "duration": 380,
+          "airplane": "Airbus A380",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 40",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 435 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-11 09:55"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 15:20"
+          },
+          "duration": 325,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 339",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 289 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 600,
+          "name": "Hamad International Airport",
+          "id": "DOH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1305,
+      "carbon_emissions": {
+        "this_flight": 725000,
+        "typical_for_this_route": 333000,
+        "difference_percent": 118
+      },
+      "price": 516,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "extensions": [
+        "1 checked bag up to 25 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3BSVWpRd2ZGRlNNek01R2dzSTlKSURFQUlhQTBWVlVqZ2NjTGpUQXc9PSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkRPSCIsbnVsbCwiUVIiLCI0MCJdLFsiRE9IIiwiMjAyNi0wNi0xMSIsIlNWTyIsbnVsbCwiUVIiLCIzMzkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 11:30"
+          },
+          "arrival_airport": {
+            "name": "King Khalid International Airport",
+            "id": "RUH",
+            "time": "2026-06-10 18:45"
+          },
+          "duration": 375,
+          "airplane": "Boeing 777",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 144",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 358 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "King Khalid International Airport",
+            "id": "RUH",
+            "time": "2026-06-11 08:20"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 14:15"
+          },
+          "duration": 355,
+          "airplane": "Airbus A320",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 283",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 424 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 815,
+          "name": "King Khalid International Airport",
+          "id": "RUH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1545,
+      "carbon_emissions": {
+        "this_flight": 783000,
+        "typical_for_this_route": 333000,
+        "difference_percent": 135
+      },
+      "price": 606,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3RUVmpFME5IeFRWakk0TXhvTENJUFpBeEFDR2dORlZWSTRISERscEFRPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIlJVSCIsbnVsbCwiU1YiLCIxNDQiXSxbIlJVSCIsIjIwMjYtMDYtMTEiLCJTVk8iLG51bGwsIlNWIiwiMjgzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 23:20"
+          },
+          "arrival_airport": {
+            "name": "King Khalid International Airport",
+            "id": "RUH",
+            "time": "2026-06-11 06:35"
+          },
+          "duration": 375,
+          "airplane": "Airbus A350",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 684",
+          "ticket_also_sold_by": [
+            "Saudia"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 313 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "King Khalid International Airport",
+            "id": "RUH",
+            "time": "2026-06-11 08:20"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 14:15"
+          },
+          "duration": 355,
+          "airplane": "Airbus A320",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 283",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 424 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 105,
+          "name": "King Khalid International Airport",
+          "id": "RUH"
+        }
+      ],
+      "total_duration": 835,
+      "carbon_emissions": {
+        "this_flight": 738000,
+        "typical_for_this_route": 333000,
+        "difference_percent": 122
+      },
+      "price": 606,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3RCUmpZNE5IeFRWakk0TXhvTENLZlpBeEFDR2dORlZWSTRISENQcFFRPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIlJVSCIsbnVsbCwiQUYiLCI2ODQiXSxbIlJVSCIsIjIwMjYtMDYtMTEiLCJTVk8iLG51bGwsIlNWIiwiMjgzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 20:35"
+          },
+          "arrival_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 23:00"
+          },
+          "duration": 145,
+          "airplane": "Airbus A320",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 243",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 123 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-11 14:30"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 18:40"
+          },
+          "duration": 190,
+          "airplane": "Airbus A320",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 132",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 151 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 930,
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "BEG",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1265,
+      "carbon_emissions": {
+        "this_flight": 275000,
+        "typical_for_this_route": 333000,
+        "difference_percent": -17
+      },
+      "price": 652,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+      "extensions": [
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3RLVlRJME0zeEtWVEV6TWhvTENMRDlBeEFDR2dORlZWSTRISEQ3emdRPSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkJFRyIsbnVsbCwiSlUiLCIyNDMiXSxbIkJFRyIsIjIwMjYtMDYtMTEiLCJTVk8iLG51bGwsIkpVIiwiMTMyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 11:20"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-10 19:20"
+          },
+          "duration": 420,
+          "airplane": "Airbus A321neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 18",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 396 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-11 01:50"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 08:15"
+          },
+          "duration": 385,
+          "airplane": "Airbus A320neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 12",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 273 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 390,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 1195,
+      "carbon_emissions": {
+        "this_flight": 670000,
+        "typical_for_this_route": 333000,
+        "difference_percent": 101
+      },
+      "price": 673,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "extensions": [
+        "1 checked bag up to 25 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ2xIUmpFNGZFZEdNVElhQ3dpM2pRUVFBaG9EUlZWU09CeHd5K0VFIixbWyJDREciLCIyMDI2LTA2LTEwIiwiQkFIIixudWxsLCJHRiIsIjE4Il0sWyJCQUgiLCIyMDI2LTA2LTExIiwiU1ZPIixudWxsLCJHRiIsIjEyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-10 10:40"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-10 19:35"
+          },
+          "duration": 415,
+          "airplane": "Airbus A380",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 32",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 398 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-11 02:30"
+          },
+          "arrival_airport": {
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport",
+            "id": "SVO",
+            "time": "2026-06-11 07:20"
+          },
+          "duration": 350,
+          "airplane": "Boeing 787-10",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 841",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 223 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 415,
+          "name": "Zayed International Airport",
+          "id": "AUH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1180,
+      "carbon_emissions": {
+        "this_flight": 622000,
+        "typical_for_this_route": 333000,
+        "difference_percent": 87
+      },
+      "price": 1101,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "extensions": [
+        "Checked baggage not included in price",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJYTFCNlJqbHRkamhVWDNkQlJHSkNXSGRDUnkwdExTMHRMUzB0TFc5NVkyZDJORUZCUVVGQlIyNU9RbnBaUlZGMU5WTkJFZ3BGV1RNeWZFVlpPRFF4R2dzSXp0c0dFQUlhQTBWVlVqZ2NjS2JsQnc9PSIsW1siQ0RHIiwiMjAyNi0wNi0xMCIsIkFVSCIsbnVsbCwiRVkiLCIzMiJdLFsiQVVIIiwiMjAyNi0wNi0xMSIsIlNWTyIsbnVsbCwiRVkiLCI4NDEiXV1d"
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 392,
+    "price_level": "low",
+    "typical_price_range": [
+      570,
+      740
+    ],
+    "price_history": [
+      [
+        1769814000,
+        395
+      ],
+      [
+        1769900400,
+        395
+      ],
+      [
+        1769986800,
+        395
+      ],
+      [
+        1770073200,
+        395
+      ],
+      [
+        1770159600,
+        395
+      ],
+      [
+        1770246000,
+        395
+      ],
+      [
+        1770332400,
+        395
+      ],
+      [
+        1770418800,
+        395
+      ],
+      [
+        1770505200,
+        395
+      ],
+      [
+        1770591600,
+        395
+      ],
+      [
+        1770678000,
+        395
+      ],
+      [
+        1770764400,
+        395
+      ],
+      [
+        1770850800,
+        395
+      ],
+      [
+        1770937200,
+        395
+      ],
+      [
+        1771023600,
+        395
+      ],
+      [
+        1771110000,
+        395
+      ],
+      [
+        1771196400,
+        395
+      ],
+      [
+        1771282800,
+        395
+      ],
+      [
+        1771369200,
+        395
+      ],
+      [
+        1771455600,
+        395
+      ],
+      [
+        1771542000,
+        395
+      ],
+      [
+        1771628400,
+        395
+      ],
+      [
+        1771714800,
+        395
+      ],
+      [
+        1771801200,
+        395
+      ],
+      [
+        1771887600,
+        395
+      ],
+      [
+        1771974000,
+        395
+      ],
+      [
+        1772060400,
+        459
+      ],
+      [
+        1772146800,
+        459
+      ],
+      [
+        1772233200,
+        459
+      ],
+      [
+        1772319600,
+        459
+      ],
+      [
+        1772406000,
+        459
+      ],
+      [
+        1772492400,
+        459
+      ],
+      [
+        1772578800,
+        429
+      ],
+      [
+        1772665200,
+        319
+      ],
+      [
+        1772751600,
+        319
+      ],
+      [
+        1772838000,
+        319
+      ],
+      [
+        1772924400,
+        319
+      ],
+      [
+        1773010800,
+        319
+      ],
+      [
+        1773097200,
+        319
+      ],
+      [
+        1773183600,
+        319
+      ],
+      [
+        1773270000,
+        319
+      ],
+      [
+        1773356400,
+        319
+      ],
+      [
+        1773442800,
+        323
+      ],
+      [
+        1773529200,
+        323
+      ],
+      [
+        1773615600,
+        323
+      ],
+      [
+        1773702000,
+        323
+      ],
+      [
+        1773788400,
+        324
+      ],
+      [
+        1773874800,
+        323
+      ],
+      [
+        1773961200,
+        323
+      ],
+      [
+        1774047600,
+        327
+      ],
+      [
+        1774134000,
+        327
+      ],
+      [
+        1774220400,
+        327
+      ],
+      [
+        1774306800,
+        327
+      ],
+      [
+        1774393200,
+        327
+      ],
+      [
+        1774479600,
+        327
+      ],
+      [
+        1774566000,
+        327
+      ],
+      [
+        1774652400,
+        327
+      ],
+      [
+        1774738800,
+        392
+      ],
+      [
+        1774821600,
+        392
+      ],
+      [
+        1774908000,
+        392
+      ],
+      [
+        1774994400,
+        392
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle Airport"
+          },
+          "city": "Paris",
+          "country": "France",
+          "country_code": "FR",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGx8ii2KbSDdbdzfKye5oDN2bwBA6audqI7XUEf2iMRZezpn_ZbQe1ZIuvUSH-8XOMe958umDwSsAF1w",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyQJ-woNs0iO22mPSkmRUM5gcsTbbYeypQ6BBTeFxXr90mqTxZl57Fdq2CDuLn4w7cKZ8TT9_zZhOpF57rIpA7yWKQnqKvkKIf9Y-qJDo"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "SVO",
+            "name": "Moscow Sheremetyevo Alexander S. Pushkin International Airport"
+          },
+          "city": "Moscow",
+          "country": "Russia",
+          "country_code": "RU",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyTCy1ygr3oTtbVSRXh4DIBr221Ygp_bTpEfwCtww-u2wzCx9vaK_y1RYfuIgvo3RTfZ46_hAktEvshA",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE4qUwY9Ysg-1IWkrUxQDqNKd5G4R6qcydqjtMdSDK5xBt4ra_6h0T-EiQ2BeUil73R-efW5x8wDfQtN7trHkjoj9_Xd8_qBA-ZloViz4"
+        }
+      ]
+    }
+  ]
+}

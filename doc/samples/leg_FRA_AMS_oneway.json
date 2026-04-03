@@ -1,0 +1,839 @@
+{
+  "search_metadata": {
+    "id": "69cd00fa88de92f66c2ce48e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/gzC8csucNIjfeuIajybSUQ/69cd00fa88de92f66c2ce48e.json",
+    "created_at": "2026-04-01 11:26:50 UTC",
+    "processed_at": "2026-04-01 11:26:50 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEzKAFqBwgBEgNGUkFyBwgBEgNBTVNAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/gzC8csucNIjfeuIajybSUQ/69cd00fa88de92f66c2ce48e.html",
+    "prettify_html_file": "https://serpapi.com/searches/gzC8csucNIjfeuIajybSUQ/69cd00fa88de92f66c2ce48e.prettify",
+    "total_time_taken": 1.41
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "FRA",
+    "arrival_id": "AMS",
+    "outbound_date": "2026-06-13",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 14:15"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 15:30"
+          },
+          "duration": 75,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1820",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 74 kg"
+          ],
+          "plane_and_crew_by": "German Airways"
+        }
+      ],
+      "total_duration": 75,
+      "carbon_emissions": {
+        "this_flight": 75000,
+        "typical_for_this_route": 73000,
+        "difference_percent": 3
+      },
+      "price": 109,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1pMVERFNE1qQWFDZ2pQVkJBQ0dnTkZWVkk0SEhDV1lnPT0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTgyMCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 18:40"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 19:50"
+          },
+          "duration": 70,
+          "airplane": "Embraer 175",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1822",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 78 kg"
+          ],
+          "plane_and_crew_by": "KLM Cityhopper"
+        }
+      ],
+      "total_duration": 70,
+      "carbon_emissions": {
+        "this_flight": 78000,
+        "typical_for_this_route": 73000,
+        "difference_percent": 7
+      },
+      "price": 109,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1pMVERFNE1qSWFDZ2pQVkJBQ0dnTkZWVkk0SEhDV1lnPT0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTgyMiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 11:45"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 13:00"
+          },
+          "duration": 75,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1818",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 67 kg"
+          ],
+          "plane_and_crew_by": "KLM Cityhopper"
+        }
+      ],
+      "total_duration": 75,
+      "carbon_emissions": {
+        "this_flight": 67000,
+        "typical_for_this_route": 73000,
+        "difference_percent": -8
+      },
+      "price": 125,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1pMVERFNE1UZ2FDZ2lQWVJBQ0dnTkZWVkk0SEhEV2NBPT0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTgxOCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 16:30"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 17:40"
+          },
+          "duration": 70,
+          "airplane": "Airbus A320neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 996",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 51 kg"
+          ]
+        }
+      ],
+      "total_duration": 70,
+      "carbon_emissions": {
+        "this_flight": 52000,
+        "typical_for_this_route": 73000,
+        "difference_percent": -29
+      },
+      "price": 165,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1ZNU0RrNU5ob0xDSytBQVJBQ0dnTkZWVkk0SEhEM2xBRT0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIkxIIiwiOTk2Il1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 06:50"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 08:00"
+          },
+          "duration": 70,
+          "airplane": "Airbus A320neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 986",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 51 kg"
+          ]
+        }
+      ],
+      "total_duration": 70,
+      "carbon_emissions": {
+        "this_flight": 52000,
+        "typical_for_this_route": 73000,
+        "difference_percent": -29
+      },
+      "price": 165,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1ZNU0RrNE5ob0xDSytBQVJBQ0dnTkZWVkk0SEhEM2xBRT0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIkxIIiwiOTg2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 21:00"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 22:10"
+          },
+          "duration": 70,
+          "airplane": "Airbus A320neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1002",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 51 kg"
+          ]
+        }
+      ],
+      "total_duration": 70,
+      "carbon_emissions": {
+        "this_flight": 52000,
+        "typical_for_this_route": 73000,
+        "difference_percent": -29
+      },
+      "price": 165,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1pNU0RFd01ESWFDd2l2Z0FFUUFob0RSVlZTT0J4dzk1UUIiLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIkxIIiwiMTAwMiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 07:00"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 08:05"
+          },
+          "duration": 65,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1814",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 67 kg"
+          ],
+          "plane_and_crew_by": "KLM Cityhopper"
+        }
+      ],
+      "total_duration": 65,
+      "carbon_emissions": {
+        "this_flight": 67000,
+        "typical_for_this_route": 73000,
+        "difference_percent": -8
+      },
+      "price": 172,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1pMVERFNE1UUWFDd2pyaFFFUUFob0RSVlZTT0J4d281c0IiLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTgxNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 18:30"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-13 19:55"
+          },
+          "duration": 85,
+          "airplane": "Embraer 190",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1319",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 72 kg"
+          ],
+          "plane_and_crew_by": "HOP!"
+        },
+        {
+          "departure_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-14 07:10"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-14 08:35"
+          },
+          "duration": 85,
+          "airplane": "Airbus A320",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 1240",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 58 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 675,
+          "name": "Paris Charles de Gaulle Airport",
+          "id": "CDG",
+          "overnight": true
+        }
+      ],
+      "total_duration": 845,
+      "carbon_emissions": {
+        "this_flight": 131000,
+        "typical_for_this_route": 73000,
+        "difference_percent": 79
+      },
+      "price": 183,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZzFCUmpFek1UbDhRVVl4TWpRd0dnc0k2WTRCRUFJYUEwVlZVamdjY05tbEFRPT0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJDREciLG51bGwsIkFGIiwiMTMxOSJdLFsiQ0RHIiwiMjAyNi0wNi0xNCIsIkFNUyIsbnVsbCwiQUYiLCIxMjQwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 12:50"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 14:00"
+          },
+          "duration": 70,
+          "airplane": "Airbus A319",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 992",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 68 kg"
+          ]
+        }
+      ],
+      "total_duration": 70,
+      "carbon_emissions": {
+        "this_flight": 68000,
+        "typical_for_this_route": 73000,
+        "difference_percent": -7
+      },
+      "price": 190,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1ZNU0RrNU1ob0xDUE9UQVJBQ0dnTkZWVkk0SEhETHF3RT0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIkxIIiwiOTkyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 10:15"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 11:30"
+          },
+          "duration": 75,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1816",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 67 kg"
+          ],
+          "plane_and_crew_by": "KLM Cityhopper"
+        }
+      ],
+      "total_duration": 75,
+      "carbon_emissions": {
+        "this_flight": 67000,
+        "typical_for_this_route": 73000,
+        "difference_percent": -8
+      },
+      "price": 195,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1pMVERFNE1UWWFDd2pubHdFUUFob0RSVlZTT0J4d2o3QUIiLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTgxNiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 09:30"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 10:40"
+          },
+          "duration": 70,
+          "airplane": "Canadair RJ 900",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 988",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 75 kg"
+          ],
+          "plane_and_crew_by": "Lufthansa CityLine"
+        }
+      ],
+      "total_duration": 70,
+      "carbon_emissions": {
+        "this_flight": 76000,
+        "typical_for_this_route": 73000,
+        "difference_percent": 4
+      },
+      "price": 214,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ1ZNU0RrNE9Cb0xDTk9tQVJBQ0dnTkZWVkk0SEhDc3dRRT0iLFtbIkZSQSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIkxIIiwiOTg4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 18:20"
+          },
+          "arrival_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-13 19:15"
+          },
+          "duration": 55,
+          "airplane": "Airbus A319",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 1198",
+          "ticket_also_sold_by": [
+            "SWISS"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 55 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-13 20:40"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 22:15"
+          },
+          "duration": 95,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 736",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 84 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 85,
+          "name": "Zurich Airport",
+          "id": "ZRH"
+        }
+      ],
+      "total_duration": 235,
+      "carbon_emissions": {
+        "this_flight": 140000,
+        "typical_for_this_route": 73000,
+        "difference_percent": 92
+      },
+      "price": 250,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJT0hGbFJGcG1PRjlVVkVGQlExWkdSRUZDUnkwdExTMHRMUzB0Y0daaVltUTBNa0ZCUVVGQlIyNU9RVkJ6UVdORFJWVkJFZ3hNU0RFeE9UaDhURmczTXpZYUN3aU93d0VRQWhvRFJWVlNPQnh3cnVJQiIsW1siRlJBIiwiMjAyNi0wNi0xMyIsIlpSSCIsbnVsbCwiTEgiLCIxMTk4Il0sWyJaUkgiLCIyMDI2LTA2LTEzIiwiQU1TIixudWxsLCJMWCIsIjczNiJdXV0="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 109,
+    "price_level": "low",
+    "typical_price_range": [
+      120,
+      180
+    ],
+    "price_history": [
+      [
+        1769814000,
+        92
+      ],
+      [
+        1769900400,
+        92
+      ],
+      [
+        1769986800,
+        92
+      ],
+      [
+        1770073200,
+        92
+      ],
+      [
+        1770159600,
+        92
+      ],
+      [
+        1770246000,
+        92
+      ],
+      [
+        1770332400,
+        92
+      ],
+      [
+        1770418800,
+        92
+      ],
+      [
+        1770505200,
+        92
+      ],
+      [
+        1770591600,
+        92
+      ],
+      [
+        1770678000,
+        92
+      ],
+      [
+        1770764400,
+        92
+      ],
+      [
+        1770850800,
+        92
+      ],
+      [
+        1770937200,
+        92
+      ],
+      [
+        1771023600,
+        92
+      ],
+      [
+        1771110000,
+        92
+      ],
+      [
+        1771196400,
+        92
+      ],
+      [
+        1771282800,
+        92
+      ],
+      [
+        1771369200,
+        92
+      ],
+      [
+        1771455600,
+        92
+      ],
+      [
+        1771542000,
+        92
+      ],
+      [
+        1771628400,
+        92
+      ],
+      [
+        1771714800,
+        92
+      ],
+      [
+        1771801200,
+        92
+      ],
+      [
+        1771887600,
+        92
+      ],
+      [
+        1771974000,
+        92
+      ],
+      [
+        1772060400,
+        92
+      ],
+      [
+        1772146800,
+        92
+      ],
+      [
+        1772233200,
+        92
+      ],
+      [
+        1772319600,
+        92
+      ],
+      [
+        1772406000,
+        92
+      ],
+      [
+        1772492400,
+        92
+      ],
+      [
+        1772578800,
+        92
+      ],
+      [
+        1772665200,
+        92
+      ],
+      [
+        1772751600,
+        92
+      ],
+      [
+        1772838000,
+        92
+      ],
+      [
+        1772924400,
+        92
+      ],
+      [
+        1773010800,
+        92
+      ],
+      [
+        1773097200,
+        92
+      ],
+      [
+        1773183600,
+        92
+      ],
+      [
+        1773270000,
+        92
+      ],
+      [
+        1773356400,
+        92
+      ],
+      [
+        1773442800,
+        92
+      ],
+      [
+        1773529200,
+        92
+      ],
+      [
+        1773615600,
+        92
+      ],
+      [
+        1773702000,
+        98
+      ],
+      [
+        1773788400,
+        98
+      ],
+      [
+        1773874800,
+        98
+      ],
+      [
+        1773961200,
+        98
+      ],
+      [
+        1774047600,
+        98
+      ],
+      [
+        1774134000,
+        98
+      ],
+      [
+        1774220400,
+        98
+      ],
+      [
+        1774306800,
+        98
+      ],
+      [
+        1774393200,
+        109
+      ],
+      [
+        1774479600,
+        109
+      ],
+      [
+        1774566000,
+        109
+      ],
+      [
+        1774652400,
+        109
+      ],
+      [
+        1774738800,
+        109
+      ],
+      [
+        1774821600,
+        109
+      ],
+      [
+        1774908000,
+        109
+      ],
+      [
+        1774994400,
+        109
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "FRA",
+            "name": "Frankfurt Airport"
+          },
+          "city": "Frankfurt am Main",
+          "country": "Germany",
+          "country_code": "DE",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqdKUfBWQXvmp7-Y6p2lZnjO0xPPGMl7Wnh1tOp4QR5QfoOyaq2AqdvByEgXmwe_eGAYewCKeUlXGxqQ",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRthwXcj3pIl7-x_4xgko5YQeqkTISsGgqS8vvDyYGQIu3lfxXz40TSEiN_5YR7AfORo7EaBO1V46ilVJueQaqWGBb5GzrVbbIt2vBOALM"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "AMS",
+            "name": "Amsterdam Airport Schiphol"
+          },
+          "city": "Amsterdam",
+          "country": "Netherlands",
+          "country_code": "NL",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTHETZVxU4_OrKq24sf7n7HS_0ca3__1_Urs251dzMXLn16tZy8J8x5i1phGimLkrbGL2gDKGrA-U35g",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiH-EGCc5jbyYbopiqf-g80xO0O5pxPnlJESLyIsY2uvo-gB84S94Q4C9kNWoKQ_eQ3OU-6evapBnb7TquB4zg3p3fQEGA3wpbxxhRdx0"
+        }
+      ]
+    }
+  ]
+}

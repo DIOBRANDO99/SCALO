@@ -1,0 +1,813 @@
+{
+  "search_metadata": {
+    "id": "69cd0159a26f56f0c0e45c9a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/Rsx4Q5HFxA6ZQPcYJHWPrQ/69cd0159a26f56f0c0e45c9a.json",
+    "created_at": "2026-04-01 11:28:25 UTC",
+    "processed_at": "2026-04-01 11:28:25 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEzKAFqBwgBEgNCUlVyBwgBEgNBTVNAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/Rsx4Q5HFxA6ZQPcYJHWPrQ/69cd0159a26f56f0c0e45c9a.html",
+    "prettify_html_file": "https://serpapi.com/searches/Rsx4Q5HFxA6ZQPcYJHWPrQ/69cd0159a26f56f0c0e45c9a.prettify",
+    "total_time_taken": 1.32
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "BRU",
+    "arrival_id": "AMS",
+    "outbound_date": "2026-06-13",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 06:20"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 07:10"
+          },
+          "duration": 50,
+          "airplane": "Embraer 175",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1700",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 54 kg"
+          ],
+          "plane_and_crew_by": "KLM Cityhopper"
+        }
+      ],
+      "total_duration": 50,
+      "carbon_emissions": {
+        "this_flight": 54000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 15
+      },
+      "price": 157,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZ1pMVERFM01EQWFDZ2o3ZVJBQ0dnTkZWVkk0SEhDL2pRRT0iLFtbIkJSVSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTcwMCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 10:25"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 11:20"
+          },
+          "duration": 55,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1704",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 50 kg"
+          ],
+          "plane_and_crew_by": "German Airways"
+        }
+      ],
+      "total_duration": 55,
+      "carbon_emissions": {
+        "this_flight": 51000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 9
+      },
+      "price": 157,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZ1pMVERFM01EUWFDZ2o3ZVJBQ0dnTkZWVkk0SEhDL2pRRT0iLFtbIkJSVSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTcwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 15:10"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 16:05"
+          },
+          "duration": 55,
+          "airplane": "Embraer 175",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1706",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Carbon emissions estimate: 54 kg"
+          ],
+          "plane_and_crew_by": "KLM Cityhopper"
+        }
+      ],
+      "total_duration": 55,
+      "carbon_emissions": {
+        "this_flight": 54000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 15
+      },
+      "price": 157,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZ1pMVERFM01EWWFDZ2o3ZVJBQ0dnTkZWVkk0SEhDL2pRRT0iLFtbIkJSVSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTcwNiJdXV0="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 15:30"
+          },
+          "arrival_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-13 18:00"
+          },
+          "duration": 150,
+          "airplane": "Canadair RJ 1000",
+          "airline": "Iberia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+          "travel_class": "Economy",
+          "flight_number": "IB 1300",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 149 kg"
+          ],
+          "plane_and_crew_by": "Air Nostrum for Iberia"
+        },
+        {
+          "departure_airport": {
+            "name": "Adolfo Suárez Madrid-Barajas Airport",
+            "id": "MAD",
+            "time": "2026-06-13 19:40"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 22:20"
+          },
+          "duration": 160,
+          "airplane": "Airbus A320",
+          "airline": "Iberia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+          "travel_class": "Economy",
+          "flight_number": "IB 739",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 126 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 100,
+          "name": "Adolfo Suárez Madrid-Barajas Airport",
+          "id": "MAD"
+        }
+      ],
+      "total_duration": 410,
+      "carbon_emissions": {
+        "this_flight": 275000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 485
+      },
+      "price": 116,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZ3hKUWpFek1EQjhTVUkzTXprYUNnakxXaEFDR2dORlZWSTRISENNYVE9PSIsW1siQlJVIiwiMjAyNi0wNi0xMyIsIk1BRCIsbnVsbCwiSUIiLCIxMzAwIl0sWyJNQUQiLCIyMDI2LTA2LTEzIiwiQU1TIixudWxsLCJJQiIsIjczOSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 21:35"
+          },
+          "arrival_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-13 23:45"
+          },
+          "duration": 130,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 8985",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 98 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-14 07:10"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-14 09:40"
+          },
+          "duration": 150,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 8300",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 112 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 445,
+          "name": "Josep Tarradellas Barcelona-El Prat Airport",
+          "id": "BCN",
+          "overnight": true
+        }
+      ],
+      "total_duration": 725,
+      "carbon_emissions": {
+        "this_flight": 211000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 349
+      },
+      "price": 121,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZzFXV1RnNU9EVjhWbGs0TXpBd0dnb0loVjRRQWhvRFJWVlNPQnh3alcwPSIsW1siQlJVIiwiMjAyNi0wNi0xMyIsIkJDTiIsbnVsbCwiVlkiLCI4OTg1Il0sWyJCQ04iLCIyMDI2LTA2LTE0IiwiQU1TIixudWxsLCJWWSIsIjgzMDAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 15:15"
+          },
+          "arrival_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-13 17:25"
+          },
+          "duration": 130,
+          "airplane": "Airbus A321neo",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 8987",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 80 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Josep Tarradellas Barcelona-El Prat Airport",
+            "id": "BCN",
+            "time": "2026-06-13 19:35"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 22:05"
+          },
+          "duration": 150,
+          "airplane": "Airbus A320",
+          "airline": "Vueling",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+          "travel_class": "Economy",
+          "flight_number": "VY 8311",
+          "ticket_also_sold_by": [
+            "Iberia"
+          ],
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 112 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 130,
+          "name": "Josep Tarradellas Barcelona-El Prat Airport",
+          "id": "BCN"
+        }
+      ],
+      "total_duration": 410,
+      "carbon_emissions": {
+        "this_flight": 193000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 311
+      },
+      "price": 136,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZzFXV1RnNU9EZDhWbGs0TXpFeEdnb0k0V2tRQWhvRFJWVlNPQnh3MlhvPSIsW1siQlJVIiwiMjAyNi0wNi0xMyIsIkJDTiIsbnVsbCwiVlkiLCI4OTg3Il0sWyJCQ04iLCIyMDI2LTA2LTEzIiwiQU1TIixudWxsLCJWWSIsIjgzMTEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 20:30"
+          },
+          "arrival_airport": {
+            "name": "Copenhagen Airport",
+            "id": "CPH",
+            "time": "2026-06-13 22:00"
+          },
+          "duration": 90,
+          "airplane": "Airbus A320neo",
+          "airline": "Scandinavian Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+          "travel_class": "Economy",
+          "flight_number": "SK 2590",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 70 kg"
+          ],
+          "plane_and_crew_by": "Sas Connect"
+        },
+        {
+          "departure_airport": {
+            "name": "Copenhagen Airport",
+            "id": "CPH",
+            "time": "2026-06-14 08:10"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-14 09:40"
+          },
+          "duration": 90,
+          "airplane": "Airbus A320neo",
+          "airline": "Scandinavian Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+          "travel_class": "Economy",
+          "flight_number": "SK 2551",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 60 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 610,
+          "name": "Copenhagen Airport",
+          "id": "CPH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 790,
+      "carbon_emissions": {
+        "this_flight": 130000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 177
+      },
+      "price": 173,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZzFUU3pJMU9UQjhVMHN5TlRVeEdnc0kvb1lCRUFJYUEwVlZVamdjY00yY0FRPT0iLFtbIkJSVSIsIjIwMjYtMDYtMTMiLCJDUEgiLG51bGwsIlNLIiwiMjU5MCJdLFsiQ1BIIiwiMjAyNi0wNi0xNCIsIkFNUyIsbnVsbCwiU0siLCIyNTUxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 08:05"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 09:00"
+          },
+          "duration": 55,
+          "airplane": "Embraer 190",
+          "airline": "KLM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "travel_class": "Economy",
+          "flight_number": "KL 1702",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 45 kg"
+          ],
+          "plane_and_crew_by": "KLM Cityhopper"
+        }
+      ],
+      "total_duration": 55,
+      "carbon_emissions": {
+        "this_flight": 46000,
+        "typical_for_this_route": 47000,
+        "difference_percent": -2
+      },
+      "price": 224,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZ1pMVERFM01ESWFDd2lucmdFUUFob0RSVlZTT0J4d25jb0IiLFtbIkJSVSIsIjIwMjYtMDYtMTMiLCJBTVMiLG51bGwsIktMIiwiMTcwMiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 10:30"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 11:40"
+          },
+          "duration": 70,
+          "airplane": "Airbus A319",
+          "airline": "Brussels Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SN.png",
+          "travel_class": "Economy",
+          "flight_number": "SN 2611",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 59 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 12:50"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 14:00"
+          },
+          "duration": 70,
+          "airplane": "Airbus A319",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 992",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 68 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 70,
+          "name": "Frankfurt Airport",
+          "id": "FRA"
+        }
+      ],
+      "total_duration": 210,
+      "carbon_emissions": {
+        "this_flight": 128000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 172
+      },
+      "price": 277,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZ3hUVGpJMk1URjhURWc1T1RJYUN3ajkxd0VRQWhvRFJWVlNPQnh3eWZvQiIsW1siQlJVIiwiMjAyNi0wNi0xMyIsIkZSQSIsbnVsbCwiU04iLCIyNjExIl0sWyJGUkEiLCIyMDI2LTA2LTEzIiwiQU1TIixudWxsLCJMSCIsIjk5MiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Brussels Airport",
+            "id": "BRU",
+            "time": "2026-06-13 14:25"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 15:35"
+          },
+          "duration": 70,
+          "airplane": "Airbus A319",
+          "airline": "Brussels Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SN.png",
+          "travel_class": "Economy",
+          "flight_number": "SN 2613",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 59 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-13 16:30"
+          },
+          "arrival_airport": {
+            "name": "Amsterdam Airport Schiphol",
+            "id": "AMS",
+            "time": "2026-06-13 17:40"
+          },
+          "duration": 70,
+          "airplane": "Airbus A320neo",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 996",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 51 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 55,
+          "name": "Frankfurt Airport",
+          "id": "FRA"
+        }
+      ],
+      "total_duration": 195,
+      "carbon_emissions": {
+        "this_flight": 111000,
+        "typical_for_this_route": 47000,
+        "difference_percent": 136
+      },
+      "price": 277,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJV0ZWR0xXMXViVjkzYTNOQlFuZE5ObWRDUnkwdExTMHRMUzB0TFhaMGIyNHhOVUZCUVVGQlIyNU9RVlp2U0ROWFJFOUJFZ3hUVGpJMk1UTjhURWc1T1RZYUN3ajkxd0VRQWhvRFJWVlNPQnh3eWZvQiIsW1siQlJVIiwiMjAyNi0wNi0xMyIsIkZSQSIsbnVsbCwiU04iLCIyNjEzIl0sWyJGUkEiLCIyMDI2LTA2LTEzIiwiQU1TIixudWxsLCJMSCIsIjk5NiJdXV0="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 116,
+    "price_level": "low",
+    "typical_price_range": [
+      120,
+      200
+    ],
+    "price_history": [
+      [
+        1771887600,
+        108
+      ],
+      [
+        1771974000,
+        108
+      ],
+      [
+        1772060400,
+        108
+      ],
+      [
+        1772146800,
+        108
+      ],
+      [
+        1772233200,
+        108
+      ],
+      [
+        1772319600,
+        108
+      ],
+      [
+        1772406000,
+        108
+      ],
+      [
+        1772492400,
+        108
+      ],
+      [
+        1772578800,
+        108
+      ],
+      [
+        1772665200,
+        108
+      ],
+      [
+        1772751600,
+        113
+      ],
+      [
+        1772838000,
+        113
+      ],
+      [
+        1772924400,
+        113
+      ],
+      [
+        1773010800,
+        113
+      ],
+      [
+        1773097200,
+        116
+      ],
+      [
+        1773183600,
+        116
+      ],
+      [
+        1773270000,
+        116
+      ],
+      [
+        1773356400,
+        116
+      ],
+      [
+        1773442800,
+        116
+      ],
+      [
+        1773529200,
+        116
+      ],
+      [
+        1773615600,
+        116
+      ],
+      [
+        1773702000,
+        116
+      ],
+      [
+        1773788400,
+        116
+      ],
+      [
+        1773874800,
+        116
+      ],
+      [
+        1773961200,
+        116
+      ],
+      [
+        1774047600,
+        116
+      ],
+      [
+        1774134000,
+        116
+      ],
+      [
+        1774220400,
+        116
+      ],
+      [
+        1774306800,
+        116
+      ],
+      [
+        1774393200,
+        116
+      ],
+      [
+        1774479600,
+        116
+      ],
+      [
+        1774566000,
+        116
+      ],
+      [
+        1774652400,
+        116
+      ],
+      [
+        1774738800,
+        116
+      ],
+      [
+        1774821600,
+        116
+      ],
+      [
+        1774908000,
+        116
+      ],
+      [
+        1774994400,
+        116
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "BRU",
+            "name": "Brussels Airport"
+          },
+          "city": "Brussels",
+          "country": "Belgium",
+          "country_code": "BE",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIn7vzriQPtnqUpMwNMNZsZkbkPp6ulyZFG8ueQMxK8owxSxT-_ibT7ou7CgKbMpw_VaK6YyyGbp1kfw",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStyvM0Dr4uahvFMpUNUFdZonsFbnG1iOfrOE18sIzXDZfDJ-sW1GLxKAWBSbN4_JXwti4rmD51AVJbBozlWRCfRGjDuVwv3QSHVwUH7I4"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "AMS",
+            "name": "Amsterdam Airport Schiphol"
+          },
+          "city": "Amsterdam",
+          "country": "Netherlands",
+          "country_code": "NL",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTHETZVxU4_OrKq24sf7n7HS_0ca3__1_Urs251dzMXLn16tZy8J8x5i1phGimLkrbGL2gDKGrA-U35g",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiH-EGCc5jbyYbopiqf-g80xO0O5pxPnlJESLyIsY2uvo-gB84S94Q4C9kNWoKQ_eQ3OU-6evapBnb7TquB4zg3p3fQEGA3wpbxxhRdx0"
+        }
+      ]
+    }
+  ]
+}

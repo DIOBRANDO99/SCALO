@@ -1,0 +1,854 @@
+{
+  "search_metadata": {
+    "id": "69cd00fa2088af23c8100727",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/CD8cpBhAbUHoeDKl5tu1Eg/69cd00fa2088af23c8100727.json",
+    "created_at": "2026-04-01 11:26:50 UTC",
+    "processed_at": "2026-04-01 11:26:50 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEwKAFqBwgBEgNGQ09yBwgBEgNGUkFAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/CD8cpBhAbUHoeDKl5tu1Eg/69cd00fa2088af23c8100727.html",
+    "prettify_html_file": "https://serpapi.com/searches/CD8cpBhAbUHoeDKl5tu1Eg/69cd00fa2088af23c8100727.prettify",
+    "total_time_taken": 1.13
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "FCO",
+    "arrival_id": "FRA",
+    "outbound_date": "2026-06-10",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 18:25"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 20:25"
+          },
+          "duration": 120,
+          "airplane": "Airbus A319",
+          "airline": "easyJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+          "travel_class": "Economy",
+          "flight_number": "U2 2994",
+          "extensions": [
+            "Carbon emissions estimate: 102 kg"
+          ]
+        }
+      ],
+      "total_duration": 120,
+      "carbon_emissions": {
+        "this_flight": 102000,
+        "typical_for_this_route": 105000,
+        "difference_percent": -3
+      },
+      "price": 30,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1pWTWpJNU9UUWFDZ2lGRnhBQ0dnTkZWVkk0SEhEZEdnPT0iLFtbIkZDTyIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIlUyIiwiMjk5NCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 13:00"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 15:00"
+          },
+          "duration": 120,
+          "airplane": "Airbus A319",
+          "airline": "easyJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+          "travel_class": "Economy",
+          "flight_number": "U2 2992",
+          "extensions": [
+            "Carbon emissions estimate: 102 kg"
+          ]
+        }
+      ],
+      "total_duration": 120,
+      "carbon_emissions": {
+        "this_flight": 102000,
+        "typical_for_this_route": 105000,
+        "difference_percent": -3
+      },
+      "price": 34,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/U2.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1pWTWpJNU9USWFDZ2lWR2hBQ0dnTkZWVkk0SEhDdEhnPT0iLFtbIkZDTyIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIlUyIiwiMjk5MiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 16:40"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 18:30"
+          },
+          "duration": 110,
+          "airplane": "Airbus A321 (Sharklets)",
+          "airline": "Condor",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+          "travel_class": "Economy",
+          "flight_number": "DE 4186",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 99 kg"
+          ]
+        }
+      ],
+      "total_duration": 110,
+      "carbon_emissions": {
+        "this_flight": 100000,
+        "typical_for_this_route": 105000,
+        "difference_percent": -5
+      },
+      "price": 65,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1pFUlRReE9EWWFDZ2pqTWhBQ0dnTkZWVkk0SEhEME9nPT0iLFtbIkZDTyIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIkRFIiwiNDE4NiJdXV0="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 08:10"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 10:00"
+          },
+          "duration": 110,
+          "airplane": "Airbus A321 (Sharklets)",
+          "airline": "Condor",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+          "travel_class": "Economy",
+          "flight_number": "DE 4418",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 99 kg"
+          ]
+        }
+      ],
+      "total_duration": 110,
+      "carbon_emissions": {
+        "this_flight": 100000,
+        "typical_for_this_route": 105000,
+        "difference_percent": -5
+      },
+      "price": 75,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1pFUlRRME1UZ2FDZ2pMT2hBQ0dnTkZWVkk0SEhEOFF3PT0iLFtbIkZDTyIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIkRFIiwiNDQxOCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 11:10"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 13:00"
+          },
+          "duration": 110,
+          "airplane": "Airbus A321 (Sharklets)",
+          "airline": "Condor",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+          "travel_class": "Economy",
+          "flight_number": "DE 4438",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 99 kg"
+          ]
+        }
+      ],
+      "total_duration": 110,
+      "carbon_emissions": {
+        "this_flight": 100000,
+        "typical_for_this_route": 105000,
+        "difference_percent": -5
+      },
+      "price": 75,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DE.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1pFUlRRME16Z2FDZ2pMT2hBQ0dnTkZWVkk0SEhEOFF3PT0iLFtbIkZDTyIsIjIwMjYtMDYtMTAiLCJGUkEiLG51bGwsIkRFIiwiNDQzOCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 21:00"
+          },
+          "arrival_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-10 22:35"
+          },
+          "duration": 95,
+          "airplane": "Airbus A319",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 405",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Belgrade Nikola Tesla Airport",
+            "id": "BEG",
+            "time": "2026-06-11 06:55"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-11 09:00"
+          },
+          "duration": 125,
+          "airplane": "Embraer 190",
+          "airline": "Air Serbia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+          "travel_class": "Economy",
+          "flight_number": "JU 350",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 128 kg"
+          ],
+          "plane_and_crew_by": "Bulgaria Air for Air Serbia"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 500,
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "BEG",
+          "overnight": true
+        }
+      ],
+      "total_duration": 720,
+      "carbon_emissions": {
+        "this_flight": 219000,
+        "typical_for_this_route": 105000,
+        "difference_percent": 109
+      },
+      "price": 90,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JU.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ3RLVlRRd05YeEtWVE0xTUJvS0NPUkZFQUlhQTBWVlVqZ2NjUHRRIixbWyJGQ08iLCIyMDI2LTA2LTEwIiwiQkVHIixudWxsLCJKVSIsIjQwNSJdLFsiQkVHIiwiMjAyNi0wNi0xMSIsIkZSQSIsbnVsbCwiSlUiLCIzNTAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 08:45"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 10:50"
+          },
+          "duration": 125,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 400",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 105 kg"
+          ]
+        }
+      ],
+      "total_duration": 125,
+      "carbon_emissions": {
+        "this_flight": 106000,
+        "typical_for_this_route": 105000,
+        "difference_percent": 1
+      },
+      "price": 110,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1ZCV2pRd01Cb0tDTGhWRUFJYUEwVlZVamdjY0pCaiIsW1siRkNPIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiQVoiLCI0MDAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 15:35"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 17:40"
+          },
+          "duration": 125,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "ITA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+          "travel_class": "Economy",
+          "flight_number": "AZ 404",
+          "ticket_also_sold_by": [
+            "Lufthansa"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 105 kg"
+          ]
+        }
+      ],
+      "total_duration": 125,
+      "carbon_emissions": {
+        "this_flight": 106000,
+        "typical_for_this_route": 105000,
+        "difference_percent": 1
+      },
+      "price": 110,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1ZCV2pRd05Cb0tDTGhWRUFJYUEwVlZVamdjY0pCaiIsW1siRkNPIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiQVoiLCI0MDQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 06:50"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 08:50"
+          },
+          "duration": 120,
+          "airplane": "Airbus A319",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 243",
+          "ticket_also_sold_by": [
+            "ITA"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 113 kg"
+          ]
+        }
+      ],
+      "total_duration": 120,
+      "carbon_emissions": {
+        "this_flight": 114000,
+        "typical_for_this_route": 105000,
+        "difference_percent": 9
+      },
+      "price": 111,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1ZNU0RJME14b0tDTTVXRUFJYUEwVlZVamdjY0w1ayIsW1siRkNPIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiTEgiLCIyNDMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 10:00"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 12:00"
+          },
+          "duration": 120,
+          "airplane": "Airbus A321",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 231",
+          "ticket_also_sold_by": [
+            "ITA"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 106 kg"
+          ]
+        }
+      ],
+      "total_duration": 120,
+      "carbon_emissions": {
+        "this_flight": 106000,
+        "typical_for_this_route": 105000,
+        "difference_percent": 1
+      },
+      "price": 111,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1ZNU0RJek1Sb0tDTTVXRUFJYUEwVlZVamdjY0w1ayIsW1siRkNPIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiTEgiLCIyMzEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 13:20"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 15:20"
+          },
+          "duration": 120,
+          "airplane": "Airbus A321",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 233",
+          "ticket_also_sold_by": [
+            "ITA"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 106 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "total_duration": 120,
+      "carbon_emissions": {
+        "this_flight": 106000,
+        "typical_for_this_route": 105000,
+        "difference_percent": 1
+      },
+      "price": 111,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1ZNU0RJek14b0tDTTVXRUFJYUEwVlZVamdjY0w1ayIsW1siRkNPIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiTEgiLCIyMzMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 14:55"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 16:55"
+          },
+          "duration": 120,
+          "airplane": "Airbus A320",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 235",
+          "ticket_also_sold_by": [
+            "ITA"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 100 kg"
+          ]
+        }
+      ],
+      "total_duration": 120,
+      "carbon_emissions": {
+        "this_flight": 100000,
+        "typical_for_this_route": 105000,
+        "difference_percent": -5
+      },
+      "price": 111,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1ZNU0RJek5Sb0tDTTVXRUFJYUEwVlZVamdjY0w1ayIsW1siRkNPIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiTEgiLCIyMzUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Leonardo da Vinci International Airport",
+            "id": "FCO",
+            "time": "2026-06-10 18:35"
+          },
+          "arrival_airport": {
+            "name": "Frankfurt Airport",
+            "id": "FRA",
+            "time": "2026-06-10 20:35"
+          },
+          "duration": 120,
+          "airplane": "Airbus A319",
+          "airline": "Lufthansa",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+          "travel_class": "Economy",
+          "flight_number": "LH 237",
+          "ticket_also_sold_by": [
+            "ITA"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 113 kg"
+          ]
+        }
+      ],
+      "total_duration": 120,
+      "carbon_emissions": {
+        "this_flight": 114000,
+        "typical_for_this_route": 105000,
+        "difference_percent": 9
+      },
+      "price": 136,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+      "booking_token": "WyJDalJJWW10RFFVZFhiWEphU0ZGQlEyWlNWa0ZDUnkwdExTMHRMUzB0YjNsaVltUXhORUZCUVVGQlIyNU9RVkJ2VG0xM1RtVkJFZ1ZNU0RJek54b0tDSkpxRUFJYUEwVlZVamdjY0pKNyIsW1siRkNPIiwiMjAyNi0wNi0xMCIsIkZSQSIsbnVsbCwiTEgiLCIyMzciXV1d"
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 30,
+    "price_level": "low",
+    "typical_price_range": [
+      40,
+      135
+    ],
+    "price_history": [
+      [
+        1769814000,
+        35
+      ],
+      [
+        1769900400,
+        35
+      ],
+      [
+        1769986800,
+        35
+      ],
+      [
+        1770073200,
+        35
+      ],
+      [
+        1770159600,
+        35
+      ],
+      [
+        1770246000,
+        43
+      ],
+      [
+        1770332400,
+        43
+      ],
+      [
+        1770418800,
+        43
+      ],
+      [
+        1770505200,
+        43
+      ],
+      [
+        1770591600,
+        43
+      ],
+      [
+        1770678000,
+        43
+      ],
+      [
+        1770764400,
+        43
+      ],
+      [
+        1770850800,
+        43
+      ],
+      [
+        1770937200,
+        37
+      ],
+      [
+        1771023600,
+        37
+      ],
+      [
+        1771110000,
+        37
+      ],
+      [
+        1771196400,
+        37
+      ],
+      [
+        1771282800,
+        37
+      ],
+      [
+        1771369200,
+        43
+      ],
+      [
+        1771455600,
+        43
+      ],
+      [
+        1771542000,
+        43
+      ],
+      [
+        1771628400,
+        43
+      ],
+      [
+        1771714800,
+        43
+      ],
+      [
+        1771801200,
+        43
+      ],
+      [
+        1771887600,
+        43
+      ],
+      [
+        1771974000,
+        43
+      ],
+      [
+        1772060400,
+        43
+      ],
+      [
+        1772146800,
+        43
+      ],
+      [
+        1772233200,
+        43
+      ],
+      [
+        1772319600,
+        43
+      ],
+      [
+        1772406000,
+        43
+      ],
+      [
+        1772492400,
+        43
+      ],
+      [
+        1772578800,
+        43
+      ],
+      [
+        1772665200,
+        43
+      ],
+      [
+        1772751600,
+        43
+      ],
+      [
+        1772838000,
+        43
+      ],
+      [
+        1772924400,
+        43
+      ],
+      [
+        1773010800,
+        38
+      ],
+      [
+        1773097200,
+        32
+      ],
+      [
+        1773183600,
+        32
+      ],
+      [
+        1773270000,
+        32
+      ],
+      [
+        1773356400,
+        38
+      ],
+      [
+        1773442800,
+        38
+      ],
+      [
+        1773529200,
+        38
+      ],
+      [
+        1773615600,
+        38
+      ],
+      [
+        1773702000,
+        38
+      ],
+      [
+        1773788400,
+        38
+      ],
+      [
+        1773874800,
+        33
+      ],
+      [
+        1773961200,
+        33
+      ],
+      [
+        1774047600,
+        33
+      ],
+      [
+        1774134000,
+        33
+      ],
+      [
+        1774220400,
+        33
+      ],
+      [
+        1774306800,
+        31
+      ],
+      [
+        1774393200,
+        31
+      ],
+      [
+        1774479600,
+        31
+      ],
+      [
+        1774566000,
+        31
+      ],
+      [
+        1774652400,
+        31
+      ],
+      [
+        1774738800,
+        31
+      ],
+      [
+        1774821600,
+        31
+      ],
+      [
+        1774908000,
+        31
+      ],
+      [
+        1774994400,
+        30
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "FCO",
+            "name": "Leonardo da Vinci International Airport"
+          },
+          "city": "Rome",
+          "country": "Italy",
+          "country_code": "IT",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2IU9ZUmvhvThfVJdnmh0sazh2RYI04-GSv0_GLCW7m3TnPpi1XYRNkIuXyL-bdJRgPn7Akcbg6zmDzw",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM_5snkSVZsnpG8dhW0NGx_Pdwk592nbBjmyqu-UxZDclvuBr6HXfXd0Fm7TYGVQpVCCr4RC6TGTmOgyP6KwpvZr0tGGnpZ7ukzP8RPLA"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "FRA",
+            "name": "Frankfurt Airport"
+          },
+          "city": "Frankfurt am Main",
+          "country": "Germany",
+          "country_code": "DE",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqdKUfBWQXvmp7-Y6p2lZnjO0xPPGMl7Wnh1tOp4QR5QfoOyaq2AqdvByEgXmwe_eGAYewCKeUlXGxqQ",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRthwXcj3pIl7-x_4xgko5YQeqkTISsGgqS8vvDyYGQIu3lfxXz40TSEiN_5YR7AfORo7EaBO1V46ilVJueQaqWGBb5GzrVbbIt2vBOALM"
+        }
+      ]
+    }
+  ]
+}

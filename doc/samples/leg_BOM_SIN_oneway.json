@@ -1,0 +1,770 @@
+{
+  "search_metadata": {
+    "id": "69cd06d7fbbebb48356619b5",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/GH-R7mnONJIOKdka98hRmg/69cd06d7fbbebb48356619b5.json",
+    "created_at": "2026-04-01 11:51:51 UTC",
+    "processed_at": "2026-04-01 11:51:51 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEzKAFqBwgBEgNCT01yBwgBEgNTSU5AAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/GH-R7mnONJIOKdka98hRmg/69cd06d7fbbebb48356619b5.html",
+    "prettify_html_file": "https://serpapi.com/searches/GH-R7mnONJIOKdka98hRmg/69cd06d7fbbebb48356619b5.prettify",
+    "total_time_taken": 1.15
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "BOM",
+    "arrival_id": "SIN",
+    "outbound_date": "2026-06-13",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 10:05"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 18:30"
+          },
+          "duration": 355,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2107",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 368 kg"
+          ]
+        }
+      ],
+      "total_duration": 355,
+      "carbon_emissions": {
+        "this_flight": 369000,
+        "typical_for_this_route": 300000,
+        "difference_percent": 23
+      },
+      "price": 116,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZ1pCU1RJeE1EY2FDZ2l3V2hBQ0dnTkZWVkk0SEhEdGFBPT0iLFtbIkJPTSIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkFJIiwiMjEwNyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 08:55"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 17:20"
+          },
+          "duration": 355,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 1011",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Carbon emissions estimate: 250 kg"
+          ]
+        }
+      ],
+      "total_duration": 355,
+      "carbon_emissions": {
+        "this_flight": 251000,
+        "typical_for_this_route": 300000,
+        "difference_percent": -16
+      },
+      "price": 122,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZ1kyUlRFd01URWFDZ2lZWHhBQ0dnTkZWVkk0SEhDNGJnPT0iLFtbIkJPTSIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIjZFIiwiMTAxMSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 11:45"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 19:50"
+          },
+          "duration": 335,
+          "airplane": "Boeing 787",
+          "airline": "Singapore Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+          "travel_class": "Economy",
+          "flight_number": "SQ 421",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 204 kg"
+          ]
+        }
+      ],
+      "total_duration": 335,
+      "carbon_emissions": {
+        "this_flight": 205000,
+        "typical_for_this_route": 300000,
+        "difference_percent": -32
+      },
+      "price": 149,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZ1ZUVVRReU1Sb0tDSVYwRUFJYUEwVlZVamdjY05DR0FRPT0iLFtbIkJPTSIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIlNRIiwiNDIxIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 23:25"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 07:45"
+          },
+          "duration": 350,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2105",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 368 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 350,
+      "carbon_emissions": {
+        "this_flight": 369000,
+        "typical_for_this_route": 300000,
+        "difference_percent": 23
+      },
+      "price": 116,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZ1pCU1RJeE1EVWFDZ2l3V2hBQ0dnTkZWVkk0SEhEdGFBPT0iLFtbIkJPTSIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIkFJIiwiMjEwNSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 01:20"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-13 09:45"
+          },
+          "duration": 355,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 1021",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "Carbon emissions estimate: 250 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 355,
+      "carbon_emissions": {
+        "this_flight": 251000,
+        "typical_for_this_route": 300000,
+        "difference_percent": -16
+      },
+      "price": 122,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZ1kyUlRFd01qRWFDZ2lZWHhBQ0dnTkZWVkk0SEhDNGJnPT0iLFtbIkJPTSIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIjZFIiwiMTAyMSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 20:40"
+          },
+          "arrival_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-13 23:10"
+          },
+          "duration": 150,
+          "airplane": "Airbus A320",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 144",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 142 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-14 01:50"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 08:30"
+          },
+          "duration": 250,
+          "airplane": "Airbus A320",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 306",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 246 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 160,
+          "name": "Colombo Bandaranaike International Airport",
+          "id": "CMB"
+        }
+      ],
+      "total_duration": 560,
+      "carbon_emissions": {
+        "this_flight": 390000,
+        "typical_for_this_route": 300000,
+        "difference_percent": 30
+      },
+      "price": 133,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZ3RWVERFME5IeFZURE13TmhvS0NOOW5FQUlhQTBWVlVqZ2NjSzU0IixbWyJCT00iLCIyMDI2LTA2LTEzIiwiQ01CIixudWxsLCJVTCIsIjE0NCJdLFsiQ01CIiwiMjAyNi0wNi0xNCIsIlNJTiIsbnVsbCwiVUwiLCIzMDYiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 23:40"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 07:40"
+          },
+          "duration": 330,
+          "airplane": "Airbus A380",
+          "airline": "Singapore Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+          "travel_class": "Economy",
+          "flight_number": "SQ 423",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 314 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 330,
+      "carbon_emissions": {
+        "this_flight": 315000,
+        "typical_for_this_route": 300000,
+        "difference_percent": 5
+      },
+      "price": 169,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZ1ZUVVRReU14b0xDS0dEQVJBQ0dnTkZWVkk0SEhDa21BRT0iLFtbIkJPTSIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIlNRIiwiNDIzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 13:15"
+          },
+          "arrival_airport": {
+            "name": "Kuala Lumpur International Airport",
+            "id": "KUL",
+            "time": "2026-06-13 21:15"
+          },
+          "duration": 330,
+          "airplane": "Boeing 737",
+          "airline": "Malaysia Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MH.png",
+          "travel_class": "Economy",
+          "flight_number": "MH 175",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 288 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Kuala Lumpur International Airport",
+            "id": "KUL",
+            "time": "2026-06-13 23:05"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 00:10"
+          },
+          "duration": 65,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Malaysia Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MH.png",
+          "travel_class": "Economy",
+          "flight_number": "MH 609",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 47 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 110,
+          "name": "Kuala Lumpur International Airport",
+          "id": "KUL"
+        }
+      ],
+      "total_duration": 505,
+      "carbon_emissions": {
+        "this_flight": 336000,
+        "typical_for_this_route": 300000,
+        "difference_percent": 12
+      },
+      "price": 176,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MH.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZ3ROU0RFM05YeE5TRFl3T1JvTENJU0pBUkFDR2dORlZWSTRISEQ5bmdFPSIsW1siQk9NIiwiMjAyNi0wNi0xMyIsIktVTCIsbnVsbCwiTUgiLCIxNzUiXSxbIktVTCIsIjIwMjYtMDYtMTMiLCJTSU4iLG51bGwsIk1IIiwiNjA5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "time": "2026-06-13 19:00"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-13 21:20"
+          },
+          "duration": 140,
+          "airplane": "Airbus A320neo",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2426",
+          "legroom": "28 in",
+          "extensions": [
+            "Below average legroom (28 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 103 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-13 23:00"
+          },
+          "arrival_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-14 07:25"
+          },
+          "duration": 355,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2380",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 385 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 100,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL"
+        }
+      ],
+      "total_duration": 595,
+      "carbon_emissions": {
+        "this_flight": 489000,
+        "typical_for_this_route": 300000,
+        "difference_percent": 63
+      },
+      "price": 202,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJVDNONlJUUklUblZNVmtGQlJFdFpjMEZDUnkwdExTMHRMUzB0TFhsc1pXZ3lPRUZCUVVGQlIyNU9RblJqVG5wRk1rbEJFZzFCU1RJME1qWjhRVWt5TXpnd0dnc0k1NTBCRUFJYUEwVlZVamdjY0lxM0FRPT0iLFtbIkJPTSIsIjIwMjYtMDYtMTMiLCJERUwiLG51bGwsIkFJIiwiMjQyNiJdLFsiREVMIiwiMjAyNi0wNi0xMyIsIlNJTiIsbnVsbCwiQUkiLCIyMzgwIl1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 116,
+    "price_level": "high",
+    "typical_price_range": [
+      75,
+      95
+    ],
+    "price_history": [
+      [
+        1769797800,
+        96
+      ],
+      [
+        1769884200,
+        97
+      ],
+      [
+        1769970600,
+        97
+      ],
+      [
+        1770057000,
+        97
+      ],
+      [
+        1770143400,
+        98
+      ],
+      [
+        1770229800,
+        98
+      ],
+      [
+        1770316200,
+        98
+      ],
+      [
+        1770402600,
+        99
+      ],
+      [
+        1770489000,
+        98
+      ],
+      [
+        1770575400,
+        98
+      ],
+      [
+        1770661800,
+        98
+      ],
+      [
+        1770748200,
+        97
+      ],
+      [
+        1770834600,
+        97
+      ],
+      [
+        1770921000,
+        97
+      ],
+      [
+        1771007400,
+        98
+      ],
+      [
+        1771093800,
+        98
+      ],
+      [
+        1771180200,
+        98
+      ],
+      [
+        1771266600,
+        98
+      ],
+      [
+        1771353000,
+        98
+      ],
+      [
+        1771439400,
+        98
+      ],
+      [
+        1771525800,
+        98
+      ],
+      [
+        1771612200,
+        98
+      ],
+      [
+        1771698600,
+        98
+      ],
+      [
+        1771785000,
+        98
+      ],
+      [
+        1771871400,
+        98
+      ],
+      [
+        1771957800,
+        98
+      ],
+      [
+        1772044200,
+        98
+      ],
+      [
+        1772130600,
+        98
+      ],
+      [
+        1772217000,
+        98
+      ],
+      [
+        1772303400,
+        98
+      ],
+      [
+        1772389800,
+        98
+      ],
+      [
+        1772476200,
+        98
+      ],
+      [
+        1772562600,
+        98
+      ],
+      [
+        1772649000,
+        99
+      ],
+      [
+        1772735400,
+        99
+      ],
+      [
+        1772821800,
+        99
+      ],
+      [
+        1772908200,
+        99
+      ],
+      [
+        1772994600,
+        99
+      ],
+      [
+        1773081000,
+        100
+      ],
+      [
+        1773167400,
+        99
+      ],
+      [
+        1773253800,
+        99
+      ],
+      [
+        1773340200,
+        99
+      ],
+      [
+        1773426600,
+        117
+      ],
+      [
+        1773513000,
+        122
+      ],
+      [
+        1773599400,
+        123
+      ],
+      [
+        1773685800,
+        123
+      ],
+      [
+        1773772200,
+        122
+      ],
+      [
+        1773858600,
+        117
+      ],
+      [
+        1773945000,
+        110
+      ],
+      [
+        1774031400,
+        109
+      ],
+      [
+        1774117800,
+        109
+      ],
+      [
+        1774204200,
+        120
+      ],
+      [
+        1774290600,
+        121
+      ],
+      [
+        1774377000,
+        120
+      ],
+      [
+        1774463400,
+        121
+      ],
+      [
+        1774549800,
+        121
+      ],
+      [
+        1774636200,
+        121
+      ],
+      [
+        1774722600,
+        121
+      ],
+      [
+        1774809000,
+        115
+      ],
+      [
+        1774895400,
+        116
+      ],
+      [
+        1774981800,
+        116
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "BOM",
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai"
+          },
+          "city": "Mumbai",
+          "country": "India",
+          "country_code": "IN",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ5Q0R5IIxjWsuWKt6lnlBIOlNfNwTqC8yBtOP_uMdzFrluYmn3jZ-6dyEWo6AbIH3x57scrUgF3gvWA",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMqVWevN4qkQ8u4HrxtHbv2Oy7UigPckL8bgZUJQWQgjvmJxG7oggYxd2Rw5MwjiBYzZFpr939opSbON9CxkwdD-7DK9it3TPq1ea8pxU"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "SIN",
+            "name": "Singapore Changi Airport"
+          },
+          "city": "Singapore",
+          "country": "Singapore",
+          "country_code": "SG",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPxNDQYUBDKl_Cnb-2R_TakwdFGzKIpvsMBeDdYwNHK_c2jUY6LVQ5R_mwZDf9hOuu6iHgYjrL87eDZw",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSp10Y3G-u5LPBzRWABhOUD7BGcBspacZc2r31UP6QmzLmyprerN-6BZ5wZkdsDXngRuIYCPQI8Ny3uYjbRegATm48AJfppuLgpsc0mhsE"
+        }
+      ]
+    }
+  ]
+}

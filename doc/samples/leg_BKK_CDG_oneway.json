@@ -1,0 +1,912 @@
+{
+  "search_metadata": {
+    "id": "69cd070f2efef84965d10615",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/2ZX2-SsYERTCFvSDcMr__g/69cd070f2efef84965d10615.json",
+    "created_at": "2026-04-01 11:52:47 UTC",
+    "processed_at": "2026-04-01 11:52:47 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTIwKAFqBwgBEgNCS0tyBwgBEgNDREdAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/2ZX2-SsYERTCFvSDcMr__g/69cd070f2efef84965d10615.html",
+    "prettify_html_file": "https://serpapi.com/searches/2ZX2-SsYERTCFvSDcMr__g/69cd070f2efef84965d10615.prettify",
+    "total_time_taken": 0.69
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "BKK",
+    "arrival_id": "CDG",
+    "outbound_date": "2026-06-20",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 20:15"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-20 23:30"
+          },
+          "duration": 435,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 153",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 330 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-21 01:35"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-21 07:55"
+          },
+          "duration": 440,
+          "airplane": "Airbus A321neo",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 19",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 394 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 125,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 1000,
+      "carbon_emissions": {
+        "this_flight": 725000,
+        "typical_for_this_route": 669000,
+        "difference_percent": 8
+      },
+      "price": 341,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "extensions": [
+        "1 checked bag up to 35 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ3BIUmpFMU0zeEhSakU1R2dzSWxJb0NFQUlhQTBWVlVqZ2NjT1cwQWc9PSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkJBSCIsbnVsbCwiR0YiLCIxNTMiXSxbIkJBSCIsIjIwMjYtMDYtMjEiLCJDREciLG51bGwsIkdGIiwiMTkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 10:05"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 17:50"
+          },
+          "duration": 765,
+          "airplane": "Airbus A330-900neo",
+          "airline": "Aircalin",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SB.png",
+          "travel_class": "Economy",
+          "flight_number": "SB 500",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 582 kg"
+          ]
+        }
+      ],
+      "total_duration": 765,
+      "carbon_emissions": {
+        "this_flight": 583000,
+        "typical_for_this_route": 669000,
+        "difference_percent": -13
+      },
+      "price": 493,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SB.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ1ZUUWpVd01Cb0xDTVNBQXhBQ0dnTkZWVkk0SEhDUXZnTT0iLFtbIkJLSyIsIjIwMjYtMDYtMjAiLCJDREciLG51bGwsIlNCIiwiNTAwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 00:05"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 07:10"
+          },
+          "duration": 725,
+          "airplane": "Boeing 777",
+          "airline": "THAI",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+          "travel_class": "Economy",
+          "flight_number": "TG 930",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 808 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 725,
+      "carbon_emissions": {
+        "this_flight": 809000,
+        "typical_for_this_route": 669000,
+        "difference_percent": 21
+      },
+      "price": 762,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ1ZVUnprek1Cb0xDTnJTQkJBQ0dnTkZWVkk0SEhENnNRVT0iLFtbIkJLSyIsIjIwMjYtMDYtMjAiLCJDREciLG51bGwsIlRHIiwiOTMwIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 19:50"
+          },
+          "arrival_airport": {
+            "name": "Xiamen Gaoqi International Airport",
+            "id": "XMN",
+            "time": "2026-06-20 23:55"
+          },
+          "duration": 185,
+          "airplane": "Boeing 737",
+          "airline": "XiamenAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MF.png",
+          "travel_class": "Economy",
+          "flight_number": "MF 864",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Carbon emissions estimate: 194 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Xiamen Gaoqi International Airport",
+            "id": "XMN",
+            "time": "2026-06-22 00:10"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-22 06:55"
+          },
+          "duration": 765,
+          "airplane": "Boeing 787",
+          "airline": "XiamenAir",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MF.png",
+          "travel_class": "Economy",
+          "flight_number": "MF 825",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 620 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1455,
+          "name": "Xiamen Gaoqi International Airport",
+          "id": "XMN"
+        }
+      ],
+      "total_duration": 2405,
+      "carbon_emissions": {
+        "this_flight": 814000,
+        "typical_for_this_route": 669000,
+        "difference_percent": 22
+      },
+      "price": 407,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MF.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ3ROUmpnMk5IeE5Samd5TlJvTENPVzlBaEFDR2dORlZWSTRISERZOEFJPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIlhNTiIsbnVsbCwiTUYiLCI4NjQiXSxbIlhNTiIsIjIwMjYtMDYtMjIiLCJDREciLG51bGwsIk1GIiwiODI1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 09:45"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-20 13:05"
+          },
+          "duration": 380,
+          "airplane": "Airbus A350",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 409",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 310 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-20 14:20"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 19:30"
+          },
+          "duration": 430,
+          "airplane": "Boeing 787",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 33",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 344 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 75,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 885,
+      "carbon_emissions": {
+        "this_flight": 655000,
+        "typical_for_this_route": 669000,
+        "difference_percent": -2
+      },
+      "price": 420,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "extensions": [
+        "Checked baggage not included in price",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ3BGV1RRd09YeEZXVE16R2dzSTNjY0NFQUlhQTBWVlVqZ2NjSno4QWc9PSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkFVSCIsbnVsbCwiRVkiLCI0MDkiXSxbIkFVSCIsIjIwMjYtMDYtMjAiLCJDREciLG51bGwsIkVZIiwiMzMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 01:50"
+          },
+          "arrival_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2026-06-20 06:00"
+          },
+          "duration": 490,
+          "airplane": "Boeing 787",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 849",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 331 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2026-06-20 08:50"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 13:55"
+          },
+          "duration": 365,
+          "airplane": "Boeing 787",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 127",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 245 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 170,
+          "name": "King Abdulaziz International Airport",
+          "id": "JED"
+        }
+      ],
+      "total_duration": 1025,
+      "carbon_emissions": {
+        "this_flight": 577000,
+        "typical_for_this_route": 669000,
+        "difference_percent": -14
+      },
+      "price": 452,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ3RUVmpnME9YeFRWakV5TnhvTENOcmdBaEFDR2dORlZWSTRISENabVFNPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIkpFRCIsbnVsbCwiU1YiLCI4NDkiXSxbIkpFRCIsIjIwMjYtMDYtMjAiLCJDREciLG51bGwsIlNWIiwiMTI3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 06:40"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-20 12:40"
+          },
+          "duration": 600,
+          "airplane": "Boeing 787",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 59",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 425 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-20 14:10"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 17:00"
+          },
+          "duration": 230,
+          "airplane": "Airbus A321neo",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1833",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 179 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 90,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 920,
+      "carbon_emissions": {
+        "this_flight": 605000,
+        "typical_for_this_route": 669000,
+        "difference_percent": -10
+      },
+      "price": 618,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "extensions": [
+        "1 checked bag up to 30 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ3RVU3pVNWZGUkxNVGd6TXhvTENJL2lBeEFDR2dORlZWSTRISENycndRPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIklTVCIsbnVsbCwiVEsiLCI1OSJdLFsiSVNUIiwiMjAyNi0wNi0yMCIsIkNERyIsbnVsbCwiVEsiLCIxODMzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 12:50"
+          },
+          "arrival_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-20 19:35"
+          },
+          "duration": 705,
+          "airplane": "Boeing 777",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 181",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 577 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zurich Airport",
+            "id": "ZRH",
+            "time": "2026-06-20 22:05"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 23:30"
+          },
+          "duration": 85,
+          "airplane": "Airbus A220-300 Passenger",
+          "airline": "SWISS",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+          "travel_class": "Economy",
+          "flight_number": "LX 646",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 67 kg"
+          ],
+          "plane_and_crew_by": "Air Baltic"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 150,
+          "name": "Zurich Airport",
+          "id": "ZRH"
+        }
+      ],
+      "total_duration": 940,
+      "carbon_emissions": {
+        "this_flight": 644000,
+        "typical_for_this_route": 669000,
+        "difference_percent": -4
+      },
+      "price": 637,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+      "extensions": [
+        "1 checked bag up to 23 kg included",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ3RNV0RFNE1YeE1XRFkwTmhvTENOTHhBeEFDR2dORlZWSTRISEN0d1FRPSIsW1siQktLIiwiMjAyNi0wNi0yMCIsIlpSSCIsbnVsbCwiTFgiLCIxODEiXSxbIlpSSCIsIjIwMjYtMDYtMjAiLCJDREciLG51bGwsIkxYIiwiNjQ2Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 11:25"
+          },
+          "arrival_airport": {
+            "name": "Paris Charles de Gaulle Airport",
+            "id": "CDG",
+            "time": "2026-06-20 19:00"
+          },
+          "duration": 755,
+          "airplane": "Airbus A350",
+          "airline": "Air France",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+          "travel_class": "Economy",
+          "flight_number": "AF 199",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 551 kg"
+          ]
+        }
+      ],
+      "total_duration": 755,
+      "carbon_emissions": {
+        "this_flight": 552000,
+        "typical_for_this_route": 669000,
+        "difference_percent": -17
+      },
+      "price": 1029,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+      "extensions": [
+        "Checked baggage for a fee",
+        "Full refund for cancellations",
+        "Free change, possible fare difference"
+      ],
+      "booking_token": "WyJDalJJTlVkWkxUVk5ha1ZLTFd0QlEySkRMV2RDUnkwdExTMHRMUzB0TFhaM2VXc3pORUZCUVVGQlIyNU9RbmhCUVZwTmJrTkJFZ1ZCUmpFNU9Sb0xDTGFqQmhBQ0dnTkZWVkk0SEhDT3BBYz0iLFtbIkJLSyIsIjIwMjYtMDYtMjAiLCJDREciLG51bGwsIkFGIiwiMTk5Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 341,
+    "price_level": "typical",
+    "typical_price_range": [
+      295,
+      360
+    ],
+    "price_history": [
+      [
+        1769792400,
+        346
+      ],
+      [
+        1769878800,
+        338
+      ],
+      [
+        1769965200,
+        338
+      ],
+      [
+        1770051600,
+        340
+      ],
+      [
+        1770138000,
+        341
+      ],
+      [
+        1770224400,
+        320
+      ],
+      [
+        1770310800,
+        320
+      ],
+      [
+        1770397200,
+        319
+      ],
+      [
+        1770483600,
+        321
+      ],
+      [
+        1770570000,
+        321
+      ],
+      [
+        1770656400,
+        321
+      ],
+      [
+        1770742800,
+        323
+      ],
+      [
+        1770829200,
+        323
+      ],
+      [
+        1770915600,
+        325
+      ],
+      [
+        1771002000,
+        354
+      ],
+      [
+        1771088400,
+        354
+      ],
+      [
+        1771174800,
+        350
+      ],
+      [
+        1771261200,
+        346
+      ],
+      [
+        1771347600,
+        350
+      ],
+      [
+        1771434000,
+        348
+      ],
+      [
+        1771520400,
+        344
+      ],
+      [
+        1771606800,
+        346
+      ],
+      [
+        1771693200,
+        346
+      ],
+      [
+        1771779600,
+        339
+      ],
+      [
+        1771866000,
+        338
+      ],
+      [
+        1771952400,
+        341
+      ],
+      [
+        1772038800,
+        291
+      ],
+      [
+        1772125200,
+        290
+      ],
+      [
+        1772211600,
+        331
+      ],
+      [
+        1772298000,
+        327
+      ],
+      [
+        1772384400,
+        294
+      ],
+      [
+        1772470800,
+        295
+      ],
+      [
+        1772557200,
+        295
+      ],
+      [
+        1772643600,
+        295
+      ],
+      [
+        1772730000,
+        294
+      ],
+      [
+        1772816400,
+        293
+      ],
+      [
+        1772902800,
+        293
+      ],
+      [
+        1772989200,
+        293
+      ],
+      [
+        1773075600,
+        295
+      ],
+      [
+        1773162000,
+        299
+      ],
+      [
+        1773248400,
+        308
+      ],
+      [
+        1773334800,
+        302
+      ],
+      [
+        1773421200,
+        301
+      ],
+      [
+        1773507600,
+        301
+      ],
+      [
+        1773594000,
+        301
+      ],
+      [
+        1773680400,
+        300
+      ],
+      [
+        1773766800,
+        302
+      ],
+      [
+        1773853200,
+        299
+      ],
+      [
+        1773939600,
+        298
+      ],
+      [
+        1774026000,
+        297
+      ],
+      [
+        1774112400,
+        296
+      ],
+      [
+        1774198800,
+        296
+      ],
+      [
+        1774285200,
+        299
+      ],
+      [
+        1774371600,
+        299
+      ],
+      [
+        1774458000,
+        300
+      ],
+      [
+        1774544400,
+        298
+      ],
+      [
+        1774630800,
+        299
+      ],
+      [
+        1774717200,
+        299
+      ],
+      [
+        1774803600,
+        302
+      ],
+      [
+        1774890000,
+        301
+      ],
+      [
+        1774976400,
+        341
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "BKK",
+            "name": "Suvarnabhumi Airport"
+          },
+          "city": "Bangkok",
+          "country": "Thailand",
+          "country_code": "TH",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzC4xB5QxGqhLwOS5u7E8q-Ty8lX8lihfxKD-L1VCamrWDhR52VWvoBnPWydRUr7FEKiKwHfAU0sB9mg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-yAxs8ZWNi0M14W-4wO0ra1auEIiVtG0zy-C8CygMmIa2-MVy7L8vSTHNXJJnS_9lq_gL3BVaF6MQh6wBKzXzqexb7CZL29F6UQABXAY"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "CDG",
+            "name": "Paris Charles de Gaulle Airport"
+          },
+          "city": "Paris",
+          "country": "France",
+          "country_code": "FR",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGx8ii2KbSDdbdzfKye5oDN2bwBA6audqI7XUEf2iMRZezpn_ZbQe1ZIuvUSH-8XOMe958umDwSsAF1w",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyQJ-woNs0iO22mPSkmRUM5gcsTbbYeypQ6BBTeFxXr90mqTxZl57Fdq2CDuLn4w7cKZ8TT9_zZhOpF57rIpA7yWKQnqKvkKIf9Y-qJDo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1898 @@
+{
+  "search_metadata": {
+    "id": "69cd06971fad363130305134",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/7ZrtYqpcPCiugLbM18HgkQ/69cd06971fad363130305134.json",
+    "created_at": "2026-04-01 11:50:47 UTC",
+    "processed_at": "2026-04-01 11:50:47 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTIwKAFqBwgBEgNTSU5yBwgBEgNMSFJAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/7ZrtYqpcPCiugLbM18HgkQ/69cd06971fad363130305134.html",
+    "prettify_html_file": "https://serpapi.com/searches/7ZrtYqpcPCiugLbM18HgkQ/69cd06971fad363130305134.prettify",
+    "total_time_taken": 1.78
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "SIN",
+    "arrival_id": "LHR",
+    "outbound_date": "2026-06-20",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 20:00"
+          },
+          "arrival_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-20 23:05"
+          },
+          "duration": 485,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 166",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 381 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Bahrain International Airport",
+            "id": "BAH",
+            "time": "2026-06-21 02:00"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 06:55"
+          },
+          "duration": 415,
+          "airplane": "Boeing 787",
+          "airline": "Gulf Air",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+          "travel_class": "Economy",
+          "flight_number": "GF 7",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 312 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Bahrain International Airport",
+          "id": "BAH"
+        }
+      ],
+      "total_duration": 1075,
+      "carbon_emissions": {
+        "this_flight": 694000,
+        "typical_for_this_route": 703000,
+        "difference_percent": -1
+      },
+      "price": 275,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/GF.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ2xIUmpFMk5ueEhSamNhQ3dpZTFnRVFBaG9EUlZWU09CeHd4dmdCIixbWyJTSU4iLCIyMDI2LTA2LTIwIiwiQkFIIixudWxsLCJHRiIsIjE2NiJdLFsiQkFIIiwiMjAyNi0wNi0yMSIsIkxIUiIsbnVsbCwiR0YiLCI3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 03:00"
+          },
+          "arrival_airport": {
+            "name": "Shenzhen Bao'an International Airport",
+            "id": "SZX",
+            "time": "2026-06-20 07:15"
+          },
+          "duration": 255,
+          "airplane": "Airbus A320",
+          "airline": "Shenzhen",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ZH.png",
+          "travel_class": "Economy",
+          "flight_number": "ZH 228",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 239 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Shenzhen Bao'an International Airport",
+            "id": "SZX",
+            "time": "2026-06-20 13:25"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 19:50"
+          },
+          "duration": 805,
+          "airplane": "Airbus A330",
+          "airline": "Shenzhen",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ZH.png",
+          "travel_class": "Economy",
+          "flight_number": "ZH 887",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 597 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 370,
+          "name": "Shenzhen Bao'an International Airport",
+          "id": "SZX"
+        }
+      ],
+      "total_duration": 1430,
+      "carbon_emissions": {
+        "this_flight": 838000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 19
+      },
+      "price": 422,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ZH.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3RhU0RJeU9IeGFTRGc0TnhvTENLdkpBaEFDR2dORlZWSTRISENML2dJPSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIlNaWCIsbnVsbCwiWkgiLCIyMjgiXSxbIlNaWCIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlpIIiwiODg3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 09:00"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 15:45"
+          },
+          "duration": 825,
+          "airplane": "Airbus A380",
+          "airline": "Singapore Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+          "travel_class": "Economy",
+          "flight_number": "SQ 308",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 712 kg"
+          ]
+        }
+      ],
+      "total_duration": 825,
+      "carbon_emissions": {
+        "this_flight": 713000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 1
+      },
+      "price": 847,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ1ZUVVRNd09Cb0xDTnVWQlJBQ0dnTkZWVkk0SEhEWi93VT0iLFtbIlNJTiIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlNRIiwiMzA4Il1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 21:00"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-21 00:20"
+          },
+          "duration": 440,
+          "airplane": "Airbus A380",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 499",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 430 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-21 02:20"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 07:00"
+          },
+          "duration": 460,
+          "airplane": "Airbus A380",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 61",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 410 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 120,
+          "name": "Zayed International Airport",
+          "id": "AUH",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1020,
+      "carbon_emissions": {
+        "this_flight": 841000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 20
+      },
+      "price": 294,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3BGV1RRNU9YeEZXVFl4R2dzSWh1VUJFQUlhQTBWVlVqZ2NjTjZKQWc9PSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIkFVSCIsbnVsbCwiRVkiLCI0OTkiXSxbIkFVSCIsIjIwMjYtMDYtMjEiLCJMSFIiLG51bGwsIkVZIiwiNjEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 03:15"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 05:35"
+          },
+          "duration": 440,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 945",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 383 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 08:00"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 13:15"
+          },
+          "duration": 435,
+          "airplane": "Boeing 777",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 3",
+          "ticket_also_sold_by": [
+            "British Airways"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 393 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 145,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 1020,
+      "carbon_emissions": {
+        "this_flight": 776000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 10
+      },
+      "price": 325,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ2xSVWprME5YeFJVak1hQ3dqcS9RRVFBaG9EUlZWU09CeHd2cVlDIixbWyJTSU4iLCIyMDI2LTA2LTIwIiwiRE9IIixudWxsLCJRUiIsIjk0NSJdLFsiRE9IIiwiMjAyNi0wNi0yMCIsIkxIUiIsbnVsbCwiUVIiLCIzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 10:20"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 12:40"
+          },
+          "duration": 440,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 943",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 383 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 15:10"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 20:25"
+          },
+          "duration": 435,
+          "airplane": "Airbus A350",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 15",
+          "ticket_also_sold_by": [
+            "British Airways"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 350 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 150,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 1025,
+      "carbon_emissions": {
+        "this_flight": 734000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 4
+      },
+      "price": 325,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3BSVWprME0zeFJVakUxR2dzSTZ2MEJFQUlhQTBWVlVqZ2NjTDZtQWc9PSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIkRPSCIsbnVsbCwiUVIiLCI5NDMiXSxbIkRPSCIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlFSIiwiMTUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 19:40"
+          },
+          "arrival_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-20 22:00"
+          },
+          "duration": 440,
+          "airplane": "Airbus A380",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 947",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 491 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Hamad International Airport",
+            "id": "DOH",
+            "time": "2026-06-21 01:10"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 06:25"
+          },
+          "duration": 435,
+          "airplane": "Airbus A380",
+          "airline": "Qatar Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+          "travel_class": "Economy",
+          "flight_number": "QR 11",
+          "ticket_also_sold_by": [
+            "British Airways"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 421 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 190,
+          "name": "Hamad International Airport",
+          "id": "DOH"
+        }
+      ],
+      "total_duration": 1065,
+      "carbon_emissions": {
+        "this_flight": 913000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 30
+      },
+      "price": 325,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/QR.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3BSVWprME4zeFJVakV4R2dzSTZ2MEJFQUlhQTBWVlVqZ2NjTDZtQWc9PSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIkRPSCIsbnVsbCwiUVIiLCI5NDciXSxbIkRPSCIsIjIwMjYtMDYtMjEiLCJMSFIiLG51bGwsIlFSIiwiMTEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 01:40"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-20 04:50"
+          },
+          "duration": 430,
+          "airplane": "Boeing 777",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 349",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 404 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-20 09:40"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 14:25"
+          },
+          "duration": 465,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 29",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 383 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 290,
+          "name": "Dubai International Airport",
+          "id": "DXB",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1185,
+      "carbon_emissions": {
+        "this_flight": 789000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 12
+      },
+      "price": 330,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3BGU3pNME9YeEZTekk1R2dzSXVvRUNFQUlhQTBWVlVqZ2NjTmlxQWc9PSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIkRYQiIsbnVsbCwiRUsiLCIzNDkiXSxbIkRYQiIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIkVLIiwiMjkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 10:35"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-20 13:45"
+          },
+          "duration": 430,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 315",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 415 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-20 15:45"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 20:15"
+          },
+          "duration": 450,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 5",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 386 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 120,
+          "name": "Dubai International Airport",
+          "id": "DXB"
+        }
+      ],
+      "total_duration": 1000,
+      "carbon_emissions": {
+        "this_flight": 801000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 14
+      },
+      "price": 330,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ2xGU3pNeE5YeEZTelVhQ3dpNmdRSVFBaG9EUlZWU09CeHcyS29DIixbWyJTSU4iLCIyMDI2LTA2LTIwIiwiRFhCIixudWxsLCJFSyIsIjMxNSJdLFsiRFhCIiwiMjAyNi0wNi0yMCIsIkxIUiIsbnVsbCwiRUsiLCI1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 21:00"
+          },
+          "arrival_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-21 00:10"
+          },
+          "duration": 430,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 355",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 401 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Dubai International Airport",
+            "id": "DXB",
+            "time": "2026-06-21 02:30"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 07:05"
+          },
+          "duration": 455,
+          "airplane": "Airbus A380",
+          "airline": "Emirates",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+          "travel_class": "Economy",
+          "flight_number": "EK 7",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 384 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 140,
+          "name": "Dubai International Airport",
+          "id": "DXB",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1025,
+      "carbon_emissions": {
+        "this_flight": 786000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 12
+      },
+      "price": 330,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ2xGU3pNMU5YeEZTemNhQ3dpNmdRSVFBaG9EUlZWU09CeHcyS29DIixbWyJTSU4iLCIyMDI2LTA2LTIwIiwiRFhCIixudWxsLCJFSyIsIjM1NSJdLFsiRFhCIiwiMjAyNi0wNi0yMSIsIkxIUiIsbnVsbCwiRUsiLCI3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 18:10"
+          },
+          "arrival_airport": {
+            "name": "Shenzhen Bao'an International Airport",
+            "id": "SZX",
+            "time": "2026-06-20 22:30"
+          },
+          "duration": 260,
+          "airplane": "Airbus A320",
+          "airline": "Shenzhen",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ZH.png",
+          "travel_class": "Economy",
+          "flight_number": "ZH 230",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 239 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Shenzhen Bao'an International Airport",
+            "id": "SZX",
+            "time": "2026-06-21 13:25"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 20:00"
+          },
+          "duration": 815,
+          "airplane": "Airbus A330",
+          "airline": "Shenzhen",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ZH.png",
+          "travel_class": "Economy",
+          "flight_number": "ZH 887",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 597 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 895,
+          "name": "Shenzhen Bao'an International Airport",
+          "id": "SZX",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1970,
+      "carbon_emissions": {
+        "this_flight": 838000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 19
+      },
+      "price": 422,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ZH.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3RhU0RJek1IeGFTRGc0TnhvTENLdkpBaEFDR2dORlZWSTRISENML2dJPSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIlNaWCIsbnVsbCwiWkgiLCIyMzAiXSxbIlNaWCIsIjIwMjYtMDYtMjEiLCJMSFIiLG51bGwsIlpIIiwiODg3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 02:20"
+          },
+          "arrival_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2026-06-20 06:20"
+          },
+          "duration": 540,
+          "airplane": "Boeing 787",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 857",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 372 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "King Abdulaziz International Airport",
+            "id": "JED",
+            "time": "2026-06-20 08:10"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 12:40"
+          },
+          "duration": 390,
+          "airplane": "Boeing 787",
+          "airline": "Saudia",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+          "travel_class": "Economy",
+          "flight_number": "SV 119",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 303 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 110,
+          "name": "King Abdulaziz International Airport",
+          "id": "JED"
+        }
+      ],
+      "total_duration": 1040,
+      "carbon_emissions": {
+        "this_flight": 676000,
+        "typical_for_this_route": 703000,
+        "difference_percent": -4
+      },
+      "price": 530,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3RUVmpnMU4zeFRWakV4T1JvTENPS2RBeEFDR2dORlZWSTRISENGNEFNPSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIkpFRCIsbnVsbCwiU1YiLCI4NTciXSxbIkpFRCIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlNWIiwiMTE5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 23:00"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-21 02:30"
+          },
+          "duration": 360,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2383",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 385 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-21 05:30"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 11:30"
+          },
+          "duration": 630,
+          "airplane": "Boeing 787",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 111",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 380 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 180,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1170,
+      "carbon_emissions": {
+        "this_flight": 765000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 9
+      },
+      "price": 576,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3hCU1RJek9ETjhRVWt4TVRFYUN3aXB3UU1RQWhvRFJWVlNPQnh3cFlrRSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIkRFTCIsbnVsbCwiQUkiLCIyMzgzIl0sWyJERUwiLCIyMDI2LTA2LTIxIiwiTEhSIixudWxsLCJBSSIsIjExMSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 11:10"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-20 17:25"
+          },
+          "duration": 675,
+          "airplane": "Airbus A350",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 209",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 506 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-20 19:10"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 21:10"
+          },
+          "duration": 240,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1983",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 178 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 105,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 1020,
+      "carbon_emissions": {
+        "this_flight": 684000,
+        "typical_for_this_route": 703000,
+        "difference_percent": -3
+      },
+      "price": 635,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3hVU3pJd09YeFVTekU1T0RNYUN3amw3d01RQWhvRFJWVlNPQnh3bXI4RSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIklTVCIsbnVsbCwiVEsiLCIyMDkiXSxbIklTVCIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlRLIiwiMTk4MyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 23:05"
+          },
+          "arrival_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-21 05:15"
+          },
+          "duration": 670,
+          "airplane": "Boeing 777",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 55",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 596 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Istanbul Airport",
+            "id": "IST",
+            "time": "2026-06-21 07:50"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 09:50"
+          },
+          "duration": 240,
+          "airplane": "Airbus A330",
+          "airline": "Turkish Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+          "travel_class": "Economy",
+          "flight_number": "TK 1979",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 178 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 155,
+          "name": "Istanbul Airport",
+          "id": "IST"
+        }
+      ],
+      "total_duration": 1065,
+      "carbon_emissions": {
+        "this_flight": 775000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 10
+      },
+      "price": 635,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3RVU3pVMWZGUkxNVGszT1JvTENPWHZBeEFDR2dORlZWSTRISENhdndRPSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIklTVCIsbnVsbCwiVEsiLCI1NSJdLFsiSVNUIiwiMjAyNi0wNi0yMSIsIkxIUiIsbnVsbCwiVEsiLCIxOTc5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 08:25"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-20 12:00"
+          },
+          "duration": 365,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2381",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 385 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-20 13:00"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 19:00"
+          },
+          "duration": 630,
+          "airplane": "Boeing 787",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2017",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 380 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 60,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL"
+        }
+      ],
+      "total_duration": 1055,
+      "carbon_emissions": {
+        "this_flight": 765000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 9
+      },
+      "price": 650,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZzFCU1RJek9ERjhRVWt5TURFM0dnc0lpdnNERUFJYUEwVlZVamdjY0tiTUJBPT0iLFtbIlNJTiIsIjIwMjYtMDYtMjAiLCJERUwiLG51bGwsIkFJIiwiMjM4MSJdLFsiREVMIiwiMjAyNi0wNi0yMCIsIkxIUiIsbnVsbCwiQUkiLCIyMDE3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 08:25"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-20 12:00"
+          },
+          "duration": 365,
+          "airplane": "Airbus A321",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2381",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 385 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "time": "2026-06-20 13:05"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 19:00"
+          },
+          "duration": 625,
+          "airplane": "Boeing 787",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2015",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 397 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 65,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL"
+        }
+      ],
+      "total_duration": 1055,
+      "carbon_emissions": {
+        "this_flight": 783000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 11
+      },
+      "price": 650,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZzFCU1RJek9ERjhRVWt5TURFMUdnc0lpdnNERUFJYUEwVlZVamdjY0tiTUJBPT0iLFtbIlNJTiIsIjIwMjYtMDYtMjAiLCJERUwiLG51bGwsIkFJIiwiMjM4MSJdLFsiREVMIiwiMjAyNi0wNi0yMCIsIkxIUiIsbnVsbCwiQUkiLCIyMDE1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 09:45"
+          },
+          "arrival_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-20 11:05"
+          },
+          "duration": 230,
+          "airplane": "Airbus A320",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 307",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 273 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Colombo Bandaranaike International Airport",
+            "id": "CMB",
+            "time": "2026-06-20 13:10"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 20:00"
+          },
+          "duration": 680,
+          "airplane": "Airbus A330",
+          "airline": "SriLankan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+          "travel_class": "Economy",
+          "flight_number": "UL 503",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 500 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 125,
+          "name": "Colombo Bandaranaike International Airport",
+          "id": "CMB"
+        }
+      ],
+      "total_duration": 1035,
+      "carbon_emissions": {
+        "this_flight": 773000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 10
+      },
+      "price": 656,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UL.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3RWVERNd04zeFZURFV3TXhvTENMR0FCQkFDR2dORlZWSTRISEM2MGdRPSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIkNNQiIsbnVsbCwiVUwiLCIzMDciXSxbIkNNQiIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlVMIiwiNTAzIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 20:50"
+          },
+          "arrival_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-20 22:10"
+          },
+          "duration": 140,
+          "airplane": "Airbus A350",
+          "airline": "THAI",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+          "travel_class": "Economy",
+          "flight_number": "TG 410",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 131 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Suvarnabhumi Airport",
+            "id": "BKK",
+            "time": "2026-06-21 00:45"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 07:15"
+          },
+          "duration": 750,
+          "airplane": "Boeing 777",
+          "airline": "THAI",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+          "travel_class": "Economy",
+          "flight_number": "TG 910",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 855 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 155,
+          "name": "Suvarnabhumi Airport",
+          "id": "BKK"
+        }
+      ],
+      "total_duration": 1045,
+      "carbon_emissions": {
+        "this_flight": 987000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 40
+      },
+      "price": 832,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TG.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ3RVUnpReE1IeFVSemt4TUJvTENMMkpCUkFDR2dORlZWSTRISERBOFFVPSIsW1siU0lOIiwiMjAyNi0wNi0yMCIsIkJLSyIsbnVsbCwiVEciLCI0MTAiXSxbIkJLSyIsIjIwMjYtMDYtMjEiLCJMSFIiLG51bGwsIlRHIiwiOTEwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 23:20"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 06:35"
+          },
+          "duration": 855,
+          "airplane": "Boeing 777",
+          "airline": "British Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+          "travel_class": "Economy",
+          "flight_number": "BA 12",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 617 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 855,
+      "carbon_emissions": {
+        "this_flight": 618000,
+        "typical_for_this_route": 703000,
+        "difference_percent": -12
+      },
+      "price": 900,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ1JDUVRFeUdnc0lqTDhGRUFJYUEwVlZVamdjY051dkJnPT0iLFtbIlNJTiIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIkJBIiwiMTIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 22:40"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 05:35"
+          },
+          "duration": 835,
+          "airplane": "Boeing 787",
+          "airline": "British Airways",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+          "travel_class": "Economy",
+          "flight_number": "BA 16",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 538 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 835,
+      "carbon_emissions": {
+        "this_flight": 538000,
+        "typical_for_this_route": 703000,
+        "difference_percent": -23
+      },
+      "price": 1171,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ1JDUVRFMkdnc0lscElIRUFJYUEwVlZVamdjY015a0NBPT0iLFtbIlNJTiIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIkJBIiwiMTYiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 12:35"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 19:30"
+          },
+          "duration": 835,
+          "airplane": "Boeing 777",
+          "airline": "Singapore Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+          "travel_class": "Economy",
+          "flight_number": "SQ 318",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 770 kg"
+          ]
+        }
+      ],
+      "total_duration": 835,
+      "carbon_emissions": {
+        "this_flight": 770000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 10
+      },
+      "price": 1199,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ1ZUVVRNeE9Cb0xDS3FvQnhBQ0dnTkZWVkk0SEhDbXZnZz0iLFtbIlNJTiIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlNRIiwiMzE4Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 23:00"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-21 05:55"
+          },
+          "duration": 835,
+          "airplane": "Airbus A380",
+          "airline": "Singapore Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+          "travel_class": "Economy",
+          "flight_number": "SQ 322",
+          "ticket_also_sold_by": [
+            "Garuda Indonesia"
+          ],
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 712 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 835,
+      "carbon_emissions": {
+        "this_flight": 713000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 1
+      },
+      "price": 1498,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ1ZUVVRNeU1ob0xDSk9TQ1JBQ0dnTkZWVkk0SEhESnpRbz0iLFtbIlNJTiIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlNRIiwiMzIyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Singapore Changi Airport",
+            "id": "SIN",
+            "time": "2026-06-20 01:05"
+          },
+          "arrival_airport": {
+            "name": "Heathrow Airport",
+            "id": "LHR",
+            "time": "2026-06-20 08:10"
+          },
+          "duration": 845,
+          "airplane": "Boeing 777",
+          "airline": "Singapore Airlines",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+          "travel_class": "Economy",
+          "flight_number": "SQ 306",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 770 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "total_duration": 845,
+      "carbon_emissions": {
+        "this_flight": 770000,
+        "typical_for_this_route": 703000,
+        "difference_percent": 10
+      },
+      "price": 1897,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+      "booking_token": "WyJDalJJUVdkclVVMUNaV2hJWWxsQlExTktSbWRDUnkwdExTMHRMUzB0TFhaMFltWnlORUZCUVVGQlIyNU9RbkJuUjFoUGJqQkJFZ1ZUVVRNd05ob0xDSy9KQ3hBQ0dnTkZWVkk0SEhEU3RnMD0iLFtbIlNJTiIsIjIwMjYtMDYtMjAiLCJMSFIiLG51bGwsIlNRIiwiMzA2Il1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 275,
+    "price_level": "high",
+    "typical_price_range": [
+      260,
+      270
+    ],
+    "price_history": [
+      [
+        1769788800,
+        275
+      ],
+      [
+        1769875200,
+        307
+      ],
+      [
+        1769961600,
+        307
+      ],
+      [
+        1770048000,
+        306
+      ],
+      [
+        1770134400,
+        279
+      ],
+      [
+        1770220800,
+        278
+      ],
+      [
+        1770307200,
+        309
+      ],
+      [
+        1770393600,
+        309
+      ],
+      [
+        1770480000,
+        308
+      ],
+      [
+        1770566400,
+        308
+      ],
+      [
+        1770652800,
+        309
+      ],
+      [
+        1770739200,
+        307
+      ],
+      [
+        1770825600,
+        307
+      ],
+      [
+        1770912000,
+        301
+      ],
+      [
+        1770998400,
+        278
+      ],
+      [
+        1771084800,
+        277
+      ],
+      [
+        1771171200,
+        276
+      ],
+      [
+        1771257600,
+        278
+      ],
+      [
+        1771344000,
+        278
+      ],
+      [
+        1771430400,
+        278
+      ],
+      [
+        1771516800,
+        302
+      ],
+      [
+        1771603200,
+        303
+      ],
+      [
+        1771689600,
+        303
+      ],
+      [
+        1771776000,
+        280
+      ],
+      [
+        1771862400,
+        279
+      ],
+      [
+        1771948800,
+        279
+      ],
+      [
+        1772035200,
+        271
+      ],
+      [
+        1772121600,
+        271
+      ],
+      [
+        1772208000,
+        271
+      ],
+      [
+        1772294400,
+        270
+      ],
+      [
+        1772380800,
+        270
+      ],
+      [
+        1772467200,
+        270
+      ],
+      [
+        1772553600,
+        272
+      ],
+      [
+        1772640000,
+        273
+      ],
+      [
+        1772726400,
+        274
+      ],
+      [
+        1772812800,
+        273
+      ],
+      [
+        1772899200,
+        273
+      ],
+      [
+        1772985600,
+        275
+      ],
+      [
+        1773072000,
+        275
+      ],
+      [
+        1773158400,
+        275
+      ],
+      [
+        1773244800,
+        275
+      ],
+      [
+        1773331200,
+        275
+      ],
+      [
+        1773417600,
+        276
+      ],
+      [
+        1773504000,
+        276
+      ],
+      [
+        1773590400,
+        276
+      ],
+      [
+        1773676800,
+        276
+      ],
+      [
+        1773763200,
+        276
+      ],
+      [
+        1773849600,
+        276
+      ],
+      [
+        1773936000,
+        275
+      ],
+      [
+        1774022400,
+        275
+      ],
+      [
+        1774108800,
+        274
+      ],
+      [
+        1774195200,
+        274
+      ],
+      [
+        1774281600,
+        275
+      ],
+      [
+        1774368000,
+        274
+      ],
+      [
+        1774454400,
+        274
+      ],
+      [
+        1774540800,
+        274
+      ],
+      [
+        1774627200,
+        274
+      ],
+      [
+        1774713600,
+        273
+      ],
+      [
+        1774800000,
+        273
+      ],
+      [
+        1774886400,
+        275
+      ],
+      [
+        1774972800,
+        275
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "SIN",
+            "name": "Singapore Changi Airport"
+          },
+          "city": "Singapore",
+          "country": "Singapore",
+          "country_code": "SG",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPxNDQYUBDKl_Cnb-2R_TakwdFGzKIpvsMBeDdYwNHK_c2jUY6LVQ5R_mwZDf9hOuu6iHgYjrL87eDZw",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSp10Y3G-u5LPBzRWABhOUD7BGcBspacZc2r31UP6QmzLmyprerN-6BZ5wZkdsDXngRuIYCPQI8Ny3uYjbRegATm48AJfppuLgpsc0mhsE"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "LHR",
+            "name": "Heathrow Airport"
+          },
+          "city": "London",
+          "country": "United Kingdom",
+          "country_code": "GB",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpN9RbtOSTDqKIPxWc_D6rdSysaWVh6d-NW7yz7yFXKRwh5RN5BpNIoXEwH1XVcFdLWqn6Sm8_Y_zmeg",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYH83YXny8hR4M7k5BMFq4vUT6LNtVABQzgs2pg-hcpSZq3oMBOQK3xh591AAJv2Qx4uvFZUGqOVt4kuoCUOklISunmndJleOoSef_7QE"
+        }
+      ]
+    }
+  ]
+}

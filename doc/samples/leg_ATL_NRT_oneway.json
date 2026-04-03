@@ -1,0 +1,993 @@
+{
+  "search_metadata": {
+    "id": "69cd046eeeabd3f1844398dd",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/qa0T89p2xW31NPrRsNdMQA/69cd046eeeabd3f1844398dd.json",
+    "created_at": "2026-04-01 11:41:34 UTC",
+    "processed_at": "2026-04-01 11:41:34 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=EUR&tfs=CBwQAhogEgoyMDI2LTA2LTEzKAFqBwgBEgNBVExyBwgBEgNOUlRAAUgBcAGYAQI&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/qa0T89p2xW31NPrRsNdMQA/69cd046eeeabd3f1844398dd.html",
+    "prettify_html_file": "https://serpapi.com/searches/qa0T89p2xW31NPrRsNdMQA/69cd046eeeabd3f1844398dd.prettify",
+    "total_time_taken": 1.2
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "type": "2",
+    "departure_id": "ATL",
+    "arrival_id": "NRT",
+    "outbound_date": "2026-06-13",
+    "stops": 2,
+    "currency": "EUR"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 21:40"
+          },
+          "arrival_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-14 19:30"
+          },
+          "duration": 830,
+          "airplane": "Airbus A350",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 14",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 675 kg"
+          ],
+          "overnight": true
+        },
+        {
+          "departure_airport": {
+            "name": "Zayed International Airport",
+            "id": "AUH",
+            "time": "2026-06-14 21:25"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-15 12:30"
+          },
+          "duration": 605,
+          "airplane": "Airbus A350",
+          "airline": "Etihad",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+          "travel_class": "Economy",
+          "flight_number": "EY 800",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 460 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 115,
+          "name": "Zayed International Airport",
+          "id": "AUH"
+        }
+      ],
+      "total_duration": 1550,
+      "carbon_emissions": {
+        "this_flight": 1136000,
+        "typical_for_this_route": 838000,
+        "difference_percent": 36
+      },
+      "price": 615,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EY.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ3BGV1RFMGZFVlpPREF3R2dzSTV0OERFQUlhQTBWVlVqZ2NjTk9zQkE9PSIsW1siQVRMIiwiMjAyNi0wNi0xMyIsIkFVSCIsbnVsbCwiRVkiLCIxNCJdLFsiQVVIIiwiMjAyNi0wNi0xNCIsIk5SVCIsbnVsbCwiRVkiLCI4MDAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 09:43"
+          },
+          "arrival_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2026-06-13 11:15"
+          },
+          "duration": 152,
+          "airplane": "Embraer 175",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 3390",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 167 kg"
+          ],
+          "plane_and_crew_by": "Envoy Air as American Eagle"
+        },
+        {
+          "departure_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2026-06-13 11:55"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 15:00"
+          },
+          "duration": 785,
+          "airplane": "Boeing 777",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 61",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 567 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 40,
+          "name": "Dallas Fort Worth International Airport",
+          "id": "DFW"
+        }
+      ],
+      "total_duration": 977,
+      "carbon_emissions": {
+        "this_flight": 736000,
+        "typical_for_this_route": 838000,
+        "difference_percent": -12
+      },
+      "price": 1035,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ3RCUVRNek9UQjhRVUUyTVJvTENJcW9CaEFDR2dORlZWSTRISERCcVFjPSIsW1siQVRMIiwiMjAyNi0wNi0xMyIsIkRGVyIsbnVsbCwiQUEiLCIzMzkwIl0sWyJERlciLCIyMDI2LTA2LTEzIiwiTlJUIixudWxsLCJBQSIsIjYxIl1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 14:25"
+          },
+          "arrival_airport": {
+            "name": "Calgary International Airport",
+            "id": "YYC",
+            "time": "2026-06-13 17:10"
+          },
+          "duration": 285,
+          "airplane": "Boeing 737",
+          "airline": "WestJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+          "travel_class": "Economy",
+          "flight_number": "WS 1591",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "Carbon emissions estimate: 236 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Calgary International Airport",
+            "id": "YYC",
+            "time": "2026-06-14 14:50"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-15 16:20"
+          },
+          "duration": 630,
+          "airplane": "Boeing 787",
+          "airline": "WestJet",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+          "travel_class": "Economy",
+          "flight_number": "WS 80",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 442 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 1300,
+          "name": "Calgary International Airport",
+          "id": "YYC",
+          "overnight": true
+        }
+      ],
+      "total_duration": 2215,
+      "carbon_emissions": {
+        "this_flight": 679000,
+        "typical_for_this_route": 838000,
+        "difference_percent": -19
+      },
+      "price": 833,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WS.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ3RYVXpFMU9URjhWMU00TUJvTENKV0tCUkFDR2dORlZWSTRISENuOGdVPSIsW1siQVRMIiwiMjAyNi0wNi0xMyIsIllZQyIsbnVsbCwiV1MiLCIxNTkxIl0sWyJZWUMiLCIyMDI2LTA2LTE0IiwiTlJUIixudWxsLCJXUyIsIjgwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 19:52"
+          },
+          "arrival_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2026-06-13 21:20"
+          },
+          "duration": 148,
+          "airplane": "Boeing 737",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 1379",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 121 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Dallas Fort Worth International Airport",
+            "id": "DFW",
+            "time": "2026-06-14 11:55"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-15 15:00"
+          },
+          "duration": 785,
+          "airplane": "Boeing 777",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 61",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 567 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 875,
+          "name": "Dallas Fort Worth International Airport",
+          "id": "DFW",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1808,
+      "carbon_emissions": {
+        "this_flight": 689000,
+        "typical_for_this_route": 838000,
+        "difference_percent": -18
+      },
+      "price": 1007,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ3RCUVRFek56bDhRVUUyTVJvTENOR1NCaEFDR2dORlZWSTRISERRa0FjPSIsW1siQVRMIiwiMjAyNi0wNi0xMyIsIkRGVyIsbnVsbCwiQUEiLCIxMzc5Il0sWyJERlciLCIyMDI2LTA2LTE0IiwiTlJUIixudWxsLCJBQSIsIjYxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 19:37"
+          },
+          "arrival_airport": {
+            "name": "Newark Liberty International Airport",
+            "id": "EWR",
+            "time": "2026-06-13 22:12"
+          },
+          "duration": 155,
+          "airplane": "Embraer 175",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 3402",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "Stream media to your device",
+            "Carbon emissions estimate: 152 kg"
+          ],
+          "plane_and_crew_by": "Republic Airways DBA United Express"
+        },
+        {
+          "departure_airport": {
+            "name": "Newark Liberty International Airport",
+            "id": "EWR",
+            "time": "2026-06-14 11:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-15 14:30"
+          },
+          "duration": 830,
+          "airplane": "Boeing 777",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 79",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 556 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 808,
+          "name": "Newark Liberty International Airport",
+          "id": "EWR",
+          "overnight": true
+        }
+      ],
+      "total_duration": 1793,
+      "carbon_emissions": {
+        "this_flight": 708000,
+        "typical_for_this_route": 838000,
+        "difference_percent": -16
+      },
+      "price": 1026,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ3RWUVRNME1ESjhWVUUzT1JvTENMbWhCaEFDR2dORlZWSTRISERvb1FjPSIsW1siQVRMIiwiMjAyNi0wNi0xMyIsIkVXUiIsbnVsbCwiVUEiLCIzNDAyIl0sWyJFV1IiLCIyMDI2LTA2LTE0IiwiTlJUIixudWxsLCJVQSIsIjc5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 07:45"
+          },
+          "arrival_airport": {
+            "name": "Chicago O'Hare International Airport",
+            "id": "ORD",
+            "time": "2026-06-13 09:03"
+          },
+          "duration": 138,
+          "airplane": "Airbus A319",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 616",
+          "ticket_also_sold_by": [
+            "JAL"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Free Wi-Fi",
+            "In-seat power outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 131 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Chicago O'Hare International Airport",
+            "id": "ORD",
+            "time": "2026-06-13 10:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 13:25"
+          },
+          "duration": 765,
+          "airplane": "Boeing 787",
+          "airline": "JAL",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/JL.png",
+          "travel_class": "Economy",
+          "flight_number": "JL 55",
+          "ticket_also_sold_by": [
+            "American"
+          ],
+          "legroom": "33 in",
+          "extensions": [
+            "Above average legroom (33 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 638 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 97,
+          "name": "Chicago O'Hare International Airport",
+          "id": "ORD"
+        }
+      ],
+      "total_duration": 1000,
+      "carbon_emissions": {
+        "this_flight": 771000,
+        "typical_for_this_route": 838000,
+        "difference_percent": -8
+      },
+      "price": 1035,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ3BCUVRZeE5ueEtURFUxR2dzSWlxZ0dFQUlhQTBWVlVqZ2NjTUdwQnc9PSIsW1siQVRMIiwiMjAyNi0wNi0xMyIsIk9SRCIsbnVsbCwiQUEiLCI2MTYiXSxbIk9SRCIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIkpMIiwiNTUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 07:05"
+          },
+          "arrival_airport": {
+            "name": "George Bush Intercontinental Airport",
+            "id": "IAH",
+            "time": "2026-06-13 08:15"
+          },
+          "duration": 130,
+          "airplane": "Boeing 737",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 532",
+          "ticket_also_sold_by": [
+            "ANA"
+          ],
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 116 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "George Bush Intercontinental Airport",
+            "id": "IAH",
+            "time": "2026-06-13 10:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 14:00"
+          },
+          "duration": 800,
+          "airplane": "Boeing 787",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 7",
+          "ticket_also_sold_by": [
+            "ANA"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 461 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 145,
+          "name": "George Bush Intercontinental Airport",
+          "id": "IAH"
+        }
+      ],
+      "total_duration": 1075,
+      "carbon_emissions": {
+        "this_flight": 578000,
+        "typical_for_this_route": 838000,
+        "difference_percent": -31
+      },
+      "price": 1054,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ2xWUVRVek1ueFZRVGNhQ3dqeXRnWVFBaG9EUlZWU09CeHcyYm9IIixbWyJBVEwiLCIyMDI2LTA2LTEzIiwiSUFIIixudWxsLCJVQSIsIjUzMiJdLFsiSUFIIiwiMjAyNi0wNi0xMyIsIk5SVCIsbnVsbCwiVUEiLCI3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 07:15"
+          },
+          "arrival_airport": {
+            "name": "Newark Liberty International Airport",
+            "id": "EWR",
+            "time": "2026-06-13 09:33"
+          },
+          "duration": 138,
+          "airplane": "Airbus A319",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 2053",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 135 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Newark Liberty International Airport",
+            "id": "EWR",
+            "time": "2026-06-13 11:40"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 14:30"
+          },
+          "duration": 830,
+          "airplane": "Boeing 777",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 79",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 556 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 127,
+          "name": "Newark Liberty International Airport",
+          "id": "EWR"
+        }
+      ],
+      "total_duration": 1095,
+      "carbon_emissions": {
+        "this_flight": 691000,
+        "typical_for_this_route": 838000,
+        "difference_percent": -18
+      },
+      "price": 1054,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ3RWUVRJd05UTjhWVUUzT1JvTENQSzJCaEFDR2dORlZWSTRISERadWdjPSIsW1siQVRMIiwiMjAyNi0wNi0xMyIsIkVXUiIsbnVsbCwiVUEiLCIyMDUzIl0sWyJFV1IiLCIyMDI2LTA2LTEzIiwiTlJUIixudWxsLCJVQSIsIjc5Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Hartsfield-Jackson Atlanta International Airport",
+            "id": "ATL",
+            "time": "2026-06-13 08:54"
+          },
+          "arrival_airport": {
+            "name": "Seattle-Tacoma International Airport",
+            "id": "SEA",
+            "time": "2026-06-13 11:20"
+          },
+          "duration": 326,
+          "airplane": "Boeing 737",
+          "airline": "Alaska",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AS.png",
+          "travel_class": "Economy",
+          "flight_number": "AS 348",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 276 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Seattle-Tacoma International Airport",
+            "id": "SEA",
+            "time": "2026-06-13 13:30"
+          },
+          "arrival_airport": {
+            "name": "Narita International Airport",
+            "id": "NRT",
+            "time": "2026-06-14 16:00"
+          },
+          "duration": 630,
+          "airplane": "Airbus A330",
+          "airline": "Alaska",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AS.png",
+          "travel_class": "Economy",
+          "flight_number": "AS 823",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 542 kg"
+          ],
+          "plane_and_crew_by": "Alaska as Hawaiian Airlines"
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 130,
+          "name": "Seattle-Tacoma International Airport",
+          "id": "SEA"
+        }
+      ],
+      "total_duration": 1086,
+      "carbon_emissions": {
+        "this_flight": 819000,
+        "typical_for_this_route": 838000,
+        "difference_percent": -2
+      },
+      "price": 1097,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AS.png",
+      "booking_token": "WyJDalJJTlZZdFdGZElaelUxTWpSQlFURmpjbEZDUnkwdExTMHRMUzB0TFhCbVltcDNOMEZCUVVGQlIyNU9Ra2MwU1RWRVRVbEJFZ3RCVXpNME9IeEJVemd5TXhvTENNallCaEFDR2dORlZWSTRISERoNFFjPSIsW1siQVRMIiwiMjAyNi0wNi0xMyIsIlNFQSIsbnVsbCwiQVMiLCIzNDgiXSxbIlNFQSIsIjIwMjYtMDYtMTMiLCJOUlQiLG51bGwsIkFTIiwiODIzIl1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 615,
+    "price_level": "low",
+    "typical_price_range": [
+      640,
+      860
+    ],
+    "price_history": [
+      [
+        1769749200,
+        555
+      ],
+      [
+        1769835600,
+        560
+      ],
+      [
+        1769922000,
+        560
+      ],
+      [
+        1770008400,
+        561
+      ],
+      [
+        1770094800,
+        564
+      ],
+      [
+        1770181200,
+        432
+      ],
+      [
+        1770267600,
+        432
+      ],
+      [
+        1770354000,
+        433
+      ],
+      [
+        1770440400,
+        431
+      ],
+      [
+        1770526800,
+        431
+      ],
+      [
+        1770613200,
+        431
+      ],
+      [
+        1770699600,
+        586
+      ],
+      [
+        1770786000,
+        591
+      ],
+      [
+        1770872400,
+        592
+      ],
+      [
+        1770958800,
+        592
+      ],
+      [
+        1771045200,
+        592
+      ],
+      [
+        1771131600,
+        592
+      ],
+      [
+        1771218000,
+        592
+      ],
+      [
+        1771304400,
+        668
+      ],
+      [
+        1771390800,
+        561
+      ],
+      [
+        1771477200,
+        564
+      ],
+      [
+        1771563600,
+        610
+      ],
+      [
+        1771650000,
+        609
+      ],
+      [
+        1771736400,
+        600
+      ],
+      [
+        1771822800,
+        597
+      ],
+      [
+        1771909200,
+        599
+      ],
+      [
+        1771995600,
+        612
+      ],
+      [
+        1772082000,
+        613
+      ],
+      [
+        1772168400,
+        616
+      ],
+      [
+        1772254800,
+        416
+      ],
+      [
+        1772341200,
+        416
+      ],
+      [
+        1772427600,
+        512
+      ],
+      [
+        1772514000,
+        523
+      ],
+      [
+        1772600400,
+        551
+      ],
+      [
+        1772686800,
+        528
+      ],
+      [
+        1772773200,
+        531
+      ],
+      [
+        1772859600,
+        558
+      ],
+      [
+        1772946000,
+        558
+      ],
+      [
+        1773028800,
+        562
+      ],
+      [
+        1773115200,
+        733
+      ],
+      [
+        1773201600,
+        723
+      ],
+      [
+        1773288000,
+        733
+      ],
+      [
+        1773374400,
+        735
+      ],
+      [
+        1773460800,
+        746
+      ],
+      [
+        1773547200,
+        747
+      ],
+      [
+        1773633600,
+        731
+      ],
+      [
+        1773720000,
+        728
+      ],
+      [
+        1773806400,
+        726
+      ],
+      [
+        1773892800,
+        681
+      ],
+      [
+        1773979200,
+        620
+      ],
+      [
+        1774065600,
+        681
+      ],
+      [
+        1774152000,
+        748
+      ],
+      [
+        1774238400,
+        793
+      ],
+      [
+        1774324800,
+        854
+      ],
+      [
+        1774411200,
+        649
+      ],
+      [
+        1774497600,
+        651
+      ],
+      [
+        1774584000,
+        653
+      ],
+      [
+        1774670400,
+        618
+      ],
+      [
+        1774756800,
+        618
+      ],
+      [
+        1774843200,
+        619
+      ],
+      [
+        1774929600,
+        622
+      ],
+      [
+        1775016000,
+        615
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "ATL",
+            "name": "Hartsfield-Jackson Atlanta International Airport"
+          },
+          "city": "Atlanta",
+          "country": "United States",
+          "country_code": "US",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYBXd-jsaFCOrq3Ftbagud_RXYRp8gK_jeDmxAfPmI5pP7SIRedYhExpUTLErX68PeHFvOzs8P_D0v_w",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJh6WEANkd6cril2a8Csnk2i_WTs-ZTUE-pamQ4iTfpTi0hlx5P9xhDKrUeBWRPb-4hiLgvoegdgPZ2t2R8qpkN_a7BzJjUNSnSonV664"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "NRT",
+            "name": "Narita International Airport"
+          },
+          "city": "Tokyo",
+          "country": "Japan",
+          "country_code": "JP",
+          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqHkzEeI2bSglPzmSGZL7bxXmn0wJgOn2ZtEN8I47uBnzY1CnHzGtD-YseJXqyexcAcw_uJp-D5HTkCg",
+          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLnIToEgwiM_jV3cbw5eQZoUAIg6XqdrJAiClDyyg0w-JBSRN5ZeOT-iFb3SvwkwP1uoBCmT-gKE5VcyCYf-xq4guL4NAFICSaNyOnYOA"
+        }
+      ]
+    }
+  ]
+}

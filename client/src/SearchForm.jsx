@@ -2,7 +2,7 @@ import { useState } from "react";
 import CityInput from "./CityInput";
 
 export default function SearchForm({ onSearch, loading }) {
-    const [discoverMode, setDiscoverMode] = useState(false);
+    const [discoverMode, setDiscoverMode] = useState(true);
 
     function handleSubmit(e) {
         e.preventDefault();

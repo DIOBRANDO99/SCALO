@@ -95,12 +95,15 @@ Apri `http://localhost:5173` nel browser. Il form ha due modalità selezionabili
 
 | Campo | Descrizione |
 |-------|-------------|
-| **Origin** | Codice IATA dell'aeroporto di partenza (es. MXP) |
-| **Stopover** | Codice IATA della città dove vuoi fermarti (es. IST) — solo in modalità Search |
-| **Destination** | Codice IATA della destinazione finale (es. BKK) |
-| **Departure Date** | Quando parti dalla città di origine |
+| **Origin** | Cerca per nome citta, nome aeroporto, codice IATA o paese (es. "Milano", "Malpensa", "MXP", "IT") |
+| **Stopover** | Stessa ricerca — solo in modalita Search |
+| **Destination** | Stessa ricerca |
+| **Departure Date** | Quando parti dalla citta di origine |
 | **Nights at stopover** | Quante notti vuoi fermarti allo scalo (default: 3) |
-| **Return Date** | Quando torni dalla destinazione alla città di origine (opzionale) |
+| **Return Date** | Quando torni dalla destinazione alla citta di origine (opzionale) |
+
+I campi Origin, Stopover e Destination supportano l'autocompletamento: digitando almeno 2 caratteri appare una lista di suggerimenti con citta, aeroporto e codice IATA. Si puo anche digitare direttamente un codice IATA a 3 lettere.
+
 
 ## Comportamento con Risultati Vuoti
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CityInput from "./CityInput";
 
 export default function SearchForm({ onSearch, loading }) {
     const [discoverMode, setDiscoverMode] = useState(false);
@@ -43,14 +44,7 @@ export default function SearchForm({ onSearch, loading }) {
                     <label className="block text-sm font-medium text-gray-700 mb-1">
                         Origin <span className="text-red-500">*</span>
                     </label>
-                    <input
-                        name="origin"
-                        type="text"
-                        required
-                        maxLength={3}
-                        placeholder="MXP"
-                        className="w-full border border-gray-300 rounded px-3 py-2 text-sm uppercase focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
+                    <CityInput name="origin" placeholder="City, airport or IATA (e.g. Milan)" required />
                 </div>
 
                 {!discoverMode && (
@@ -58,14 +52,7 @@ export default function SearchForm({ onSearch, loading }) {
                         <label className="block text-sm font-medium text-gray-700 mb-1">
                             Stopover <span className="text-red-500">*</span>
                         </label>
-                        <input
-                            name="stopover"
-                            type="text"
-                            required
-                            maxLength={3}
-                            placeholder="IST"
-                            className="w-full border border-gray-300 rounded px-3 py-2 text-sm uppercase focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
+                        <CityInput name="stopover" placeholder="City, airport or IATA (e.g. Istanbul)" required />
                     </div>
                 )}
 
@@ -73,14 +60,7 @@ export default function SearchForm({ onSearch, loading }) {
                     <label className="block text-sm font-medium text-gray-700 mb-1">
                         Destination <span className="text-red-500">*</span>
                     </label>
-                    <input
-                        name="destination"
-                        type="text"
-                        required
-                        maxLength={3}
-                        placeholder="BKK"
-                        className="w-full border border-gray-300 rounded px-3 py-2 text-sm uppercase focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
+                    <CityInput name="destination" placeholder="City, airport or IATA (e.g. Bangkok)" required />
                 </div>
             </div>
 

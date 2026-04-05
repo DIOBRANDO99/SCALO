@@ -8,21 +8,6 @@ function norm(str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
-/**
- * Relevance score for an airport against a normalized query.
- * Higher = more relevant. Returns 0 if no match.
- *
- *  100  IATA exact match          (e.g. "bkk" → BKK)
- *   80  IATA starts-with          (e.g. "bk"  → BKK)
- *   60  City starts-with          (e.g. "bang" → Bangkok)
- *   50  City contains             (e.g. "kok"  → Bangkok)
- *   40  Airport name starts-with  (e.g. "suvar" → Suvarnabhumi)
- *   30  Airport name contains     (e.g. "bhumi" → Suvarnabhumi)
- *   20  Keywords contain          (e.g. "bergamo" → BGY via "Milan Bergamo Airport")
- *   10  Country name contains     (e.g. "italy" → all IT airports)
- *
- * Within the same score, large airports (size=1) sort before medium (size=0).
- */
 function score(ap, q) {
     const iata = ap.iata.toLowerCase();
     const city = norm(ap.city || "");

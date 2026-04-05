@@ -1,18 +1,3 @@
-/**
- * generate_cities.js
- *
- * Reads dataset/airports.csv (OurAirports) and produces
- * client/src/data/cities.json — a flat array of airports
- * suitable for the CityInput autocomplete component.
- *
- * Each entry includes:
- *   iata, name, city, country (ISO), countryName, lat, lon,
- *   keywords (from OurAirports), size (1 = large, 0 = medium),
- *   searchText (pre-computed lowercase for fast filtering)
- *
- * Usage:  node scripts/generate_cities.js
- */
-
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
@@ -20,7 +5,6 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
-// ── CSV parser (handles quoted fields) ──────────────────────────
 function parseCSVLine(line) {
     const fields = [];
     let i = 0;
@@ -53,8 +37,6 @@ function parseCSVLine(line) {
     }
     return fields;
 }
-
-// ── Country name resolver (built-in Node API, no deps) ─────────
 const regionNames = new Intl.DisplayNames(["en"], { type: "region" });
 
 function countryNameFor(iso) {
@@ -65,15 +47,10 @@ function countryNameFor(iso) {
     }
 }
 
-// ── Diacritic normalization ─────────────────────────────────────
-// "Türkiye" → "turkiye", "São Paulo" → "sao paulo", "İstanbul" → "istanbul"
 function stripDiacritics(str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
-// ── Common alternate country names ─────────────────────────────
-// Intl.DisplayNames uses official names that may differ from common usage.
-// These aliases ensure users can search by the name they know.
 const COUNTRY_ALIASES = {
     TR: "Turkey",
     CI: "Ivory Coast",
@@ -88,7 +65,6 @@ const COUNTRY_ALIASES = {
     TL: "East Timor",
 };
 
-// ── Main ────────────────────────────────────────────────────────
 const csv = readFileSync(join(ROOT, "dataset", "airports.csv"), "utf-8");
 const lines = csv.split("\n").filter(Boolean);
 const header = parseCSVLine(lines[0]);
@@ -133,10 +109,6 @@ for (let i = 1; i < lines.length; i++) {
     const keywords = (f[col.keywords] || "").trim();
     const size = type === "large_airport" ? 1 : 0;
 
-    // Pre-compute lowercase, diacritics-stripped search text.
-    // Includes keywords for alias matching (e.g. BGY → "Milan Bergamo Airport"),
-    // stripped diacritics (e.g. "Türkiye" → "turkiye"), and country aliases
-    // (e.g. TR → "Turkey" alongside "Turkiye").
     const alias = COUNTRY_ALIASES[iso] || "";
     const searchText = stripDiacritics(
         [iata, city, name, cName, iso, keywords, alias].filter(Boolean).join(" ")
@@ -148,10 +120,8 @@ for (let i = 1; i < lines.length; i++) {
     });
 }
 
-// Sort: large airports first, then alphabetically by city
 airports.sort((a, b) => b.size - a.size || a.city.localeCompare(b.city));
 
-// Write output
 const outDir = join(ROOT, "client", "src", "data");
 mkdirSync(outDir, { recursive: true });
 const outPath = join(outDir, "cities.json");

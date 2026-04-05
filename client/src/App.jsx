@@ -100,7 +100,7 @@ export default function App() {
         <div className={`${hubData ? "max-w-5xl" : "max-w-3xl"} mx-auto px-4 py-12`}>
             <h1 className="text-3xl font-bold mb-2">SCALO</h1>
             <p className="text-gray-600 mb-8">
-                Smart Connection &amp; Layover Optimizer
+                Smart Connection And Layover Optimizer
             </p>
 
             <SearchForm onSearch={handleSearch} loading={loading} />

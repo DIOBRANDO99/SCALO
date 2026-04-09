@@ -83,26 +83,38 @@ Verifica che il backend sia attivo:
 
 ```bash
 curl http://localhost:3001/health
-# { "status": "ok", "provider": "mock", "timestamp": "..." }
+# { "status": "ok", "provider": "mock_real", "timestamp": "..." }
 ```
 
 ## Usare il Form di Ricerca
 
-Apri `http://localhost:5173` nel browser. Il form ha due modalità selezionabili tramite il toggle **Discover best stopover**:
+Apri `http://localhost:5173` nel browser. Il form ha due modalità selezionabili tramite il toggle **Choose stopover**:
 
-- **Modalità Search** (toggle off): specifica uno scalo preciso. Campi disponibili: Origin, Stopover, Destination, Departure Date, Nights at stopover, Return Date.
-- **Modalità Discover** (toggle on): SCALO calcola gli scali candidati lungo la rotta e li mostra su una mappa interattiva. I punti arancioni sono hub con rotte verificate — clicca su uno per avviare la ricerca su quel corridoio.
+- **Modalità Discover** (toggle off, default): SCALO calcola gli scali candidati lungo la rotta, li punteggia e li mostra su una mappa interattiva. Passa il cursore su un hub per vedere un'anteprima della città con snippet Wikipedia. Clicca su un hub per aprire il popup con foto e dettagli, poi premi "Search this stopover" per avviare la ricerca su quel corridoio. I pulsanti **Show all / Show best** (in alto a destra sulla mappa) alternano tra tutti gli hub nell'ellisse e i top 10 selezionati automaticamente.
+
+![Improved UI with Wikipedia popup](doc/screenshots/improved_ui.png)
+- **Modalità Search** (toggle on): specifica uno scalo preciso. Campi disponibili: Origin, Stopover, Destination, Departure Date, Nights at stopover, Return Date.
 
 | Campo | Descrizione |
 |-------|-------------|
 | **Origin** | Cerca per nome citta, nome aeroporto, codice IATA o paese (es. "Milano", "Malpensa", "MXP", "IT") |
-| **Stopover** | Stessa ricerca — solo in modalita Search |
+| **Stopover** | Stessa ricerca — solo in modalità Search |
 | **Destination** | Stessa ricerca |
 | **Departure Date** | Quando parti dalla citta di origine |
 | **Nights at stopover** | Quante notti vuoi fermarti allo scalo (default: 3) |
 | **Return Date** | Quando torni dalla destinazione alla citta di origine (opzionale) |
 
 I campi Origin, Stopover e Destination supportano l'autocompletamento: digitando almeno 2 caratteri appare una lista di suggerimenti con citta, aeroporto e codice IATA. Si puo anche digitare direttamente un codice IATA a 3 lettere.
+
+### Opzioni Avanzate
+
+Il form include una sezione **Advanced options** espandibile con:
+
+| Opzione | Valori | Default |
+|---------|--------|---------|
+| **Max stops per leg** | Direct only / Up to 1 stop / Up to 2 stops | Up to 2 stops |
+
+Questa opzione controlla quante connessioni sono ammesse su ciascun tratto di volo (es. Milano→scalo, scalo→Bangkok). Impostare "Direct only" può ridurre o eliminare i risultati su rotte dove i voli non-stop non sono disponibili.
 
 
 ## Comportamento con Risultati Vuoti
@@ -113,7 +125,7 @@ L'interfaccia gestisce tre scenari quando una ricerca non produce risultati util
 |----------|-------------|-----------|
 | **Nessun volo trovato** | Uno o più tratti non hanno opzioni di volo | Indica quali tratte specifiche non hanno risultati e suggerisce di cambiare date o scalo |
 | **Nessun volo diretto** | I voli con scalo sono stati trovati ma non esiste un volo diretto per confrontare il risparmio | Informa che il calcolo del risparmio non è disponibile, con opzione di vedere comunque i voli |
-| **Scalo più costoso** | Lo scalo costa più del volo diretto | Mostra la differenza di prezzo e permette di visualizzare comunque i dettagli |
+| **Scalo più costoso** | Lo scalo costa più del volo diretto | Mostra la differenza di prezzo e permette di visualizzare comunque i dettagli. Se la ricerca era con connessioni limitate (Direct only o Up to 1 stop), suggerisce di aumentare il limite in Advanced options |
 
 In tutti i casi l'utente può fare una nuova ricerca senza ricaricare la pagina.
 
@@ -163,12 +175,13 @@ Oppure da `backend/` o `client/` separatamente. Per watch mode: `npm run test:wa
 
 ![Ellipse test map](doc/screenshots/example-test-map.png)
 
-In modalità Discover, il sistema seleziona gli aeroporti candidati per lo scalo attraverso un pipeline a 2 livelli, senza consumare chiamate API:
+In modalità Discover, il sistema seleziona e classifica gli aeroporti candidati per lo scalo attraverso un pipeline a 3 livelli, senza consumare chiamate API:
 
 | Livello | Cosa fa | Input → Output |
 |---------|---------|----------------|
 | **1. Ellipse** | Filtro geografico Haversine: `d(A,C) + d(C,B) <= (1 + f) * d(A,B)` con f=0.2 | ~1168 → ~100-400 |
 | **2. Route filter** | Verifica esistenza rotte A→S e S→B tramite OpenFlights (solo compagnie attive) | ~100-400 → ~20-80 |
+| **3. Scoring** | Punteggio composito per selezionare i top 10 hub — attivato con `?auto=true` | ~20-80 → 10 |
 
 **Come funziona:**
 
@@ -176,8 +189,11 @@ In modalità Discover, il sistema seleziona gli aeroporti candidati per lo scalo
 2. Definisce un budget massimo di distanza: `d_max = (1 + f) * d(A,B)`, dove `f` è il fattore di tolleranza (default 20%)
 3. Per ogni aeroporto `large_airport` nel dataset OurAirports (~1168 aeroporti con servizio schedulato), verifica se `d(A,C) + d(C,B) <= d_max`
 4. Filtra ulteriormente verificando che esistano rotte reali A→S e S→B nel dataset OpenFlights, considerando solo compagnie aeree attive
+5. Punteggia ogni hub con una formula composita: `0.3 × airlines_leg1 + 0.3 × airlines_leg2 + 0.2 × (1 - detour%) + 0.2 × total_routes` — dove `airlines_leg1/2` è il numero di compagnie che operano esattamente quel tratto
 
-Questo approccio garantisce che gli scali proposti siano geograficamente sensati e abbiano connessioni aeree reali, evitando di interrogare aeroporti irrilevanti.
+La mappa mostra di default i top 10 hub. Il pulsante **Show all** mostra tutti gli hub nell'ellisse; **Show best** ritorna ai top 10.
+
+**Correzioni città (CITY_OVERRIDES):** il dataset OurAirports include 74 aeroporti dove il campo `municipality` indica un sobborgo o distretto invece della città servita (es. Islamabad International ha `municipality = "Attock"`). Una tabella statica in `hubs.js` corregge questi casi prima che la città venga usata per la ricerca Wikipedia.
 
 Se le coordinate di partenza o arrivo non vengono trovate nel dataset, il sistema usa una lista di fallback con 16 hub principali mondiali.
 

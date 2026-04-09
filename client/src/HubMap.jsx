@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, CircleMarker, Polyline, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, CircleMarker, Polyline, Popup, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 function greatCirclePoints(lat1, lon1, lat2, lon2, n = 60) {
@@ -30,8 +30,8 @@ function greatCirclePoints(lat1, lon1, lat2, lon2, n = 60) {
     return points;
 }
 
-export default function HubMap({ hubData, onHubSelect, loading }) {
-    const { origin, destination, hubs } = hubData;
+export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, loading }) {
+    const { origin, destination, hubs, totalHubs } = hubData;
 
     const arc = greatCirclePoints(origin.lat, origin.lon, destination.lat, destination.lon);
     const originPos = arc[0];
@@ -61,6 +61,7 @@ export default function HubMap({ hubData, onHubSelect, loading }) {
                         pathOptions={{ color: "#d97706", fillColor: "#f59e0b", fillOpacity: 0.85, weight: 1.5 }}
                         eventHandlers={{}}
                     >
+                        <Tooltip direction="top" offset={[0, -6]}>{hub.name}</Tooltip>
                         <Popup>
                             <div style={{ minWidth: "140px" }}>
                                 <strong>{hub.iata}</strong> — {hub.name}<br />
@@ -69,9 +70,9 @@ export default function HubMap({ hubData, onHubSelect, loading }) {
                                 </span><br />
                                 <button
                                     onClick={() => !loading && onHubSelect(hub)}
-                                    style={{ marginTop: "6px", color: "#2563eb", textDecoration: "underline", background: "none", border: "none", cursor: "pointer", padding: 0, fontSize: "13px" }}
+                                    style={{ marginTop: "8px", display: "block", width: "100%", backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
                                 >
-                                    Search this stopover →
+                                    Search this stopover
                                 </button>
                             </div>
                         </Popup>
@@ -95,11 +96,31 @@ export default function HubMap({ hubData, onHubSelect, loading }) {
                 </CircleMarker>
             </MapContainer>
 
-            <div className="bg-white border-t px-4 py-2 flex flex-wrap gap-4 text-xs text-gray-500">
+            <div className="bg-white border-t px-4 py-2 flex flex-wrap gap-4 text-xs text-gray-500 items-center">
                 <span><span style={{ color: "#dc2626" }}>●</span> Origin / Destination</span>
                 <span><span style={{ color: "#f59e0b" }}>●</span> Hub candidate — click to search</span>
                 <span><span style={{ color: "#16a34a" }}>—</span> Direct route</span>
-                <span className="ml-auto">{hubs.length} hub{hubs.length !== 1 ? "s" : ""} found</span>
+                <span>{hubs.length} hub{hubs.length !== 1 ? "s" : ""} shown</span>
+                <div className="ml-auto flex gap-2">
+                    {totalHubs > hubs.length && (
+                        <button
+                            onClick={() => !loading && onShowAll()}
+                            className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded hover:bg-gray-200 disabled:opacity-50"
+                            disabled={loading}
+                        >
+                            Show all {totalHubs}
+                        </button>
+                    )}
+                    {totalHubs === undefined && (
+                        <button
+                            onClick={() => !loading && onShowBest()}
+                            className="text-xs bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 disabled:opacity-50"
+                            disabled={loading}
+                        >
+                            Show best
+                        </button>
+                    )}
+                </div>
             </div>
         </div>
     );

@@ -8,6 +8,7 @@ const DATASET_DIR = join(__dirname, "../../dataset");
 let airports = null;
 let routeGraph = null;
 let airportStats = null;
+let routePairAirlines = null;
 let nameMap = null;
 
 function parseCSVLine(line) {
@@ -61,7 +62,7 @@ function loadAirports() {
 }
 
 function loadRouteGraph() {
-    if (routeGraph) return { routeGraph, airportStats };
+    if (routeGraph) return { routeGraph, airportStats, routePairAirlines };
 
     const activeAirlines = new Set();
     const airlinesRaw = readFileSync(join(DATASET_DIR, "airlines.dat"), "utf8");
@@ -78,6 +79,7 @@ function loadRouteGraph() {
 
     routeGraph = new Map();
     airportStats = new Map();
+    routePairAirlines = new Map();
 
     const routesRaw = readFileSync(join(DATASET_DIR, "routes.dat"), "utf8");
     for (const line of routesRaw.split("\n")) {
@@ -103,10 +105,15 @@ function loadRouteGraph() {
         if (!airportStats.has(dest)) airportStats.set(dest, { totalRoutes: 0, airlines: new Set() });
         airportStats.get(dest).totalRoutes++;
         airportStats.get(dest).airlines.add(airline);
+
+        // Per-pair airline count
+        const pairKey = `${source}→${dest}`;
+        if (!routePairAirlines.has(pairKey)) routePairAirlines.set(pairKey, new Set());
+        routePairAirlines.get(pairKey).add(airline);
     }
 
     console.log(`[hubs] Built route graph: ${routeGraph.size} airports with outbound routes`);
-    return { routeGraph, airportStats };
+    return { routeGraph, airportStats, routePairAirlines };
 }
 
 function buildNameMap() {
@@ -195,7 +202,7 @@ export function getHubsWithDetails(originIata, destinationIata, factor = 0.2) {
     const dMax = (1 + factor) * dAB;
 
     const names = buildNameMap();
-    const { airportStats } = loadRouteGraph();
+    const { airportStats, routePairAirlines } = loadRouteGraph();
 
     const hubs = [];
     for (const airport of allAirports) {
@@ -209,6 +216,8 @@ export function getHubsWithDetails(originIata, destinationIata, factor = 0.2) {
 
             const detourPercent = Math.round(((dAC + dCB - dAB) / dAB) * 1000) / 10;
             const stats = airportStats.get(airport.iata);
+            const airlinesLeg1 = routePairAirlines.get(`${originIata}→${airport.iata}`)?.size ?? 0;
+            const airlinesLeg2 = routePairAirlines.get(`${airport.iata}→${destinationIata}`)?.size ?? 0;
 
             hubs.push({
                 iata: airport.iata,
@@ -217,6 +226,8 @@ export function getHubsWithDetails(originIata, destinationIata, factor = 0.2) {
                 name: names.get(airport.iata) ?? airport.iata,
                 routeCount: stats?.totalRoutes ?? 0,
                 detourPercent,
+                airlinesLeg1,
+                airlinesLeg2,
             });
         }
     }
@@ -229,4 +240,31 @@ export function getHubsWithDetails(originIata, destinationIata, factor = 0.2) {
         directDistance: Math.round(dAB),
         hubs,
     };
+}
+
+/**
+ * Scores and returns the top N hubs using route-specific factors.
+ * Weights: airlinesLeg1 30%, airlinesLeg2 30%, detour (inverted) 20%, totalRoutes 20%.
+ */
+export function getTopHubs(hubData, n = 10) {
+    const { hubs } = hubData;
+    if (hubs.length === 0) return hubData;
+
+    const maxLeg1 = Math.max(...hubs.map(h => h.airlinesLeg1), 1);
+    const maxLeg2 = Math.max(...hubs.map(h => h.airlinesLeg2), 1);
+    const maxRoutes = Math.max(...hubs.map(h => h.routeCount), 1);
+    const maxDetour = Math.max(...hubs.map(h => h.detourPercent), 1);
+
+    const scored = hubs.map(h => ({
+        ...h,
+        score:
+            0.3 * (h.airlinesLeg1 / maxLeg1) +
+            0.3 * (h.airlinesLeg2 / maxLeg2) +
+            0.2 * (1 - h.detourPercent / maxDetour) +
+            0.2 * (h.routeCount / maxRoutes),
+    }));
+
+    scored.sort((a, b) => b.score - a.score);
+
+    return { ...hubData, hubs: scored.slice(0, n), totalHubs: hubs.length };
 }

@@ -28,13 +28,13 @@ export default function SearchForm({ onSearch, loading }) {
             <div className="flex items-center justify-between mb-6">
                 <h2 className="text-lg font-semibold">Search Flights</h2>
                 <label className="flex items-center gap-2 cursor-pointer select-none">
-                    <span className="text-sm text-gray-600">Discover best stopover</span>
+                    <span className="text-sm text-gray-600">Choose stopover</span>
                     <button
                         type="button"
                         onClick={() => setDiscoverMode(d => !d)}
-                        className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${discoverMode ? "bg-blue-600" : "bg-gray-300"}`}
+                        className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${!discoverMode ? "bg-blue-600" : "bg-gray-300"}`}
                     >
-                        <span className={`inline-block h-3 w-3 transform rounded-full bg-white transition-transform ${discoverMode ? "translate-x-5" : "translate-x-1"}`} />
+                        <span className={`inline-block h-3 w-3 transform rounded-full bg-white transition-transform ${!discoverMode ? "translate-x-5" : "translate-x-1"}`} />
                     </button>
                 </label>
             </div>

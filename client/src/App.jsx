@@ -27,7 +27,7 @@ export default function App() {
 
         if (mode === "discover") {
             try {
-                const res = await fetch(`/api/hubs?origin=${body.origin}&destination=${body.destination}`);
+                const res = await fetch(`/api/hubs?origin=${body.origin}&destination=${body.destination}&auto=true`);
                 if (!res.ok) {
                     const err = await res.json();
                     throw new Error(err.error || `HTTP ${res.status}`);
@@ -56,6 +56,48 @@ export default function App() {
             }
 
             setResult(await res.json());
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    async function handleShowAll() {
+        setLoading(true);
+        setError(null);
+        setResult(null);
+        setShowNegative(false);
+        setSelectedHub(null);
+
+        try {
+            const res = await fetch(`/api/hubs?origin=${pendingParams.origin}&destination=${pendingParams.destination}`);
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.error || `HTTP ${res.status}`);
+            }
+            setHubData(await res.json());
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    async function handleShowBest() {
+        setLoading(true);
+        setError(null);
+        setResult(null);
+        setShowNegative(false);
+        setSelectedHub(null);
+
+        try {
+            const res = await fetch(`/api/hubs?origin=${pendingParams.origin}&destination=${pendingParams.destination}&auto=true`);
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.error || `HTTP ${res.status}`);
+            }
+            setHubData(await res.json());
         } catch (err) {
             setError(err.message);
         } finally {
@@ -116,7 +158,7 @@ export default function App() {
 
             {/* Discover mode: hub map */}
             {hubData && (
-                <HubMap hubData={hubData} onHubSelect={handleHubSelect} loading={loading} />
+                <HubMap hubData={hubData} onHubSelect={handleHubSelect} onShowAll={handleShowAll} onShowBest={handleShowBest} loading={loading} />
             )}
 
             {/* Selected hub indicator */}

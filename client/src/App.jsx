@@ -27,7 +27,7 @@ export default function App() {
 
         if (mode === "discover") {
             try {
-                const res = await fetch(`/api/hubs?origin=${body.origin}&destination=${body.destination}`);
+                const res = await fetch(`/api/hubs?origin=${body.origin}&destination=${body.destination}&auto=true`);
                 if (!res.ok) {
                     const err = await res.json();
                     throw new Error(err.error || `HTTP ${res.status}`);
@@ -56,6 +56,48 @@ export default function App() {
             }
 
             setResult(await res.json());
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    async function handleShowAll() {
+        setLoading(true);
+        setError(null);
+        setResult(null);
+        setShowNegative(false);
+        setSelectedHub(null);
+
+        try {
+            const res = await fetch(`/api/hubs?origin=${pendingParams.origin}&destination=${pendingParams.destination}`);
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.error || `HTTP ${res.status}`);
+            }
+            setHubData(await res.json());
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    async function handleShowBest() {
+        setLoading(true);
+        setError(null);
+        setResult(null);
+        setShowNegative(false);
+        setSelectedHub(null);
+
+        try {
+            const res = await fetch(`/api/hubs?origin=${pendingParams.origin}&destination=${pendingParams.destination}&auto=true`);
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.error || `HTTP ${res.status}`);
+            }
+            setHubData(await res.json());
         } catch (err) {
             setError(err.message);
         } finally {
@@ -116,7 +158,7 @@ export default function App() {
 
             {/* Discover mode: hub map */}
             {hubData && (
-                <HubMap hubData={hubData} onHubSelect={handleHubSelect} loading={loading} />
+                <HubMap hubData={hubData} onHubSelect={handleHubSelect} onShowAll={handleShowAll} onShowBest={handleShowBest} loading={loading} />
             )}
 
             {/* Selected hub indicator */}
@@ -161,6 +203,11 @@ export default function App() {
                         title="No savings with this stopover"
                         description={`Flying via ${result.stopover.iata} costs €${Math.abs(result.summary.savings)} more than the direct flight (€${result.summary.directPrice}). This stopover is not worth it for price — but you might still want to visit!`}
                     >
+                        {pendingParams?.maxStops && pendingParams.maxStops !== "3" && (
+                            <p className="mt-3 text-sm text-gray-500">
+                                You're searching with restricted connections — try increasing <strong>Max stops per leg</strong> in Advanced options for more options.
+                            </p>
+                        )}
                         <button
                             className="mt-4 text-sm text-blue-600 underline"
                             onClick={() => setShowNegative(true)}

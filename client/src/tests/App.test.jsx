@@ -3,13 +3,24 @@ import userEvent from "@testing-library/user-event";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import App from "../App";
 
-// Helper: submit the search form with minimal valid input
+const PLACEHOLDER_ORIGIN      = "City, airport or IATA (e.g. Milan)";
+const PLACEHOLDER_STOPOVER    = "City, airport or IATA (e.g. Istanbul)";
+const PLACEHOLDER_DESTINATION = "City, airport or IATA (e.g. Bangkok)";
+
+// Helper: submit the search form in search mode with minimal valid input.
+// App defaults to discover mode, so we click the toggle first to get the stopover field.
 async function submitSearch(user, { origin = "MXP", stopover = "IST", destination = "BKK" } = {}) {
     const { container } = render(<App />);
-    await user.type(screen.getByPlaceholderText("MXP"), origin);
-    await user.type(screen.getByPlaceholderText("IST"), stopover);
-    await user.type(screen.getByPlaceholderText("BKK"), destination);
+
+    // Switch to search mode (default is discover)
+    await user.click(screen.getByTestId("mode-toggle"));
+
+    // CityInput accepts a raw 3-letter IATA typed directly as a fallback
+    await user.type(screen.getByPlaceholderText(PLACEHOLDER_ORIGIN), origin);
+    await user.type(screen.getByPlaceholderText(PLACEHOLDER_STOPOVER), stopover);
+    await user.type(screen.getByPlaceholderText(PLACEHOLDER_DESTINATION), destination);
     fireEvent.change(container.querySelector('input[name="outboundDate"]'), { target: { value: "2026-06-10" } });
+
     await user.click(screen.getByRole("button", { name: "Search Flights" }));
 }
 
@@ -21,7 +32,6 @@ describe("App — Scenario A: no flights found", () => {
     it("shows 'No flights found' when one or more legs have no options", async () => {
         const user = userEvent.setup();
 
-        // Leg with no options — the backend returns options: [] for one leg
         const mockResult = {
             stopover: { iata: "IST", nights: 3 },
             legs: [
@@ -40,7 +50,6 @@ describe("App — Scenario A: no flights found", () => {
         await submitSearch(user);
 
         expect(screen.getByText("No flights found")).toBeInTheDocument();
-        // Must NOT show ResultCard (no leg titles)
         expect(screen.queryByText("Outbound")).not.toBeInTheDocument();
     });
 });
@@ -118,7 +127,6 @@ describe("App — Scenario C: stopover more expensive than direct", () => {
                 { id: "outbound2", origin: "ORD", destination: "BKK", date: "2026-06-13", bestPrice: 769, options: [{ price: 769 }] },
                 { id: "return",    origin: "BKK", destination: "MXP", date: "2026-06-20", bestPrice: 266, options: [{ price: 266 }] },
             ],
-            // 415+769+266=1450, direct=1176, savings=-274
             summary: { bestCombinedPrice: 1450, directPrice: 1176, savings: -274, currency: "EUR" },
         };
 
@@ -130,7 +138,6 @@ describe("App — Scenario C: stopover more expensive than direct", () => {
         await submitSearch(user, { stopover: "ORD" });
 
         expect(screen.getByText("No savings with this stopover")).toBeInTheDocument();
-        // Message must include the correct cost difference and direct price
         expect(screen.getByText(/costs €274 more than the direct flight \(€1176\)/)).toBeInTheDocument();
         expect(screen.queryByText("Outbound")).not.toBeInTheDocument();
     });

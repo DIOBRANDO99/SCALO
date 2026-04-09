@@ -5,9 +5,91 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATASET_DIR = join(__dirname, "../../dataset");
 
+// Airports where the dataset municipality field doesn't match the city people associate with the airport
+// (suburbs, districts, or wrong entries). Applied on top of the auto-split cleaning rule.
+const CITY_OVERRIDES = {
+    ACE: "Lanzarote",          // San Bartolomé → Lanzarote island
+    ADA: "Adana",              // Seyhan is a district of Adana
+    ADB: "İzmir",              // Gaziemir is a suburb of İzmir (Adnan Menderes Airport)
+    ANU: "Antigua",            // Osbourn → V.C. Bird Intl serves Antigua island
+    ATH: "Athens",             // Spata-Artemida → Athens Eleftherios Venizelos
+    AVV: "Melbourne",          // Geelong → Avalon Airport is branded as Melbourne
+    BEM: "Beni Mellal",        // Oulad Yaich → Beni Mellal Airport
+    BGY: "Bergamo",            // Orio al Serio → Il Caravaggio Intl (Milan Bergamo)
+    BJL: "Banjul",             // Yundum → Banjul International Airport
+    BJX: "León",               // Silao → Guanajuato Airport serves León
+    BNX: "Banja Luka",         // Mahovljani → Banja Luka Airport
+    BRU: "Brussels",           // Zaventem → Brussels Airport
+    BSL: "Basel",              // Bâle (French) → EuroAirport Basel–Mulhouse–Freiburg
+    CAY: "Cayenne",            // Matoury → suburb of Cayenne
+    CGY: "Cagayan de Oro",     // Laguindingan → Cagayan de Oro
+    CHQ: "Chania",             // Souda → Chania Airport
+    CRK: "Angeles",            // Mabalacat → Clark Intl serves Angeles City
+    DJE: "Djerba",             // Mellita → on Djerba island
+    DPS: "Denpasar",           // Kuta → Ngurah Rai Intl, Denpasar is the capital
+    ECN: "Nicosia",            // Tymbou → Ercan Airport serves Nicosia (Northern Cyprus)
+    EIS: "Tortola",            // Beef Island → connected to Tortola, BVI
+    FEZ: "Fes",                // Saïss → the plain where Fes Saïss Airport sits
+    FKB: "Karlsruhe",          // Rheinmünster → Karlsruhe Baden-Baden Airport
+    FMO: "Münster",            // Greven → Münster Osnabrück Airport
+    FSZ: "Shizuoka",           // Makinohara → Mount Fuji Shizuoka Airport
+    FUE: "Fuerteventura",      // El Matorral → Fuerteventura Airport (island name)
+    GOI: "Goa",                // Vasco da Gama → Goa Dabolim Airport
+    GOX: "Goa",                // Mopa → Manohar Intl, the new Goa airport
+    GRZ: "Graz",               // Feldkirchen bei Graz → Graz Airport
+    GUM: "Guam",               // Hagåtña → Antonio Won Pat Intl serves all of Guam
+    HEA: "Herat",              // Guzara → Herat – Khwaja Abdullah Ansari Intl
+    IBR: "Ibaraki",            // Omitama → Ibaraki Airport
+    ILO: "Iloilo",             // Cabatuan → Iloilo International Airport
+    IOM: "Douglas",            // Castletown → Douglas is the capital of Isle of Man
+    IPC: "Easter Island",      // Isla De Pascua → English name for Easter Island
+    ISB: "Islamabad",          // Attock → Islamabad International Airport
+    KNO: "Medan",              // Beringin → Kualanamu Intl serves Medan
+    KRK: "Kraków",             // Balice → Kraków John Paul II Airport
+    KUL: "Kuala Lumpur",       // Sepang → KLIA, 60 km south of KL but serves KL
+    LEJ: "Leipzig",            // Schkeuditz → Leipzig/Halle Airport
+    LEN: "León",               // La Virgen Del Camino → León Airport
+    LIL: "Lille",              // Lesquin → Lille Airport
+    LIN: "Milan",              // Segrate → Milano Linate
+    LJU: "Ljubljana",          // Zgornji Brnik → Ljubljana Jože Pučnik Airport
+    LYS: "Lyon",               // Colombier-Saugnieu → Lyon Saint-Exupéry
+    MFM: "Macau",              // Nossa Senhora do Carmo → Macau International Airport
+    MNI: "Montserrat",         // Gerald's Park → John A. Osborne Airport on Montserrat
+    MRS: "Marseille",          // Marignane → Marseille Provence Airport
+    MRU: "Mauritius",          // Plaine Magnien → Sir Seewoosagur Ramgoolam Intl
+    MVD: "Montevideo",         // Ciudad de la Costa → Carrasco Intl serves Montevideo
+    MXP: "Milan",              // Ferno → Milan Malpensa
+    NGO: "Nagoya",             // Tokoname → Chubu Centrair serves Nagoya
+    NRT: "Tokyo",              // Narita → Narita Intl is Tokyo's main international hub
+    NTL: "Newcastle",          // Williamtown → Newcastle Airport serves Newcastle
+    OSR: "Ostrava",            // Mošnov → Leoš Janáček Airport Ostrava
+    OTP: "Bucharest",          // Otopeni → Bucharest Henri Coandă Intl
+    OVD: "Oviedo",             // Ranón → Asturias Airport serves Oviedo
+    PAD: "Paderborn",          // Büren → Paderborn Lippstadt Airport
+    PIE: "St. Petersburg",     // Pinellas Park → St. Petersburg–Clearwater Intl
+    PIK: "Glasgow",            // Prestwick → Glasgow Prestwick Airport
+    RZE: "Rzeszów",            // Jasionka → Rzeszów-Jasionka Airport
+    SAW: "Istanbul",           // Pendik → Sabiha Gökçen Intl (Istanbul district)
+    SDJ: "Sendai",             // Natori → Sendai Airport serves Sendai
+    SKP: "Skopje",             // Ilinden → Skopje International Airport
+    SPN: "Saipan",             // I Fadang → Saipan International Airport
+    TIA: "Tirana",             // Rinas → Tirana International Airport Mother Teresa
+    TRN: "Turin",              // Caselle Torinese → Turin Airport
+    TRS: "Trieste",            // Ronchi dei Legionari → Trieste Airport
+    TZL: "Tuzla",              // Dubrave Gornje → Tuzla International Airport
+    USM: "Ko Samui",           // Na Thon → Ko Samui Airport (Na Thon is a town on the island)
+    VRN: "Verona",             // Caselle → Verona Villafranca Valerio Catullo Airport
+    VVO: "Vladivostok",        // Artyom → Vladivostok International Airport
+    WMI: "Warsaw",             // Nowy Dwór Mazowiecki → Warsaw Modlin Airport
+    XIY: "Xi'an",              // Xianyang → Xi'an Xianyang International Airport
+    XNN: "Xining",             // Haidong → Xining Caojiabao Airport
+    ZAG: "Zagreb",             // Velika Gorica → Zagreb Franjo Tuđman Airport
+};
+
 let airports = null;
 let routeGraph = null;
 let airportStats = null;
+let routePairAirlines = null;
 let nameMap = null;
 
 function parseCSVLine(line) {
@@ -36,6 +118,8 @@ function loadAirports() {
         lon:       header.indexOf("longitude_deg"),
         iata:      header.indexOf("iata_code"),
         scheduled: header.indexOf("scheduled_service"),
+        city:      header.indexOf("municipality"),
+        wiki:      header.indexOf("wikipedia_link"),
     };
 
     airports = [];
@@ -53,7 +137,9 @@ function loadAirports() {
         if (!iata || iata.length !== 3) continue;
         if (isNaN(lat) || isNaN(lon)) continue;
 
-        airports.push({ iata, lat, lon });
+        const rawCity = fields[idx.city] ?? "";
+        const city = CITY_OVERRIDES[iata] ?? rawCity.split(/[(\/,]/)[0].trim();
+        airports.push({ iata, lat, lon, city, wiki: fields[idx.wiki] ?? "" });
     }
 
     console.log(`[hubs] Loaded ${airports.length} large airports`);
@@ -61,7 +147,7 @@ function loadAirports() {
 }
 
 function loadRouteGraph() {
-    if (routeGraph) return { routeGraph, airportStats };
+    if (routeGraph) return { routeGraph, airportStats, routePairAirlines };
 
     const activeAirlines = new Set();
     const airlinesRaw = readFileSync(join(DATASET_DIR, "airlines.dat"), "utf8");
@@ -78,6 +164,7 @@ function loadRouteGraph() {
 
     routeGraph = new Map();
     airportStats = new Map();
+    routePairAirlines = new Map();
 
     const routesRaw = readFileSync(join(DATASET_DIR, "routes.dat"), "utf8");
     for (const line of routesRaw.split("\n")) {
@@ -103,10 +190,15 @@ function loadRouteGraph() {
         if (!airportStats.has(dest)) airportStats.set(dest, { totalRoutes: 0, airlines: new Set() });
         airportStats.get(dest).totalRoutes++;
         airportStats.get(dest).airlines.add(airline);
+
+        // Per-pair airline count
+        const pairKey = `${source}→${dest}`;
+        if (!routePairAirlines.has(pairKey)) routePairAirlines.set(pairKey, new Set());
+        routePairAirlines.get(pairKey).add(airline);
     }
 
     console.log(`[hubs] Built route graph: ${routeGraph.size} airports with outbound routes`);
-    return { routeGraph, airportStats };
+    return { routeGraph, airportStats, routePairAirlines };
 }
 
 function buildNameMap() {
@@ -195,7 +287,7 @@ export function getHubsWithDetails(originIata, destinationIata, factor = 0.2) {
     const dMax = (1 + factor) * dAB;
 
     const names = buildNameMap();
-    const { airportStats } = loadRouteGraph();
+    const { airportStats, routePairAirlines } = loadRouteGraph();
 
     const hubs = [];
     for (const airport of allAirports) {
@@ -209,14 +301,20 @@ export function getHubsWithDetails(originIata, destinationIata, factor = 0.2) {
 
             const detourPercent = Math.round(((dAC + dCB - dAB) / dAB) * 1000) / 10;
             const stats = airportStats.get(airport.iata);
+            const airlinesLeg1 = routePairAirlines.get(`${originIata}→${airport.iata}`)?.size ?? 0;
+            const airlinesLeg2 = routePairAirlines.get(`${airport.iata}→${destinationIata}`)?.size ?? 0;
 
             hubs.push({
                 iata: airport.iata,
                 lat: airport.lat,
                 lon: airport.lon,
                 name: names.get(airport.iata) ?? airport.iata,
+                city: airport.city,
+                wiki: airport.wiki,
                 routeCount: stats?.totalRoutes ?? 0,
                 detourPercent,
+                airlinesLeg1,
+                airlinesLeg2,
             });
         }
     }
@@ -229,4 +327,31 @@ export function getHubsWithDetails(originIata, destinationIata, factor = 0.2) {
         directDistance: Math.round(dAB),
         hubs,
     };
+}
+
+/**
+ * Scores and returns the top N hubs using route-specific factors.
+ * Weights: airlinesLeg1 30%, airlinesLeg2 30%, detour (inverted) 20%, totalRoutes 20%.
+ */
+export function getTopHubs(hubData, n = 10) {
+    const { hubs } = hubData;
+    if (hubs.length === 0) return hubData;
+
+    const maxLeg1 = Math.max(...hubs.map(h => h.airlinesLeg1), 1);
+    const maxLeg2 = Math.max(...hubs.map(h => h.airlinesLeg2), 1);
+    const maxRoutes = Math.max(...hubs.map(h => h.routeCount), 1);
+    const maxDetour = Math.max(...hubs.map(h => h.detourPercent), 1);
+
+    const scored = hubs.map(h => ({
+        ...h,
+        score:
+            0.3 * (h.airlinesLeg1 / maxLeg1) +
+            0.3 * (h.airlinesLeg2 / maxLeg2) +
+            0.2 * (1 - h.detourPercent / maxDetour) +
+            0.2 * (h.routeCount / maxRoutes),
+    }));
+
+    scored.sort((a, b) => b.score - a.score);
+
+    return { ...hubData, hubs: scored.slice(0, n), totalHubs: hubs.length };
 }

@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { getHubsWithDetails } from "../services/hubs.js";
+import { getHubsWithDetails, getTopHubs } from "../services/hubs.js";
 
 const router = Router();
 
 router.get("/", (req, res) => {
-    const { origin, destination } = req.query;
+    const { origin, destination, auto } = req.query;
 
     // Validation
     if (!origin || !destination) {
@@ -29,10 +29,14 @@ router.get("/", (req, res) => {
         return res.status(400).json({ error: "origin and destination must be different" });
     }
 
-    const result = getHubsWithDetails(o, d);
+    let result = getHubsWithDetails(o, d);
 
     if (!result) {
         return res.status(404).json({ error: `Could not find coordinates for ${o} or ${d} in airport database` });
+    }
+
+    if (auto === "true") {
+        result = getTopHubs(result);
     }
 
     res.json(result);

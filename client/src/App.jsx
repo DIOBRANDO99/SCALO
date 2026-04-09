@@ -203,6 +203,11 @@ export default function App() {
                         title="No savings with this stopover"
                         description={`Flying via ${result.stopover.iata} costs €${Math.abs(result.summary.savings)} more than the direct flight (€${result.summary.directPrice}). This stopover is not worth it for price — but you might still want to visit!`}
                     >
+                        {pendingParams?.maxStops && pendingParams.maxStops !== "3" && (
+                            <p className="mt-3 text-sm text-gray-500">
+                                You're searching with restricted connections — try increasing <strong>Max stops per leg</strong> in Advanced options for more options.
+                            </p>
+                        )}
                         <button
                             className="mt-4 text-sm text-blue-600 underline"
                             onClick={() => setShowNegative(true)}

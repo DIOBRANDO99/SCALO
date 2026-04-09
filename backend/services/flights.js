@@ -65,14 +65,14 @@ function cheapestPrice(flights) {
     return prices.length > 0 ? Math.min(...prices) : null;
 }
 
-export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights }) {
+export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops = "3" }) {
     const adapter = await getAdapter();
     const stopoverDepartureDate = addDays(outboundDate, stopoverNights);
 
     const [leg1Raw, leg2Raw, leg3Raw, directRaw] = await Promise.all([
-        adapter.search({ departureId: origin,       arrivalId: stopover,     outboundDate,                        tripType: "2" }),
-        adapter.search({ departureId: stopover,     arrivalId: destination,  outboundDate: stopoverDepartureDate, tripType: "2" }),
-        adapter.search({ departureId: destination,  arrivalId: origin,       outboundDate: returnDate,            tripType: "2" }),
+        adapter.search({ departureId: origin,       arrivalId: stopover,     outboundDate,                        tripType: "2", stops: maxStops }),
+        adapter.search({ departureId: stopover,     arrivalId: destination,  outboundDate: stopoverDepartureDate, tripType: "2", stops: maxStops }),
+        adapter.search({ departureId: destination,  arrivalId: origin,       outboundDate: returnDate,            tripType: "2", stops: maxStops }),
         adapter.search({ departureId: origin,       arrivalId: destination,  outboundDate,              returnDate,              tripType: "1" }),
     ]);
 

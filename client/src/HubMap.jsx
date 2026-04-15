@@ -47,7 +47,7 @@ async function fetchWikiSummary(city, fallback) {
     return (await tryFetch(city)) ?? (fallback ? await tryFetch(fallback) : null);
 }
 
-export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, loading }) {
+export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, onExploreActivities, loading }) {
     const { origin, destination, hubs, totalHubs } = hubData;
     const [wikiCache, setWikiCache] = useState({});
 
@@ -136,12 +136,20 @@ export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, lo
                                             </a>
                                         </>
                                     )}
-                                    <button
-                                        onClick={() => !loading && onHubSelect(hub)}
-                                        style={{ display: "block", width: "100%", backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
-                                    >
-                                        Search this stopover
-                                    </button>
+                                    <div style={{ display: "flex", gap: "6px", marginTop: "4px" }}>
+                                        <button
+                                            onClick={() => !loading && onExploreActivities(hub)}
+                                            style={{ flex: 1, backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                        >
+                                            Explore
+                                        </button>
+                                        <button
+                                            onClick={() => !loading && onHubSelect(hub)}
+                                            style={{ flex: 1, backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                        >
+                                            Search flights
+                                        </button>
+                                    </div>
                                 </div>
                             </Popup>
                         </CircleMarker>

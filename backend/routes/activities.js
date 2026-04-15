@@ -5,27 +5,19 @@ const router = Router();
 
 router.get("/", async (req, res) => {
     try {
-        const { lat, lon, kinds, limit } = req.query;
+        const { city, kinds, limit } = req.query;
 
-        if (!lat || !lon) {
+        if (!city) {
             return res.status(400).json({
-                error: "Missing required query params: lat and lon",
-                example: "/api/activities?lat=41.01&lon=28.98",
+                error: "Missing required query param: city",
+                example: "/api/activities?city=Rome",
             });
         }
 
-        const latNum = parseFloat(lat);
-        const lonNum = parseFloat(lon);
-
-        if (isNaN(latNum) || isNaN(lonNum)) {
-            return res.status(400).json({ error: "lat and lon must be valid numbers" });
-        }
-
         const pois = await getActivities({
-            lat: latNum,
-            lon: lonNum,
+            city,
             kinds: kinds ?? "interesting_places",
-            limit: limit ? parseInt(limit, 10) : 20,
+            limit: limit ? parseInt(limit, 10) : 50,
         });
 
         res.json(pois);

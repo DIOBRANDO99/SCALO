@@ -4,6 +4,8 @@ import ResultCard from "./ResultCard";
 import LoadingSpinner from "./LoadingSpinner";
 import EmptyState from "./EmptyState";
 import HubMap from "./HubMap";
+import ActivityPanel from "./ActivityPanel";
+import PreferenceSelector, { buildKinds } from "./PreferenceSelector";
 
 export default function App() {
     const [result, setResult] = useState(null);
@@ -13,6 +15,9 @@ export default function App() {
     const [error, setError] = useState(null);
     const [showNegative, setShowNegative] = useState(false);
     const [selectedHub, setSelectedHub] = useState(null);
+    const [activityData, setActivityData] = useState(null);
+    const [activityHub, setActivityHub] = useState(null);
+    const [activityLoading, setActivityLoading] = useState(false);
 
     async function handleSearch(params) {
         setLoading(true);
@@ -105,6 +110,31 @@ export default function App() {
         }
     }
 
+    function handleExploreActivities(hub) {
+        setActivityHub(hub);
+        setActivityData(null);
+    }
+
+    async function handlePreferenceSearch(hub, selectedPreferences) {
+        setActivityLoading(true);
+        setActivityData(null);
+
+        const kinds = buildKinds(selectedPreferences);
+
+        try {
+            const res = await fetch(`/api/activities?city=${encodeURIComponent(hub.city || hub.name)}&kinds=${encodeURIComponent(kinds)}`);
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.error || `HTTP ${res.status}`);
+            }
+            setActivityData(await res.json());
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setActivityLoading(false);
+        }
+    }
+
     async function handleHubSelect(hub) {
         setLoading(true);
         setError(null);
@@ -158,7 +188,15 @@ export default function App() {
 
             {/* Discover mode: hub map */}
             {hubData && (
-                <HubMap hubData={hubData} onHubSelect={handleHubSelect} onShowAll={handleShowAll} onShowBest={handleShowBest} loading={loading} />
+                <HubMap hubData={hubData} onHubSelect={handleHubSelect} onShowAll={handleShowAll} onShowBest={handleShowBest} onExploreActivities={handleExploreActivities} loading={loading} />
+            )}
+
+            {activityHub && !activityData && !activityLoading && (
+                <PreferenceSelector hub={activityHub} onSearch={handlePreferenceSearch} loading={activityLoading} />
+            )}
+
+            {activityHub && (activityData || activityLoading) && (
+                <ActivityPanel hub={activityHub} pois={activityData ?? []} loading={activityLoading} />
             )}
 
             {/* Selected hub indicator */}

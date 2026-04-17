@@ -1,9 +1,12 @@
 import { useState } from "react";
+import cities from "./data/cities.json";
 import SearchForm from "./SearchForm";
 import ResultCard from "./ResultCard";
 import LoadingSpinner from "./LoadingSpinner";
 import EmptyState from "./EmptyState";
 import HubMap from "./HubMap";
+import ActivityPanel from "./ActivityPanel";
+import DistrictSelector from "./DistrictSelector";
 
 export default function App() {
     const [result, setResult] = useState(null);
@@ -13,6 +16,10 @@ export default function App() {
     const [error, setError] = useState(null);
     const [showNegative, setShowNegative] = useState(false);
     const [selectedHub, setSelectedHub] = useState(null);
+    const [activityHub, setActivityHub] = useState(null);
+    const [activityData, setActivityData] = useState(null);       // { type: "listings"|"districts", ... }
+    const [activityParent, setActivityParent] = useState(null);   // saved districts data for back button
+    const [activityLoading, setActivityLoading] = useState(false);
 
     async function handleSearch(params) {
         setLoading(true);
@@ -22,6 +29,9 @@ export default function App() {
         setPendingParams(null);
         setShowNegative(false);
         setSelectedHub(null);
+        setActivityHub(null);
+        setActivityData(null);
+        setActivityParent(null);
 
         const { mode, ...body } = params;
 
@@ -111,6 +121,9 @@ export default function App() {
         setResult(null);
         setShowNegative(false);
         setSelectedHub(hub.iata);
+        setActivityHub(null);
+        setActivityData(null);
+        setActivityParent(null);
 
         try {
             const res = await fetch("/api/search", {
@@ -129,6 +142,48 @@ export default function App() {
             setError(err.message);
         } finally {
             setLoading(false);
+        }
+    }
+
+    async function handleExploreActivities(hub) {
+        setActivityHub(hub);
+        setActivityData(null);
+        setActivityParent(null);
+        setActivityLoading(true);
+        try {
+            const res = await fetch(`/api/activities?city=${encodeURIComponent(hub.city || hub.name)}`);
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.error || `HTTP ${res.status}`);
+            }
+            setActivityData(await res.json());
+        } catch (err) {
+            setError(err.message);
+            setActivityHub(null);
+        } finally {
+            setActivityLoading(false);
+        }
+    }
+
+    async function handleDistrictSelect(slug) {
+        setActivityParent(activityData);   // save districts list for back button
+        setActivityData(null);
+        setActivityLoading(true);
+        try {
+            const params = new URLSearchParams({
+                city: activityHub.city || activityHub.name,
+                district: slug,
+            });
+            const res = await fetch(`/api/activities?${params}`);
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.error || `HTTP ${res.status}`);
+            }
+            setActivityData(await res.json());
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setActivityLoading(false);
         }
     }
 
@@ -158,7 +213,32 @@ export default function App() {
 
             {/* Discover mode: hub map */}
             {hubData && (
-                <HubMap hubData={hubData} onHubSelect={handleHubSelect} onShowAll={handleShowAll} onShowBest={handleShowBest} loading={loading} />
+                <HubMap
+                    hubData={hubData}
+                    onHubSelect={handleHubSelect}
+                    onShowAll={handleShowAll}
+                    onShowBest={handleShowBest}
+                    onExploreActivities={handleExploreActivities}
+                    loading={loading}
+                />
+            )}
+
+            {/* Activities flow */}
+            {activityHub && activityLoading && <LoadingSpinner />}
+            {activityHub && !activityLoading && activityData?.type === "districts" && (
+                <DistrictSelector
+                    hub={activityHub}
+                    districts={activityData.districts}
+                    onSelect={handleDistrictSelect}
+                />
+            )}
+            {activityHub && !activityLoading && activityData?.type === "listings" && (
+                <ActivityPanel
+                    hub={activityHub}
+                    sections={activityData.sections}
+                    loading={false}
+                    onBack={activityParent ? () => setActivityData(activityParent) : null}
+                />
             )}
 
             {/* Selected hub indicator */}
@@ -208,12 +288,23 @@ export default function App() {
                                 You're searching with restricted connections — try increasing <strong>Max stops per leg</strong> in Advanced options for more options.
                             </p>
                         )}
-                        <button
-                            className="mt-4 text-sm text-blue-600 underline"
-                            onClick={() => setShowNegative(true)}
-                        >
-                            Show flights anyway
-                        </button>
+                        <div className="mt-4 flex flex-wrap gap-4 items-center">
+                            <button
+                                className="text-sm text-blue-600 underline"
+                                onClick={() => setShowNegative(true)}
+                            >
+                                Show flights anyway
+                            </button>
+                            <button
+                                className="text-sm text-blue-600 underline"
+                                onClick={() => {
+                                    const ap = cities.find(c => c.iata === result.stopover.iata);
+                                    handleExploreActivities({ iata: result.stopover.iata, city: ap?.city, name: ap?.name || result.stopover.iata });
+                                }}
+                            >
+                                Explore activities in {cities.find(c => c.iata === result.stopover.iata)?.city || result.stopover.iata} →
+                            </button>
+                        </div>
                     </EmptyState>
                 )}
 

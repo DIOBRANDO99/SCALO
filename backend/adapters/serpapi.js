@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SAMPLES_DIR = join(__dirname, "../../doc/samples");
 
-export async function search({ departureId, arrivalId, outboundDate, returnDate, stops = "2", tripType = "1" }) {
+export async function search({ departureId, arrivalId, outboundDate, returnDate, stops = "2", tripType = "1", adults = 1, travelClass = "1" }) {
   const result = await getJson({
     engine: "google_flights",
     departure_id: departureId,
@@ -15,6 +15,8 @@ export async function search({ departureId, arrivalId, outboundDate, returnDate,
     return_date: returnDate,
     stops,
     type: tripType,
+    adults,
+    travel_class: travelClass,
     currency: "EUR",
     hl: "en",
     api_key: process.env.SERPAPI_KEY,

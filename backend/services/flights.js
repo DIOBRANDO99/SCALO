@@ -65,15 +65,15 @@ function cheapestPrice(flights) {
     return prices.length > 0 ? Math.min(...prices) : null;
 }
 
-export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops = "3" }) {
+export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops = "3", adults = 1, travelClass = "1" }) {
     const adapter = await getAdapter();
     const stopoverDepartureDate = addDays(outboundDate, stopoverNights);
 
     const [leg1Raw, leg2Raw, leg3Raw, directRaw] = await Promise.all([
-        adapter.search({ departureId: origin,       arrivalId: stopover,     outboundDate,                        tripType: "2", stops: maxStops }),
-        adapter.search({ departureId: stopover,     arrivalId: destination,  outboundDate: stopoverDepartureDate, tripType: "2", stops: maxStops }),
-        adapter.search({ departureId: destination,  arrivalId: origin,       outboundDate: returnDate,            tripType: "2", stops: maxStops }),
-        adapter.search({ departureId: origin,       arrivalId: destination,  outboundDate,              returnDate,              tripType: "1" }),
+        adapter.search({ departureId: origin,       arrivalId: stopover,     outboundDate,                        tripType: "2", stops: maxStops, adults, travelClass }),
+        adapter.search({ departureId: stopover,     arrivalId: destination,  outboundDate: stopoverDepartureDate, tripType: "2", stops: maxStops, adults, travelClass }),
+        adapter.search({ departureId: destination,  arrivalId: origin,       outboundDate: returnDate,            tripType: "2", stops: maxStops, adults, travelClass }),
+        adapter.search({ departureId: origin,       arrivalId: destination,  outboundDate,              returnDate,              tripType: "1", adults, travelClass }),
     ]);
 
     const leg1Options = extractFlights(leg1Raw);
@@ -97,6 +97,7 @@ export async function searchWithStopover({ origin, destination, stopover, outbou
 
     return {
         stopover: { iata: stopover, nights: stopoverNights },
+        adults,
         legs: [
             { id: "outbound1", origin,       destination: stopover,     date: outboundDate,          bestPrice: bestLeg1Price, options: leg1Options },
             { id: "outbound2", origin: stopover, destination,           date: stopoverDepartureDate, bestPrice: bestLeg2Price, options: leg2Options },

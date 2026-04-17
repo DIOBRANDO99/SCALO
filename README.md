@@ -18,9 +18,9 @@ Il motore è completo e funzionante. L'interfaccia web è completa.
 
 ```
 backend/           Server Express (API REST)
-  adapters/        Wrapper per provider di dati di volo (serpapi, mock_fake, mock_real, mock_discover, mock_demo)
-  services/        Logica di business (flights.js, hubs.js)
-  routes/          Endpoint HTTP
+  adapters/        Wrapper per provider di dati (serpapi, mock_fake, mock_real, mock_discover, mock_demo, wikivoyage)
+  services/        Logica di business (flights.js, hubs.js, activities.js)
+  routes/          Endpoint HTTP (search, discover, hubs, activities)
   tests/           Suite di test Vitest
 client/            Interfaccia web (Vite + React + Tailwind)
   src/             Componenti React e stili
@@ -90,7 +90,7 @@ curl http://localhost:3001/health
 
 Apri `http://localhost:5173` nel browser. Il form ha due modalità selezionabili tramite il toggle **Choose stopover**:
 
-- **Modalità Discover** (toggle off, default): SCALO calcola gli scali candidati lungo la rotta, li punteggia e li mostra su una mappa interattiva. Passa il cursore su un hub per vedere un'anteprima della città con snippet Wikipedia. Clicca su un hub per aprire il popup con foto e dettagli, poi premi "Search this stopover" per avviare la ricerca su quel corridoio. I pulsanti **Show all / Show best** (in alto a destra sulla mappa) alternano tra tutti gli hub nell'ellisse e i top 10 selezionati automaticamente.
+- **Modalità Discover** (toggle off, default): SCALO calcola gli scali candidati lungo la rotta, li punteggia e li mostra su una mappa interattiva. Passa il cursore su un hub per vedere un'anteprima della città con snippet Wikipedia. Clicca su un hub per aprire il popup con foto e dettagli, poi premi **"Search this stopover"** per avviare la ricerca su quel corridoio oppure **"Explore activities"** per vedere cosa fare nella città (vedi sezione [Attività Wikivoyage](#attività-wikivoyage)). I pulsanti **Show all / Show best** (in alto a destra sulla mappa) alternano tra tutti gli hub nell'ellisse e i top 10 selezionati automaticamente.
 
 ![Improved UI with Wikipedia popup](doc/screenshots/improved_ui.png)
 - **Modalità Search** (toggle on): specifica uno scalo preciso. Campi disponibili: Origin, Stopover, Destination, Departure Date, Nights at stopover, Return Date.
@@ -125,7 +125,7 @@ L'interfaccia gestisce tre scenari quando una ricerca non produce risultati util
 |----------|-------------|-----------|
 | **Nessun volo trovato** | Uno o più tratti non hanno opzioni di volo | Indica quali tratte specifiche non hanno risultati e suggerisce di cambiare date o scalo |
 | **Nessun volo diretto** | I voli con scalo sono stati trovati ma non esiste un volo diretto per confrontare il risparmio | Informa che il calcolo del risparmio non è disponibile, con opzione di vedere comunque i voli |
-| **Scalo più costoso** | Lo scalo costa più del volo diretto | Mostra la differenza di prezzo e permette di visualizzare comunque i dettagli. Se la ricerca era con connessioni limitate (Direct only o Up to 1 stop), suggerisce di aumentare il limite in Advanced options |
+| **Scalo più costoso** | Lo scalo costa più del volo diretto | Mostra la differenza di prezzo e permette di visualizzare comunque i dettagli. Se la ricerca era con connessioni limitate (Direct only o Up to 1 stop), suggerisce di aumentare il limite in Advanced options. Propone anche di esplorare le attività nella città di scalo — potrebbe valere il costo extra |
 
 In tutti i casi l'utente può fare una nuova ricerca senza ricaricare la pagina.
 
@@ -197,6 +197,44 @@ La mappa mostra di default i top 10 hub. Il pulsante **Show all** mostra tutti g
 
 Se le coordinate di partenza o arrivo non vengono trovate nel dataset, il sistema usa una lista di fallback con 16 hub principali mondiali.
 
+
+## Attività Wikivoyage
+
+![Activities UI](doc/screenshots/UI_activities.png)
+
+SCALO integra le guide di viaggio di [Wikivoyage](https://en.wikivoyage.org) per mostrare cosa fare, vedere, mangiare e comprare nella città di scalo. **Non richiede nessuna chiave API** — Wikivoyage è una wiki pubblica con API gratuita.
+
+### Come accedervi
+
+- **Modalità Discover**: clicca su un hub sulla mappa → pulsante **"Explore activities"** nel popup
+- **Scalo più costoso** (Scenario C): se lo scalo costa più del diretto, compare il link **"Explore activities in [città] →"** per valutare se vale comunque la pena fermarsi
+
+### Come funziona
+
+Il backend chiama l'API MediaWiki di Wikivoyage (`en.wikivoyage.org/w/api.php`) e analizza il wikitext grezzo della pagina della città, estraendo i template `{{listing}}` con nome, descrizione, indirizzo, orari, prezzo e URL. I risultati vengono raggruppati per sezione:
+
+| Sezione Wikivoyage | Categoria mostrata |
+|---|---|
+| See | Sights |
+| Do | Activities |
+| Eat | Food |
+| Drink | Nightlife |
+| Buy | Shopping |
+
+### Città con distretti
+
+Le grandi città (Istanbul, Amsterdam, Dubai) suddividono i contenuti in sotto-pagine per distretto. In questo caso SCALO mostra prima un selettore di distretto; solo dopo aver scelto il distretto viene fatta la chiamata API per i listing. Questo limita le chiamate API al minimo necessario. Il pulsante **"← Back to districts"** ripristina la lista distretti dalla cache senza nuove chiamate.
+
+### Cache
+
+I risultati sono salvati in memoria per sessione (chiave: nome città o slug distretto in lowercase). Ricerche successive sulla stessa città non generano nuove chiamate API.
+
+### Endpoint
+
+```
+GET /api/activities?city=Doha
+GET /api/activities?city=Istanbul&district=Istanbul%2FHistorical%20Peninsula
+```
 
 ## Licenze e Attribuzioni
 

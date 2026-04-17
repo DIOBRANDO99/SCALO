@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 import searchRouter from "./routes/search.js";
 import discoverRouter from "./routes/discover.js";
+import activitiesRouter from "./routes/activities.js";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -22,6 +23,7 @@ app.get("/health", (_req, res) => {
 
 app.use("/api/search", searchRouter);
 app.use("/api/discover", discoverRouter);
+app.use("/api/activities", activitiesRouter);
 
 // --- Global error handler ---
 app.use((err, _req, res, _next) => {

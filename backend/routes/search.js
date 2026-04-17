@@ -5,7 +5,7 @@ const router = Router();
 
 router.post("/", async (req, res) => {
     try {
-        const { origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops } = req.body;
+        const { origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops, adults, travelClass } = req.body;
 
         const missing = [];
         if (!origin) missing.push("origin");
@@ -48,6 +48,17 @@ router.post("/", async (req, res) => {
             return res.status(400).json({ error: "stopoverNights must be between 1 and 14" });
         }
 
+        const pax = adults ?? 1;
+        if (typeof pax !== "number" || pax < 1 || pax > 9) {
+            return res.status(400).json({ error: "adults must be between 1 and 9" });
+        }
+
+        const validClasses = ["1", "2", "3", "4"];
+        const tc = travelClass ?? "1";
+        if (!validClasses.includes(String(tc))) {
+            return res.status(400).json({ error: "travelClass must be 1 (Economy), 2 (Premium Economy), 3 (Business), or 4 (First)" });
+        }
+
         const o = origin.toUpperCase();
         const d = destination.toUpperCase();
         const s = stopover.toUpperCase();
@@ -65,6 +76,8 @@ router.post("/", async (req, res) => {
             returnDate: returnDate || null,
             stopoverNights: nights,
             maxStops: maxStops ?? "3",
+            adults: pax,
+            travelClass: String(tc),
         });
 
         res.json(result);

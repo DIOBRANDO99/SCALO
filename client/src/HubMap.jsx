@@ -47,7 +47,7 @@ async function fetchWikiSummary(city, fallback) {
     return (await tryFetch(city)) ?? (fallback ? await tryFetch(fallback) : null);
 }
 
-export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, loading }) {
+export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, onExploreActivities, loading }) {
     const { origin, destination, hubs, totalHubs } = hubData;
     const [wikiCache, setWikiCache] = useState({});
 
@@ -138,10 +138,18 @@ export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, lo
                                     )}
                                     <button
                                         onClick={() => !loading && onHubSelect(hub)}
-                                        style={{ display: "block", width: "100%", backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                        style={{ display: "block", width: "100%", backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer", marginBottom: "6px" }}
                                     >
                                         Search this stopover
                                     </button>
+                                    {onExploreActivities && (
+                                        <button
+                                            onClick={() => !loading && onExploreActivities(hub)}
+                                            style={{ display: "block", width: "100%", backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                        >
+                                            Explore activities
+                                        </button>
+                                    )}
                                 </div>
                             </Popup>
                         </CircleMarker>

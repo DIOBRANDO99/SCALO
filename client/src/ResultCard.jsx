@@ -165,7 +165,7 @@ function bookingUrl(option, leg) {
 }
 
 export default function ResultCard({ result }) {
-  const { legs, summary, stopover } = result;
+  const { legs, summary, stopover, adults = 1 } = result;
 
   const [selectedIdx, setSelectedIdx] = useState(() =>
     legs.map((leg) => {
@@ -222,8 +222,13 @@ export default function ResultCard({ result }) {
 
       {/* Footer */}
       <div className="border-t pt-4">
-        <p className="text-xs text-gray-400 mb-1">Total selected</p>
+        <p className="text-xs text-gray-400 mb-1">
+          Total selected{adults > 1 ? ` · ${adults} passengers` : ""}
+        </p>
         <p className="text-2xl font-bold">€{totalPrice}</p>
+        {adults > 1 && (
+          <p className="text-xs text-gray-400">€{Math.round(totalPrice / adults)} per person</p>
+        )}
         {savings != null && totalPrice !== summary.bestCombinedPrice && (
           <p className="text-xs text-gray-400">
             Best possible: €{summary.bestCombinedPrice}

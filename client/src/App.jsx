@@ -121,9 +121,12 @@ export default function App() {
         setResult(null);
         setShowNegative(false);
         setSelectedHub(hub.iata);
-        setActivityHub(null);
-        setActivityData(null);
-        setActivityParent(null);
+        // clear activity results only if they belong to a different city
+        if (activityHub && activityHub.iata !== hub.iata) {
+            setActivityHub(null);
+            setActivityData(null);
+            setActivityParent(null);
+        }
 
         try {
             const res = await fetch("/api/search", {
@@ -150,6 +153,12 @@ export default function App() {
         setActivityData(null);
         setActivityParent(null);
         setActivityLoading(true);
+        // clear flight results only if they belong to a different city
+        if (result && result.stopover.iata !== hub.iata) {
+            setResult(null);
+            setShowNegative(false);
+            setSelectedHub(null);
+        }
         try {
             const res = await fetch(`/api/activities?city=${encodeURIComponent(hub.city || hub.name)}`);
             if (!res.ok) {
@@ -225,6 +234,16 @@ export default function App() {
 
             {/* Activities flow */}
             {activityHub && activityLoading && <LoadingSpinner />}
+            {activityHub && !activityLoading && activityData && pendingParams && hubData && !result && (
+                <div className="mb-4">
+                    <button
+                        onClick={() => handleHubSelect(activityHub)}
+                        style={{ backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                    >
+                        Search flights
+                    </button>
+                </div>
+            )}
             {activityHub && !activityLoading && activityData?.type === "districts" && (
                 <DistrictSelector
                     hub={activityHub}
@@ -288,22 +307,24 @@ export default function App() {
                                 You're searching with restricted connections — try increasing <strong>Max stops per leg</strong> in Advanced options for more options.
                             </p>
                         )}
-                        <div className="mt-4 flex flex-wrap gap-4 items-center">
+                        <div className="mt-4 flex flex-wrap gap-3">
                             <button
-                                className="text-sm text-blue-600 underline"
                                 onClick={() => setShowNegative(true)}
+                                style={{ backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
                             >
                                 Show flights anyway
                             </button>
-                            <button
-                                className="text-sm text-blue-600 underline"
-                                onClick={() => {
-                                    const ap = cities.find(c => c.iata === result.stopover.iata);
-                                    handleExploreActivities({ iata: result.stopover.iata, city: ap?.city, name: ap?.name || result.stopover.iata });
-                                }}
-                            >
-                                Explore activities in {cities.find(c => c.iata === result.stopover.iata)?.city || result.stopover.iata} →
-                            </button>
+                            {!activityHub && (
+                                <button
+                                    onClick={() => {
+                                        const ap = cities.find(c => c.iata === result.stopover.iata);
+                                        handleExploreActivities({ iata: result.stopover.iata, city: ap?.city, name: ap?.name || result.stopover.iata });
+                                    }}
+                                    style={{ backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                >
+                                    Search activities
+                                </button>
+                            )}
                         </div>
                     </EmptyState>
                 )}
@@ -313,7 +334,25 @@ export default function App() {
                 !hasEmptyLegs &&
                 result.summary.bestCombinedPrice !== null &&
                 ((!savingsNull && result.summary.savings >= 0) || showNegative) && (
-                    <ResultCard result={result} />
+                    <>
+                        <ResultCard result={result} />
+                        {!activityHub && (
+                            <div className="mt-4 mb-8">
+                                {(() => {
+                                    const ap = cities.find(c => c.iata === result.stopover.iata);
+                                    const hub = { iata: result.stopover.iata, city: ap?.city, name: ap?.name || result.stopover.iata };
+                                    return (
+                                        <button
+                                            onClick={() => handleExploreActivities(hub)}
+                                            style={{ backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                        >
+                                            Search activities
+                                        </button>
+                                    );
+                                })()}
+                            </div>
+                        )}
+                    </>
                 )}
         </div>
     );

@@ -18,7 +18,7 @@ async function apiGet(params) {
     for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
 
     const res = await fetch(url.toString(), {
-        headers: { "User-Agent": "SCALO/1.1 (university project; contact via GitHub)" },
+        headers: { "User-Agent": "SCALO/1.1 (university project; https://github.com/DIOBRANDO99/SCALO)" },
     });
     if (!res.ok) throw new Error(`Wikivoyage API error: ${res.status} ${res.statusText}`);
     return res.json();

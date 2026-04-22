@@ -5,7 +5,7 @@ const router = Router();
 
 router.post("/", async (req, res) => {
     try {
-        const { origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops, adults, travelClass } = req.body;
+        const { origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops, adults, travelClass, oneWay } = req.body;
 
         const missing = [];
         if (!origin) missing.push("origin");
@@ -78,6 +78,7 @@ router.post("/", async (req, res) => {
             maxStops: maxStops ?? "3",
             adults: pax,
             travelClass: String(tc),
+            oneWay: Boolean(oneWay),
         });
 
         res.json(result);

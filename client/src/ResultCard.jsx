@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function formatDuration(minutes) {
   const h = Math.floor(minutes / 60);
@@ -164,7 +164,7 @@ function bookingUrl(option, leg) {
   return `https://www.skyscanner.net/transport/flights/${dep.toLowerCase()}/${arr.toLowerCase()}/${date}/`;
 }
 
-export default function ResultCard({ result }) {
+export default function ResultCard({ result, onClose, onTotalPriceChange }) {
   const { legs, summary, stopover, adults = 1 } = result;
 
   const [selectedIdx, setSelectedIdx] = useState(() =>
@@ -180,6 +180,8 @@ export default function ResultCard({ result }) {
   const totalPrice = selectedOptions.reduce((sum, o) => sum + (o?.price ?? 0), 0);
   const savings = summary.directPrice != null ? summary.directPrice - totalPrice : null;
 
+  useEffect(() => { onTotalPriceChange?.(totalPrice); }, [totalPrice]);
+
   const destination = legs.find((l) => l.id === "outbound2")?.destination ?? legs[1]?.destination;
 
   return (
@@ -194,16 +196,21 @@ export default function ResultCard({ result }) {
             {stopover.nights} night{stopover.nights !== 1 ? "s" : ""} in {stopover.iata}
           </p>
         </div>
-        {savings != null && (
-          <div className={`text-right shrink-0 ${savings >= 0 ? "text-green-600" : "text-red-500"}`}>
-            <div className="text-2xl font-bold">
-              {savings >= 0 ? `Save €${savings}` : `+€${Math.abs(savings)} vs direct`}
+        <div className="flex items-start gap-3 shrink-0">
+          {savings != null && (
+            <div className={`text-right ${savings >= 0 ? "text-green-600" : "text-red-500"}`}>
+              <div className="text-2xl font-bold">
+                {savings >= 0 ? `Save €${savings}` : `+€${Math.abs(savings)} vs direct`}
+              </div>
+              <div className="text-xs text-gray-400">
+                Direct: €{summary.directPrice}
+              </div>
             </div>
-            <div className="text-xs text-gray-400">
-              Direct: €{summary.directPrice}
-            </div>
-          </div>
-        )}
+          )}
+          {onClose && (
+            <button onClick={onClose} className="text-gray-400 hover:text-gray-600 text-lg leading-none mt-1">×</button>
+          )}
+        </div>
       </div>
 
       {/* Legs */}

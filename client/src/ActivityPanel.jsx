@@ -96,7 +96,7 @@ function ListingCard({ listing, category }) {
     );
 }
 
-export default function ActivityPanel({ hub, sections, loading, onBack }) {
+export default function ActivityPanel({ hub, sections, loading, onBack, onClose }) {
     const [activeCategory, setActiveCategory] = useState("All");
 
     // Build flat category list from sections
@@ -116,21 +116,26 @@ export default function ActivityPanel({ hub, sections, loading, onBack }) {
 
     return (
         <div className="bg-white rounded-lg shadow p-6 mb-8">
-            {onBack && (
-                <button
-                    onClick={onBack}
-                    style={{ fontSize: "12px", color: "#2563eb", background: "none", border: "none", cursor: "pointer", padding: 0, marginBottom: "12px", display: "block" }}
-                >
-                    ← Back to districts
-                </button>
-            )}
-            <div style={{ marginBottom: "16px" }}>
-                <h3 style={{ fontSize: "15px", fontWeight: 600, marginBottom: "2px" }}>
-                    Things to do in {hub.city || hub.name}
-                </h3>
-                <p style={{ fontSize: "12px", color: "#6b7280" }}>
-                    {totalCount} places · via Wikivoyage
-                </p>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: onBack ? "4px" : "16px" }}>
+                <div>
+                    {onBack && (
+                        <button
+                            onClick={onBack}
+                            style={{ fontSize: "12px", color: "#2563eb", background: "none", border: "none", cursor: "pointer", padding: 0, marginBottom: "12px", display: "block" }}
+                        >
+                            ← Back to districts
+                        </button>
+                    )}
+                    <h3 style={{ fontSize: "15px", fontWeight: 600, marginBottom: "2px" }}>
+                        Things to do in {hub.city || hub.name}
+                    </h3>
+                    <p style={{ fontSize: "12px", color: "#6b7280" }}>
+                        {totalCount} places · via Wikivoyage
+                    </p>
+                </div>
+                {onClose && (
+                    <button onClick={onClose} style={{ fontSize: "18px", color: "#9ca3af", background: "none", border: "none", cursor: "pointer", lineHeight: 1 }}>×</button>
+                )}
             </div>
 
             {/* Category filter */}

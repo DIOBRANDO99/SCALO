@@ -3,6 +3,7 @@ import CityInput from "./CityInput";
 
 export default function SearchForm({ onSearch, loading }) {
     const [discoverMode, setDiscoverMode] = useState(true);
+    const [oneWay, setOneWay] = useState(false);
     const [showAdvanced, setShowAdvanced] = useState(false);
 
     function handleSubmit(e) {
@@ -15,7 +16,8 @@ export default function SearchForm({ onSearch, loading }) {
             origin:         fd.get("origin").trim().toUpperCase(),
             destination:    fd.get("destination").trim().toUpperCase(),
             outboundDate,
-            returnDate:     fd.get("returnDate") || null,
+            oneWay,
+            returnDate:     oneWay ? null : (fd.get("returnDate") || null),
             stopoverNights: parseInt(fd.get("stopoverNights"), 10) || 3,
             maxStops:       fd.get("maxStops") ?? "3",
             adults:         parseInt(fd.get("adults"), 10) || 1,
@@ -31,17 +33,29 @@ export default function SearchForm({ onSearch, loading }) {
         <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6 mb-8">
             <div className="flex items-center justify-between mb-6">
                 <h2 className="text-lg font-semibold">Search Flights</h2>
-                <label className="flex items-center gap-2 cursor-pointer select-none">
-                    <span className="text-sm text-gray-600">Choose stopover</span>
-                    <button
-                        type="button"
-                        data-testid="mode-toggle"
-                        onClick={() => setDiscoverMode(d => !d)}
-                        className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${!discoverMode ? "bg-blue-600" : "bg-gray-300"}`}
-                    >
-                        <span className={`inline-block h-3 w-3 transform rounded-full bg-white transition-transform ${!discoverMode ? "translate-x-5" : "translate-x-1"}`} />
-                    </button>
-                </label>
+                <div className="flex items-center gap-4">
+                    <label className="flex items-center gap-2 cursor-pointer select-none">
+                        <span className="text-sm text-gray-600">One way</span>
+                        <button
+                            type="button"
+                            onClick={() => setOneWay(o => !o)}
+                            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${oneWay ? "bg-blue-600" : "bg-gray-300"}`}
+                        >
+                            <span className={`inline-block h-3 w-3 transform rounded-full bg-white transition-transform ${oneWay ? "translate-x-5" : "translate-x-1"}`} />
+                        </button>
+                    </label>
+                    <label className="flex items-center gap-2 cursor-pointer select-none">
+                        <span className="text-sm text-gray-600">Choose stopover</span>
+                        <button
+                            type="button"
+                            data-testid="mode-toggle"
+                            onClick={() => setDiscoverMode(d => !d)}
+                            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${!discoverMode ? "bg-blue-600" : "bg-gray-300"}`}
+                        >
+                            <span className={`inline-block h-3 w-3 transform rounded-full bg-white transition-transform ${!discoverMode ? "translate-x-5" : "translate-x-1"}`} />
+                        </button>
+                    </label>
+                </div>
             </div>
 
             <div className={`grid gap-4 mb-4 ${discoverMode ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1 sm:grid-cols-3"}`}>
@@ -97,16 +111,19 @@ export default function SearchForm({ onSearch, loading }) {
                     />
                 </div>
 
-                <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Return Date
-                    </label>
-                    <input
-                        name="returnDate"
-                        type="date"
-                        className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                </div>
+                {!oneWay && (
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                            Return Date <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                            name="returnDate"
+                            type="date"
+                            required
+                            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
+                )}
             </div>
 
             {/* Advanced options */}

@@ -149,8 +149,29 @@ Tutte le variabili vanno in `backend/.env`:
 |-----------|-------------|
 | `SERPAPI_KEY` | Chiave API SerpAPI — necessaria solo con `FLIGHT_PROVIDER=serpapi` |
 | `FLIGHT_PROVIDER` | Provider dati di volo (vedi tabella sopra) — default `mock_real` |
+| `ACTIVITY_PROVIDER` | `wikivoyage` (default) oppure `gyg_mock`. Sceglie il provider per l'endpoint `/api/activities`. |
 | `PORT` | Porta del server backend — default `3001` |
 | `SAVE_SAMPLES` | Se `true`, ogni risposta SerpAPI viene salvata in `doc/samples/` — utile per catturare nuovi dati reali senza script separati |
+
+## Activity Providers
+
+SCALO supporta due provider per l'endpoint `/api/activities`, selezionabili tramite la variabile `ACTIVITY_PROVIDER`:
+
+### `wikivoyage` (default)
+
+Dati live da [Wikivoyage](https://en.wikivoyage.org) via API MediaWiki. Funziona per qualsiasi città del mondo, include gestione dei districts (città grandi suddivise in sotto-pagine). I dati includono: nome, descrizione, indirizzo, orari, prezzo (stringa), telefono e coordinate.
+
+### `gyg_mock`
+
+Dataset statico in stile GetYourGuide per 5 città demo: **Istanbul, Bangkok, Rome, Dubai, Barcelona**. Ogni attività include campi arricchiti (rating, numero recensioni, thumbnail, booking link in stile marketplace) per simulare l'integrazione futura con un provider commerciale come GetYourGuide Partner API. Struttura flat (no districts) per semplicità di presentazione.
+
+Per passare al mock:
+
+ACTIVITY_PROVIDER=gyg_mock
+
+
+Riavvia il backend e qualsiasi richiesta `/api/activities?city=Istanbul` userà i dati del mock. Città non incluse nel mock ritornano `sections: []` (il frontend mostra il fallback "No structured activity listings found").
+
 
 ## Eseguire i Test
 

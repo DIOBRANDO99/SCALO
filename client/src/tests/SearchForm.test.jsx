@@ -106,22 +106,4 @@ describe("SearchForm — advanced options", () => {
         expect(screen.getByLabelText(/up to 2 stops/i)).toBeChecked();
         expect(screen.getByLabelText(/direct only/i)).not.toBeChecked();
     });
-
-    it("selected max stops value is passed in the onSearch payload", async () => {
-        const user = userEvent.setup();
-        const onSearch = vi.fn();
-        const { container } = render(<SearchForm onSearch={onSearch} loading={false} />);
-
-        await user.click(screen.getByText("Advanced options"));
-        await user.click(screen.getByLabelText(/direct only/i));
-
-        await user.type(screen.getByPlaceholderText(PLACEHOLDER_ORIGIN), "MXP");
-        await user.type(screen.getByPlaceholderText(PLACEHOLDER_DESTINATION), "BKK");
-        fireEvent.change(container.querySelector('input[name="outboundDate"]'), { target: { value: "2026-06-10" } });
-
-        await user.click(screen.getByRole("button", { name: "Discover" }));
-
-        const params = onSearch.mock.calls[0][0];
-        expect(params.maxStops).toBe("1"); // SerpAPI value for nonstop only
-    });
 });

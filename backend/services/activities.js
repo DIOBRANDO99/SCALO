@@ -11,6 +11,7 @@ async function getAdapter() {
 }
 
 function formatDuration({ duration, unit }) {
+    if (duration == null || !unit) return null;
     return `${duration} ${unit}${duration !== 1 ? "s" : ""}`;
 }
 
@@ -22,6 +23,7 @@ function normalizeGYG(raw) {
         const cat = tour.categories?.[0]?.name ?? "Tours & Sightseeing";
         if (!grouped.has(cat)) grouped.set(cat, []);
         grouped.get(cat).push({
+            id: tour.tour_id ?? null,
             name: tour.title,
             description: tour.description || tour.abstract || null,
             thumbnail: tour.pictures?.[0]?.ssl_url ?? null,

@@ -21,7 +21,10 @@ async function fetchFromAPI(city) {
 }
 
 function fetchFromSample(city) {
-    const file = join(SAMPLES_DIR, `gyg_tours_${city.trim().toLowerCase()}.json`);
+    // Strip parenthetical/comma suffixes that appear in some airport municipality names
+    // e.g. "Dubai(Jebel Ali)" → "dubai", "Pendik, Istanbul" → "pendik" (no sample, returns EMPTY)
+    const normalized = city.trim().split(/[(\/,]/)[0].trim().toLowerCase();
+    const file = join(SAMPLES_DIR, `gyg_tours_${normalized}.json`);
     if (!existsSync(file)) return EMPTY;
     return JSON.parse(readFileSync(file, "utf-8"));
 }

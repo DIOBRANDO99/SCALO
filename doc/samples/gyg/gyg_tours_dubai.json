@@ -1,0 +1,363 @@
+{
+  "_metadata": {
+    "descriptor": "GetYourGuide AG",
+    "date": "2026-04-25T14:00:00",
+    "status": "OK",
+    "query": "cnt_language=en&currency=EUR&q=Dubai&limit=4&offset=0",
+    "availableLanguages": ["en", "ar", "de", "fr", "zh", "ru"],
+    "exchange": { "rate": 1, "currency": "EUR" },
+    "totalCount": 1243,
+    "limit": 4,
+    "offset": 0
+  },
+  "data": {
+    "tours": [
+      {
+        "tour_id": 173456,
+        "tour_code": "deprecated",
+        "cond_language": ["en", "ar", "de", "fr"],
+        "title": "Burj Khalifa At the Top: Skip-the-Line Ticket (Level 124 & 125)",
+        "abstract": "Skip the queues and ascend to the observation decks of the world's tallest building. Enjoy breathtaking 360° views of the Dubai skyline, the desert, and the Arabian Gulf from Level 124 and 125.",
+        "description": "The Burj Khalifa stands at 828 metres and dominates the Dubai skyline. Your skip-the-line ticket grants you fast-track access to the At the Top experience on Levels 124 and 125. High-speed elevators take you to the top in under a minute. Interactive multimedia displays tell the story of Dubai's transformation. The outdoor terrace offers unobstructed panoramic views. Telescopes on the deck let you zoom in on landmarks across the city.",
+        "is_auto_translation": false,
+        "is_english_fallback": false,
+        "additional_information": "Tickets are timed entry — arrive within your allocated 30-minute window. Smart casual dress code applies. The attraction may close temporarily during adverse weather.",
+        "items_to_bring": ["Photo ID", "Printed or mobile voucher"],
+        "not_allowed": ["Tripods", "Selfie sticks", "Outside food and drinks"],
+        "not_suitable_for": ["Visitors with severe vertigo"],
+        "bestseller": true,
+        "certified": true,
+        "has_pick_up": false,
+        "overall_rating": 4.7,
+        "number_of_ratings": 18432,
+        "highlights": [
+          "Skip-the-line access to Levels 124 & 125",
+          "360° views of Dubai, the desert, and the Arabian Gulf",
+          "High-speed elevator to the top in under a minute",
+          "Interactive multimedia displays on Dubai's history"
+        ],
+        "inclusions": "• Skip-the-line ticket to Burj Khalifa Level 124 & 125\n• Access to outdoor observation terrace\n• Multimedia guide included",
+        "exclusions": "Hotel transfers\nAt the Top SKY (Level 148) — available as upgrade",
+        "pictures": [
+          {
+            "id": 441201,
+            "url": "https://img-getyourguide-com.partner.gygtest.com/img/tour_img-173456-[format_id].jpg",
+            "ssl_url": "https://img-getyourguide-com.partner.gygtest.com/img/tour_img-173456-[format_id].jpg",
+            "verified": true,
+            "copyright": null
+          }
+        ],
+        "coordinates": { "lat": 25.1972, "long": 55.2744 },
+        "price": {
+          "values": { "amount": 42.00 },
+          "description": "per person"
+        },
+        "categories": [
+          { "category_id": 17, "name": "Skip-the-Line" },
+          { "category_id": 10, "name": "Museums & Exhibitions" }
+        ],
+        "locations": [
+          {
+            "location_id": 7312,
+            "type": "city",
+            "name": "Dubai",
+            "english_name": "Dubai",
+            "city": "Dubai",
+            "country": "AE",
+            "coordinates": { "lat": 25.2048, "long": 55.2708 },
+            "parent_id": null
+          },
+          {
+            "location_id": 8901,
+            "type": "poi",
+            "name": "Burj Khalifa",
+            "english_name": "Burj Khalifa",
+            "city": "Dubai",
+            "country": "AE",
+            "coordinates": { "lat": 25.1972, "long": 55.2744 },
+            "parent_id": 7312
+          }
+        ],
+        "url": "https://www-getyourguide-com.partner.gygtest.com/dubai-l173/burj-khalifa-at-the-top-t173456/?partner_id=DEMO&psrc=partner_api&currency=EUR",
+        "translations": ["en", "ar", "de", "fr", "zh", "ru", "es", "it"],
+        "free_sale": true,
+        "guide_type": "none",
+        "mobile_voucher": true,
+        "supplier_id": 55210,
+        "durations": [
+          { "duration": 1.5, "unit": "hour" }
+        ],
+        "opening_hours": [
+          {
+            "opening_time": "2026-04-25T08:30:00",
+            "closing_time": "2026-04-25T23:00:00"
+          }
+        ],
+        "cancellation_policy": {
+          "cancellable": true,
+          "cancellation_fee_unit": "percentage",
+          "cancellation_fee_value": 0,
+          "cancellation_offset_minutes": 1440,
+          "cancellation_policy_text": "Free cancellation up to 24 hours before the experience starts."
+        }
+      },
+      {
+        "tour_id": 173789,
+        "tour_code": "deprecated",
+        "cond_language": ["en", "ar"],
+        "title": "Dubai Desert Safari with Dune Bashing, Camel Ride & BBQ Dinner",
+        "abstract": "Experience the thrill of dune bashing in a 4x4, ride a camel at sunset, try sandboarding, and enjoy a lavish BBQ dinner under the stars with live entertainment in a traditional Bedouin camp.",
+        "description": "Afternoon pick-up from your Dubai hotel in a 4WD vehicle. Head to the red sand dunes of the Dubai Desert Conservation Reserve for an exhilarating dune bashing session. Watch the sunset from the top of a dune, then transfer to a traditional Bedouin camp. Activities at the camp include camel riding, sandboarding, falconry displays, henna painting, and a shisha lounge. Enjoy an unlimited BBQ buffet with grilled meats, mezze, and traditional Arabic sweets. Live entertainment includes a Tanoura whirling dance show and a belly dance performance. Return transfer to your hotel by 22:30.",
+        "is_auto_translation": false,
+        "is_english_fallback": false,
+        "additional_information": "Dune bashing is not recommended for pregnant women, people with back or neck problems, or those with heart conditions. Dress modestly when visiting the camp. Pick-up time is between 15:00 and 16:00 depending on your hotel location.",
+        "items_to_bring": ["Comfortable clothes", "Closed-toe shoes for sandboarding", "Camera", "Warm layer for the evening"],
+        "not_allowed": ["Outside alcohol"],
+        "not_suitable_for": ["Pregnant women", "People with back or neck problems", "Children under 3 years"],
+        "bestseller": true,
+        "certified": true,
+        "has_pick_up": true,
+        "overall_rating": 4.6,
+        "number_of_ratings": 24871,
+        "highlights": [
+          "Dune bashing in a 4WD through red sand dunes",
+          "Camel ride at sunset",
+          "Sandboarding on the dunes",
+          "Unlimited BBQ buffet dinner",
+          "Tanoura dance and belly dance shows",
+          "Hotel pick-up and drop-off included"
+        ],
+        "inclusions": "• Return hotel transfers\n• Dune bashing in 4WD\n• Camel ride\n• Sandboarding\n• BBQ buffet dinner\n• Soft drinks, water, tea, coffee\n• Live entertainment",
+        "exclusions": "Alcoholic beverages (available for purchase)\nProfessional photos",
+        "pictures": [
+          {
+            "id": 441350,
+            "url": "https://img-getyourguide-com.partner.gygtest.com/img/tour_img-173789-[format_id].jpg",
+            "ssl_url": "https://img-getyourguide-com.partner.gygtest.com/img/tour_img-173789-[format_id].jpg",
+            "verified": true,
+            "copyright": null
+          }
+        ],
+        "coordinates": { "lat": 24.9857, "long": 55.3644 },
+        "price": {
+          "values": {
+            "amount": 49.00,
+            "special": {
+              "original_price": 62.00,
+              "savings": 21.0,
+              "apps_only": false
+            }
+          },
+          "description": "per person"
+        },
+        "categories": [
+          { "category_id": 20, "name": "Adventure Sports" },
+          { "category_id": 3,  "name": "Outdoor Activities" }
+        ],
+        "locations": [
+          {
+            "location_id": 7312,
+            "type": "city",
+            "name": "Dubai",
+            "english_name": "Dubai",
+            "city": "Dubai",
+            "country": "AE",
+            "coordinates": { "lat": 25.2048, "long": 55.2708 },
+            "parent_id": null
+          }
+        ],
+        "url": "https://www-getyourguide-com.partner.gygtest.com/dubai-l173/desert-safari-dune-bashing-t173789/?partner_id=DEMO&psrc=partner_api&currency=EUR",
+        "translations": ["en", "ar", "de", "fr", "ru"],
+        "free_sale": true,
+        "guide_type": "driver",
+        "mobile_voucher": true,
+        "supplier_id": 55340,
+        "durations": [
+          { "duration": 6.0, "unit": "hour" }
+        ],
+        "opening_hours": null,
+        "cancellation_policy": {
+          "cancellable": true,
+          "cancellation_fee_unit": "percentage",
+          "cancellation_fee_value": 0,
+          "cancellation_offset_minutes": 2880,
+          "cancellation_policy_text": "Free cancellation up to 48 hours before the experience starts."
+        }
+      },
+      {
+        "tour_id": 173234,
+        "tour_code": "deprecated",
+        "cond_language": ["en", "ar", "zh"],
+        "title": "Dubai Frame: Entry Ticket with Sky Bridge Walk",
+        "abstract": "Visit the iconic Dubai Frame, a 150-metre picture frame-shaped structure bridging old and new Dubai. Walk the glass-floored sky bridge for views of Deira on one side and Downtown Dubai on the other.",
+        "description": "The Dubai Frame stands 150 metres tall in Zabeel Park and frames the old and new parts of the city perfectly. The lower floors host an immersive museum chronicling Dubai's transformation from a small fishing village to a global metropolis. A high-speed elevator takes you to the sky bridge, where a retractable glass floor gives you a vertigo-inducing view straight down to the park below. The upper walkway offers simultaneous views of historic Deira and modern Downtown Dubai — the perfect metaphor built into the architecture itself.",
+        "is_auto_translation": false,
+        "is_english_fallback": false,
+        "additional_information": "Tickets are timed entry. The glass floor section can be bypassed for visitors uncomfortable with heights. Allow approximately 45–60 minutes for the full experience.",
+        "items_to_bring": ["Mobile voucher or printed ticket"],
+        "not_allowed": ["Large bags", "Food and drinks inside the frame"],
+        "not_suitable_for": ["Visitors with severe vertigo or acrophobia"],
+        "bestseller": false,
+        "certified": false,
+        "has_pick_up": false,
+        "overall_rating": 4.3,
+        "number_of_ratings": 6210,
+        "highlights": [
+          "Glass-floored sky bridge 150m above the ground",
+          "Views of both old Deira and modern Downtown Dubai",
+          "Immersive museum of Dubai's history",
+          "Located inside Zabeel Park"
+        ],
+        "inclusions": "• Entry ticket to Dubai Frame\n• Sky bridge access\n• Museum access",
+        "exclusions": "Transport to/from the venue\nZabeel Park entry fee",
+        "pictures": [
+          {
+            "id": 441102,
+            "url": "https://img-getyourguide-com.partner.gygtest.com/img/tour_img-173234-[format_id].jpg",
+            "ssl_url": "https://img-getyourguide-com.partner.gygtest.com/img/tour_img-173234-[format_id].jpg",
+            "verified": true,
+            "copyright": null
+          }
+        ],
+        "coordinates": { "lat": 25.2350, "long": 55.3006 },
+        "price": {
+          "values": { "amount": 18.00 },
+          "description": "per person"
+        },
+        "categories": [
+          { "category_id": 10, "name": "Museums & Exhibitions" },
+          { "category_id": 1,  "name": "Tours & Sightseeing" }
+        ],
+        "locations": [
+          {
+            "location_id": 7312,
+            "type": "city",
+            "name": "Dubai",
+            "english_name": "Dubai",
+            "city": "Dubai",
+            "country": "AE",
+            "coordinates": { "lat": 25.2048, "long": 55.2708 },
+            "parent_id": null
+          },
+          {
+            "location_id": 9042,
+            "type": "poi",
+            "name": "Dubai Frame",
+            "english_name": "Dubai Frame",
+            "city": "Dubai",
+            "country": "AE",
+            "coordinates": { "lat": 25.2350, "long": 55.3006 },
+            "parent_id": 7312
+          }
+        ],
+        "url": "https://www-getyourguide-com.partner.gygtest.com/dubai-l173/dubai-frame-ticket-t173234/?partner_id=DEMO&psrc=partner_api&currency=EUR",
+        "translations": ["en", "ar", "zh"],
+        "free_sale": true,
+        "guide_type": "none",
+        "mobile_voucher": true,
+        "supplier_id": 55188,
+        "durations": [
+          { "duration": 1.0, "unit": "hour" }
+        ],
+        "opening_hours": [
+          {
+            "opening_time": "2026-04-25T09:00:00",
+            "closing_time": "2026-04-25T21:00:00"
+          }
+        ],
+        "cancellation_policy": {
+          "cancellable": true,
+          "cancellation_fee_unit": "percentage",
+          "cancellation_fee_value": 0,
+          "cancellation_offset_minutes": 1440,
+          "cancellation_policy_text": "Free cancellation up to 24 hours before the experience starts."
+        }
+      },
+      {
+        "tour_id": 173567,
+        "tour_code": "deprecated",
+        "cond_language": ["en"],
+        "title": "Old Dubai Walking Tour: Al Fahidi, Spice Souk & Gold Souk",
+        "abstract": "Explore the historic heart of Dubai on foot with a local guide. Walk through the Al Fahidi Historical Neighbourhood, cross the Creek by abra, and browse the aromatic Spice Souk and glittering Gold Souk.",
+        "description": "Begin in the Al Fahidi Historical Neighbourhood, one of Dubai's oldest surviving areas, with its wind-tower architecture and narrow alleyways. Visit the Dubai Museum inside the Al Fahidi Fort. Take a traditional abra (water taxi) across the Dubai Creek to Deira. Stroll through the covered Spice Souk — the air thick with cardamom, saffron, and frankincense. Continue to the Gold Souk, where over 300 jewellers display some of the world's largest collections of gold jewellery. Your guide will share stories of the pearl diving era and Dubai's trading history throughout.",
+        "is_auto_translation": false,
+        "is_english_fallback": false,
+        "additional_information": "Wear comfortable closed-toe shoes — the tour involves 3–4km of walking on uneven surfaces. Dress modestly (shoulders and knees covered). Abra crossing included.",
+        "items_to_bring": ["Comfortable walking shoes", "Sun hat", "Water"],
+        "not_allowed": [],
+        "not_suitable_for": ["Wheelchair users (narrow alleyways and ferry boarding)"],
+        "bestseller": false,
+        "certified": true,
+        "has_pick_up": false,
+        "overall_rating": 4.8,
+        "number_of_ratings": 3940,
+        "highlights": [
+          "Al Fahidi Historical Neighbourhood & Dubai Museum",
+          "Abra water taxi across Dubai Creek",
+          "Spice Souk and Gold Souk",
+          "Small group of max 12 people",
+          "Expert local guide"
+        ],
+        "inclusions": "• Expert English-speaking guide\n• Abra (water taxi) crossing\n• Dubai Museum entry\n• Small group (max 12)",
+        "exclusions": "Personal shopping\nFood and drinks\nHotel transfers",
+        "pictures": [
+          {
+            "id": 441490,
+            "url": "https://img-getyourguide-com.partner.gygtest.com/img/tour_img-173567-[format_id].jpg",
+            "ssl_url": "https://img-getyourguide-com.partner.gygtest.com/img/tour_img-173567-[format_id].jpg",
+            "verified": true,
+            "copyright": null
+          }
+        ],
+        "coordinates": { "lat": 25.2637, "long": 55.2972 },
+        "price": {
+          "values": { "amount": 38.00 },
+          "description": "per person"
+        },
+        "categories": [
+          { "category_id": 11, "name": "Walking Tours" },
+          { "category_id": 16, "name": "Guided Tours" }
+        ],
+        "locations": [
+          {
+            "location_id": 7312,
+            "type": "city",
+            "name": "Dubai",
+            "english_name": "Dubai",
+            "city": "Dubai",
+            "country": "AE",
+            "coordinates": { "lat": 25.2048, "long": 55.2708 },
+            "parent_id": null
+          },
+          {
+            "location_id": 9103,
+            "type": "neighborhood",
+            "name": "Al Fahidi Historical Neighbourhood",
+            "english_name": "Al Fahidi Historical Neighbourhood",
+            "city": "Dubai",
+            "country": "AE",
+            "coordinates": { "lat": 25.2637, "long": 55.2972 },
+            "parent_id": 7312
+          }
+        ],
+        "url": "https://www-getyourguide-com.partner.gygtest.com/dubai-l173/old-dubai-walking-tour-t173567/?partner_id=DEMO&psrc=partner_api&currency=EUR",
+        "translations": ["en", "de", "fr"],
+        "free_sale": true,
+        "guide_type": "live_tour_guide",
+        "mobile_voucher": true,
+        "supplier_id": 55421,
+        "durations": [
+          { "duration": 3.0, "unit": "hour" }
+        ],
+        "opening_hours": null,
+        "cancellation_policy": {
+          "cancellable": true,
+          "cancellation_fee_unit": "percentage",
+          "cancellation_fee_value": 0,
+          "cancellation_offset_minutes": 1440,
+          "cancellation_policy_text": "Free cancellation up to 24 hours before the experience starts."
+        }
+      }
+    ]
+  }
+}

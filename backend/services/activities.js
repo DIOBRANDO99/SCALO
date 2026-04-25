@@ -1,25 +1,68 @@
-import { fetchActivitiesByCity, fetchDistrictActivities } from "../adapters/wikivoyage.js";
-
-// Cache keyed by lowercase city name or district slug
 const cache = new Map();
 
-/**
- * Return activity data for a city or a specific district sub-page.
- *
- * @param {object} opts
- * @param {string}  opts.city     City name (e.g. "Istanbul")
- * @param {string}  [opts.district] Full district slug (e.g. "Istanbul/Sultanahmet")
- * @returns {Promise<{type: string, ...}>}
- */
-export async function getActivities({ city, district }) {
-    const key = (district ?? city).toLowerCase();
+function getProvider() {
+    return process.env.ACTIVITY_PROVIDER || "wikivoyage";
+}
 
-    if (!cache.has(key)) {
-        const data = district
-            ? await fetchDistrictActivities(district)
-            : await fetchActivitiesByCity(city);
-        cache.set(key, data);
+async function getAdapter() {
+    const provider = getProvider();
+    if (provider === "gyg") return import("../adapters/gyg.js");
+    return import("../adapters/wikivoyage.js");
+}
+
+function formatDuration({ duration, unit }) {
+    if (duration == null || !unit) return null;
+    return `${duration} ${unit}${duration !== 1 ? "s" : ""}`;
+}
+
+function normalizeGYG(raw) {
+    const tours = raw.data?.tours ?? [];
+    const grouped = new Map();
+
+    for (const tour of tours) {
+        const cat = tour.categories?.[0]?.name ?? "Tours & Sightseeing";
+        if (!grouped.has(cat)) grouped.set(cat, []);
+        grouped.get(cat).push({
+            id: tour.tour_id ?? null,
+            name: tour.title,
+            description: tour.description || tour.abstract || null,
+            thumbnail: tour.pictures?.[0]?.ssl_url ?? null,
+            rating: tour.overall_rating ?? null,
+            reviews: tour.number_of_ratings ?? null,
+            priceAmount: tour.price?.values?.amount ?? null,
+            originalPrice: tour.price?.values?.special?.original_price ?? null,
+            currency: "EUR",
+            duration: tour.durations?.length ? formatDuration(tour.durations[0]) : null,
+            bookingUrl: tour.url ?? null,
+            cancellable: tour.cancellation_policy?.cancellable ?? false,
+            lat: tour.coordinates?.lat ?? null,
+            lon: tour.coordinates?.long ?? null,
+        });
     }
 
-    return cache.get(key);
+    return {
+        type: "listings",
+        provider: "gyg",
+        sections: [...grouped.entries()].map(([category, listings]) => ({ category, listings })),
+    };
+}
+
+export async function getActivities({ city, district }) {
+    const provider = getProvider();
+    const cacheKey = `${provider}:${(district ?? city).toLowerCase()}`;
+
+    if (!cache.has(cacheKey)) {
+        const adapter = await getAdapter();
+        const raw = district
+            ? await adapter.fetchDistrictActivities(district)
+            : await adapter.fetchActivitiesByCity(city);
+
+        const data = provider === "gyg"
+            ? normalizeGYG(raw)
+            : { ...raw, provider: "wikivoyage" };
+
+        cache.set(cacheKey, data);
+    }
+
+    return cache.get(cacheKey);
 }

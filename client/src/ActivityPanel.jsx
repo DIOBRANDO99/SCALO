@@ -1,11 +1,32 @@
 import { useState } from "react";
 
 const CATEGORY_STYLE = {
-    Sights:     { bg: "#dbeafe", text: "#1d4ed8" },
-    Activities: { bg: "#dcfce7", text: "#15803d" },
-    Food:       { bg: "#fef9c3", text: "#854d0e" },
-    Nightlife:  { bg: "#f3e8ff", text: "#7e22ce" },
-    Shopping:   { bg: "#ffedd5", text: "#c2410c" },
+    // Wikivoyage
+    Sights:                 { bg: "#dbeafe", text: "#1d4ed8" },
+    Activities:             { bg: "#dcfce7", text: "#15803d" },
+    Food:                   { bg: "#fef9c3", text: "#854d0e" },
+    Shopping:               { bg: "#ffedd5", text: "#c2410c" },
+    // shared
+    Nightlife:              { bg: "#f3e8ff", text: "#7e22ce" },
+    // GYG
+    "Skip-the-Line":        { bg: "#fee2e2", text: "#b91c1c" },
+    "Guided Tours":         { bg: "#dbeafe", text: "#1d4ed8" },
+    "Walking Tours":        { bg: "#dcfce7", text: "#15803d" },
+    "Food Tours":           { bg: "#fef9c3", text: "#854d0e" },
+    "Cooking Classes":      { bg: "#fff7ed", text: "#c2410c" },
+    "Day Trips":            { bg: "#e0f2fe", text: "#0369a1" },
+    "Outdoor Activities":   { bg: "#dcfce7", text: "#15803d" },
+    "Adventure Sports":     { bg: "#fce7f3", text: "#9d174d" },
+    "Cruises & Sailing":    { bg: "#e0f2fe", text: "#0369a1" },
+    "Museums & Exhibitions":{ bg: "#ede9fe", text: "#6d28d9" },
+    "Tours & Sightseeing":  { bg: "#dbeafe", text: "#1d4ed8" },
+    "Spa & Hammam":         { bg: "#fdf4ff", text: "#86198f" },
+    "Wellness":             { bg: "#fdf4ff", text: "#86198f" },
+    "Water Sports":                  { bg: "#e0f2fe", text: "#0369a1" },
+    "Classes & Workshops":           { bg: "#fff7ed", text: "#c2410c" },
+    "Transfers & Ground Transport":  { bg: "#f3f4f6", text: "#4b5563" },
+    "Theme Parks & Amusement Parks": { bg: "#fce7f3", text: "#9d174d" },
+    "Wine Tasting":                  { bg: "#f3e8ff", text: "#7e22ce" },
 };
 
 function CategoryBadge({ category }) {
@@ -25,16 +46,18 @@ function CategoryBadge({ category }) {
     );
 }
 
-function ListingCard({ listing, category }) {
+function ListingCard({ listing, category, provider }) {
     const [expanded, setExpanded] = useState(false);
+    const isGYG = provider === "gyg";
     const hasMeta = listing.address || listing.hours || listing.price || listing.phone;
+    const isExpandable = listing.description || hasMeta || (isGYG && listing.thumbnail);
 
     return (
         <div
-            style={{ borderBottom: "1px solid #f3f4f6", padding: "12px 0", cursor: listing.description || hasMeta ? "pointer" : "default" }}
-            onClick={() => (listing.description || hasMeta) && setExpanded(e => !e)}
+            style={{ borderBottom: "1px solid #f3f4f6", padding: "12px 0", cursor: isExpandable ? "pointer" : "default" }}
+            onClick={() => isExpandable && setExpanded(e => !e)}
         >
-            {/* Name row */}
+            {/* Name + badge + meta row */}
             <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "10px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0 }}>
                     <span style={{ fontSize: "13px", fontWeight: 600, color: "#111827", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
@@ -42,44 +65,77 @@ function ListingCard({ listing, category }) {
                     </span>
                     <CategoryBadge category={category} />
                 </div>
-                {(listing.description || hasMeta) && (
-                    <span style={{ fontSize: "11px", color: "#9ca3af", flexShrink: 0 }}>
-                        {expanded ? "▲" : "▼"}
-                    </span>
-                )}
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexShrink: 0 }}>
+                    {isGYG && listing.rating != null && (
+                        <span style={{ fontSize: "11px", color: "#f59e0b", fontWeight: 600 }}>
+                            ★ {listing.rating.toFixed(1)}
+                        </span>
+                    )}
+                    {isGYG && listing.priceAmount != null && (
+                        <span style={{ fontSize: "11px", color: "#111827", fontWeight: 600 }}>
+                            {listing.originalPrice
+                                ? <><s style={{ color: "#9ca3af", fontWeight: 400 }}>€{listing.originalPrice}</s>{" "}€{listing.priceAmount}</>
+                                : `from €${listing.priceAmount}`}
+                        </span>
+                    )}
+                    {isExpandable && (
+                        <span style={{ fontSize: "11px", color: "#9ca3af" }}>
+                            {expanded ? "▲" : "▼"}
+                        </span>
+                    )}
+                </div>
             </div>
+
+            {/* GYG subtitle: reviews + duration */}
+            {isGYG && (listing.reviews != null || listing.duration) && (
+                <div style={{ display: "flex", gap: "12px", marginTop: "3px" }}>
+                    {listing.reviews != null && (
+                        <span style={{ fontSize: "11px", color: "#6b7280" }}>
+                            {listing.reviews.toLocaleString()} reviews
+                        </span>
+                    )}
+                    {listing.duration && (
+                        <span style={{ fontSize: "11px", color: "#6b7280" }}>⏱ {listing.duration}</span>
+                    )}
+                </div>
+            )}
 
             {/* Expanded details */}
             {expanded && (
                 <div style={{ marginTop: "8px" }}>
+                    {isGYG && listing.thumbnail && (
+                        <img
+                            src={listing.thumbnail}
+                            alt={listing.name}
+                            onError={e => { e.currentTarget.style.display = "none"; }}
+                            style={{ width: "100%", maxHeight: "160px", objectFit: "cover", borderRadius: "6px", marginBottom: "8px" }}
+                        />
+                    )}
                     {listing.description && (
                         <p style={{ fontSize: "12px", color: "#374151", lineHeight: "1.5", marginBottom: "6px" }}>
                             {listing.description}
                         </p>
                     )}
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                        {listing.address && (
-                            <span style={{ fontSize: "11px", color: "#6b7280" }}>
-                                {listing.address}
-                            </span>
-                        )}
-                        {listing.hours && (
-                            <span style={{ fontSize: "11px", color: "#6b7280" }}>
-                                {listing.hours}
-                            </span>
-                        )}
-                        {listing.price && (
-                            <span style={{ fontSize: "11px", color: "#6b7280" }}>
-                                {listing.price}
-                            </span>
-                        )}
-                        {listing.phone && (
-                            <span style={{ fontSize: "11px", color: "#6b7280" }}>
-                                {listing.phone}
-                            </span>
-                        )}
-                    </div>
-                    {listing.url && (
+                    {!isGYG && (
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                            {listing.address && <span style={{ fontSize: "11px", color: "#6b7280" }}>{listing.address}</span>}
+                            {listing.hours  && <span style={{ fontSize: "11px", color: "#6b7280" }}>{listing.hours}</span>}
+                            {listing.price  && <span style={{ fontSize: "11px", color: "#6b7280" }}>{listing.price}</span>}
+                            {listing.phone  && <span style={{ fontSize: "11px", color: "#6b7280" }}>{listing.phone}</span>}
+                        </div>
+                    )}
+                    {isGYG && listing.bookingUrl && (
+                        <a
+                            href={listing.bookingUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={e => e.stopPropagation()}
+                            style={{ fontSize: "12px", color: "#2563eb", display: "inline-block", marginTop: "4px", fontWeight: 500 }}
+                        >
+                            Book on GetYourGuide →
+                        </a>
+                    )}
+                    {!isGYG && listing.url && (
                         <a
                             href={listing.url}
                             target="_blank"
@@ -96,10 +152,14 @@ function ListingCard({ listing, category }) {
     );
 }
 
-export default function ActivityPanel({ hub, sections, loading, onBack, onClose }) {
+const PROVIDER_LABEL = {
+    gyg: "GetYourGuide",
+    wikivoyage: "Wikivoyage",
+};
+
+export default function ActivityPanel({ hub, sections, provider = "wikivoyage", loading, onBack, onClose }) {
     const [activeCategory, setActiveCategory] = useState("All");
 
-    // Build flat category list from sections
     const allCategories = sections.map(s => s.category);
     const uniqueCategories = ["All", ...new Set(allCategories)];
 
@@ -113,6 +173,8 @@ export default function ActivityPanel({ hub, sections, loading, onBack, onClose 
     for (const s of sections) {
         categoryCounts[s.category] = (categoryCounts[s.category] ?? 0) + s.listings.length;
     }
+
+    const providerLabel = PROVIDER_LABEL[provider] ?? provider;
 
     return (
         <div className="bg-white rounded-lg shadow p-6 mb-8">
@@ -130,7 +192,7 @@ export default function ActivityPanel({ hub, sections, loading, onBack, onClose 
                         Things to do in {hub.city || hub.name}
                     </h3>
                     <p style={{ fontSize: "12px", color: "#6b7280" }}>
-                        {totalCount} places · via Wikivoyage
+                        {totalCount} {totalCount === 1 ? "place" : "places"} · via {providerLabel}
                     </p>
                 </div>
                 {onClose && (
@@ -170,14 +232,23 @@ export default function ActivityPanel({ hub, sections, loading, onBack, onClose 
             {!loading && sections.length === 0 && (
                 <div style={{ textAlign: "center", padding: "24px 0" }}>
                     <p style={{ fontSize: "13px", color: "#6b7280", marginBottom: "4px" }}>
-                        No structured activity listings found for this city.
+                        No activity listings found for this city.
                     </p>
-                    <p style={{ fontSize: "12px", color: "#9ca3af" }}>
-                        Try searching "{hub.city || hub.name}" directly on{" "}
-                        <a href={`https://en.wikivoyage.org/wiki/${encodeURIComponent(hub.city || hub.name)}`} target="_blank" rel="noreferrer" style={{ color: "#2563eb" }}>
-                            Wikivoyage
-                        </a>.
-                    </p>
+                    {provider === "gyg" ? (
+                        <p style={{ fontSize: "12px", color: "#9ca3af" }}>
+                            Search "{hub.city || hub.name}" directly on{" "}
+                            <a href={`https://www.getyourguide.com/s/?q=${encodeURIComponent(hub.city || hub.name)}`} target="_blank" rel="noreferrer" style={{ color: "#2563eb" }}>
+                                GetYourGuide
+                            </a>.
+                        </p>
+                    ) : (
+                        <p style={{ fontSize: "12px", color: "#9ca3af" }}>
+                            Try searching "{hub.city || hub.name}" directly on{" "}
+                            <a href={`https://en.wikivoyage.org/wiki/${encodeURIComponent(hub.city || hub.name)}`} target="_blank" rel="noreferrer" style={{ color: "#2563eb" }}>
+                                Wikivoyage
+                            </a>.
+                        </p>
+                    )}
                 </div>
             )}
 
@@ -188,8 +259,13 @@ export default function ActivityPanel({ hub, sections, loading, onBack, onClose 
             )}
 
             {!loading && filteredSections.map(sec =>
-                sec.listings.map(listing => (
-                    <ListingCard key={listing.name} listing={listing} category={sec.category} />
+                sec.listings.map((listing, i) => (
+                    <ListingCard
+                        key={listing.id != null ? `${sec.category}:${listing.id}` : `${sec.category}:${i}`}
+                        listing={listing}
+                        category={sec.category}
+                        provider={provider}
+                    />
                 ))
             )}
         </div>

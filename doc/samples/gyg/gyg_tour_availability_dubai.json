@@ -1,0 +1,49 @@
+{
+  "tour_id": 173789,
+  "participants_range": { "min": 1, "max": 15 },
+  "categories": [
+    {
+      "ticket_category": "adult",
+      "name": "Adults",
+      "age_range": { "min": 18, "max": 99 },
+      "independently_bookable": true
+    },
+    {
+      "ticket_category": "youth",
+      "name": "Youth",
+      "age_range": { "min": 12, "max": 17 },
+      "independently_bookable": false
+    },
+    {
+      "ticket_category": "child",
+      "name": "Children",
+      "age_range": { "min": 3, "max": 11 },
+      "independently_bookable": false
+    }
+  ],
+  "addons": [
+    {
+      "id": 2201,
+      "name": "Professional photo package (20 edited photos)",
+      "max_quantity": 1
+    },
+    {
+      "id": 2202,
+      "name": "Quad bike rental (30 min)",
+      "max_quantity": 4
+    }
+  ],
+  "available_dates": [
+    { "date": "2026-05-01", "has_deal": false },
+    { "date": "2026-05-02", "has_deal": false },
+    { "date": "2026-05-03", "has_deal": true  },
+    { "date": "2026-05-04", "has_deal": false },
+    { "date": "2026-05-05", "has_deal": false },
+    { "date": "2026-05-06", "has_deal": false },
+    { "date": "2026-05-07", "has_deal": true  },
+    { "date": "2026-05-08", "has_deal": false },
+    { "date": "2026-05-09", "has_deal": false },
+    { "date": "2026-05-10", "has_deal": false }
+  ],
+  "update_timestamp": "2026-04-25T06:00:00"
+}

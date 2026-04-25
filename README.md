@@ -1,8 +1,8 @@
 # SCALO
 
-![SCALO UI](doc/screenshots/UI_example.png)
+![SCALO UI](doc/screenshots/initial_menu.png)
 
-Quando voli da Milano a Bangkok, la compagnia aerea potrebbe chiederti €1.176 per un volo diretto. Ma c'è qualcosa che molti viaggiatori non sanno: a volte è possibile comprare due biglietti separati — Milano-Istanbul e poi Istanbul-Bangkok — e pagare molto meno. In questo caso €629 invece di €1.176, con un risparmio di €547. E in più hai uno scalo a Istanbul dove puoi fermarti qualche giorno prima di proseguire.
+A volte è possibile comprare due biglietti separati — Milano-Istanbul e poi Istanbul-Bangkok — e pagare molto meno del volo diretto. E in più hai uno scalo a Istanbul dove puoi fermarti qualche giorno prima di proseguire.
 
 Questa è l'idea di SCALO. Uno strumento che fa questa ricerca in automatico.
 
@@ -18,7 +18,7 @@ Il motore è completo e funzionante. L'interfaccia web è completa.
 
 ```
 backend/           Server Express (API REST)
-  adapters/        Wrapper per provider di dati (serpapi, mock_fake, mock_real, mock_discover, mock_demo, wikivoyage)
+  adapters/        Wrapper per provider di dati (serpapi, mock_fake, mock_real, wikivoyage, gyg)
   services/        Logica di business (flights.js, hubs.js, activities.js)
   routes/          Endpoint HTTP (search, discover, hubs, activities)
   tests/           Suite di test Vitest
@@ -28,7 +28,7 @@ client/            Interfaccia web (Vite + React + Tailwind)
 scripts/           Script CLI per fetching campioni API reali
 dataset/           Dati OpenFlights — airports.csv, airlines.dat, routes.dat
 doc/
-  samples/         Dati SerpAPI salvati — leg_* usati da mock_real, search_* e discover_* per riferimento
+  samples/         Dati SerpAPI salvati — leg_* usati da mock_real per sviluppo offline; gyg/ usati dall'adapter GYG
   screenshots/     Screenshot dell'interfaccia
   rapporto.tex     Relazione di progetto
 ```
@@ -61,7 +61,7 @@ Crea il file `backend/.env` e inserisci:
 
 ```
 SERPAPI_KEY=la_tua_chiave_serpapi
-FLIGHT_PROVIDER=mock_real
+FLIGHT_PROVIDER=serpapi
 PORT=3001
 ```
 
@@ -79,21 +79,16 @@ npm run dev    # avvia Vite su http://localhost:5173
 
 Il client in sviluppo fa proxy automatico delle richieste `/api/*` verso il backend sulla porta 3001.
 
-Verifica che il backend sia attivo:
-
-```bash
-curl http://localhost:3001/health
-# { "status": "ok", "provider": "mock_real", "timestamp": "..." }
-```
 
 ## Usare il Form di Ricerca
 
 Apri `http://localhost:5173` nel browser. Il form ha due modalità selezionabili tramite il toggle **Choose stopover**:
 
-- **Modalità Discover** (toggle off, default): SCALO calcola gli scali candidati lungo la rotta, li punteggia e li mostra su una mappa interattiva. Passa il cursore su un hub per vedere un'anteprima della città con snippet Wikipedia. Clicca su un hub per aprire il popup con foto e dettagli, poi premi **"Search this stopover"** per avviare la ricerca su quel corridoio oppure **"Explore activities"** per vedere cosa fare nella città (vedi sezione [Attività Wikivoyage](#attività-wikivoyage)). I pulsanti **Show all / Show best** (in alto a destra sulla mappa) alternano tra tutti gli hub nell'ellisse e i top 10 selezionati automaticamente.
+- **Modalità Discover** (toggle off, default): SCALO calcola gli scali candidati lungo la rotta, li punteggia e li mostra su una mappa interattiva. Passa il cursore su un hub per vedere un'anteprima della città con snippet Wikipedia. Clicca su un hub per aprire il popup con foto e dettagli, poi premi **"Search this stopover"** per avviare la ricerca su quel corridoio oppure **"Explore activities"** per vedere cosa fare nella città. I pulsanti **Show all / Show best** (in alto a destra sulla mappa) alternano tra tutti gli hub nell'ellisse e i top 10 selezionati automaticamente.
 
-![Improved UI with Wikipedia popup](doc/screenshots/improved_ui.png)
-- **Modalità Search** (toggle on): specifica uno scalo preciso. Campi disponibili: Origin, Stopover, Destination, Departure Date, Nights at stopover, Return Date.
+![Mappa interattiva con popup hub](doc/screenshots/map_selection_menu.png)
+
+- **Modalità Search** (toggle on): specifica uno scalo preciso. Campi disponibili: Origin, Stopover, Destination, Departure Date, Outbound nights, Return Date, Return nights.
 
 | Campo | Descrizione |
 |-------|-------------|
@@ -101,20 +96,13 @@ Apri `http://localhost:5173` nel browser. Il form ha due modalità selezionabili
 | **Stopover** | Stessa ricerca — solo in modalità Search |
 | **Destination** | Stessa ricerca |
 | **Departure Date** | Quando parti dalla citta di origine |
-| **Nights at stopover** | Quante notti vuoi fermarti allo scalo (default: 3) |
-| **Return Date** | Quando torni dalla destinazione alla citta di origine (opzionale) |
+| **Outbound nights** | Quante notti vuoi fermarti allo scalo di andata (default: 3) |
+| **Return Date** | Quando torni dalla destinazione alla citta di origine |
+| **Return nights** | Quante notti vuoi fermarti allo scalo di ritorno (default: 3) |
 
 I campi Origin, Stopover e Destination supportano l'autocompletamento: digitando almeno 2 caratteri appare una lista di suggerimenti con citta, aeroporto e codice IATA. Si puo anche digitare direttamente un codice IATA a 3 lettere.
 
-### Opzioni Avanzate
-
-Il form include una sezione **Advanced options** espandibile con:
-
-| Opzione | Valori | Default |
-|---------|--------|---------|
-| **Max stops per leg** | Direct only / Up to 1 stop / Up to 2 stops | Up to 2 stops |
-
-Questa opzione controlla quante connessioni sono ammesse su ciascun tratto di volo (es. Milano→scalo, scalo→Bangkok). Impostare "Direct only" può ridurre o eliminare i risultati su rotte dove i voli non-stop non sono disponibili.
+La sezione **Passengers & class** (espandibile) permette di impostare il numero di passeggeri e la classe di viaggio.
 
 
 ## Comportamento con Risultati Vuoti
@@ -125,21 +113,23 @@ L'interfaccia gestisce tre scenari quando una ricerca non produce risultati util
 |----------|-------------|-----------|
 | **Nessun volo trovato** | Uno o più tratti non hanno opzioni di volo | Indica quali tratte specifiche non hanno risultati e suggerisce di cambiare date o scalo |
 | **Nessun volo diretto** | I voli con scalo sono stati trovati ma non esiste un volo diretto per confrontare il risparmio | Informa che il calcolo del risparmio non è disponibile, con opzione di vedere comunque i voli |
-| **Scalo più costoso** | Lo scalo costa più del volo diretto | Mostra la differenza di prezzo e permette di visualizzare comunque i dettagli. Se la ricerca era con connessioni limitate (Direct only o Up to 1 stop), suggerisce di aumentare il limite in Advanced options. Propone anche di esplorare le attività nella città di scalo — potrebbe valere il costo extra |
+| **Scalo più costoso** | Lo scalo costa più del volo diretto | Mostra la differenza di prezzo rispetto al diretto e permette di visualizzare comunque i voli. Propone anche di esplorare le attività nella città di scalo — potrebbe valere il costo extra |
 
 In tutti i casi l'utente può fare una nuova ricerca senza ricaricare la pagina.
 
+Quando una ricerca va a buon fine, i risultati vengono mostrati in una scheda con i tratti di volo, ordinabili per prezzo, durata o numero di scali.
+
+![Risultati volo con card e sort](doc/screenshots/flights_menu.png)
+
 ## Provider di Dati di Volo
 
-Il backend supporta quattro provider, selezionabili tramite `FLIGHT_PROVIDER` in `backend/.env`:
+Il backend supporta tre provider, selezionabili tramite `FLIGHT_PROVIDER` in `backend/.env`:
 
 | Valore | Descrizione |
 |--------|-------------|
-| `mock_real` | Risposte reali SerpAPI salvate in `doc/samples/` — default per sviluppo |
+| `serpapi` | SerpAPI Google Flights live — provider principale |
+| `mock_real` | Risposte reali SerpAPI salvate in `doc/samples/` — per sviluppo offline (MXP→IST→BKK) |
 | `mock_fake` | Dati inventati per testare casi limite (stopover caro, nessun volo diretto, ranking) |
-| `mock_demo` | Dati reali per quattro corridoi demo: FCO→AMS, CDG→BKK, LHR→SIN, GRU→NRT |
-| `mock_discover` | Dati reali da `doc/samples/discover_MXP_BKK_2026-03-19.json` — 16 hub per MXP→BKK |
-| `serpapi` | SerpApi Google Flights live — solo per demo e deploy |
 
 ## Variabili d'Ambiente
 
@@ -148,9 +138,36 @@ Tutte le variabili vanno in `backend/.env`:
 | Variabile | Descrizione |
 |-----------|-------------|
 | `SERPAPI_KEY` | Chiave API SerpAPI — necessaria solo con `FLIGHT_PROVIDER=serpapi` |
-| `FLIGHT_PROVIDER` | Provider dati di volo (vedi tabella sopra) — default `mock_real` |
+| `FLIGHT_PROVIDER` | Provider dati di volo (vedi tabella sopra) — default `serpapi` |
+| `ACTIVITY_PROVIDER` | `wikivoyage` (default) oppure `gyg`. Sceglie il provider per l'endpoint `/api/activities`. |
+| `GYG_API_KEY` | Chiave API GetYourGuide — necessaria solo con `ACTIVITY_PROVIDER=gyg` per chiamate live. Senza chiave usa i file sample in `doc/samples/gyg/`. |
 | `PORT` | Porta del server backend — default `3001` |
 | `SAVE_SAMPLES` | Se `true`, ogni risposta SerpAPI viene salvata in `doc/samples/` — utile per catturare nuovi dati reali senza script separati |
+
+## Activity Providers
+
+SCALO supporta due provider per l'endpoint `/api/activities`, selezionabili tramite la variabile `ACTIVITY_PROVIDER`:
+
+### `wikivoyage` (default)
+
+Dati live da [Wikivoyage](https://en.wikivoyage.org) via API MediaWiki. Funziona per qualsiasi città del mondo, include gestione dei districts (città grandi suddivise in sotto-pagine). I dati includono: nome, descrizione, indirizzo, orari, prezzo (stringa), telefono e coordinate.
+
+### `gyg`
+
+Integrazione GetYourGuide Partner API. Ogni attività include campi arricchiti: rating, numero recensioni, thumbnail, durata, prezzo (con eventuale sconto), e link di prenotazione diretto su getyourguide.com.
+
+**Con `GYG_API_KEY`**: il backend chiama `GET https://api.getyourguide.com/1/tours?q={city}` in tempo reale.
+
+**Senza `GYG_API_KEY`**: il backend legge i file sample in `doc/samples/gyg/gyg_tours_{city}.json`. Attualmente è disponibile solo `gyg_tours_dubai.json`; per altre città il pannello mostra il fallback vuoto.
+
+```
+ACTIVITY_PROVIDER=gyg
+```
+
+Il frontend si adatta automaticamente: mostra "via GetYourGuide", categorie GYG (Skip-the-Line, Walking Tours, Food Tours, ecc.), rating con stelle, prezzi con eventuale barrato, e pulsante "Book on GetYourGuide →".
+
+![Pannello attività GetYourGuide](doc/screenshots/gyg_menu.png)
+
 
 ## Eseguire i Test
 
@@ -172,8 +189,6 @@ Oppure da `backend/` o `client/` separatamente. Per watch mode: `npm run test:wa
 
 
 ## Selezione Dinamica degli Hub
-
-![Ellipse test map](doc/screenshots/example-test-map.png)
 
 In modalità Discover, il sistema seleziona e classifica gli aeroporti candidati per lo scalo attraverso un pipeline a 3 livelli, senza consumare chiamate API:
 
@@ -200,14 +215,13 @@ Se le coordinate di partenza o arrivo non vengono trovate nel dataset, il sistem
 
 ## Attività Wikivoyage
 
-![Activities UI](doc/screenshots/UI_activities.png)
-
 SCALO integra le guide di viaggio di [Wikivoyage](https://en.wikivoyage.org) per mostrare cosa fare, vedere, mangiare e comprare nella città di scalo. **Non richiede nessuna chiave API** — Wikivoyage è una wiki pubblica con API gratuita.
 
 ### Come accedervi
 
 - **Modalità Discover**: clicca su un hub sulla mappa → pulsante **"Explore activities"** nel popup
-- **Scalo più costoso** (Scenario C): se lo scalo costa più del diretto, compare il link **"Explore activities in [città] →"** per valutare se vale comunque la pena fermarsi
+- **Risultati volo trovati**: sopra la scheda voli compare il pulsante **"Search activities in [città]"**
+- **Scalo più costoso** (Scenario C): se lo scalo costa più del diretto, compare il pulsante **"Search activities"** per valutare se vale comunque la pena fermarsi
 
 ### Come funziona
 
@@ -225,18 +239,19 @@ Il backend chiama l'API MediaWiki di Wikivoyage (`en.wikivoyage.org/w/api.php`) 
 
 Le grandi città (Istanbul, Amsterdam, Dubai) suddividono i contenuti in sotto-pagine per distretto. In questo caso SCALO mostra prima un selettore di distretto; solo dopo aver scelto il distretto viene fatta la chiamata API per i listing. Questo limita le chiamate API al minimo necessario. Il pulsante **"← Back to districts"** ripristina la lista distretti dalla cache senza nuove chiamate.
 
+![Selettore distretto Wikivoyage](doc/screenshots/wikivoyage_district_menu.png)
+
+Dopo aver selezionato un distretto, vengono mostrati i listing filtrabili per categoria:
+
+![Risultati attività Wikivoyage](doc/screenshots/wikivoyage_results_menu.png)
+
 ### Cache
 
 I risultati sono salvati in memoria per sessione (chiave: nome città o slug distretto in lowercase). Ricerche successive sulla stessa città non generano nuove chiamate API.
 
-### Endpoint
-
-```
-GET /api/activities?city=Doha
-GET /api/activities?city=Istanbul&district=Istanbul%2FHistorical%20Peninsula
-```
-
 ## Licenze e Attribuzioni
 
-Dati aeroportuali da OurAirports — pubblico dominio.
-Dati rotte e compagnie aeree da OpenFlights — disponibili sotto Open Database License (ODbL).
+Dati aeroportuali da [OurAirports](https://ourairports.com) — pubblico dominio.
+Dati rotte e compagnie aeree da [OpenFlights](https://openflights.org) — Open Database License (ODbL).
+Contenuti delle guide di viaggio da [Wikivoyage](https://en.wikivoyage.org) — CC BY-SA 3.0.
+Anteprime città da [Wikipedia](https://en.wikipedia.org) — CC BY-SA 3.0.

@@ -1,0 +1,66 @@
+{
+  "_metadata": {
+    "descriptor": "GetYourGuide AG",
+    "date": "2026-04-25T14:00:00",
+    "status": "OK",
+    "query": "cnt_language=en&limit=3&offset=0&sortfield=date&sortdirection=DESC",
+    "totalCount": 24871,
+    "limit": 3,
+    "offset": 0
+  },
+  "data": {
+    "reviews": {
+      "outline": [
+        { "rating": 5, "number_of_reviews": 18340, "share": 73.7 },
+        { "rating": 4, "number_of_reviews": 4726,  "share": 19.0 },
+        { "rating": 3, "number_of_reviews": 1492,  "share": 6.0  },
+        { "rating": 2, "number_of_reviews": 248,   "share": 1.0  },
+        { "rating": 1, "number_of_reviews": 65,    "share": 0.3  }
+      ],
+      "review_items": [
+        {
+          "review_id": 5521034,
+          "tour_id": 173789,
+          "supplier_id": 55340,
+          "review_date": "2026-04-23T19:45:00",
+          "subject": "Best evening of the whole trip",
+          "comment": "The dune bashing was absolutely wild — our driver was brilliant and clearly knew how to read the dunes. The camp was beautifully set up and the BBQ spread was enormous. The Tanoura show at the end was mesmerising. Highly recommend the sunset timing.",
+          "reviewer_name": "Marco B. — Italy",
+          "review_rating": 5.0,
+          "review_rating_service": 5.0,
+          "review_rating_orga": 5.0,
+          "review_rating_value": 4.5,
+          "review_rating_safety": 5.0
+        },
+        {
+          "review_id": 5519877,
+          "tour_id": 173789,
+          "supplier_id": 55340,
+          "review_date": "2026-04-20T11:22:00",
+          "subject": "Great experience but camp felt crowded",
+          "comment": "The dune bashing and camel ride were fantastic. The BBQ dinner was good quality. My only complaint is that the camp had too many people at the same time — it lost a bit of the atmosphere. Still worth doing.",
+          "reviewer_name": "Sarah T. — United Kingdom",
+          "review_rating": 4.0,
+          "review_rating_service": 4.5,
+          "review_rating_orga": 3.5,
+          "review_rating_value": 4.0,
+          "review_rating_safety": 5.0
+        },
+        {
+          "review_id": 5517642,
+          "tour_id": 173789,
+          "supplier_id": 55340,
+          "review_date": "2026-04-17T08:10:00",
+          "subject": "Unforgettable for the whole family",
+          "comment": "We went with two kids aged 8 and 11. Both loved the sandboarding and the camel ride. The driver was very safety-conscious during the dune bashing and made sure everyone was comfortable. The food was plentiful and the henna artist was very talented.",
+          "reviewer_name": "Fatima A. — France",
+          "review_rating": 5.0,
+          "review_rating_service": 5.0,
+          "review_rating_orga": 5.0,
+          "review_rating_value": 5.0,
+          "review_rating_safety": 5.0
+        }
+      ]
+    }
+  }
+}

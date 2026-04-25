@@ -157,6 +157,12 @@ function LegSection({ leg, selectedIdx, onSelect }) {
   );
 }
 
+const SORTS = [
+  { key: "price",    label: "Cheapest",      fn: (a, b) => a.price - b.price },
+  { key: "duration", label: "Fastest",       fn: (a, b) => a.totalDuration - b.totalDuration },
+  { key: "stops",    label: "Fewest stops",  fn: (a, b) => (a.flights.length - b.flights.length) || (a.price - b.price) },
+];
+
 function bookingUrl(option, leg) {
   const dep = option.flights[0].departureAirport?.id ?? leg.origin;
   const arr = option.flights[option.flights.length - 1].arrivalAirport?.id ?? leg.destination;
@@ -167,16 +173,18 @@ function bookingUrl(option, leg) {
 export default function ResultCard({ result, onClose, onTotalPriceChange }) {
   const { legs, summary, stopover, adults = 1 } = result;
 
-  const [selectedIdx, setSelectedIdx] = useState(() =>
-    legs.map((leg) => {
-      const validOptions = leg.options.filter((o) => typeof o.price === "number");
-      if (validOptions.length === 0) return 0;
-      const minPrice = Math.min(...validOptions.map((o) => o.price));
-      return leg.options.findIndex((o) => o.price === minPrice);
-    })
-  );
+  const [sort, setSort] = useState("price");
+  const sortFn = SORTS.find((s) => s.key === sort)?.fn ?? SORTS[0].fn;
+  const sortedLegs = legs.map((leg) => ({ ...leg, options: [...leg.options].sort(sortFn) }));
 
-  const selectedOptions = legs.map((leg, i) => leg.options[selectedIdx[i]]);
+  const [selectedIdx, setSelectedIdx] = useState(() => legs.map(() => 0));
+
+  function handleSort(key) {
+    setSort(key);
+    setSelectedIdx(legs.map(() => 0));
+  }
+
+  const selectedOptions = sortedLegs.map((leg, i) => leg.options[selectedIdx[i]]);
   const totalPrice = selectedOptions.reduce((sum, o) => sum + (o?.price ?? 0), 0);
   const savings = summary.directPrice != null ? summary.directPrice - totalPrice : null;
 
@@ -196,7 +204,30 @@ export default function ResultCard({ result, onClose, onTotalPriceChange }) {
             {stopover.nights} night{stopover.nights !== 1 ? "s" : ""} in {stopover.iata}
           </p>
         </div>
-        <div className="flex items-start gap-3 shrink-0">
+        <div className="flex flex-col items-end gap-2 shrink-0">
+          <div className="flex items-center gap-2">
+            {SORTS.map((s) => (
+              <button
+                key={s.key}
+                onClick={() => handleSort(s.key)}
+                style={{
+                  padding: "4px 12px",
+                  borderRadius: "999px",
+                  fontSize: "12px",
+                  fontWeight: 500,
+                  border: sort === s.key ? "none" : "1px solid #d1d5db",
+                  backgroundColor: sort === s.key ? "#2563eb" : "white",
+                  color: sort === s.key ? "white" : "#374151",
+                  cursor: "pointer",
+                }}
+              >
+                {s.label}
+              </button>
+            ))}
+            {onClose && (
+              <button onClick={onClose} className="text-gray-400 hover:text-gray-600 text-lg leading-none">×</button>
+            )}
+          </div>
           {savings != null && (
             <div className={`text-right ${savings >= 0 ? "text-green-600" : "text-red-500"}`}>
               <div className="text-2xl font-bold">
@@ -207,14 +238,11 @@ export default function ResultCard({ result, onClose, onTotalPriceChange }) {
               </div>
             </div>
           )}
-          {onClose && (
-            <button onClick={onClose} className="text-gray-400 hover:text-gray-600 text-lg leading-none mt-1">×</button>
-          )}
         </div>
       </div>
 
       {/* Legs */}
-      {legs.map((leg, i) => (
+      {sortedLegs.map((leg, i) => (
         <LegSection
           key={leg.id}
           leg={leg}

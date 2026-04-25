@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import cities from "./data/cities.json";
 import SearchForm from "./SearchForm";
 import ResultCard from "./ResultCard";
@@ -21,6 +21,8 @@ export default function App() {
     const [activityParent, setActivityParent] = useState(null);   // saved districts data for back button
     const [activityLoading, setActivityLoading] = useState(false);
 
+    const [activityProvider, setActivityProvider] = useState("wikivoyage");
+
     const [outboundTotalPrice, setOutboundTotalPrice] = useState(null);
     const [returnTotalPrice, setReturnTotalPrice] = useState(null);
 
@@ -30,11 +32,17 @@ export default function App() {
     const [returnLoading, setReturnLoading] = useState(false);
     const [returnSelectedHub, setReturnSelectedHub] = useState(null);
     const [returnShowNegative, setReturnShowNegative] = useState(false);
-    const [returnStopoverNights, setReturnStopoverNights] = useState(3);
     const [returnActivityHub, setReturnActivityHub] = useState(null);
     const [returnActivityData, setReturnActivityData] = useState(null);
     const [returnActivityParent, setReturnActivityParent] = useState(null);
     const [returnActivityLoading, setReturnActivityLoading] = useState(false);
+
+    useEffect(() => {
+        fetch("/health")
+            .then(r => r.json())
+            .then(d => setActivityProvider(d.activityProvider || "wikivoyage"))
+            .catch(() => {});
+    }, []);
 
     async function handleSearch(params) {
         setLoading(true);
@@ -53,7 +61,6 @@ export default function App() {
         setReturnResult(null);
         setReturnSelectedHub(null);
         setReturnShowNegative(false);
-        setReturnStopoverNights(3);
         setReturnActivityHub(null);
         setReturnActivityData(null);
         setReturnActivityParent(null);
@@ -176,6 +183,12 @@ export default function App() {
     }
 
     async function handleExploreActivities(hub) {
+        if (selectedHub && selectedHub !== hub.iata) {
+            setResult(null);
+            setShowNegative(false);
+            setSelectedHub(null);
+            setOutboundTotalPrice(null);
+        }
         setActivityHub(hub);
         setActivityData(null);
         setActivityParent(null);
@@ -276,7 +289,7 @@ export default function App() {
             setReturnActivityParent(null);
         }
         const d = new Date(pendingParams.returnDate);
-        d.setDate(d.getDate() - returnStopoverNights);
+        d.setDate(d.getDate() - (pendingParams.returnStopoverNights ?? 3));
         const returnDepartureDate = d.toISOString().split("T")[0];
 
         try {
@@ -288,8 +301,7 @@ export default function App() {
                     destination: pendingParams.origin,
                     stopover: hub.iata,
                     outboundDate: returnDepartureDate,
-                    stopoverNights: returnStopoverNights,
-                    maxStops: pendingParams.maxStops,
+                    stopoverNights: pendingParams.returnStopoverNights ?? 3,
                     adults: pendingParams.adults,
                     travelClass: pendingParams.travelClass,
                     oneWay: true,
@@ -305,6 +317,12 @@ export default function App() {
     }
 
     async function handleExploreReturnActivities(hub) {
+        if (returnSelectedHub && returnSelectedHub !== hub.iata) {
+            setReturnResult(null);
+            setReturnShowNegative(false);
+            setReturnSelectedHub(null);
+            setReturnTotalPrice(null);
+        }
         setReturnActivityHub(hub);
         setReturnActivityData(null);
         setReturnActivityParent(null);
@@ -388,18 +406,20 @@ export default function App() {
                     onShowBest={handleShowBest}
                     onExploreActivities={handleExploreActivities}
                     loading={loading}
+                    selectedHub={selectedHub}
+                    activityIata={activityHub?.iata}
                 />
             )}
 
             {/* Activities flow */}
             {activityHub && activityLoading && <LoadingSpinner />}
-            {activityHub && !activityLoading && activityData && pendingParams && hubData && !result && (
-                <div className="mb-4">
+            {activityHub && !activityLoading && activityData && hubData && !result && pendingParams && (
+                <div className="mb-2">
                     <button
                         onClick={() => handleHubSelect(activityHub)}
-                        style={{ backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                        style={{ backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
                     >
-                        Search flights
+                        Search flights to {activityHub.city || activityHub.name}
                     </button>
                 </div>
             )}
@@ -414,6 +434,7 @@ export default function App() {
                 <ActivityPanel
                     hub={activityHub}
                     sections={activityData.sections}
+                    provider={activityData.provider || activityProvider}
                     loading={false}
                     onBack={activityParent ? () => setActivityData(activityParent) : null}
                     onClose={() => { setActivityHub(null); setActivityData(null); setActivityParent(null); }}
@@ -462,11 +483,6 @@ export default function App() {
                         title="No savings with this stopover"
                         description={`Flying via ${result.stopover.iata} costs €${Math.abs(result.summary.savings)} more than the direct flight (€${result.summary.directPrice}). This stopover is not worth it for price — but you might still want to visit!`}
                     >
-                        {pendingParams?.maxStops && pendingParams.maxStops !== "3" && (
-                            <p className="mt-3 text-sm text-gray-500">
-                                You're searching with restricted connections — try increasing <strong>Max stops per leg</strong> in Advanced options for more options.
-                            </p>
-                        )}
                         <div className="mt-4 flex flex-wrap gap-3">
                             <button
                                 onClick={() => setShowNegative(true)}
@@ -495,56 +511,51 @@ export default function App() {
                 result.summary.bestCombinedPrice !== null &&
                 ((!savingsNull && result.summary.savings >= 0) || showNegative) && (
                     <>
+                        {activityHub?.iata !== result.stopover.iata && (() => {
+                            const ap = cities.find(c => c.iata === result.stopover.iata);
+                            const hub = { iata: result.stopover.iata, city: ap?.city, name: ap?.name || result.stopover.iata };
+                            return (
+                                <div className="mb-2">
+                                    <button
+                                        onClick={() => handleExploreActivities(hub)}
+                                        style={{ backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                    >
+                                        Search activities in {hub.city || hub.iata}
+                                    </button>
+                                </div>
+                            );
+                        })()}
                         <ResultCard
                             result={result}
                             onClose={() => { setResult(null); setShowNegative(false); setSelectedHub(null); setOutboundTotalPrice(null); }}
                             onTotalPriceChange={setOutboundTotalPrice}
                         />
-                        {activityHub?.iata !== result.stopover.iata && (
-                            <div className="mt-4 mb-8">
-                                {(() => {
-                                    const ap = cities.find(c => c.iata === result.stopover.iata);
-                                    const hub = { iata: result.stopover.iata, city: ap?.city, name: ap?.name || result.stopover.iata };
-                                    return (
-                                        <button
-                                            onClick={() => handleExploreActivities(hub)}
-                                            style={{ backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
-                                        >
-                                            Search activities
-                                        </button>
-                                    );
-                                })()}
-                            </div>
-                        )}
                     </>
                 )}
             {/* Phase 2: Return journey */}
             {showReturnPhase && (
                 <div className="mt-4">
-                    <div className="flex items-center gap-3 mb-4">
-                        <h2 className="text-lg font-semibold">
-                            Return: {pendingParams.destination} → {pendingParams.origin}
-                        </h2>
-                        <label className="flex items-center gap-2 text-sm text-gray-600">
-                            Nights at stopover:
-                            <input
-                                type="number"
-                                min={1}
-                                max={14}
-                                value={returnStopoverNights}
-                                onChange={e => setReturnStopoverNights(parseInt(e.target.value, 10) || 3)}
-                                className="w-16 border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            />
-                        </label>
-                        {!returnHubData && !returnResult && !returnLoading && (
+                    {!returnHubData && !returnResult && !returnLoading && (
+                        <div className="flex items-center justify-between bg-blue-50 border border-blue-200 rounded-lg px-5 py-4 mb-6">
+                            <div>
+                                <div className="font-semibold text-blue-900 text-sm">Ready to find your return stopover?</div>
+                                <div className="text-xs text-blue-600 mt-0.5">
+                                    {pendingParams.destination} → {pendingParams.origin} · {pendingParams.returnStopoverNights ?? 3} night{(pendingParams.returnStopoverNights ?? 3) !== 1 ? "s" : ""}
+                                </div>
+                            </div>
                             <button
                                 onClick={handleReturnDiscover}
-                                style={{ backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                style={{ backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "8px 18px", fontSize: "13px", fontWeight: 600, cursor: "pointer", whiteSpace: "nowrap" }}
                             >
-                                Discover return stopovers
+                                Find return stopover →
                             </button>
-                        )}
-                    </div>
+                        </div>
+                    )}
+                    {(returnHubData || returnResult || returnLoading) && (
+                        <h2 className="text-lg font-semibold mb-4">
+                            Return: {pendingParams.destination} → {pendingParams.origin}
+                        </h2>
+                    )}
 
                     {returnLoading && <LoadingSpinner />}
 
@@ -556,6 +567,8 @@ export default function App() {
                             onShowBest={handleReturnShowBest}
                             onExploreActivities={handleExploreReturnActivities}
                             loading={returnLoading}
+                            selectedHub={returnSelectedHub}
+                            activityIata={returnActivityHub?.iata}
                         />
                     )}
 
@@ -605,33 +618,41 @@ export default function App() {
                     {returnResult && !returnHasEmptyLegs && returnResult.summary.bestCombinedPrice !== null &&
                         ((!returnSavingsNull && returnResult.summary.savings >= 0) || returnShowNegative) && (
                         <>
+                            {returnActivityHub?.iata !== returnResult.stopover.iata && (() => {
+                                const ap = cities.find(c => c.iata === returnResult.stopover.iata);
+                                const hub = { iata: returnResult.stopover.iata, city: ap?.city, name: ap?.name || returnResult.stopover.iata };
+                                return (
+                                    <div className="mb-2">
+                                        <button
+                                            onClick={() => handleExploreReturnActivities(hub)}
+                                            style={{ backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                        >
+                                            Search activities in {hub.city || hub.iata}
+                                        </button>
+                                    </div>
+                                );
+                            })()}
                             <ResultCard
                                 result={returnResult}
                                 onClose={() => { setReturnResult(null); setReturnShowNegative(false); setReturnSelectedHub(null); setReturnTotalPrice(null); }}
                                 onTotalPriceChange={setReturnTotalPrice}
                             />
-                            {returnActivityHub?.iata !== returnResult.stopover.iata && (
-                                <div className="mt-4 mb-4">
-                                    {(() => {
-                                        const ap = cities.find(c => c.iata === returnResult.stopover.iata);
-                                        const hub = { iata: returnResult.stopover.iata, city: ap?.city, name: ap?.name || returnResult.stopover.iata };
-                                        return (
-                                            <button
-                                                onClick={() => handleExploreReturnActivities(hub)}
-                                                style={{ backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
-                                            >
-                                                Search activities
-                                            </button>
-                                        );
-                                    })()}
-                                </div>
-                            )}
                         </>
                     )}
                     {/* Return activities flow */}
                     {returnActivityHub && (
                         <div className="mt-4">
                             {returnActivityLoading && <LoadingSpinner />}
+                            {!returnActivityLoading && returnActivityData && returnHubData && !returnResult && (
+                                <div className="mb-2">
+                                    <button
+                                        onClick={() => handleReturnHubSelect(returnActivityHub)}
+                                        style={{ backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                    >
+                                        Search flights to {returnActivityHub.city || returnActivityHub.name}
+                                    </button>
+                                </div>
+                            )}
                             {!returnActivityLoading && returnActivityData?.type === "districts" && (
                                 <DistrictSelector
                                     hub={returnActivityHub}
@@ -643,6 +664,7 @@ export default function App() {
                                 <ActivityPanel
                                     hub={returnActivityHub}
                                     sections={returnActivityData.sections}
+                                    provider={returnActivityData.provider || activityProvider}
                                     loading={false}
                                     onBack={returnActivityParent ? () => setReturnActivityData(returnActivityParent) : null}
                                     onClose={() => { setReturnActivityHub(null); setReturnActivityData(null); setReturnActivityParent(null); }}

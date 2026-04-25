@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import cities from "./data/cities.json";
 import SearchForm from "./SearchForm";
 import ResultCard from "./ResultCard";
@@ -21,6 +21,8 @@ export default function App() {
     const [activityParent, setActivityParent] = useState(null);   // saved districts data for back button
     const [activityLoading, setActivityLoading] = useState(false);
 
+    const [activityProvider, setActivityProvider] = useState("wikivoyage");
+
     const [outboundTotalPrice, setOutboundTotalPrice] = useState(null);
     const [returnTotalPrice, setReturnTotalPrice] = useState(null);
 
@@ -35,6 +37,13 @@ export default function App() {
     const [returnActivityData, setReturnActivityData] = useState(null);
     const [returnActivityParent, setReturnActivityParent] = useState(null);
     const [returnActivityLoading, setReturnActivityLoading] = useState(false);
+
+    useEffect(() => {
+        fetch("/health")
+            .then(r => r.json())
+            .then(d => setActivityProvider(d.activityProvider || "wikivoyage"))
+            .catch(() => {});
+    }, []);
 
     async function handleSearch(params) {
         setLoading(true);
@@ -414,6 +423,7 @@ export default function App() {
                 <ActivityPanel
                     hub={activityHub}
                     sections={activityData.sections}
+                    provider={activityData.provider || activityProvider}
                     loading={false}
                     onBack={activityParent ? () => setActivityData(activityParent) : null}
                     onClose={() => { setActivityHub(null); setActivityData(null); setActivityParent(null); }}
@@ -643,6 +653,7 @@ export default function App() {
                                 <ActivityPanel
                                     hub={returnActivityHub}
                                     sections={returnActivityData.sections}
+                                    provider={returnActivityData.provider || activityProvider}
                                     loading={false}
                                     onBack={returnActivityParent ? () => setReturnActivityData(returnActivityParent) : null}
                                     onClose={() => { setReturnActivityHub(null); setReturnActivityData(null); setReturnActivityParent(null); }}

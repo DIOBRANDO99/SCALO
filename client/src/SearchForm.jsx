@@ -19,7 +19,7 @@ export default function SearchForm({ onSearch, loading }) {
             oneWay,
             returnDate:     oneWay ? null : (fd.get("returnDate") || null),
             stopoverNights: parseInt(fd.get("stopoverNights"), 10) || 3,
-            maxStops:       fd.get("maxStops") ?? "3",
+            returnStopoverNights: oneWay ? null : (parseInt(fd.get("returnStopoverNights"), 10) || 3),
             adults:         parseInt(fd.get("adults"), 10) || 1,
             travelClass:    fd.get("travelClass") ?? "1",
         };
@@ -83,7 +83,7 @@ export default function SearchForm({ onSearch, loading }) {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div className={`grid gap-4 mb-6 ${oneWay ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-2 sm:grid-cols-4"}`}>
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
                         Departure Date <span className="text-red-500">*</span>
@@ -98,7 +98,7 @@ export default function SearchForm({ onSearch, loading }) {
 
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Nights at stopover <span className="text-red-500">*</span>
+                        {oneWay ? "Nights at stopover" : "Outbound nights"} <span className="text-red-500">*</span>
                     </label>
                     <input
                         name="stopoverNights"
@@ -124,9 +124,26 @@ export default function SearchForm({ onSearch, loading }) {
                         />
                     </div>
                 )}
+
+                {!oneWay && (
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                            Return nights <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                            name="returnStopoverNights"
+                            type="number"
+                            required
+                            min={1}
+                            max={14}
+                            defaultValue={3}
+                            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
+                )}
             </div>
 
-            {/* Advanced options */}
+            {/* Passengers & class */}
             <div className="mb-6">
                 <button
                     type="button"
@@ -134,31 +151,11 @@ export default function SearchForm({ onSearch, loading }) {
                     className="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-1"
                 >
                     <span>{showAdvanced ? "▾" : "▸"}</span>
-                    Advanced options
+                    Passengers & class
                 </button>
 
                 {showAdvanced && (
                     <div className="mt-3 pt-3 border-t border-gray-100 space-y-4">
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Max stops per leg
-                            </label>
-                            <div className="flex gap-2">
-                                {/* SerpAPI stops values: 1=nonstop, 2=≤1 stop, 3=≤2 stops */}
-                                {[["1", "Direct only"], ["2", "Up to 1 stop"], ["3", "Up to 2 stops"]].map(([val, label]) => (
-                                    <label key={val} className="flex items-center gap-1.5 cursor-pointer">
-                                        <input
-                                            type="radio"
-                                            name="maxStops"
-                                            value={val}
-                                            defaultChecked={val === "3"}
-                                            className="accent-blue-600"
-                                        />
-                                        <span className="text-sm text-gray-600">{label}</span>
-                                    </label>
-                                ))}
-                            </div>
-                        </div>
 
                         <div className="grid grid-cols-2 gap-4">
                             <div>

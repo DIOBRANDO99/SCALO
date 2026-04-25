@@ -22,6 +22,11 @@ const CATEGORY_STYLE = {
     "Tours & Sightseeing":  { bg: "#dbeafe", text: "#1d4ed8" },
     "Spa & Hammam":         { bg: "#fdf4ff", text: "#86198f" },
     "Wellness":             { bg: "#fdf4ff", text: "#86198f" },
+    "Water Sports":                  { bg: "#e0f2fe", text: "#0369a1" },
+    "Classes & Workshops":           { bg: "#fff7ed", text: "#c2410c" },
+    "Transfers & Ground Transport":  { bg: "#f3f4f6", text: "#4b5563" },
+    "Theme Parks & Amusement Parks": { bg: "#fce7f3", text: "#9d174d" },
+    "Wine Tasting":                  { bg: "#f3e8ff", text: "#7e22ce" },
 };
 
 function CategoryBadge({ category }) {
@@ -254,8 +259,13 @@ export default function ActivityPanel({ hub, sections, provider = "wikivoyage", 
             )}
 
             {!loading && filteredSections.map(sec =>
-                sec.listings.map(listing => (
-                    <ListingCard key={listing.name} listing={listing} category={sec.category} provider={provider} />
+                sec.listings.map((listing, i) => (
+                    <ListingCard
+                        key={listing.id != null ? `${sec.category}:${listing.id}` : `${sec.category}:${i}`}
+                        listing={listing}
+                        category={sec.category}
+                        provider={provider}
+                    />
                 ))
             )}
         </div>

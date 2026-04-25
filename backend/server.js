@@ -17,6 +17,7 @@ app.get("/health", (_req, res) => {
   res.json({
     status: "ok",
     provider: process.env.FLIGHT_PROVIDER || "serpapi",
+    activityProvider: process.env.ACTIVITY_PROVIDER || "wikivoyage",
     timestamp: new Date().toISOString(),
   });
 });
@@ -33,5 +34,7 @@ app.use((err, _req, res, _next) => {
 
 app.listen(PORT, () => {
   console.log(`SCALO backend listening on http://localhost:${PORT}`);
-  console.log(`Flight provider: ${process.env.FLIGHT_PROVIDER || "serpapi"}`);
+  console.log(`Flight provider:    ${process.env.FLIGHT_PROVIDER || "serpapi"}`);
+  console.log(`Activity provider:  ${process.env.ACTIVITY_PROVIDER || "wikivoyage"}`);
+  console.log(`Save samples:       ${process.env.SAVE_SAMPLES || "false"}`);
 });

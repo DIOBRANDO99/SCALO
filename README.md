@@ -149,7 +149,8 @@ Tutte le variabili vanno in `backend/.env`:
 |-----------|-------------|
 | `SERPAPI_KEY` | Chiave API SerpAPI — necessaria solo con `FLIGHT_PROVIDER=serpapi` |
 | `FLIGHT_PROVIDER` | Provider dati di volo (vedi tabella sopra) — default `mock_real` |
-| `ACTIVITY_PROVIDER` | `wikivoyage` (default) oppure `gyg_mock`. Sceglie il provider per l'endpoint `/api/activities`. |
+| `ACTIVITY_PROVIDER` | `wikivoyage` (default) oppure `gyg`. Sceglie il provider per l'endpoint `/api/activities`. |
+| `GYG_API_KEY` | Chiave API GetYourGuide — necessaria solo con `ACTIVITY_PROVIDER=gyg` per chiamate live. Senza chiave usa i file sample in `doc/samples/gyg/`. |
 | `PORT` | Porta del server backend — default `3001` |
 | `SAVE_SAMPLES` | Se `true`, ogni risposta SerpAPI viene salvata in `doc/samples/` — utile per catturare nuovi dati reali senza script separati |
 
@@ -161,16 +162,19 @@ SCALO supporta due provider per l'endpoint `/api/activities`, selezionabili tram
 
 Dati live da [Wikivoyage](https://en.wikivoyage.org) via API MediaWiki. Funziona per qualsiasi città del mondo, include gestione dei districts (città grandi suddivise in sotto-pagine). I dati includono: nome, descrizione, indirizzo, orari, prezzo (stringa), telefono e coordinate.
 
-### `gyg_mock`
+### `gyg`
 
-Dataset statico in stile GetYourGuide per 5 città demo: **Istanbul, Bangkok, Rome, Dubai, Barcelona**. Ogni attività include campi arricchiti (rating, numero recensioni, thumbnail, booking link in stile marketplace) per simulare l'integrazione futura con un provider commerciale come GetYourGuide Partner API. Struttura flat (no districts) per semplicità di presentazione.
+Integrazione GetYourGuide Partner API. Ogni attività include campi arricchiti: rating, numero recensioni, thumbnail, durata, prezzo (con eventuale sconto), e link di prenotazione diretto su getyourguide.com.
 
-Per passare al mock:
+**Con `GYG_API_KEY`**: il backend chiama `GET https://api.getyourguide.com/1/tours?q={city}` in tempo reale.
 
-ACTIVITY_PROVIDER=gyg_mock
+**Senza `GYG_API_KEY`**: il backend legge i file sample in `doc/samples/gyg/gyg_tours_{city}.json`. Attualmente è disponibile solo `gyg_tours_dubai.json`; per altre città il pannello mostra il fallback vuoto.
 
+```
+ACTIVITY_PROVIDER=gyg
+```
 
-Riavvia il backend e qualsiasi richiesta `/api/activities?city=Istanbul` userà i dati del mock. Città non incluse nel mock ritornano `sections: []` (il frontend mostra il fallback "No structured activity listings found").
+Il frontend si adatta automaticamente: mostra "via GetYourGuide", categorie GYG (Skip-the-Line, Walking Tours, Food Tours, ecc.), rating con stelle, prezzi con eventuale barrato, e pulsante "Book on GetYourGuide →".
 
 
 ## Eseguire i Test

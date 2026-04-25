@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 import searchRouter from "./routes/search.js";
 import discoverRouter from "./routes/discover.js";
+import activitiesRouter from "./routes/activities.js";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -16,12 +17,14 @@ app.get("/health", (_req, res) => {
   res.json({
     status: "ok",
     provider: process.env.FLIGHT_PROVIDER || "serpapi",
+    activityProvider: process.env.ACTIVITY_PROVIDER || "wikivoyage",
     timestamp: new Date().toISOString(),
   });
 });
 
 app.use("/api/search", searchRouter);
 app.use("/api/discover", discoverRouter);
+app.use("/api/activities", activitiesRouter);
 
 // --- Global error handler ---
 app.use((err, _req, res, _next) => {
@@ -31,5 +34,7 @@ app.use((err, _req, res, _next) => {
 
 app.listen(PORT, () => {
   console.log(`SCALO backend listening on http://localhost:${PORT}`);
-  console.log(`Flight provider: ${process.env.FLIGHT_PROVIDER || "serpapi"}`);
+  console.log(`Flight provider:    ${process.env.FLIGHT_PROVIDER || "serpapi"}`);
+  console.log(`Activity provider:  ${process.env.ACTIVITY_PROVIDER || "wikivoyage"}`);
+  console.log(`Save samples:       ${process.env.SAVE_SAMPLES || "false"}`);
 });

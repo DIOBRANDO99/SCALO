@@ -1,0 +1,35 @@
+{
+  "_metadata": {
+    "descriptor": "GetYourGuide AG",
+    "date": "2026-04-25T14:00:00",
+    "status": "OK",
+    "query": "cnt_language=en&limit=20&offset=0",
+    "totalCount": 67,
+    "limit": 20,
+    "offset": 0
+  },
+  "data": {
+    "categories": [
+      { "category_id": 1,  "name": "Tours & Sightseeing",          "parent_id": null, "number_of_tours": 45230 },
+      { "category_id": 2,  "name": "Food & Drink",                  "parent_id": null, "number_of_tours": 18450 },
+      { "category_id": 3,  "name": "Outdoor Activities",            "parent_id": null, "number_of_tours": 22100 },
+      { "category_id": 4,  "name": "Water Sports",                  "parent_id": 3,    "number_of_tours": 8700  },
+      { "category_id": 5,  "name": "Classes & Workshops",           "parent_id": null, "number_of_tours": 9800  },
+      { "category_id": 6,  "name": "Cooking Classes",               "parent_id": 5,    "number_of_tours": 4200  },
+      { "category_id": 7,  "name": "Transfers & Ground Transport",  "parent_id": null, "number_of_tours": 12000 },
+      { "category_id": 8,  "name": "Cruises & Sailing",             "parent_id": null, "number_of_tours": 7600  },
+      { "category_id": 9,  "name": "Theme Parks & Amusement Parks", "parent_id": null, "number_of_tours": 3200  },
+      { "category_id": 10, "name": "Museums & Exhibitions",         "parent_id": 1,    "number_of_tours": 11500 },
+      { "category_id": 11, "name": "Walking Tours",                 "parent_id": 1,    "number_of_tours": 19000 },
+      { "category_id": 12, "name": "Day Trips",                     "parent_id": 1,    "number_of_tours": 25300 },
+      { "category_id": 13, "name": "Nightlife",                     "parent_id": null, "number_of_tours": 5400  },
+      { "category_id": 14, "name": "Wine Tasting",                  "parent_id": 2,    "number_of_tours": 3100  },
+      { "category_id": 15, "name": "Food Tours",                    "parent_id": 2,    "number_of_tours": 6700  },
+      { "category_id": 16, "name": "Guided Tours",                  "parent_id": 1,    "number_of_tours": 38000 },
+      { "category_id": 17, "name": "Skip-the-Line",                 "parent_id": 1,    "number_of_tours": 14200 },
+      { "category_id": 18, "name": "Wellness",                      "parent_id": null, "number_of_tours": 4100  },
+      { "category_id": 19, "name": "Spa & Hammam",                  "parent_id": 18,   "number_of_tours": 2300  },
+      { "category_id": 20, "name": "Adventure Sports",              "parent_id": 3,    "number_of_tours": 5900  }
+    ]
+  }
+}

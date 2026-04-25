@@ -47,7 +47,7 @@ async function fetchWikiSummary(city, fallback) {
     return (await tryFetch(city)) ?? (fallback ? await tryFetch(fallback) : null);
 }
 
-export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, loading }) {
+export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, onExploreActivities, loading, selectedHub, activityIata }) {
     const { origin, destination, hubs, totalHubs } = hubData;
     const [wikiCache, setWikiCache] = useState({});
 
@@ -80,31 +80,50 @@ export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, lo
                         pathOptions={{ color: "#16a34a", weight: 2, opacity: 0.6, dashArray: "6 4" }}
                     />
 
-                    {hubs.map(hub => (
+                    {hubs.map(hub => {
+                        const isFlightSelected   = hub.iata === selectedHub;
+                        const isActivitySelected = hub.iata === activityIata && !isFlightSelected;
+                        const isAnySelected      = isFlightSelected || isActivitySelected;
+
+                        const fill   = isFlightSelected ? "#3b82f6" : isActivitySelected ? "#10b981" : "#f59e0b";
+                        const border = isFlightSelected ? "#2563eb" : isActivitySelected ? "#059669" : "#d97706";
+                        const radius = hubRadius(hub) + (isAnySelected ? 3 : 0);
+                        const weight = isAnySelected ? 2.5 : 1.5;
+
+                        const selectionKey = isFlightSelected ? "f" : isActivitySelected ? "a" : "n";
+                        return (
                         <CircleMarker
-                            key={hub.iata}
+                            key={`${hub.iata}-${selectionKey}`}
                             center={[hub.lat, hub.lon]}
-                            radius={hubRadius(hub)}
-                            pathOptions={{ color: "#d97706", fillColor: "#f59e0b", fillOpacity: 0.85, weight: 1.5 }}
+                            radius={radius}
+                            pathOptions={{ color: border, fillColor: fill, fillOpacity: 0.9, weight }}
                             eventHandlers={{ mouseover: () => handleHover(hub) }}
                         >
-                            <Tooltip direction="top" offset={[0, -6]} sticky={false}>
-                                <div style={{ width: "260px", whiteSpace: "normal", wordBreak: "break-word" }}>
-                                    <div style={{ fontWeight: 600, fontSize: "13px" }}>{hub.city || hub.name}</div>
-                                    <div style={{ fontSize: "11px", color: "#6b7280", marginBottom: "4px" }}>{hub.name}</div>
-                                    {wikiCache[hub.iata] === undefined && hub.city && (
-                                        <div style={{ fontSize: "11px", color: "#9ca3af" }}>Loading…</div>
-                                    )}
-                                    {wikiCache[hub.iata] === null && (
-                                        <div style={{ fontSize: "11px", color: "#9ca3af" }}>Loading…</div>
-                                    )}
-                                    {wikiCache[hub.iata]?.extract && (
-                                        <div style={{ fontSize: "11px", color: "#374151", marginBottom: "4px" }}>
-                                            {wikiCache[hub.iata].extract.slice(0, 150)}…
-                                        </div>
-                                    )}
-                                </div>
-                            </Tooltip>
+                            {isAnySelected ? (
+                                <Tooltip permanent direction="top" offset={[0, -8]}>
+                                    <span style={{ fontSize: "11px", fontWeight: 600, whiteSpace: "nowrap" }}>
+                                        {isFlightSelected ? "✈" : "📍"} {hub.city || hub.iata}
+                                    </span>
+                                </Tooltip>
+                            ) : (
+                                <Tooltip direction="top" offset={[0, -6]} sticky={false}>
+                                    <div style={{ width: "260px", whiteSpace: "normal", wordBreak: "break-word" }}>
+                                        <div style={{ fontWeight: 600, fontSize: "13px" }}>{hub.city || hub.name}</div>
+                                        <div style={{ fontSize: "11px", color: "#6b7280", marginBottom: "4px" }}>{hub.name}</div>
+                                        {wikiCache[hub.iata] === undefined && hub.city && (
+                                            <div style={{ fontSize: "11px", color: "#9ca3af" }}>Loading…</div>
+                                        )}
+                                        {wikiCache[hub.iata] === null && (
+                                            <div style={{ fontSize: "11px", color: "#9ca3af" }}>Loading…</div>
+                                        )}
+                                        {wikiCache[hub.iata]?.extract && (
+                                            <div style={{ fontSize: "11px", color: "#374151", marginBottom: "4px" }}>
+                                                {wikiCache[hub.iata].extract.slice(0, 150)}…
+                                            </div>
+                                        )}
+                                    </div>
+                                </Tooltip>
+                            )}
                             <Popup maxWidth={320}>
                                 <div style={{ maxWidth: "300px" }}>
                                     {/* Header row: text + image side by side */}
@@ -138,14 +157,23 @@ export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, lo
                                     )}
                                     <button
                                         onClick={() => !loading && onHubSelect(hub)}
-                                        style={{ display: "block", width: "100%", backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                        style={{ display: "block", width: "100%", backgroundColor: "#2563eb", color: "white", border: "none", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer", marginBottom: "6px" }}
                                     >
                                         Search this stopover
                                     </button>
+                                    {onExploreActivities && (
+                                        <button
+                                            onClick={() => !loading && onExploreActivities(hub)}
+                                            style={{ display: "block", width: "100%", backgroundColor: "white", color: "#2563eb", border: "1px solid #2563eb", borderRadius: "6px", padding: "6px 10px", fontSize: "13px", fontWeight: 500, cursor: "pointer" }}
+                                        >
+                                            Explore activities
+                                        </button>
+                                    )}
                                 </div>
                             </Popup>
                         </CircleMarker>
-                    ))}
+                        );
+                    })}
 
                     <CircleMarker
                         center={originPos}
@@ -191,6 +219,8 @@ export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, lo
             <div className="bg-white border-t px-4 py-2 flex flex-wrap gap-4 text-xs text-gray-500 items-center">
                 <span><span style={{ color: "#dc2626" }}>●</span> Origin / Destination</span>
                 <span><span style={{ color: "#f59e0b" }}>●</span> Hub candidate</span>
+                {selectedHub  && <span><span style={{ color: "#3b82f6" }}>●</span> Flight stopover</span>}
+                {activityIata && <span><span style={{ color: "#10b981" }}>●</span> Exploring activities</span>}
                 <span>{hubs.length} hub{hubs.length !== 1 ? "s" : ""} shown</span>
             </div>
 

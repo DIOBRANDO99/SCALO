@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function formatDuration(minutes) {
   const h = Math.floor(minutes / 60);
@@ -157,6 +157,12 @@ function LegSection({ leg, selectedIdx, onSelect }) {
   );
 }
 
+const SORTS = [
+  { key: "price",    label: "Cheapest",      fn: (a, b) => a.price - b.price },
+  { key: "duration", label: "Fastest",       fn: (a, b) => a.totalDuration - b.totalDuration },
+  { key: "stops",    label: "Fewest stops",  fn: (a, b) => (a.flights.length - b.flights.length) || (a.price - b.price) },
+];
+
 function bookingUrl(option, leg) {
   const dep = option.flights[0].departureAirport?.id ?? leg.origin;
   const arr = option.flights[option.flights.length - 1].arrivalAirport?.id ?? leg.destination;
@@ -164,21 +170,25 @@ function bookingUrl(option, leg) {
   return `https://www.skyscanner.net/transport/flights/${dep.toLowerCase()}/${arr.toLowerCase()}/${date}/`;
 }
 
-export default function ResultCard({ result }) {
-  const { legs, summary, stopover } = result;
+export default function ResultCard({ result, onClose, onTotalPriceChange }) {
+  const { legs, summary, stopover, adults = 1 } = result;
 
-  const [selectedIdx, setSelectedIdx] = useState(() =>
-    legs.map((leg) => {
-      const validOptions = leg.options.filter((o) => typeof o.price === "number");
-      if (validOptions.length === 0) return 0;
-      const minPrice = Math.min(...validOptions.map((o) => o.price));
-      return leg.options.findIndex((o) => o.price === minPrice);
-    })
-  );
+  const [sort, setSort] = useState("price");
+  const sortFn = SORTS.find((s) => s.key === sort)?.fn ?? SORTS[0].fn;
+  const sortedLegs = legs.map((leg) => ({ ...leg, options: [...leg.options].sort(sortFn) }));
 
-  const selectedOptions = legs.map((leg, i) => leg.options[selectedIdx[i]]);
+  const [selectedIdx, setSelectedIdx] = useState(() => legs.map(() => 0));
+
+  function handleSort(key) {
+    setSort(key);
+    setSelectedIdx(legs.map(() => 0));
+  }
+
+  const selectedOptions = sortedLegs.map((leg, i) => leg.options[selectedIdx[i]]);
   const totalPrice = selectedOptions.reduce((sum, o) => sum + (o?.price ?? 0), 0);
   const savings = summary.directPrice != null ? summary.directPrice - totalPrice : null;
+
+  useEffect(() => { onTotalPriceChange?.(totalPrice); }, [totalPrice]);
 
   const destination = legs.find((l) => l.id === "outbound2")?.destination ?? legs[1]?.destination;
 
@@ -194,20 +204,45 @@ export default function ResultCard({ result }) {
             {stopover.nights} night{stopover.nights !== 1 ? "s" : ""} in {stopover.iata}
           </p>
         </div>
-        {savings != null && (
-          <div className={`text-right shrink-0 ${savings >= 0 ? "text-green-600" : "text-red-500"}`}>
-            <div className="text-2xl font-bold">
-              {savings >= 0 ? `Save €${savings}` : `+€${Math.abs(savings)} vs direct`}
-            </div>
-            <div className="text-xs text-gray-400">
-              Direct: €{summary.directPrice}
-            </div>
+        <div className="flex flex-col items-end gap-2 shrink-0">
+          <div className="flex items-center gap-2">
+            {SORTS.map((s) => (
+              <button
+                key={s.key}
+                onClick={() => handleSort(s.key)}
+                style={{
+                  padding: "4px 12px",
+                  borderRadius: "999px",
+                  fontSize: "12px",
+                  fontWeight: 500,
+                  border: sort === s.key ? "none" : "1px solid #d1d5db",
+                  backgroundColor: sort === s.key ? "#2563eb" : "white",
+                  color: sort === s.key ? "white" : "#374151",
+                  cursor: "pointer",
+                }}
+              >
+                {s.label}
+              </button>
+            ))}
+            {onClose && (
+              <button onClick={onClose} className="text-gray-400 hover:text-gray-600 text-lg leading-none">×</button>
+            )}
           </div>
-        )}
+          {savings != null && (
+            <div className={`text-right ${savings >= 0 ? "text-green-600" : "text-red-500"}`}>
+              <div className="text-2xl font-bold">
+                {savings >= 0 ? `Save €${savings}` : `+€${Math.abs(savings)} vs direct`}
+              </div>
+              <div className="text-xs text-gray-400">
+                Direct: €{summary.directPrice}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Legs */}
-      {legs.map((leg, i) => (
+      {sortedLegs.map((leg, i) => (
         <LegSection
           key={leg.id}
           leg={leg}
@@ -222,8 +257,13 @@ export default function ResultCard({ result }) {
 
       {/* Footer */}
       <div className="border-t pt-4">
-        <p className="text-xs text-gray-400 mb-1">Total selected</p>
+        <p className="text-xs text-gray-400 mb-1">
+          Total selected{adults > 1 ? ` · ${adults} passengers` : ""}
+        </p>
         <p className="text-2xl font-bold">€{totalPrice}</p>
+        {adults > 1 && (
+          <p className="text-xs text-gray-400">€{Math.round(totalPrice / adults)} per person</p>
+        )}
         {savings != null && totalPrice !== summary.bestCombinedPrice && (
           <p className="text-xs text-gray-400">
             Best possible: €{summary.bestCombinedPrice}

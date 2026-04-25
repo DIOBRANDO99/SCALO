@@ -1,15 +1,13 @@
 import { getHubsWithDetails } from "./hubs.js";
 
 const adapterMap = {
-    serpapi:        "../adapters/serpapi.js",
-    mock_fake:      "../adapters/mock_fake.js",
-    mock_real:      "../adapters/mock_real.js",
-    mock_discover:  "../adapters/mock_discover.js",
-    mock_demo:      "../adapters/mock_demo.js",
+    serpapi:    "../adapters/serpapi.js",
+    mock_fake:  "../adapters/mock_fake.js",
+    mock_real:  "../adapters/mock_real.js",
 };
 
 async function getAdapter() {
-    const path = adapterMap[process.env.FLIGHT_PROVIDER] ?? "../adapters/mock_real.js";
+    const path = adapterMap[process.env.FLIGHT_PROVIDER] ?? "../adapters/serpapi.js";
     return import(path);
 }
 
@@ -65,31 +63,56 @@ function cheapestPrice(flights) {
     return prices.length > 0 ? Math.min(...prices) : null;
 }
 
-export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops = "3" }) {
+export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops = "3", adults = 1, travelClass = "1", oneWay = false }) {
     const adapter = await getAdapter();
     const stopoverDepartureDate = addDays(outboundDate, stopoverNights);
 
-    const [leg1Raw, leg2Raw, leg3Raw, directRaw] = await Promise.all([
-        adapter.search({ departureId: origin,       arrivalId: stopover,     outboundDate,                        tripType: "2", stops: maxStops }),
-        adapter.search({ departureId: stopover,     arrivalId: destination,  outboundDate: stopoverDepartureDate, tripType: "2", stops: maxStops }),
-        adapter.search({ departureId: destination,  arrivalId: origin,       outboundDate: returnDate,            tripType: "2", stops: maxStops }),
-        adapter.search({ departureId: origin,       arrivalId: destination,  outboundDate,              returnDate,              tripType: "1" }),
-    ]);
+    const searches = [
+        adapter.search({ departureId: origin,      arrivalId: stopover,    outboundDate,                        tripType: "2", stops: maxStops, adults, travelClass }),
+        adapter.search({ departureId: stopover,    arrivalId: destination, outboundDate: stopoverDepartureDate, tripType: "2", stops: maxStops, adults, travelClass }),
+        oneWay
+            ? adapter.search({ departureId: origin, arrivalId: destination, outboundDate, tripType: "2", stops: maxStops, adults, travelClass })
+            : Promise.all([
+                adapter.search({ departureId: destination, arrivalId: origin, outboundDate: returnDate, tripType: "2", stops: maxStops, adults, travelClass }),
+                adapter.search({ departureId: origin,      arrivalId: destination, outboundDate, returnDate, tripType: "1", adults, travelClass }),
+            ]),
+    ];
+
+    const [leg1Raw, leg2Raw, thirdRaw] = await Promise.all(searches);
 
     const leg1Options = extractFlights(leg1Raw);
     const leg2Options = extractFlights(leg2Raw);
-    const leg3Options = extractFlights(leg3Raw);
-    const directFlights = extractFlights(directRaw);
 
     const bestLeg1Price = cheapestPrice(leg1Options);
     const bestLeg2Price = cheapestPrice(leg2Options);
-    const bestLeg3Price = cheapestPrice(leg3Options);
 
-    const directPrice = cheapestPrice(directFlights.filter(f => !f.layovers || f.layovers.length === 0));
+    let legs, bestCombinedPrice, directPrice, leg3Options, bestLeg3Price;
 
-    const bestCombinedPrice = bestLeg1Price !== null && bestLeg2Price !== null && bestLeg3Price !== null
-        ? bestLeg1Price + bestLeg2Price + bestLeg3Price
-        : null;
+    if (oneWay) {
+        const directFlights = extractFlights(thirdRaw);
+        directPrice = cheapestPrice(directFlights.filter(f => !f.layovers || f.layovers.length === 0));
+        bestCombinedPrice = bestLeg1Price !== null && bestLeg2Price !== null
+            ? bestLeg1Price + bestLeg2Price
+            : null;
+        legs = [
+            { id: "outbound1", origin,          destination: stopover,  date: outboundDate,          bestPrice: bestLeg1Price, options: leg1Options },
+            { id: "outbound2", origin: stopover, destination,           date: stopoverDepartureDate, bestPrice: bestLeg2Price, options: leg2Options },
+        ];
+    } else {
+        const [leg3Raw, directRaw] = thirdRaw;
+        leg3Options = extractFlights(leg3Raw);
+        bestLeg3Price = cheapestPrice(leg3Options);
+        const directFlights = extractFlights(directRaw);
+        directPrice = cheapestPrice(directFlights.filter(f => !f.layovers || f.layovers.length === 0));
+        bestCombinedPrice = bestLeg1Price !== null && bestLeg2Price !== null && bestLeg3Price !== null
+            ? bestLeg1Price + bestLeg2Price + bestLeg3Price
+            : null;
+        legs = [
+            { id: "outbound1", origin,              destination: stopover,  date: outboundDate,          bestPrice: bestLeg1Price,  options: leg1Options },
+            { id: "outbound2", origin: stopover,     destination,           date: stopoverDepartureDate, bestPrice: bestLeg2Price,  options: leg2Options },
+            { id: "return",    origin: destination,  destination: origin,   date: returnDate,            bestPrice: bestLeg3Price,  options: leg3Options },
+        ];
+    }
 
     const savings = directPrice !== null && bestCombinedPrice !== null
         ? directPrice - bestCombinedPrice
@@ -97,11 +120,9 @@ export async function searchWithStopover({ origin, destination, stopover, outbou
 
     return {
         stopover: { iata: stopover, nights: stopoverNights },
-        legs: [
-            { id: "outbound1", origin,       destination: stopover,     date: outboundDate,          bestPrice: bestLeg1Price, options: leg1Options },
-            { id: "outbound2", origin: stopover, destination,           date: stopoverDepartureDate, bestPrice: bestLeg2Price, options: leg2Options },
-            { id: "return",    origin: destination, destination: origin, date: returnDate,           bestPrice: bestLeg3Price, options: leg3Options },
-        ],
+        adults,
+        oneWay,
+        legs,
         summary: { bestCombinedPrice, directPrice, savings, currency: "EUR" },
     };
 }

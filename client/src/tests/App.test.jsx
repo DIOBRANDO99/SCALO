@@ -3,9 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import App from "../App";
 
-const PLACEHOLDER_ORIGIN      = "City, airport or IATA (e.g. Milan)";
-const PLACEHOLDER_STOPOVER    = "City, airport or IATA (e.g. Istanbul)";
-const PLACEHOLDER_DESTINATION = "City, airport or IATA (e.g. Bangkok)";
+const CITY_INPUT_RE = /City, airport or IATA/;
 
 // Helper: submit the search form in search mode with minimal valid input.
 // App defaults to discover mode, so we click the toggle first to get the stopover field.
@@ -15,11 +13,14 @@ async function submitSearch(user, { origin = "MXP", stopover = "IST", destinatio
     // Switch to search mode (default is discover)
     await user.click(screen.getByTestId("mode-toggle"));
 
-    // CityInput accepts a raw 3-letter IATA typed directly as a fallback
-    await user.type(screen.getByPlaceholderText(PLACEHOLDER_ORIGIN), origin);
-    await user.type(screen.getByPlaceholderText(PLACEHOLDER_STOPOVER), stopover);
-    await user.type(screen.getByPlaceholderText(PLACEHOLDER_DESTINATION), destination);
+    // CityInput accepts a raw 3-letter IATA typed directly as a fallback.
+    // In search mode the order is: origin, stopover, destination.
+    const [originInput, stopoverInput, destinationInput] = screen.getAllByPlaceholderText(CITY_INPUT_RE);
+    await user.type(originInput, origin);
+    await user.type(stopoverInput, stopover);
+    await user.type(destinationInput, destination);
     fireEvent.change(container.querySelector('input[name="outboundDate"]'), { target: { value: "2026-06-10" } });
+    fireEvent.change(container.querySelector('input[name="returnDate"]'),   { target: { value: "2026-06-20" } });
 
     await user.click(screen.getByRole("button", { name: "Search Flights" }));
 }
@@ -42,10 +43,11 @@ describe("App — Scenario A: no flights found", () => {
             summary: { bestCombinedPrice: null, directPrice: 1176, savings: null, currency: "EUR" },
         };
 
-        vi.spyOn(globalThis, "fetch").mockResolvedValueOnce({
-            ok: true,
-            json: async () => mockResult,
-        });
+        vi.spyOn(globalThis, "fetch").mockImplementation(url =>
+            url.includes("/api/search")
+                ? Promise.resolve({ ok: true, json: async () => mockResult })
+                : Promise.resolve({ ok: true, json: async () => ({ activityProvider: "wikivoyage" }) })
+        );
 
         await submitSearch(user);
 
@@ -68,10 +70,11 @@ describe("App — Scenario B: no direct flight to compare", () => {
             summary: { bestCombinedPrice: 623, directPrice: null, savings: null, currency: "EUR" },
         };
 
-        vi.spyOn(globalThis, "fetch").mockResolvedValueOnce({
-            ok: true,
-            json: async () => mockResult,
-        });
+        vi.spyOn(globalThis, "fetch").mockImplementation(url =>
+            url.includes("/api/search")
+                ? Promise.resolve({ ok: true, json: async () => mockResult })
+                : Promise.resolve({ ok: true, json: async () => ({ activityProvider: "wikivoyage" }) })
+        );
 
         await submitSearch(user);
 
@@ -104,10 +107,11 @@ describe("App — Scenario B: no direct flight to compare", () => {
             summary: { bestCombinedPrice: 623, directPrice: null, savings: null, currency: "EUR" },
         };
 
-        vi.spyOn(globalThis, "fetch").mockResolvedValueOnce({
-            ok: true,
-            json: async () => mockResult,
-        });
+        vi.spyOn(globalThis, "fetch").mockImplementation(url =>
+            url.includes("/api/search")
+                ? Promise.resolve({ ok: true, json: async () => mockResult })
+                : Promise.resolve({ ok: true, json: async () => ({ activityProvider: "wikivoyage" }) })
+        );
 
         await submitSearch(user);
         await user.click(screen.getByText("Show stopover flights"));
@@ -130,10 +134,11 @@ describe("App — Scenario C: stopover more expensive than direct", () => {
             summary: { bestCombinedPrice: 1450, directPrice: 1176, savings: -274, currency: "EUR" },
         };
 
-        vi.spyOn(globalThis, "fetch").mockResolvedValueOnce({
-            ok: true,
-            json: async () => mockResult,
-        });
+        vi.spyOn(globalThis, "fetch").mockImplementation(url =>
+            url.includes("/api/search")
+                ? Promise.resolve({ ok: true, json: async () => mockResult })
+                : Promise.resolve({ ok: true, json: async () => ({ activityProvider: "wikivoyage" }) })
+        );
 
         await submitSearch(user, { stopover: "ORD" });
 

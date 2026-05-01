@@ -241,33 +241,6 @@ function hasRoute(fromIata, toIata) {
 }
 
 /**
- * Returns IATA codes of large airports inside the ellipse A→B.
- */
-export function findHubs(originIata, destinationIata, factor = 0.2) {
-    const allAirports = loadAirports();
-    const origin = allAirports.find((a) => a.iata === originIata);
-    const dest = allAirports.find((a) => a.iata === destinationIata);
-
-    if (!origin || !dest) return null;
-
-    const dAB = haversine(origin.lat, origin.lon, dest.lat, dest.lon);
-    const dMax = (1 + factor) * dAB;
-
-    const hubs = [];
-    for (const airport of allAirports) {
-        if (airport.iata === originIata || airport.iata === destinationIata) continue;
-        const dAC = haversine(origin.lat, origin.lon, airport.lat, airport.lon);
-        const dCB = haversine(airport.lat, airport.lon, dest.lat, dest.lon);
-        if (dAC + dCB <= dMax) {
-            hubs.push(airport.iata);
-        }
-    }
-
-    console.log(`[hubs] ${originIata}→${destinationIata}: d=${Math.round(dAB)}km, ${hubs.length} airports in ellipse`);
-    return hubs;
-}
-
-/**
  * Returns hub candidates with full details for the frontend map.
  * Pipeline: ellipse filter → route existence filter → enrich with details.
  * @param {string} originIata

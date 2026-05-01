@@ -20,7 +20,7 @@ Il motore è completo e funzionante. L'interfaccia web è completa.
 backend/           Server Express (API REST)
   adapters/        Wrapper per provider di dati (serpapi, mock_fake, mock_real, wikivoyage, gyg)
   services/        Logica di business (flights.js, hubs.js, activities.js)
-  routes/          Endpoint HTTP (search, discover, hubs, activities)
+  routes/          Endpoint HTTP (search, hubs, activities)
   tests/           Suite di test Vitest
 client/            Interfaccia web (Vite + React + Tailwind)
   src/             Componenti React e stili
@@ -237,7 +237,7 @@ Il backend chiama l'API MediaWiki di Wikivoyage (`en.wikivoyage.org/w/api.php`) 
 
 ### Città con distretti
 
-Le grandi città (Istanbul, Amsterdam, Dubai) suddividono i contenuti in sotto-pagine per distretto. In questo caso SCALO mostra prima un selettore di distretto; solo dopo aver scelto il distretto viene fatta la chiamata API per i listing. Questo limita le chiamate API al minimo necessario. Il pulsante **"← Back to districts"** ripristina la lista distretti dalla cache senza nuove chiamate.
+Le grandi città (Istanbul, Amsterdam, Dubai) suddividono i contenuti in sotto-pagine per distretto. In questo caso SCALO seleziona automaticamente il primo distretto (Wikivoyage li elenca in ordine di rilevanza, partendo dal centro storico) e mostra subito le sue attività; il selettore di distretto resta accessibile tramite il pulsante **"Select district"** per cambiare quartiere senza nuove chiamate API.
 
 ![Selettore distretto Wikivoyage](doc/screenshots/wikivoyage_district_menu.png)
 

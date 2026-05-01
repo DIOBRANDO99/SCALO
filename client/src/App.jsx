@@ -7,6 +7,7 @@ import EmptyState from "./EmptyState";
 import HubMap from "./HubMap";
 import ActivityPanel from "./ActivityPanel";
 import DistrictSelector from "./DistrictSelector";
+import scalologoUrl from "./assets/scalo_logo.png";
 
 export default function App() {
     const [result, setResult] = useState(null);
@@ -19,6 +20,7 @@ export default function App() {
     const [activityHub, setActivityHub] = useState(null);
     const [activityData, setActivityData] = useState(null);       // { type: "listings"|"districts", ... }
     const [activityParent, setActivityParent] = useState(null);   // saved districts data for back button
+    const [activityDistrict, setActivityDistrict] = useState(null); // name of currently displayed district, if any
     const [activityLoading, setActivityLoading] = useState(false);
 
     const [activityProvider, setActivityProvider] = useState("wikivoyage");
@@ -35,6 +37,7 @@ export default function App() {
     const [returnActivityHub, setReturnActivityHub] = useState(null);
     const [returnActivityData, setReturnActivityData] = useState(null);
     const [returnActivityParent, setReturnActivityParent] = useState(null);
+    const [returnActivityDistrict, setReturnActivityDistrict] = useState(null);
     const [returnActivityLoading, setReturnActivityLoading] = useState(false);
 
     useEffect(() => {
@@ -55,6 +58,7 @@ export default function App() {
         setActivityHub(null);
         setActivityData(null);
         setActivityParent(null);
+        setActivityDistrict(null);
         setOutboundTotalPrice(null);
         setReturnTotalPrice(null);
         setReturnHubData(null);
@@ -64,6 +68,7 @@ export default function App() {
         setReturnActivityHub(null);
         setReturnActivityData(null);
         setReturnActivityParent(null);
+        setReturnActivityDistrict(null);
 
         const { mode, ...body } = params;
 
@@ -192,14 +197,32 @@ export default function App() {
         setActivityHub(hub);
         setActivityData(null);
         setActivityParent(null);
+        setActivityDistrict(null);
         setActivityLoading(true);
         try {
-            const res = await fetch(`/api/activities?city=${encodeURIComponent(hub.city || hub.name)}`);
+            const cityName = hub.city || hub.name;
+            const res = await fetch(`/api/activities?city=${encodeURIComponent(cityName)}`);
             if (!res.ok) {
                 const err = await res.json();
                 throw new Error(err.error || `HTTP ${res.status}`);
             }
-            setActivityData(await res.json());
+            const data = await res.json();
+
+            // Auto-select the first district (Wikivoyage lists them in rough importance order:
+            // central/historic first — e.g. Sultanahmet for Istanbul, Centrum for Amsterdam).
+            if (data.type === "districts" && data.districts.length > 0) {
+                setActivityParent(data);
+                setActivityDistrict(data.districts[0].name);
+                const params = new URLSearchParams({ city: cityName, district: data.districts[0].slug });
+                const r2 = await fetch(`/api/activities?${params}`);
+                if (!r2.ok) {
+                    const err = await r2.json();
+                    throw new Error(err.error || `HTTP ${r2.status}`);
+                }
+                setActivityData(await r2.json());
+            } else {
+                setActivityData(data);
+            }
         } catch (err) {
             setError(err.message);
             setActivityHub(null);
@@ -209,6 +232,8 @@ export default function App() {
     }
 
     async function handleDistrictSelect(slug) {
+        const district = activityData.districts.find(d => d.slug === slug);
+        setActivityDistrict(district?.name ?? null);
         setActivityParent(activityData);   // save districts list for back button
         setActivityData(null);
         setActivityLoading(true);
@@ -326,14 +351,30 @@ export default function App() {
         setReturnActivityHub(hub);
         setReturnActivityData(null);
         setReturnActivityParent(null);
+        setReturnActivityDistrict(null);
         setReturnActivityLoading(true);
         try {
-            const res = await fetch(`/api/activities?city=${encodeURIComponent(hub.city || hub.name)}`);
+            const cityName = hub.city || hub.name;
+            const res = await fetch(`/api/activities?city=${encodeURIComponent(cityName)}`);
             if (!res.ok) {
                 const err = await res.json();
                 throw new Error(err.error || `HTTP ${res.status}`);
             }
-            setReturnActivityData(await res.json());
+            const data = await res.json();
+
+            if (data.type === "districts" && data.districts.length > 0) {
+                setReturnActivityParent(data);
+                setReturnActivityDistrict(data.districts[0].name);
+                const params = new URLSearchParams({ city: cityName, district: data.districts[0].slug });
+                const r2 = await fetch(`/api/activities?${params}`);
+                if (!r2.ok) {
+                    const err = await r2.json();
+                    throw new Error(err.error || `HTTP ${r2.status}`);
+                }
+                setReturnActivityData(await r2.json());
+            } else {
+                setReturnActivityData(data);
+            }
         } catch (err) {
             setError(err.message);
             setReturnActivityHub(null);
@@ -343,6 +384,8 @@ export default function App() {
     }
 
     async function handleReturnDistrictSelect(slug) {
+        const district = returnActivityData.districts.find(d => d.slug === slug);
+        setReturnActivityDistrict(district?.name ?? null);
         setReturnActivityParent(returnActivityData);
         setReturnActivityData(null);
         setReturnActivityLoading(true);
@@ -381,9 +424,12 @@ export default function App() {
 
     return (
         <div className={`${isWide ? "max-w-5xl" : "max-w-3xl"} mx-auto px-4 py-12`}>
-            <h1 className="text-3xl font-bold mb-2">SCALO</h1>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "8px" }}>
+                <img src={scalologoUrl} alt="" style={{ width: "40px", height: "40px" }} />
+                <h1 className="text-3xl font-bold">SCALO</h1>
+            </div>
             <p className="text-gray-600 mb-8">
-                Smart Connection And Layover Optimizer
+                Turn layovers into stopovers
             </p>
 
             <SearchForm onSearch={handleSearch} loading={loading} />
@@ -433,11 +479,13 @@ export default function App() {
             {activityHub && !activityLoading && activityData?.type === "listings" && (
                 <ActivityPanel
                     hub={activityHub}
+                    district={activityDistrict}
                     sections={activityData.sections}
+                    bannerImage={activityData.bannerImage}
                     provider={activityData.provider || activityProvider}
                     loading={false}
-                    onBack={activityParent ? () => setActivityData(activityParent) : null}
-                    onClose={() => { setActivityHub(null); setActivityData(null); setActivityParent(null); }}
+                    onBack={activityParent ? () => { setActivityData(activityParent); setActivityDistrict(null); } : null}
+                    onClose={() => { setActivityHub(null); setActivityData(null); setActivityParent(null); setActivityDistrict(null); }}
                 />
             )}
 
@@ -663,11 +711,13 @@ export default function App() {
                             {!returnActivityLoading && returnActivityData?.type === "listings" && (
                                 <ActivityPanel
                                     hub={returnActivityHub}
+                                    district={returnActivityDistrict}
                                     sections={returnActivityData.sections}
+                                    bannerImage={returnActivityData.bannerImage}
                                     provider={returnActivityData.provider || activityProvider}
                                     loading={false}
-                                    onBack={returnActivityParent ? () => setReturnActivityData(returnActivityParent) : null}
-                                    onClose={() => { setReturnActivityHub(null); setReturnActivityData(null); setReturnActivityParent(null); }}
+                                    onBack={returnActivityParent ? () => { setReturnActivityData(returnActivityParent); setReturnActivityDistrict(null); } : null}
+                                    onClose={() => { setReturnActivityHub(null); setReturnActivityData(null); setReturnActivityParent(null); setReturnActivityDistrict(null); }}
                                 />
                             )}
                         </div>

@@ -32,7 +32,7 @@ export default function SearchForm({ onSearch, loading }) {
     return (
         <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6 mb-8">
             <div className="flex items-center justify-between mb-6">
-                <h2 className="text-lg font-semibold">Search Flights</h2>
+                <h2 className="text-lg font-semibold">{discoverMode ? "Discover stopovers" : "Search flights"}</h2>
                 <div className="flex items-center gap-4">
                     <label className="flex items-center gap-2 cursor-pointer select-none">
                         <span className="text-sm text-gray-600">One way</span>
@@ -63,7 +63,7 @@ export default function SearchForm({ onSearch, loading }) {
                     <label className="block text-sm font-medium text-gray-700 mb-1">
                         Origin <span className="text-red-500">*</span>
                     </label>
-                    <CityInput name="origin" placeholder="City, airport or IATA (e.g. Milan)" required />
+                    <CityInput name="origin" placeholder="City, airport or IATA" required />
                 </div>
 
                 {!discoverMode && (
@@ -79,7 +79,7 @@ export default function SearchForm({ onSearch, loading }) {
                     <label className="block text-sm font-medium text-gray-700 mb-1">
                         Destination <span className="text-red-500">*</span>
                     </label>
-                    <CityInput name="destination" placeholder="City, airport or IATA (e.g. Bangkok)" required />
+                    <CityInput name="destination" placeholder="City, airport or IATA" required />
                 </div>
             </div>
 

@@ -1,4 +1,18 @@
 const API_BASE = "https://en.wikivoyage.org/w/api.php";
+const FILE_BASE = "https://en.wikivoyage.org/wiki/Special:FilePath";
+
+function fileUrl(filename, width) {
+    return `${FILE_BASE}/${encodeURIComponent(filename)}?width=${width}`;
+}
+
+function parseImageParam(val) {
+    if (!val) return null;
+    let s = val.trim();
+    s = s.replace(/^\[\[/, "").replace(/\]\]$/, "");
+    s = s.split("|")[0].trim();              // [[File:Foo.jpg|thumb|caption]] → File:Foo.jpg
+    s = s.replace(/^File:/i, "").trim();
+    return s || null;
+}
 
 // Map Wikivoyage section titles → display category
 const SECTION_TO_CATEGORY = {
@@ -119,6 +133,7 @@ function extractListings(text) {
         if (inner === null) continue;
         const params = parseParams(inner);
         if (!params.name) continue;
+        const imageFile = parseImageParam(params.image);
         listings.push({
             name:        cleanWiki(params.name),
             description: cleanWiki(params.content ?? params.description ?? null),
@@ -127,6 +142,7 @@ function extractListings(text) {
             hours:       cleanWiki(params.hours ?? null),
             price:       cleanWiki(params.price ?? null),
             phone:       cleanWiki(params.phone ?? params.tollfree ?? null),
+            image:       imageFile ? fileUrl(imageFile, 400) : null,
             lat:         parseFloat(params.lat) || null,
             lon:         parseFloat(params.long) || null,
         });
@@ -223,6 +239,19 @@ function hasDistricts(wikitext) {
 }
 
 /**
+ * Extract the page banner image filename from {{pagebanner|filename.jpg}} templates.
+ * Skips banners that resolve via Wikidata (no inline filename).
+ */
+function extractPageBanner(wikitext) {
+    const m = /\{\{[Pp]agebanner\s*\|\s*([^|}\n]+?)\s*[|}\n]/.exec(wikitext);
+    if (!m) return null;
+    const filename = parseImageParam(m[1]);
+    if (!filename) return null;
+    if (/^Wikidata$/i.test(filename)) return null;
+    return fileUrl(filename, 1200);
+}
+
+/**
  * Extract all [[PageTitle/District]] links from the wikitext.
  * Returns [{ name: "Sultanahmet", slug: "Istanbul/Sultanahmet" }, ...]
  */
@@ -250,7 +279,11 @@ function extractDistrictLinks(wikitext, pageTitle) {
 export async function fetchDistrictActivities(slug) {
     const wikitext = await fetchWikitext(slug);
     if (!wikitext) throw new Error(`No Wikivoyage content found for "${slug}"`);
-    return { type: "listings", sections: parseWikitextListings(wikitext) };
+    return {
+        type: "listings",
+        sections: parseWikitextListings(wikitext),
+        bannerImage: extractPageBanner(wikitext),
+    };
 }
 
 /**
@@ -266,12 +299,14 @@ export async function fetchActivitiesByCity(city) {
     const wikitext = await fetchWikitext(title);
     if (!wikitext) throw new Error(`Could not retrieve Wikivoyage content for "${title}"`);
 
+    const bannerImage = extractPageBanner(wikitext);
+
     if (hasDistricts(wikitext)) {
         const districts = extractDistrictLinks(wikitext, title);
         if (districts.length > 0) {
-            return { type: "districts", pageTitle: title, districts };
+            return { type: "districts", pageTitle: title, districts, bannerImage };
         }
     }
 
-    return { type: "listings", sections: parseWikitextListings(wikitext) };
+    return { type: "listings", sections: parseWikitextListings(wikitext), bannerImage };
 }

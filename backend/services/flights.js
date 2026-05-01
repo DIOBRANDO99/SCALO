@@ -63,17 +63,17 @@ function cheapestPrice(flights) {
     return prices.length > 0 ? Math.min(...prices) : null;
 }
 
-export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights, maxStops = "3", adults = 1, travelClass = "1", oneWay = false }) {
+export async function searchWithStopover({ origin, destination, stopover, outboundDate, returnDate, stopoverNights, adults = 1, travelClass = "1", oneWay = false }) {
     const adapter = await getAdapter();
     const stopoverDepartureDate = addDays(outboundDate, stopoverNights);
 
     const searches = [
-        adapter.search({ departureId: origin,      arrivalId: stopover,    outboundDate,                        tripType: "2", stops: maxStops, adults, travelClass }),
-        adapter.search({ departureId: stopover,    arrivalId: destination, outboundDate: stopoverDepartureDate, tripType: "2", stops: maxStops, adults, travelClass }),
+        adapter.search({ departureId: origin,      arrivalId: stopover,    outboundDate,                        tripType: "2", stops: "3", adults, travelClass }),
+        adapter.search({ departureId: stopover,    arrivalId: destination, outboundDate: stopoverDepartureDate, tripType: "2", stops: "3", adults, travelClass }),
         oneWay
-            ? adapter.search({ departureId: origin, arrivalId: destination, outboundDate, tripType: "2", stops: maxStops, adults, travelClass })
+            ? adapter.search({ departureId: origin, arrivalId: destination, outboundDate, tripType: "2", stops: "3", adults, travelClass })
             : Promise.all([
-                adapter.search({ departureId: destination, arrivalId: origin, outboundDate: returnDate, tripType: "2", stops: maxStops, adults, travelClass }),
+                adapter.search({ departureId: destination, arrivalId: origin, outboundDate: returnDate, tripType: "2", stops: "3", adults, travelClass }),
                 adapter.search({ departureId: origin,      arrivalId: destination, outboundDate, returnDate, tripType: "1", adults, travelClass }),
             ]),
     ];

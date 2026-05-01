@@ -20,7 +20,7 @@ Il motore è completo e funzionante. L'interfaccia web è completa.
 backend/           Server Express (API REST)
   adapters/        Wrapper per provider di dati (serpapi, mock_fake, mock_real, wikivoyage, gyg)
   services/        Logica di business (flights.js, hubs.js, activities.js)
-  routes/          Endpoint HTTP (search, discover, hubs, activities)
+  routes/          Endpoint HTTP (search, hubs, activities)
   tests/           Suite di test Vitest
 client/            Interfaccia web (Vite + React + Tailwind)
   src/             Componenti React e stili

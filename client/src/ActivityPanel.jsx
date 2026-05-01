@@ -50,7 +50,7 @@ function ListingCard({ listing, category, provider }) {
     const [expanded, setExpanded] = useState(false);
     const isGYG = provider === "gyg";
     const hasMeta = listing.address || listing.hours || listing.price || listing.phone;
-    const isExpandable = listing.description || hasMeta || (isGYG && listing.thumbnail);
+    const isExpandable = listing.description || hasMeta || (isGYG && listing.thumbnail) || listing.image;
 
     return (
         <div
@@ -111,6 +111,14 @@ function ListingCard({ listing, category, provider }) {
                             style={{ width: "100%", maxHeight: "160px", objectFit: "cover", borderRadius: "6px", marginBottom: "8px" }}
                         />
                     )}
+                    {!isGYG && listing.image && (
+                        <img
+                            src={listing.image}
+                            alt={listing.name}
+                            onError={e => { e.currentTarget.style.display = "none"; }}
+                            style={{ width: "100%", maxHeight: "160px", objectFit: "cover", borderRadius: "6px", marginBottom: "8px" }}
+                        />
+                    )}
                     {listing.description && (
                         <p style={{ fontSize: "12px", color: "#374151", lineHeight: "1.5", marginBottom: "6px" }}>
                             {listing.description}
@@ -157,7 +165,7 @@ const PROVIDER_LABEL = {
     wikivoyage: "Wikivoyage",
 };
 
-export default function ActivityPanel({ hub, sections, provider = "wikivoyage", loading, onBack, onClose }) {
+export default function ActivityPanel({ hub, district, sections, bannerImage, provider = "wikivoyage", loading, onBack, onClose }) {
     const [activeCategory, setActiveCategory] = useState("All");
 
     const allCategories = sections.map(s => s.category);
@@ -177,7 +185,16 @@ export default function ActivityPanel({ hub, sections, provider = "wikivoyage", 
     const providerLabel = PROVIDER_LABEL[provider] ?? provider;
 
     return (
-        <div className="bg-white rounded-lg shadow p-6 mb-8">
+        <div className="bg-white rounded-lg shadow mb-8 overflow-hidden">
+            {bannerImage && (
+                <img
+                    src={bannerImage}
+                    alt=""
+                    onError={e => { e.currentTarget.style.display = "none"; }}
+                    style={{ display: "block", width: "100%", height: "120px", objectFit: "cover" }}
+                />
+            )}
+            <div className="p-6">
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: onBack ? "4px" : "16px" }}>
                 <div>
                     {onBack && (
@@ -185,14 +202,14 @@ export default function ActivityPanel({ hub, sections, provider = "wikivoyage", 
                             onClick={onBack}
                             style={{ fontSize: "12px", color: "#2563eb", background: "none", border: "none", cursor: "pointer", padding: 0, marginBottom: "12px", display: "block" }}
                         >
-                            ← Back to districts
+                            Select district
                         </button>
                     )}
                     <h3 style={{ fontSize: "15px", fontWeight: 600, marginBottom: "2px" }}>
-                        Things to do in {hub.city || hub.name}
+                        Things to do in {district || hub.city || hub.name}
                     </h3>
                     <p style={{ fontSize: "12px", color: "#6b7280" }}>
-                        {totalCount} {totalCount === 1 ? "place" : "places"} · via {providerLabel}
+                        {district ? `In ${hub.city || hub.name} · ` : ""}{totalCount} {totalCount === 1 ? "place" : "places"} · via {providerLabel}
                     </p>
                 </div>
                 {onClose && (
@@ -268,6 +285,7 @@ export default function ActivityPanel({ hub, sections, provider = "wikivoyage", 
                     />
                 ))
             )}
+            </div>
         </div>
     );
 }

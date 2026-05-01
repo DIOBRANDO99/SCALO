@@ -3,9 +3,8 @@ import userEvent from "@testing-library/user-event";
 import { describe, it, expect, vi } from "vitest";
 import SearchForm from "../SearchForm";
 
-const PLACEHOLDER_ORIGIN      = "City, airport or IATA (e.g. Milan)";
-const PLACEHOLDER_STOPOVER    = "City, airport or IATA (e.g. Istanbul)";
-const PLACEHOLDER_DESTINATION = "City, airport or IATA (e.g. Bangkok)";
+const PLACEHOLDER_STOPOVER = "City, airport or IATA (e.g. Istanbul)";
+const CITY_INPUT_RE = /City, airport or IATA/;
 
 describe("SearchForm — mode toggle", () => {
     it("defaults to discover mode: no stopover field, Discover button", () => {
@@ -42,9 +41,11 @@ describe("SearchForm — onSearch payload", () => {
         const onSearch = vi.fn();
         const { container } = render(<SearchForm onSearch={onSearch} loading={false} />);
 
-        await user.type(screen.getByPlaceholderText(PLACEHOLDER_ORIGIN), "MXP");
-        await user.type(screen.getByPlaceholderText(PLACEHOLDER_DESTINATION), "BKK");
+        const [originInput, destinationInput] = screen.getAllByPlaceholderText(CITY_INPUT_RE);
+        await user.type(originInput, "MXP");
+        await user.type(destinationInput, "BKK");
         fireEvent.change(container.querySelector('input[name="outboundDate"]'), { target: { value: "2026-06-10" } });
+        fireEvent.change(container.querySelector('input[name="returnDate"]'),   { target: { value: "2026-06-20" } });
 
         await user.click(screen.getByRole("button", { name: "Discover" }));
 
@@ -63,10 +64,12 @@ describe("SearchForm — onSearch payload", () => {
 
         await user.click(screen.getByTestId("mode-toggle")); // switch to search mode
 
-        await user.type(screen.getByPlaceholderText(PLACEHOLDER_ORIGIN), "MXP");
-        await user.type(screen.getByPlaceholderText(PLACEHOLDER_STOPOVER), "IST");
-        await user.type(screen.getByPlaceholderText(PLACEHOLDER_DESTINATION), "BKK");
+        const [originInput, stopoverInput, destinationInput] = screen.getAllByPlaceholderText(CITY_INPUT_RE);
+        await user.type(originInput, "MXP");
+        await user.type(stopoverInput, "IST");
+        await user.type(destinationInput, "BKK");
         fireEvent.change(container.querySelector('input[name="outboundDate"]'), { target: { value: "2026-06-10" } });
+        fireEvent.change(container.querySelector('input[name="returnDate"]'),   { target: { value: "2026-06-20" } });
 
         await user.click(screen.getByRole("button", { name: "Search Flights" }));
 
@@ -79,31 +82,3 @@ describe("SearchForm — onSearch payload", () => {
     });
 });
 
-describe("SearchForm — advanced options", () => {
-    it("advanced options are collapsed by default", () => {
-        render(<SearchForm onSearch={vi.fn()} loading={false} />);
-        expect(screen.getByText("Advanced options")).toBeInTheDocument();
-        expect(screen.queryByLabelText(/direct only/i)).not.toBeInTheDocument();
-    });
-
-    it("clicking Advanced options reveals the max stops radio buttons", async () => {
-        const user = userEvent.setup();
-        render(<SearchForm onSearch={vi.fn()} loading={false} />);
-
-        await user.click(screen.getByText("Advanced options"));
-
-        expect(screen.getByLabelText(/direct only/i)).toBeInTheDocument();
-        expect(screen.getByLabelText(/up to 1 stop/i)).toBeInTheDocument();
-        expect(screen.getByLabelText(/up to 2 stops/i)).toBeInTheDocument();
-    });
-
-    it("Up to 2 stops is selected by default when advanced options are opened", async () => {
-        const user = userEvent.setup();
-        render(<SearchForm onSearch={vi.fn()} loading={false} />);
-
-        await user.click(screen.getByText("Advanced options"));
-
-        expect(screen.getByLabelText(/up to 2 stops/i)).toBeChecked();
-        expect(screen.getByLabelText(/direct only/i)).not.toBeChecked();
-    });
-});

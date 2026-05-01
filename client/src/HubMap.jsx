@@ -110,10 +110,7 @@ export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, on
                                     <div style={{ width: "260px", whiteSpace: "normal", wordBreak: "break-word" }}>
                                         <div style={{ fontWeight: 600, fontSize: "13px" }}>{hub.city || hub.name}</div>
                                         <div style={{ fontSize: "11px", color: "#6b7280", marginBottom: "4px" }}>{hub.name}</div>
-                                        {wikiCache[hub.iata] === undefined && hub.city && (
-                                            <div style={{ fontSize: "11px", color: "#9ca3af" }}>Loading…</div>
-                                        )}
-                                        {wikiCache[hub.iata] === null && (
+                                        {wikiCache[hub.iata] == null && hub.city && (
                                             <div style={{ fontSize: "11px", color: "#9ca3af" }}>Loading…</div>
                                         )}
                                         {wikiCache[hub.iata]?.extract && (
@@ -131,11 +128,6 @@ export default function HubMap({ hubData, onHubSelect, onShowAll, onShowBest, on
                                         <div style={{ flex: 1, minWidth: 0 }}>
                                             <div style={{ fontWeight: 600, fontSize: "14px", marginBottom: "2px" }}>{hub.city || hub.name}</div>
                                             <div style={{ fontSize: "11px", color: "#6b7280", marginBottom: "4px" }}>{hub.name}</div>
-                                            {/* debug info — uncomment to inspect scoring inputs
-                                            <div style={{ fontSize: "11px", color: "#6b7280" }}>
-                                                {hub.routeCount} routes · {hub.detourPercent}% detour
-                                            </div>
-                                            */}
                                         </div>
                                         {wikiCache[hub.iata]?.thumbnail && (
                                             <img
